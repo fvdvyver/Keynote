@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D10E1011A10AFC5006DD677 /* CPSRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E1001A10AFC5006DD677 /* CPSRootWireframe.m */; };
 		6D78FC411A0B7A140097E4F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC401A0B7A140097E4F5 /* main.m */; };
 		6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC431A0B7A140097E4F5 /* AppDelegate.m */; };
 		6D78FC471A0B7A140097E4F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC461A0B7A140097E4F5 /* ViewController.m */; };
 		6D78FC4A1A0B7A140097E4F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC481A0B7A140097E4F5 /* Main.storyboard */; };
 		6D78FC4C1A0B7A140097E4F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC4B1A0B7A140097E4F5 /* Images.xcassets */; };
 		6D78FC4F1A0B7A140097E4F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC4D1A0B7A140097E4F5 /* LaunchScreen.xib */; };
-		6D78FC5B1A0B7A140097E4F5 /* Cochrane_PresentationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC5A1A0B7A140097E4F5 /* Cochrane_PresentationTests.m */; };
+		6D78FC6D1A0B82B70097E4F5 /* CPSRootWireframeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC6C1A0B82B70097E4F5 /* CPSRootWireframeTests.m */; };
+		76C13A78658DA88850DD7979 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 888BB7766EC1DFB252B3FBBC /* libPods.a */; };
+		E0BF00AE3AD224C668B6E35D /* libPods-Cochrane PresentationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC7C682EDA3593D283FE74A /* libPods-Cochrane PresentationTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CC7C682EDA3593D283FE74A /* libPods-Cochrane PresentationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cochrane PresentationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A87F2FA6AD0B26733A8DF01 /* Pods-Cochrane PresentationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cochrane PresentationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cochrane PresentationTests/Pods-Cochrane PresentationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		34CA437028E5848B3F09F9F6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		455A999303C9ED5158A09806 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6D10E0FF1A10AFC5006DD677 /* CPSRootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSRootWireframe.h; sourceTree = "<group>"; };
+		6D10E1001A10AFC5006DD677 /* CPSRootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRootWireframe.m; sourceTree = "<group>"; };
+		6D10E1021A10B089006DD677 /* CPSViewControllerProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSViewControllerProvider.h; sourceTree = "<group>"; };
+		6D10E1031A10B19F006DD677 /* CPSRootPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSRootPresenter.h; sourceTree = "<group>"; };
 		6D78FC3B1A0B7A140097E4F5 /* Cochrane Presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cochrane Presentation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D78FC3F1A0B7A140097E4F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D78FC401A0B7A140097E4F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,11 +46,13 @@
 		6D78FC451A0B7A140097E4F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6D78FC461A0B7A140097E4F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6D78FC491A0B7A140097E4F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6D78FC4B1A0B7A140097E4F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6D78FC4B1A0B7A140097E4F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		6D78FC4E1A0B7A140097E4F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6D78FC541A0B7A140097E4F5 /* Cochrane PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cochrane PresentationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D78FC591A0B7A140097E4F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D78FC5A1A0B7A140097E4F5 /* Cochrane_PresentationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cochrane_PresentationTests.m; sourceTree = "<group>"; };
+		6D78FC6C1A0B82B70097E4F5 /* CPSRootWireframeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRootWireframeTests.m; sourceTree = "<group>"; };
+		74A31BB7765D6B7908888057 /* Pods-Cochrane PresentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cochrane PresentationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cochrane PresentationTests/Pods-Cochrane PresentationTests.release.xcconfig"; sourceTree = "<group>"; };
+		888BB7766EC1DFB252B3FBBC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C13A78658DA88850DD7979 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0BF00AE3AD224C668B6E35D /* libPods-Cochrane PresentationTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +81,8 @@
 				6D78FC3D1A0B7A140097E4F5 /* Cochrane Presentation */,
 				6D78FC571A0B7A140097E4F5 /* Cochrane PresentationTests */,
 				6D78FC3C1A0B7A140097E4F5 /* Products */,
+				A9EC3ADCF9E652372F126187 /* Pods */,
+				A149F60FFEF6ED2290EABEEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +98,10 @@
 		6D78FC3D1A0B7A140097E4F5 /* Cochrane Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				6D78FC421A0B7A140097E4F5 /* AppDelegate.h */,
-				6D78FC431A0B7A140097E4F5 /* AppDelegate.m */,
+				6D78FC651A0B7AF00097E4F5 /* Classes */,
+				6D78FC671A0B7B850097E4F5 /* Resources */,
 				6D78FC451A0B7A140097E4F5 /* ViewController.h */,
 				6D78FC461A0B7A140097E4F5 /* ViewController.m */,
-				6D78FC481A0B7A140097E4F5 /* Main.storyboard */,
-				6D78FC4B1A0B7A140097E4F5 /* Images.xcassets */,
-				6D78FC4D1A0B7A140097E4F5 /* LaunchScreen.xib */,
 				6D78FC3E1A0B7A140097E4F5 /* Supporting Files */,
 			);
 			path = "Cochrane Presentation";
@@ -105,7 +119,7 @@
 		6D78FC571A0B7A140097E4F5 /* Cochrane PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
-				6D78FC5A1A0B7A140097E4F5 /* Cochrane_PresentationTests.m */,
+				6D78FC691A0B80C90097E4F5 /* Application Navigation */,
 				6D78FC581A0B7A140097E4F5 /* Supporting Files */,
 			);
 			path = "Cochrane PresentationTests";
@@ -119,6 +133,73 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6D78FC651A0B7AF00097E4F5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6D78FC661A0B7AFF0097E4F5 /* Application */,
+				6D78FC681A0B7BEA0097E4F5 /* Application Navigation */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6D78FC661A0B7AFF0097E4F5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6D78FC421A0B7A140097E4F5 /* AppDelegate.h */,
+				6D78FC431A0B7A140097E4F5 /* AppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		6D78FC671A0B7B850097E4F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D78FC481A0B7A140097E4F5 /* Main.storyboard */,
+				6D78FC4B1A0B7A140097E4F5 /* Images.xcassets */,
+				6D78FC4D1A0B7A140097E4F5 /* LaunchScreen.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6D78FC681A0B7BEA0097E4F5 /* Application Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				6D10E1021A10B089006DD677 /* CPSViewControllerProvider.h */,
+				6D10E1031A10B19F006DD677 /* CPSRootPresenter.h */,
+				6D10E0FF1A10AFC5006DD677 /* CPSRootWireframe.h */,
+				6D10E1001A10AFC5006DD677 /* CPSRootWireframe.m */,
+			);
+			path = "Application Navigation";
+			sourceTree = "<group>";
+		};
+		6D78FC691A0B80C90097E4F5 /* Application Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				6D78FC6C1A0B82B70097E4F5 /* CPSRootWireframeTests.m */,
+			);
+			path = "Application Navigation";
+			sourceTree = "<group>";
+		};
+		A149F60FFEF6ED2290EABEEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				888BB7766EC1DFB252B3FBBC /* libPods.a */,
+				1CC7C682EDA3593D283FE74A /* libPods-Cochrane PresentationTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9EC3ADCF9E652372F126187 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34CA437028E5848B3F09F9F6 /* Pods.debug.xcconfig */,
+				455A999303C9ED5158A09806 /* Pods.release.xcconfig */,
+				2A87F2FA6AD0B26733A8DF01 /* Pods-Cochrane PresentationTests.debug.xcconfig */,
+				74A31BB7765D6B7908888057 /* Pods-Cochrane PresentationTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D78FC5E1A0B7A140097E4F5 /* Build configuration list for PBXNativeTarget "Cochrane Presentation" */;
 			buildPhases = (
+				EFB9CD08888E49B212479F5C /* Check Pods Manifest.lock */,
 				6D78FC371A0B7A140097E4F5 /* Sources */,
 				6D78FC381A0B7A140097E4F5 /* Frameworks */,
 				6D78FC391A0B7A140097E4F5 /* Resources */,
+				2ABF28023AE12E7CC28A8D7C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D78FC611A0B7A140097E4F5 /* Build configuration list for PBXNativeTarget "Cochrane PresentationTests" */;
 			buildPhases = (
+				208620B3983DA95CB2943F11 /* Check Pods Manifest.lock */,
 				6D78FC501A0B7A140097E4F5 /* Sources */,
 				6D78FC511A0B7A140097E4F5 /* Frameworks */,
 				6D78FC521A0B7A140097E4F5 /* Resources */,
+				09B595E9EA63F81A7056BF5A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +248,7 @@
 		6D78FC331A0B7A140097E4F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CPS;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Mushroom Cloud";
 				TargetAttributes = {
@@ -214,12 +300,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09B595E9EA63F81A7056BF5A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cochrane PresentationTests/Pods-Cochrane PresentationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		208620B3983DA95CB2943F11 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2ABF28023AE12E7CC28A8D7C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFB9CD08888E49B212479F5C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D78FC371A0B7A140097E4F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6D78FC471A0B7A140097E4F5 /* ViewController.m in Sources */,
+				6D10E1011A10AFC5006DD677 /* CPSRootWireframe.m in Sources */,
 				6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */,
 				6D78FC411A0B7A140097E4F5 /* main.m in Sources */,
 			);
@@ -229,7 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D78FC5B1A0B7A140097E4F5 /* Cochrane_PresentationTests.m in Sources */,
+				6D78FC6D1A0B82B70097E4F5 /* CPSRootWireframeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +400,7 @@
 				6D78FC491A0B7A140097E4F5 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		6D78FC4D1A0B7A140097E4F5 /* LaunchScreen.xib */ = {
@@ -258,6 +409,7 @@
 				6D78FC4E1A0B7A140097E4F5 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -343,6 +495,7 @@
 		};
 		6D78FC5F1A0B7A140097E4F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34CA437028E5848B3F09F9F6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Cochrane Presentation/Info.plist";
@@ -353,6 +506,7 @@
 		};
 		6D78FC601A0B7A140097E4F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455A999303C9ED5158A09806 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Cochrane Presentation/Info.plist";
@@ -363,6 +517,7 @@
 		};
 		6D78FC621A0B7A140097E4F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A87F2FA6AD0B26733A8DF01 /* Pods-Cochrane PresentationTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -382,6 +537,7 @@
 		};
 		6D78FC631A0B7A140097E4F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74A31BB7765D6B7908888057 /* Pods-Cochrane PresentationTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -414,6 +570,7 @@
 				6D78FC601A0B7A140097E4F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D78FC611A0B7A140097E4F5 /* Build configuration list for PBXNativeTarget "Cochrane PresentationTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +579,7 @@
 				6D78FC631A0B7A140097E4F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
