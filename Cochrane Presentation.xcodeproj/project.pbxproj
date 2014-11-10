@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6D10E1011A10AFC5006DD677 /* CPSRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E1001A10AFC5006DD677 /* CPSRootWireframe.m */; };
+		6D10E1091A10B866006DD677 /* CPSRevealRootPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E1081A10B866006DD677 /* CPSRevealRootPresenter.m */; };
+		6D10E10A1A10B8A1006DD677 /* CPSRevealRootPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E1081A10B866006DD677 /* CPSRevealRootPresenter.m */; };
+		6D10E10B1A10B8A4006DD677 /* CPSRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E1001A10AFC5006DD677 /* CPSRootWireframe.m */; };
+		6D10E10E1A10B96E006DD677 /* CPSRootWireframe+CochranePresentationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E10D1A10B96E006DD677 /* CPSRootWireframe+CochranePresentationAdditions.m */; };
+		6D10E1101A10BC3A006DD677 /* CPSRevealRootPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E10F1A10BC3A006DD677 /* CPSRevealRootPresenterTests.m */; };
 		6D78FC411A0B7A140097E4F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC401A0B7A140097E4F5 /* main.m */; };
 		6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC431A0B7A140097E4F5 /* AppDelegate.m */; };
 		6D78FC471A0B7A140097E4F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC461A0B7A140097E4F5 /* ViewController.m */; };
@@ -38,6 +43,11 @@
 		6D10E1001A10AFC5006DD677 /* CPSRootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRootWireframe.m; sourceTree = "<group>"; };
 		6D10E1021A10B089006DD677 /* CPSViewControllerProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSViewControllerProvider.h; sourceTree = "<group>"; };
 		6D10E1031A10B19F006DD677 /* CPSRootPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSRootPresenter.h; sourceTree = "<group>"; };
+		6D10E1071A10B866006DD677 /* CPSRevealRootPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSRevealRootPresenter.h; sourceTree = "<group>"; };
+		6D10E1081A10B866006DD677 /* CPSRevealRootPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRevealRootPresenter.m; sourceTree = "<group>"; };
+		6D10E10C1A10B96E006DD677 /* CPSRootWireframe+CochranePresentationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPSRootWireframe+CochranePresentationAdditions.h"; sourceTree = "<group>"; };
+		6D10E10D1A10B96E006DD677 /* CPSRootWireframe+CochranePresentationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CPSRootWireframe+CochranePresentationAdditions.m"; sourceTree = "<group>"; };
+		6D10E10F1A10BC3A006DD677 /* CPSRevealRootPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRevealRootPresenterTests.m; sourceTree = "<group>"; };
 		6D78FC3B1A0B7A140097E4F5 /* Cochrane Presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cochrane Presentation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D78FC3F1A0B7A140097E4F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D78FC401A0B7A140097E4F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -168,6 +178,10 @@
 				6D10E1031A10B19F006DD677 /* CPSRootPresenter.h */,
 				6D10E0FF1A10AFC5006DD677 /* CPSRootWireframe.h */,
 				6D10E1001A10AFC5006DD677 /* CPSRootWireframe.m */,
+				6D10E1071A10B866006DD677 /* CPSRevealRootPresenter.h */,
+				6D10E1081A10B866006DD677 /* CPSRevealRootPresenter.m */,
+				6D10E10C1A10B96E006DD677 /* CPSRootWireframe+CochranePresentationAdditions.h */,
+				6D10E10D1A10B96E006DD677 /* CPSRootWireframe+CochranePresentationAdditions.m */,
 			);
 			path = "Application Navigation";
 			sourceTree = "<group>";
@@ -176,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				6D78FC6C1A0B82B70097E4F5 /* CPSRootWireframeTests.m */,
+				6D10E10F1A10BC3A006DD677 /* CPSRevealRootPresenterTests.m */,
 			);
 			path = "Application Navigation";
 			sourceTree = "<group>";
@@ -368,9 +383,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D10E1091A10B866006DD677 /* CPSRevealRootPresenter.m in Sources */,
 				6D78FC471A0B7A140097E4F5 /* ViewController.m in Sources */,
 				6D10E1011A10AFC5006DD677 /* CPSRootWireframe.m in Sources */,
 				6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */,
+				6D10E10E1A10B96E006DD677 /* CPSRootWireframe+CochranePresentationAdditions.m in Sources */,
 				6D78FC411A0B7A140097E4F5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +396,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D10E1101A10BC3A006DD677 /* CPSRevealRootPresenterTests.m in Sources */,
+				6D10E10B1A10B8A4006DD677 /* CPSRootWireframe.m in Sources */,
+				6D10E10A1A10B8A1006DD677 /* CPSRevealRootPresenter.m in Sources */,
 				6D78FC6D1A0B82B70097E4F5 /* CPSRootWireframeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

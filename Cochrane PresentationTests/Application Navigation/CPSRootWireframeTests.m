@@ -56,13 +56,17 @@
 - (void)testSettingMenuControllerProviderUpdatesPresentersMenuViewController
 {
     self.wireframe.menuControllerProvider = self.controllerProvider;
-    OCMVerify([self.presenter setMenuViewController:self.viewController]);
+    
+    id presenter = self.presenter;
+    OCMVerify([presenter setMenuViewController:self.viewController]);
 }
 
 - (void)testSettingContentControllerProviderUpdatesPresentersContentViewController
 {
     self.wireframe.contentControllerProvider = self.controllerProvider;
-    OCMVerify([self.presenter setContentViewController:self.viewController]);
+    
+    id presenter = self.presenter;
+    OCMVerify([presenter setContentViewController:self.viewController]);
 }
 
 @end
