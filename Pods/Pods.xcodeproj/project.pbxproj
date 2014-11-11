@@ -55,7 +55,6 @@
 		63A18B9142AA89DB6E7C8CD5 /* OCMStubRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = C523B7EE4A1C03FAF34273CD /* OCMStubRecorder.h */; };
 		63E85ECAA6B947DFAABDAF59 /* OCMInvocationExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = A25AA9F3ECD1E02AF240D041 /* OCMInvocationExpectation.h */; };
 		6A2BDBA7E795D1F737C686CD /* NSValue+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB7747E55F4E802E085F33 /* NSValue+OCMAdditions.m */; };
-		6D10E1121A10C3E9006DD677 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E1111A10C3E9006DD677 /* README.md */; };
 		6F034024BDB14AC69A3BF819 /* OCMConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A096B36E5F7E8E13A0F9692A /* OCMConstraint.m */; };
 		7561ADD2FF653CF1D839D29F /* OCMMacroState.h in Headers */ = {isa = PBXBuildFile; fileRef = D977B22FFCA4341C93FAF441 /* OCMMacroState.h */; };
 		76798B5EB08C0E17B4FB7B7A /* NSValue+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F0B04555D47CEF1C3E3A19E6 /* NSValue+OCMAdditions.h */; };
@@ -642,7 +641,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D10E1121A10C3E9006DD677 /* README.md in Sources */,
 				0E15640D9F323F8513111EEC /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
