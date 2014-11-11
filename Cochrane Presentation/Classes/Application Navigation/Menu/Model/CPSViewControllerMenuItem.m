@@ -10,36 +10,84 @@
 
 @interface CPSViewControllerMenuItem ()
 
-@property (nonatomic, readonly) UIStoryboard * storyboard;
-@property (nonatomic, readonly) NSString * viewControllerIdentifier;
+@property (nonatomic, readonly) id<CPSViewControllerProvider> viewControllerProvider;
 
 @end
 
 @implementation CPSViewControllerMenuItem
 
-@synthesize viewControllerIdentifier = _viewControllerIdentifier;
+@synthesize viewControllerProvider = _viewControllerProvider;
 
 - (instancetype)initWithTitle:(NSString *)title
                          icon:(UIImage *)icon
-     viewControllerIdentifier:(NSString *)controllerIdentifier
-                 inStoryboard:(UIStoryboard *)storyboard
+       viewControllerProvider:(id<CPSViewControllerProvider>)viewControllerProvider
 {
     if (self = [super initWithTitle:title icon:icon])
     {
-        _storyboard = storyboard;
-        _viewControllerIdentifier = controllerIdentifier;
+        _viewControllerProvider = viewControllerProvider;
     }
     return self;
 }
 
-- (UIViewController *)contentViewController
+- (instancetype)copyWithZone:(NSZone *)zone
 {
-    return [self.storyboard instantiateViewControllerWithIdentifier:self.viewControllerIdentifier];
+    return [[[self class] alloc] initWithTitle:self.title
+                                          icon:self.iconImage
+                        viewControllerProvider:self.viewControllerProvider];
 }
 
-- (NSString *)viewControllerIdentifier
+- (NSUInteger)hash
 {
-    return _viewControllerIdentifier;
+    NSInteger prime = 31;
+    NSUInteger hash = 1;
+    
+    hash = self.title == nil ? hash : (prime * hash + [self.title hash]);
+    hash = prime * hash + ((int) self.iconImage);
+    hash = prime * hash + ((int) self.viewControllerProvider);
+    
+    return hash;
+}
+
+- (BOOL)isEqualToMenuItem:(CPSViewControllerMenuItem *)otherItem
+{
+    if (otherItem == nil)
+    {
+        return NO;
+    }
+    
+    if (otherItem == self)
+    {
+        return YES;
+    }
+    
+    if (![self.title isEqualToString:otherItem.title])
+    {
+        return NO;
+    }
+    if (self.iconImage != otherItem.iconImage)
+    {
+        return NO;
+    }
+    if (self.viewControllerProvider != otherItem.viewControllerProvider)
+    {
+        return NO;
+    }
+    
+    return YES;
+}
+
+- (BOOL)isEqual:(id)object
+{
+    if (self == object)
+    {
+        return YES;
+    }
+    if (![object isKindOfClass:[CPSViewControllerMenuItem class]])
+    {
+        return NO;
+    }
+    
+    return [self isEqualToMenuItem:object];
 }
 
 @end

@@ -55,19 +55,38 @@
     OCMVerify([menuDelegate viewControllerMenuItemSelected:menuItem]);
 }
 
-- (void)testViewControllerItemInstantiatesCorrectViewController
+- (void)testViewControllerMenuItemEquality
 {
-    NSString *identifier = @"view controller x";
+    CPSViewControllerMenuItem *item1 = [[CPSViewControllerMenuItem alloc] initWithTitle:@"title"
+                                                                                   icon:[UIImage new]
+                                                                 viewControllerProvider:OCMProtocolMock(@protocol(CPSViewControllerProvider))];
+    CPSViewControllerMenuItem *item2 = [[CPSViewControllerMenuItem alloc] initWithTitle:item1.title
+                                                                                   icon:item1.iconImage
+                                                                 viewControllerProvider:item1.viewControllerProvider];
+    CPSViewControllerMenuItem *item3 = [[CPSViewControllerMenuItem alloc] initWithTitle:@"title"
+                                                                                   icon:[UIImage new]
+                                                                 viewControllerProvider:OCMProtocolMock(@protocol(CPSViewControllerProvider))];
     
-    id storyboard = OCMClassMock([UIStoryboard class]);
-    CPSViewControllerMenuItem *menuItem = [[CPSViewControllerMenuItem alloc] initWithTitle:nil
-                                                                                      icon:nil
-                                                                  viewControllerIdentifier:identifier
-                                                                              inStoryboard:storyboard];
+    XCTAssertEqualObjects(item1, item1);
+    XCTAssertEqualObjects(item1, item2);
+    XCTAssertNotEqualObjects(item1, item3);
+}
+
+- (void)testViewControllerMenuItemHash
+{
+    CPSViewControllerMenuItem *item1 = [[CPSViewControllerMenuItem alloc] initWithTitle:@"title"
+                                                                                   icon:[UIImage new]
+                                                                 viewControllerProvider:OCMProtocolMock(@protocol(CPSViewControllerProvider))];
+    CPSViewControllerMenuItem *item2 = [[CPSViewControllerMenuItem alloc] initWithTitle:item1.title
+                                                                                   icon:item1.iconImage
+                                                                 viewControllerProvider:item1.viewControllerProvider];
+    CPSViewControllerMenuItem *item3 = [[CPSViewControllerMenuItem alloc] initWithTitle:@"title"
+                                                                                   icon:[UIImage new]
+                                                                 viewControllerProvider:OCMProtocolMock(@protocol(CPSViewControllerProvider))];
     
-    [menuItem contentViewController];
-    
-    OCMVerify([storyboard instantiateViewControllerWithIdentifier:identifier]);
+    XCTAssertEqual([item1 hash], [item1 hash]);
+    XCTAssertEqual([item1 hash], [item2 hash]);
+    XCTAssertNotEqual([item1 hash], [item3 hash]);
 }
 
 @end
