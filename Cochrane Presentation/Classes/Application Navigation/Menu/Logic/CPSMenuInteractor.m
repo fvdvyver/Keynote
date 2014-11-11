@@ -10,9 +10,43 @@
 
 @implementation CPSMenuInteractor
 
+// **********************************************************************************
+#pragma mark - Accessors/Mutators
+// **********************************************************************************
+
+- (void)setMenuItems:(NSArray *)menuItems
+{
+    _menuItems = menuItems;
+    
+    self.selectedMenuItem = nil;
+    [self requestOutputDataUpdate];
+    [self updateOutput];
+}
+
+// **********************************************************************************
+#pragma mark - Public Implementation
+// **********************************************************************************
+
 - (void)selectMenuItem:(CPSMenuItem *)item
 {
-    // TODO: 
+    [item invokeAction:self.menuDelegate];
+    
+    self.selectedMenuItem = item;
+    [self updateOutput];
+}
+
+// **********************************************************************************
+#pragma mark - CPSMenuInteractorInput Protocol Methods
+// **********************************************************************************
+
+- (void)requestOutputDataUpdate
+{
+    [self.output setMenuItems:self.menuItems];
+}
+
+- (void)updateOutput
+{
+    [self.output setSelectedMenuItem:self.selectedMenuItem];
 }
 
 @end

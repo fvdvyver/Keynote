@@ -28,6 +28,7 @@
 		6D78FC4C1A0B7A140097E4F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC4B1A0B7A140097E4F5 /* Images.xcassets */; };
 		6D78FC4F1A0B7A140097E4F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC4D1A0B7A140097E4F5 /* LaunchScreen.xib */; };
 		6D78FC6D1A0B82B70097E4F5 /* CPSRootWireframeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC6C1A0B82B70097E4F5 /* CPSRootWireframeTests.m */; };
+		6DC8E6501A11F7D100197DB3 /* CPSMenuInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E64F1A11F7D100197DB3 /* CPSMenuInteractorTests.m */; };
 		76C13A78658DA88850DD7979 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 888BB7766EC1DFB252B3FBBC /* libPods.a */; };
 		E0BF00AE3AD224C668B6E35D /* libPods-Cochrane PresentationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC7C682EDA3593D283FE74A /* libPods-Cochrane PresentationTests.a */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		6D10E11B1A10C8D8006DD677 /* CPSViewControllerMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSViewControllerMenuItem.h; sourceTree = "<group>"; };
 		6D10E11C1A10C8D8006DD677 /* CPSViewControllerMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSViewControllerMenuItem.m; sourceTree = "<group>"; };
 		6D10E1201A10D065006DD677 /* CPSMenuItemTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuItemTests.m; sourceTree = "<group>"; };
+		6D10E12D1A11F3F2006DD677 /* CPSMenuInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuInteractorIO.h; sourceTree = "<group>"; };
 		6D78FC3B1A0B7A140097E4F5 /* Cochrane Presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cochrane Presentation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D78FC3F1A0B7A140097E4F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D78FC401A0B7A140097E4F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		6D78FC541A0B7A140097E4F5 /* Cochrane PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cochrane PresentationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D78FC591A0B7A140097E4F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D78FC6C1A0B82B70097E4F5 /* CPSRootWireframeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRootWireframeTests.m; sourceTree = "<group>"; };
+		6DC8E64F1A11F7D100197DB3 /* CPSMenuInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuInteractorTests.m; sourceTree = "<group>"; };
 		74A31BB7765D6B7908888057 /* Pods-Cochrane PresentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cochrane PresentationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cochrane PresentationTests/Pods-Cochrane PresentationTests.release.xcconfig"; sourceTree = "<group>"; };
 		888BB7766EC1DFB252B3FBBC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,6 +126,7 @@
 		6D10E11E1A10D03F006DD677 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				6DC8E64E1A11F7BE00197DB3 /* Logic */,
 				6D10E11F1A10D054006DD677 /* Model */,
 			);
 			path = Menu;
@@ -139,6 +143,7 @@
 		6D10E1291A113927006DD677 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				6D10E12D1A11F3F2006DD677 /* CPSMenuInteractorIO.h */,
 				6D10E1141A10C677006DD677 /* CPSMenuInteractor.h */,
 				6D10E1151A10C677006DD677 /* CPSMenuInteractor.m */,
 			);
@@ -255,6 +260,14 @@
 				6D10E10F1A10BC3A006DD677 /* CPSRevealRootPresenterTests.m */,
 			);
 			path = "Application Navigation";
+			sourceTree = "<group>";
+		};
+		6DC8E64E1A11F7BE00197DB3 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6DC8E64F1A11F7D100197DB3 /* CPSMenuInteractorTests.m */,
+			);
+			path = Logic;
 			sourceTree = "<group>";
 		};
 		A149F60FFEF6ED2290EABEEA /* Frameworks */ = {
@@ -461,6 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DC8E6501A11F7D100197DB3 /* CPSMenuInteractorTests.m in Sources */,
 				6D10E1101A10BC3A006DD677 /* CPSRevealRootPresenterTests.m in Sources */,
 				6D10E10B1A10B8A4006DD677 /* CPSRootWireframe.m in Sources */,
 				6D10E10A1A10B8A1006DD677 /* CPSRevealRootPresenter.m in Sources */,

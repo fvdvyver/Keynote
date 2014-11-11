@@ -8,14 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+#import "CPSMenuInteractorIO.h"
 #import "CPSMenuItem.h"
 
-@interface CPSMenuInteractor : NSObject
+@interface CPSMenuInteractor : NSObject <CPSMenuInteractorInput>
 
 @property (nonatomic, strong) NSArray * menuItems;
 @property (nonatomic, strong) id<CPSMenuItemDelegate> menuDelegate;
+@property (nonatomic, strong) CPSMenuItem * selectedMenuItem;
 
-// This should not invoke the items action, nor should it notify the delegate
-- (void)selectMenuItem:(CPSMenuItem *)item;
+@property (nonatomic, strong) id<CPSMenuInteractorOutput> output;
 
 @end
