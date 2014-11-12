@@ -28,10 +28,16 @@
 		6D78FC4C1A0B7A140097E4F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC4B1A0B7A140097E4F5 /* Images.xcassets */; };
 		6D78FC4F1A0B7A140097E4F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC4D1A0B7A140097E4F5 /* LaunchScreen.xib */; };
 		6D78FC6D1A0B82B70097E4F5 /* CPSRootWireframeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC6C1A0B82B70097E4F5 /* CPSRootWireframeTests.m */; };
+		6D8DEA131A139192007C92F8 /* CPSMenuItemTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DEA121A139192007C92F8 /* CPSMenuItemTableViewDelegate.m */; };
 		6DC8E6501A11F7D100197DB3 /* CPSMenuInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E64F1A11F7D100197DB3 /* CPSMenuInteractorTests.m */; };
 		6DC8E6531A1205D100197DB3 /* CPSCachingMenuDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E6521A1205D100197DB3 /* CPSCachingMenuDelegate.m */; };
 		6DC8E6551A12076300197DB3 /* CPSCachingMenuDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E6541A12076300197DB3 /* CPSCachingMenuDelegateTests.m */; };
 		6DC8E65B1A1247A200197DB3 /* CPSCachedViewControllerProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E65A1A1247A200197DB3 /* CPSCachedViewControllerProvider.m */; };
+		6DC8E6601A12949D00197DB3 /* CPSMenuPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E65F1A12949D00197DB3 /* CPSMenuPresenter.m */; };
+		6DC8E6651A13810800197DB3 /* CPSMenuPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E6641A13810800197DB3 /* CPSMenuPresenterTests.m */; };
+		6DC8E66B1A1388DE00197DB3 /* MCArrayTableViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E66A1A1388DE00197DB3 /* MCArrayTableViewDatasource.m */; };
+		6DC8E66E1A138A5300197DB3 /* CPSMenuItemCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E66D1A138A5300197DB3 /* CPSMenuItemCellPresenter.m */; };
+		6DC8E6701A138B1E00197DB3 /* CPSMenuItemCellPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E66F1A138B1E00197DB3 /* CPSMenuItemCellPresenterTests.m */; };
 		76C13A78658DA88850DD7979 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 888BB7766EC1DFB252B3FBBC /* libPods.a */; };
 		E0BF00AE3AD224C668B6E35D /* libPods-Cochrane PresentationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC7C682EDA3593D283FE74A /* libPods-Cochrane PresentationTests.a */; };
 /* End PBXBuildFile section */
@@ -81,12 +87,25 @@
 		6D78FC541A0B7A140097E4F5 /* Cochrane PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cochrane PresentationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D78FC591A0B7A140097E4F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D78FC6C1A0B82B70097E4F5 /* CPSRootWireframeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRootWireframeTests.m; sourceTree = "<group>"; };
+		6D8DEA111A139192007C92F8 /* CPSMenuItemTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuItemTableViewDelegate.h; sourceTree = "<group>"; };
+		6D8DEA121A139192007C92F8 /* CPSMenuItemTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuItemTableViewDelegate.m; sourceTree = "<group>"; };
 		6DC8E64F1A11F7D100197DB3 /* CPSMenuInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuInteractorTests.m; sourceTree = "<group>"; };
 		6DC8E6511A1205D100197DB3 /* CPSCachingMenuDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCachingMenuDelegate.h; sourceTree = "<group>"; };
 		6DC8E6521A1205D100197DB3 /* CPSCachingMenuDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCachingMenuDelegate.m; sourceTree = "<group>"; };
 		6DC8E6541A12076300197DB3 /* CPSCachingMenuDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCachingMenuDelegateTests.m; sourceTree = "<group>"; };
 		6DC8E6591A1247A200197DB3 /* CPSCachedViewControllerProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCachedViewControllerProvider.h; sourceTree = "<group>"; };
 		6DC8E65A1A1247A200197DB3 /* CPSCachedViewControllerProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCachedViewControllerProvider.m; sourceTree = "<group>"; };
+		6DC8E65E1A12949D00197DB3 /* CPSMenuPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuPresenter.h; sourceTree = "<group>"; };
+		6DC8E65F1A12949D00197DB3 /* CPSMenuPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuPresenter.m; sourceTree = "<group>"; };
+		6DC8E6621A12953F00197DB3 /* CPSMenuViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuViewInterface.h; sourceTree = "<group>"; };
+		6DC8E6641A13810800197DB3 /* CPSMenuPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuPresenterTests.m; sourceTree = "<group>"; };
+		6DC8E6681A13885500197DB3 /* MCTableViewCellPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTableViewCellPresenter.h; sourceTree = "<group>"; };
+		6DC8E6691A1388DE00197DB3 /* MCArrayTableViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCArrayTableViewDatasource.h; sourceTree = "<group>"; };
+		6DC8E66A1A1388DE00197DB3 /* MCArrayTableViewDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCArrayTableViewDatasource.m; sourceTree = "<group>"; };
+		6DC8E66C1A138A5300197DB3 /* CPSMenuItemCellPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuItemCellPresenter.h; sourceTree = "<group>"; };
+		6DC8E66D1A138A5300197DB3 /* CPSMenuItemCellPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuItemCellPresenter.m; sourceTree = "<group>"; };
+		6DC8E66F1A138B1E00197DB3 /* CPSMenuItemCellPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuItemCellPresenterTests.m; sourceTree = "<group>"; };
+		6DC8E6711A138C8500197DB3 /* CPSMenuItemCellInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuItemCellInterface.h; sourceTree = "<group>"; };
 		74A31BB7765D6B7908888057 /* Pods-Cochrane PresentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cochrane PresentationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cochrane PresentationTests/Pods-Cochrane PresentationTests.release.xcconfig"; sourceTree = "<group>"; };
 		888BB7766EC1DFB252B3FBBC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,6 +135,7 @@
 			children = (
 				6D10E1291A113927006DD677 /* Logic */,
 				6D10E1171A10C8AF006DD677 /* Model */,
+				6DC8E65C1A12946F00197DB3 /* UI */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -136,6 +156,7 @@
 			children = (
 				6DC8E64E1A11F7BE00197DB3 /* Logic */,
 				6D10E11F1A10D054006DD677 /* Model */,
+				6DC8E6631A1380F300197DB3 /* Presenter */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -223,6 +244,7 @@
 			children = (
 				6D78FC661A0B7AFF0097E4F5 /* Application */,
 				6D78FC681A0B7BEA0097E4F5 /* Application Navigation */,
+				6DC8E6661A1387EB00197DB3 /* Utility */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -281,6 +303,64 @@
 				6DC8E6541A12076300197DB3 /* CPSCachingMenuDelegateTests.m */,
 			);
 			path = Logic;
+			sourceTree = "<group>";
+		};
+		6DC8E65C1A12946F00197DB3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6DC8E65D1A12948C00197DB3 /* Presenter */,
+				6DC8E6611A12951B00197DB3 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6DC8E65D1A12948C00197DB3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6DC8E65E1A12949D00197DB3 /* CPSMenuPresenter.h */,
+				6DC8E65F1A12949D00197DB3 /* CPSMenuPresenter.m */,
+				6DC8E66C1A138A5300197DB3 /* CPSMenuItemCellPresenter.h */,
+				6DC8E66D1A138A5300197DB3 /* CPSMenuItemCellPresenter.m */,
+				6D8DEA111A139192007C92F8 /* CPSMenuItemTableViewDelegate.h */,
+				6D8DEA121A139192007C92F8 /* CPSMenuItemTableViewDelegate.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6DC8E6611A12951B00197DB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DC8E6621A12953F00197DB3 /* CPSMenuViewInterface.h */,
+				6DC8E6711A138C8500197DB3 /* CPSMenuItemCellInterface.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DC8E6631A1380F300197DB3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6DC8E6641A13810800197DB3 /* CPSMenuPresenterTests.m */,
+				6DC8E66F1A138B1E00197DB3 /* CPSMenuItemCellPresenterTests.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6DC8E6661A1387EB00197DB3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6DC8E6671A13881D00197DB3 /* Table View Data Sources */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		6DC8E6671A13881D00197DB3 /* Table View Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6DC8E6681A13885500197DB3 /* MCTableViewCellPresenter.h */,
+				6DC8E6691A1388DE00197DB3 /* MCArrayTableViewDatasource.h */,
+				6DC8E66A1A1388DE00197DB3 /* MCArrayTableViewDatasource.m */,
+			);
+			path = "Table View Data Sources";
 			sourceTree = "<group>";
 		};
 		A149F60FFEF6ED2290EABEEA /* Frameworks */ = {
@@ -472,9 +552,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D10E1091A10B866006DD677 /* CPSRevealRootPresenter.m in Sources */,
+				6DC8E66E1A138A5300197DB3 /* CPSMenuItemCellPresenter.m in Sources */,
 				6D78FC471A0B7A140097E4F5 /* ViewController.m in Sources */,
+				6D8DEA131A139192007C92F8 /* CPSMenuItemTableViewDelegate.m in Sources */,
 				6D10E11A1A10C8C0006DD677 /* CPSMenuItem.m in Sources */,
 				6DC8E65B1A1247A200197DB3 /* CPSCachedViewControllerProvider.m in Sources */,
+				6DC8E66B1A1388DE00197DB3 /* MCArrayTableViewDatasource.m in Sources */,
+				6DC8E6601A12949D00197DB3 /* CPSMenuPresenter.m in Sources */,
 				6D10E1011A10AFC5006DD677 /* CPSRootWireframe.m in Sources */,
 				6DC8E6531A1205D100197DB3 /* CPSCachingMenuDelegate.m in Sources */,
 				6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */,
@@ -489,6 +573,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DC8E6701A138B1E00197DB3 /* CPSMenuItemCellPresenterTests.m in Sources */,
 				6DC8E6501A11F7D100197DB3 /* CPSMenuInteractorTests.m in Sources */,
 				6D10E1101A10BC3A006DD677 /* CPSRevealRootPresenterTests.m in Sources */,
 				6D10E10B1A10B8A4006DD677 /* CPSRootWireframe.m in Sources */,
@@ -497,6 +582,7 @@
 				6D10E1251A10D66F006DD677 /* CPSRootWireframe+CochranePresentationAdditions.m in Sources */,
 				6D10E1241A10D666006DD677 /* CPSMenuInteractor.m in Sources */,
 				6D10E1231A10D660006DD677 /* CPSMenuItem.m in Sources */,
+				6DC8E6651A13810800197DB3 /* CPSMenuPresenterTests.m in Sources */,
 				6D10E1211A10D065006DD677 /* CPSMenuItemTests.m in Sources */,
 				6D10E1221A10D65E006DD677 /* CPSViewControllerMenuItem.m in Sources */,
 				6DC8E6551A12076300197DB3 /* CPSCachingMenuDelegateTests.m in Sources */,
