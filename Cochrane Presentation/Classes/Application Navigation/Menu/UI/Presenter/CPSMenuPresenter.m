@@ -12,8 +12,6 @@
 #import "CPSMenuItemCellPresenter.h"
 #import "CPSMenuItemTableViewDelegate.h"
 
-#define kCellReuseIdentifier @"menu_cell"
-
 @interface CPSMenuPresenter () <CPSMenuItemTableViewEventHandler>
 
 @property (nonatomic, strong) CPSMenuItemCellPresenter *   cellPresenter;
@@ -35,8 +33,9 @@
 
 - (void)setMenuItems:(NSArray *)menuItems
 {
+    NSString *cellReuseIdentifier = [self.userInterface menuItemCellReuseIdentifier];
     self.datasource = [[MCArrayTableViewDatasource alloc] initWithItems:menuItems
-                                                         cellIdentifier:kCellReuseIdentifier
+                                                         cellIdentifier:cellReuseIdentifier
                                                               presenter:self.cellPresenter];
     
     self.tableViewDelegate = [CPSMenuItemTableViewDelegate new];

@@ -120,4 +120,17 @@
     OCMVerify([eventHandler updateSelection]);
 }
 
+- (void)testViewControllerRegistersAppropriateCellOnViewDidLoad
+{
+    id tableview = self.tableViewMock;
+    NSString *cellReuseIdentifier = [self.menuViewController menuItemCellReuseIdentifier];
+    
+    [self.menuViewController viewDidLoad];
+    
+    OCMVerify([tableview registerClass:[OCMArg checkWithBlock:^BOOL(Class obj)
+    {
+        return [obj conformsToProtocol:@protocol(CPSMenuItemCellInterface)];
+    }] forCellReuseIdentifier:cellReuseIdentifier]);
+}
+
 @end

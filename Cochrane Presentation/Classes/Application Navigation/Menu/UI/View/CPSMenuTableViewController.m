@@ -8,7 +8,19 @@
 
 #import "CPSMenuTableViewController.h"
 
+#import "CPSMenuItemTableViewCell.h"
+
 @implementation CPSMenuTableViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.tableView.dataSource = nil;
+    self.tableView.delegate = nil;
+    [self.tableView registerClass:[CPSMenuItemTableViewCell class]
+           forCellReuseIdentifier:[self menuItemCellReuseIdentifier]];
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -35,6 +47,11 @@
 - (void)setTableViewDelegate:(id<UITableViewDelegate>)delegate
 {
     [self.tableView setDelegate:delegate];
+}
+
+- (NSString *)menuItemCellReuseIdentifier
+{
+    return @"menu_item_cell";
 }
 
 @end
