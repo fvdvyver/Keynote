@@ -10,6 +10,8 @@
 
 @protocol CPSRootPresenter <NSObject>
 
+- (void)setRootUserInterface:(UIViewController *)rootViewController;
+
 - (void)setMenuViewController:(UIViewController *)menuViewController;
 - (void)setContentViewController:(UIViewController *)contentViewController;
 

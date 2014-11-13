@@ -8,12 +8,11 @@
 
 #import "AppDelegate.h"
 
-#import "CPSRootWireframe.h"
-#import "CPSRootWireframe+CochranePresentationAdditions.h"
+#import "CPSAppContext.h"
 
 @interface AppDelegate ()
 
-@property (nonatomic, strong) CPSRootWireframe *rootWireframe;
+@property (nonatomic, strong) CPSAppContext *applicationContext;
 
 @end
 
@@ -21,7 +20,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.rootWireframe = [CPSRootWireframe installRootWireframeInWindow:self.window];
+    CPSAppContext *applicationContext = [CPSAppContext new];
+    [applicationContext configureApplicationWithWindow:self.window];
+
+    self.applicationContext = applicationContext;
     return YES;
 }
 

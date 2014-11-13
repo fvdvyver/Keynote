@@ -10,6 +10,12 @@
 
 @implementation CPSRevealRootPresenter
 
+- (void)setRootUserInterface:(UIViewController *)rootViewController
+{
+    NSAssert([rootViewController isKindOfClass:[MCRevealController class]], @"CPSRevealRootPresenter only supports using an MCRevealController as its rootViewController");
+    self.revealController = (MCRevealController *)rootViewController;
+}
+
 - (void)setMenuViewController:(UIViewController *)menuViewController
 {
     [self.revealController setLeftViewController:menuViewController];
