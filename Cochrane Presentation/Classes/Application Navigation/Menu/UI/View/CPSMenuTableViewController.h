@@ -10,8 +10,9 @@
 
 #import "CPSMenuViewInterface.h"
 
-@interface CPSMenuTableViewController : UITableViewController <CPSMenuViewInterface>
+@interface CPSMenuTableViewController : UIViewController <CPSMenuViewInterface>
 
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, weak) id<CPSMenuViewEventHandler> eventHandler;
 
 @end

@@ -14,6 +14,8 @@
 
 @interface CPSMenuWireframe : NSObject <CPSViewControllerProvider>
 
-- (instancetype)initWithMenuItems:(NSArray *)menuItems delegate:(id<CPSMenuItemDelegate>)menuItemDelegate;
+- (instancetype)initWithStoryboardName:(NSString*)storyboardname
+                             menuItems:(NSArray *)menuItems
+                              delegate:(id<CPSMenuItemDelegate>)menuItemDelegate;
 
 @end

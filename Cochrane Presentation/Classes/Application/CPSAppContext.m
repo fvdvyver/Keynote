@@ -61,7 +61,9 @@
                            ];
     
     CPSCachingMenuDelegate *menuDelegate = [[CPSCachingMenuDelegate alloc] initWithRootWireframe:rootWireframe];
-    CPSMenuWireframe *menuWireframe = [[CPSMenuWireframe alloc] initWithMenuItems:menuItems delegate:menuDelegate];
+    CPSMenuWireframe *menuWireframe = [[CPSMenuWireframe alloc] initWithStoryboardName:@"Main"
+                                                                             menuItems:menuItems
+                                                                              delegate:menuDelegate];
     
     rootWireframe.presenter = presenter;
     

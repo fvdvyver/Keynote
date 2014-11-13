@@ -16,19 +16,27 @@
 
 @interface CPSMenuWireframe ()
 
+@property (nonatomic, strong) NSString * storyboardName;
+
 @property (nonatomic, strong) CPSMenuInteractor *          menuInteractor;
 @property (nonatomic, strong) CPSMenuTableViewController * menuViewController;
 
 - (void)configureWithMenuItems:(NSArray *)menuItems delegate:(id<CPSMenuItemDelegate>)menuItemDelegate;
 
+- (UIStoryboard *)mainStoryboard;
+- (CPSMenuTableViewController *)newMenuTableViewController;
+
 @end
 
 @implementation CPSMenuWireframe
 
-- (instancetype)initWithMenuItems:(NSArray *)menuItems delegate:(id<CPSMenuItemDelegate>)menuItemDelegate
+- (instancetype)initWithStoryboardName:(NSString*)storyboardname
+                             menuItems:(NSArray *)menuItems
+                              delegate:(id<CPSMenuItemDelegate>)menuItemDelegate
 {
     if (self = [super init])
     {
+        _storyboardName = storyboardname;
         [self configureWithMenuItems:menuItems delegate:menuItemDelegate];
     }
     return self;
@@ -38,7 +46,7 @@
 {
     CPSMenuInteractor *interactor = [CPSMenuInteractor new];
     CPSMenuPresenter *menuPresenter = [CPSMenuPresenter new];
-    CPSMenuTableViewController *menuViewController = [CPSMenuTableViewController new];
+    CPSMenuTableViewController *menuViewController = [self newMenuTableViewController];
     
     interactor.menuItems = menuItems;
     interactor.menuDelegate = menuItemDelegate;
@@ -51,6 +59,16 @@
     
     self.menuInteractor = interactor;
     self.menuViewController = menuViewController;
+}
+
+- (UIStoryboard *)mainStoryboard
+{
+    return [UIStoryboard storyboardWithName:self.storyboardName bundle:[NSBundle mainBundle]];
+}
+
+- (CPSMenuTableViewController *)newMenuTableViewController
+{
+    return [self.mainStoryboard instantiateViewControllerWithIdentifier:@"MenuTableViewController"];
 }
 
 - (UIViewController *)contentViewController

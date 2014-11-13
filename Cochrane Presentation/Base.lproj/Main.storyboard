@@ -21,5 +21,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Menu Table View Controller-->
+        <scene sceneID="QQQ-eM-Rd1">
+            <objects>
+                <viewController storyboardIdentifier="MenuTableViewController" id="TNT-zj-CFc" customClass="CPSMenuTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ryA-o5-WSu"/>
+                        <viewControllerLayoutGuide type="bottom" id="n4b-Pz-b9T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jnd-Uv-xDU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NxZ-WI-7rU">
+                                <rect key="frame" x="0.0" y="159" width="600" height="441"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8eN-9Z-mdl" userLabel="Header View">
+                                <rect key="frame" x="0.0" y="40" width="600" height="119"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="logo_header_border" translatesAutoresizingMaskIntoConstraints="NO" id="quu-pT-5cI">
+                                        <rect key="frame" x="8" y="0.0" width="526" height="119"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mD-fK-4Un">
+                                        <rect key="frame" x="98" y="62" width="104" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="FrR-U1-Ia5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="2mD-fK-4Un" firstAttribute="top" secondItem="8eN-9Z-mdl" secondAttribute="top" constant="62" id="C7l-Iy-rlJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="quu-pT-5cI" secondAttribute="bottom" id="He6-Dm-JRI"/>
+                                    <constraint firstItem="2mD-fK-4Un" firstAttribute="leading" secondItem="8eN-9Z-mdl" secondAttribute="leading" constant="98" id="TfT-66-mee"/>
+                                    <constraint firstItem="quu-pT-5cI" firstAttribute="top" secondItem="8eN-9Z-mdl" secondAttribute="top" id="c09-oP-Ss5"/>
+                                    <constraint firstItem="quu-pT-5cI" firstAttribute="leading" secondItem="8eN-9Z-mdl" secondAttribute="leading" constant="8" id="hfd-eL-WvI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n4b-Pz-b9T" firstAttribute="top" secondItem="NxZ-WI-7rU" secondAttribute="bottom" id="5ge-qR-szU"/>
+                            <constraint firstItem="8eN-9Z-mdl" firstAttribute="top" secondItem="ryA-o5-WSu" secondAttribute="bottom" constant="20" id="D2U-2h-pMn"/>
+                            <constraint firstAttribute="trailing" secondItem="8eN-9Z-mdl" secondAttribute="trailing" id="czb-zU-1Jo"/>
+                            <constraint firstItem="NxZ-WI-7rU" firstAttribute="leading" secondItem="Jnd-Uv-xDU" secondAttribute="leading" id="dZl-b5-hNP"/>
+                            <constraint firstItem="NxZ-WI-7rU" firstAttribute="top" secondItem="8eN-9Z-mdl" secondAttribute="bottom" id="iXU-6j-8c9"/>
+                            <constraint firstAttribute="trailing" secondItem="NxZ-WI-7rU" secondAttribute="trailing" id="snY-DA-D3k"/>
+                            <constraint firstItem="8eN-9Z-mdl" firstAttribute="leading" secondItem="Jnd-Uv-xDU" secondAttribute="leading" id="v6m-D7-fPZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="NxZ-WI-7rU" id="dJ5-n0-2db"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SEl-49-GBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="310" y="999"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="logo_header_border" width="526" height="119"/>
+    </resources>
 </document>

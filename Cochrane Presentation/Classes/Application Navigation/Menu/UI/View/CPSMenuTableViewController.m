@@ -10,6 +10,10 @@
 
 #import "CPSMenuItemTableViewCell.h"
 
+@interface CPSMenuTableViewController ()
+
+@end
+
 @implementation CPSMenuTableViewController
 
 - (void)viewDidLoad
