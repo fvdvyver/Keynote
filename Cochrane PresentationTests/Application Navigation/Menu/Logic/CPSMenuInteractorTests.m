@@ -84,11 +84,13 @@
 
 - (void)testSelectingMenuItemUpdatesState
 {
-    CPSMenuItem *menuItem = [CPSMenuItem new];
+    CPSMenuItem *menuItem = OCMPartialMock([CPSMenuItem new]);
     id delegate = self.menuDelegate;
     id output = self.output;
     
     self.menuInteractor.menuItems = @[ menuItem ];
+    
+    OCMStub([menuItem invokeAction:[OCMArg any]]).andReturn(YES);
     
     [self.menuInteractor selectMenuItem:menuItem];
     

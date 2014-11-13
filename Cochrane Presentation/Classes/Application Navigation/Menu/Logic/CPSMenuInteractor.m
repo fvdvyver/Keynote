@@ -29,9 +29,12 @@
 
 - (void)selectMenuItem:(CPSMenuItem *)item
 {
-    [item invokeAction:self.menuDelegate];
-    
-    self.selectedMenuItem = item;
+    BOOL selectItem = [item invokeAction:self.menuDelegate];
+    if (selectItem)
+    {
+        self.selectedMenuItem = item;
+    }
+
     [self updateOutput];
 }
 
