@@ -19,6 +19,11 @@
         self.backgroundColor = [UIColor clearColor];
         self.textLabel.textColor = [UIColor whiteColor];
         self.textLabel.font = [UIFont fontWithName:kCPSApplicationFontDefaultName size:19];
+        
+        UIView *backgroundView = [UIView new];
+        backgroundView.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.2];
+        
+        self.selectedBackgroundView = backgroundView;
     }
     return self;
 }
