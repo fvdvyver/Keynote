@@ -22,6 +22,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Placeholder View Controller-->
+        <scene sceneID="yAe-jj-bGA">
+            <objects>
+                <viewController storyboardIdentifier="PlaceholderViewController" id="Nhk-3Q-kjp" customClass="CPSPlaceholderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cDY-iX-8Jb"/>
+                        <viewControllerLayoutGuide type="bottom" id="LmG-4h-mcy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tBw-Xd-QKN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="hive_background" translatesAutoresizingMaskIntoConstraints="NO" id="Bb6-vw-Bwe">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bB-MR-DSk">
+                                <rect key="frame" x="262" y="280.5" width="76.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="7bB-MR-DSk" secondAttribute="centerY" id="a6L-gk-YIt"/>
+                            <constraint firstAttribute="centerX" secondItem="7bB-MR-DSk" secondAttribute="centerX" id="tGq-Em-pKz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="placeholderLabel" destination="7bB-MR-DSk" id="lLH-1c-jML"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GI3-gg-cD2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1177" y="322"/>
+        </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="QQQ-eM-Rd1">
             <objects>
@@ -92,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEl-49-GBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="310" y="999.5"/>
+            <point key="canvasLocation" x="417" y="989"/>
         </scene>
     </scenes>
     <resources>
