@@ -4,6 +4,12 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Planer_Reg.ttf">
+            <string>Planer</string>
+            <string>Planer</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Reveal Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -50,8 +56,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bB-MR-DSk">
-                                <rect key="frame" x="262" y="280.5" width="76.5" height="38.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <rect key="frame" x="268" y="284" width="65.5" height="32"/>
+                                <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -88,19 +94,19 @@
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="logo_header_border" translatesAutoresizingMaskIntoConstraints="NO" id="quu-pT-5cI">
                                         <rect key="frame" x="8" y="0.0" width="526" height="119"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mD-fK-4Un">
-                                        <rect key="frame" x="98" y="62" width="104" height="32"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MENU" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mD-fK-4Un">
+                                        <rect key="frame" x="98" y="66" width="97" height="36"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="FrR-U1-Ia5"/>
+                                            <constraint firstAttribute="height" constant="36" id="FrR-U1-Ia5"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                        <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="2mD-fK-4Un" firstAttribute="top" secondItem="8eN-9Z-mdl" secondAttribute="top" constant="62" id="C7l-Iy-rlJ"/>
+                                    <constraint firstItem="2mD-fK-4Un" firstAttribute="top" secondItem="8eN-9Z-mdl" secondAttribute="top" constant="66" id="C7l-Iy-rlJ"/>
                                     <constraint firstAttribute="bottom" secondItem="quu-pT-5cI" secondAttribute="bottom" id="He6-Dm-JRI"/>
                                     <constraint firstItem="2mD-fK-4Un" firstAttribute="leading" secondItem="8eN-9Z-mdl" secondAttribute="leading" constant="98" id="TfT-66-mee"/>
                                     <constraint firstItem="quu-pT-5cI" firstAttribute="top" secondItem="8eN-9Z-mdl" secondAttribute="top" id="c09-oP-Ss5"/>

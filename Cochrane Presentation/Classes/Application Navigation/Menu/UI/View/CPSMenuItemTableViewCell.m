@@ -8,6 +8,8 @@
 
 #import "CPSMenuItemTableViewCell.h"
 
+#import "CPSAppearanceConfig.h"
+
 @implementation CPSMenuItemTableViewCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -16,6 +18,7 @@
     {
         self.backgroundColor = [UIColor clearColor];
         self.textLabel.textColor = [UIColor whiteColor];
+        self.textLabel.font = [UIFont fontWithName:kCPSApplicationFontDefaultName size:19];
     }
     return self;
 }

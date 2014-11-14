@@ -47,6 +47,8 @@
 		6DEA20D91A1606AE001AAC42 /* CPSPlaceholderPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA20D81A1606AE001AAC42 /* CPSPlaceholderPresenter.m */; };
 		6DEA20DD1A16070B001AAC42 /* CPSPlaceholderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA20DC1A16070B001AAC42 /* CPSPlaceholderViewController.m */; };
 		6DEA20E51A162042001AAC42 /* MCMaskedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA20E41A162042001AAC42 /* MCMaskedTableView.m */; };
+		6DEA20E81A1638AA001AAC42 /* Planer_Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA20E71A163890001AAC42 /* Planer_Reg.ttf */; };
+		6DEA20EB1A163A16001AAC42 /* CPSAppearanceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA20EA1A163A16001AAC42 /* CPSAppearanceConfig.m */; };
 		76C13A78658DA88850DD7979 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 888BB7766EC1DFB252B3FBBC /* libPods.a */; };
 		E0BF00AE3AD224C668B6E35D /* libPods-Cochrane PresentationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC7C682EDA3593D283FE74A /* libPods-Cochrane PresentationTests.a */; };
 /* End PBXBuildFile section */
@@ -135,6 +137,9 @@
 		6DEA20DC1A16070B001AAC42 /* CPSPlaceholderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSPlaceholderViewController.m; sourceTree = "<group>"; };
 		6DEA20E31A162042001AAC42 /* MCMaskedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMaskedTableView.h; sourceTree = "<group>"; };
 		6DEA20E41A162042001AAC42 /* MCMaskedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMaskedTableView.m; sourceTree = "<group>"; };
+		6DEA20E71A163890001AAC42 /* Planer_Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planer_Reg.ttf; sourceTree = "<group>"; };
+		6DEA20E91A163A16001AAC42 /* CPSAppearanceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSAppearanceConfig.h; sourceTree = "<group>"; };
+		6DEA20EA1A163A16001AAC42 /* CPSAppearanceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSAppearanceConfig.m; sourceTree = "<group>"; };
 		74A31BB7765D6B7908888057 /* Pods-Cochrane PresentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cochrane PresentationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cochrane PresentationTests/Pods-Cochrane PresentationTests.release.xcconfig"; sourceTree = "<group>"; };
 		888BB7766EC1DFB252B3FBBC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -287,6 +292,8 @@
 				6D78FC431A0B7A140097E4F5 /* AppDelegate.m */,
 				6DBD91741A14AD2700FA6A51 /* CPSAppContext.h */,
 				6DBD91751A14AD2700FA6A51 /* CPSAppContext.m */,
+				6DEA20E91A163A16001AAC42 /* CPSAppearanceConfig.h */,
+				6DEA20EA1A163A16001AAC42 /* CPSAppearanceConfig.m */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -294,6 +301,7 @@
 		6D78FC671A0B7B850097E4F5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6DEA20E61A16387E001AAC42 /* Fonts */,
 				6D78FC481A0B7A140097E4F5 /* Main.storyboard */,
 				6D78FC4B1A0B7A140097E4F5 /* Images.xcassets */,
 				6D78FC4D1A0B7A140097E4F5 /* LaunchScreen.xib */,
@@ -484,6 +492,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6DEA20E61A16387E001AAC42 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6DEA20E71A163890001AAC42 /* Planer_Reg.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		A149F60FFEF6ED2290EABEEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -589,6 +605,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DEA20E81A1638AA001AAC42 /* Planer_Reg.ttf in Resources */,
 				6D78FC4A1A0B7A140097E4F5 /* Main.storyboard in Resources */,
 				6D78FC4F1A0B7A140097E4F5 /* LaunchScreen.xib in Resources */,
 				6D78FC4C1A0B7A140097E4F5 /* Images.xcassets in Resources */,
@@ -693,6 +710,7 @@
 				6D10E1161A10C677006DD677 /* CPSMenuInteractor.m in Sources */,
 				6D61104B1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m in Sources */,
 				6D78FC411A0B7A140097E4F5 /* main.m in Sources */,
+				6DEA20EB1A163A16001AAC42 /* CPSAppearanceConfig.m in Sources */,
 				6D10E11D1A10C8D8006DD677 /* CPSViewControllerMenuItem.m in Sources */,
 				6DEA20E51A162042001AAC42 /* MCMaskedTableView.m in Sources */,
 				6DBD91761A14AD2700FA6A51 /* CPSAppContext.m in Sources */,
