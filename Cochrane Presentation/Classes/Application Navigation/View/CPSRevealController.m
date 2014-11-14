@@ -31,4 +31,10 @@
     }
 }
 
+- (void)setLeftViewController:(UIViewController *)leftViewController
+{
+    [super setLeftViewController:leftViewController];
+    [self setMinimumWidth:380 forViewController:leftViewController];
+}
+
 @end
