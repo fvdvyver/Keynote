@@ -103,7 +103,7 @@
                                        viewControllerProvider:deploymentInfoProvider],
              [[CPSViewControllerMenuItem alloc] initWithTitle:NSLocalizedString(@"ClearVu", nil)
                                                          icon:nil
-                                       viewControllerProvider:clearVuProvider],
+                                       viewControllerProvider:clearVuProvider]
              ];
 }
 
