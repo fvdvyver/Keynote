@@ -18,4 +18,6 @@
                              menuItems:(NSArray *)menuItems
                               delegate:(id<CPSMenuItemDelegate>)menuItemDelegate;
 
+- (void)selectMenuItemAtIndex:(NSInteger)index;
+
 @end

@@ -14,6 +14,8 @@
 #import "CPSMenuWireframe.h"
 #import "CPSCachingMenuDelegate.h"
 
+#import "CPSViewControllerMenuItem.h"
+
 #import "CPSRootWireframe+MCRevealPresentation.h"
 
 #import "CPSMenuItem.h"
@@ -25,6 +27,7 @@
 @property (nonatomic, strong) CPSMenuWireframe * menuWireframe;
 
 - (void)configureDependencies;
+- (NSArray *)menuItems;
 
 @end
 
@@ -43,11 +46,8 @@
 {
     [self.rootWireframe installRootWireframeWithRevealControllerInWindow:window];
     
-    UIViewController *viewController = [UIViewController new];
-    viewController.view.backgroundColor = [UIColor redColor];
-    
     self.rootWireframe.menuControllerProvider = self.menuWireframe;
-    self.rootWireframe.contentControllerProvider = [CPSCachedViewControllerProvider providerWithCachedViewController:viewController];
+    [self.menuWireframe selectMenuItemAtIndex:0];
 }
 
 - (void)configureDependencies
@@ -55,10 +55,7 @@
     CPSRootWireframe *rootWireframe = [CPSRootWireframe new];
     CPSRevealRootPresenter *presenter = [CPSRevealRootPresenter new];
     
-    NSArray *menuItems = @[
-                           [[CPSMenuItem alloc] initWithTitle:@"Slide 1" icon:nil],
-                           [[CPSMenuItem alloc] initWithTitle:@"Slide 2" icon:nil]
-                           ];
+    NSArray *menuItems = [self menuItems];
     
     CPSCachingMenuDelegate *menuDelegate = [[CPSCachingMenuDelegate alloc] initWithRootWireframe:rootWireframe];
     CPSMenuWireframe *menuWireframe = [[CPSMenuWireframe alloc] initWithStoryboardName:@"Main"
@@ -69,6 +66,28 @@
     
     self.rootWireframe = rootWireframe;
     self.menuWireframe = menuWireframe;
+}
+
+- (NSArray *)menuItems
+{
+    UIViewController *viewController = [UIViewController new];
+    viewController.view.backgroundColor = [UIColor redColor];
+    
+    id<CPSViewControllerProvider> redProvider =  [CPSCachedViewControllerProvider providerWithCachedViewController:viewController];
+    
+    viewController = [UIViewController new];
+    viewController.view.backgroundColor = [UIColor blueColor];
+    
+    id<CPSViewControllerProvider> blueProvider =  [CPSCachedViewControllerProvider providerWithCachedViewController:viewController];
+    
+    return @[
+             [[CPSViewControllerMenuItem alloc] initWithTitle:NSLocalizedString(@"Intro", nil)
+                                                         icon:nil
+                                       viewControllerProvider:redProvider],
+             [[CPSViewControllerMenuItem alloc] initWithTitle:NSLocalizedString(@"Cost of Risk", nil)
+                                                         icon:nil
+                                       viewControllerProvider:blueProvider]
+             ];
 }
 
 @end

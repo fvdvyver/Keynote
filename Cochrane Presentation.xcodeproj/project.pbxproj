@@ -42,6 +42,7 @@
 		6DC8E66B1A1388DE00197DB3 /* MCArrayTableViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E66A1A1388DE00197DB3 /* MCArrayTableViewDatasource.m */; };
 		6DC8E66E1A138A5300197DB3 /* CPSMenuItemCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E66D1A138A5300197DB3 /* CPSMenuItemCellPresenter.m */; };
 		6DC8E6701A138B1E00197DB3 /* CPSMenuItemCellPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E66F1A138B1E00197DB3 /* CPSMenuItemCellPresenterTests.m */; };
+		6DEA20CF1A15FF3B001AAC42 /* CPSRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA20CE1A15FF3B001AAC42 /* CPSRevealController.m */; };
 		76C13A78658DA88850DD7979 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 888BB7766EC1DFB252B3FBBC /* libPods.a */; };
 		E0BF00AE3AD224C668B6E35D /* libPods-Cochrane PresentationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC7C682EDA3593D283FE74A /* libPods-Cochrane PresentationTests.a */; };
 /* End PBXBuildFile section */
@@ -119,6 +120,8 @@
 		6DC8E66D1A138A5300197DB3 /* CPSMenuItemCellPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuItemCellPresenter.m; sourceTree = "<group>"; };
 		6DC8E66F1A138B1E00197DB3 /* CPSMenuItemCellPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuItemCellPresenterTests.m; sourceTree = "<group>"; };
 		6DC8E6711A138C8500197DB3 /* CPSMenuItemCellInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuItemCellInterface.h; sourceTree = "<group>"; };
+		6DEA20CD1A15FF3B001AAC42 /* CPSRevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSRevealController.h; sourceTree = "<group>"; };
+		6DEA20CE1A15FF3B001AAC42 /* CPSRevealController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRevealController.m; sourceTree = "<group>"; };
 		74A31BB7765D6B7908888057 /* Pods-Cochrane PresentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cochrane PresentationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cochrane PresentationTests/Pods-Cochrane PresentationTests.release.xcconfig"; sourceTree = "<group>"; };
 		888BB7766EC1DFB252B3FBBC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -288,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				6D10E1131A10C63C006DD677 /* Menu */,
+				6DEA20CC1A15FF24001AAC42 /* View */,
 				6D10E1021A10B089006DD677 /* CPSViewControllerProvider.h */,
 				6D10E1031A10B19F006DD677 /* CPSRootPresenter.h */,
 				6D10E0FF1A10AFC5006DD677 /* CPSRootWireframe.h */,
@@ -407,6 +411,15 @@
 				6DC8E66A1A1388DE00197DB3 /* MCArrayTableViewDatasource.m */,
 			);
 			path = "Table View Data Sources";
+			sourceTree = "<group>";
+		};
+		6DEA20CC1A15FF24001AAC42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DEA20CD1A15FF3B001AAC42 /* CPSRevealController.h */,
+				6DEA20CE1A15FF3B001AAC42 /* CPSRevealController.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A149F60FFEF6ED2290EABEEA /* Frameworks */ = {
@@ -606,6 +619,7 @@
 				6DC8E66B1A1388DE00197DB3 /* MCArrayTableViewDatasource.m in Sources */,
 				6DC8E6601A12949D00197DB3 /* CPSMenuPresenter.m in Sources */,
 				6DBD91731A14AC7200FA6A51 /* CPSMenuWireframe.m in Sources */,
+				6DEA20CF1A15FF3B001AAC42 /* CPSRevealController.m in Sources */,
 				6D10E1011A10AFC5006DD677 /* CPSRootWireframe.m in Sources */,
 				6D8DEA161A13C3D9007C92F8 /* CPSMenuTableViewController.m in Sources */,
 				6D8DEA1E1A14A578007C92F8 /* CPSMenuItemTableViewCell.m in Sources */,

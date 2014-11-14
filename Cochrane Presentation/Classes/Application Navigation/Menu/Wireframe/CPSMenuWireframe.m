@@ -76,4 +76,10 @@
     return self.menuViewController;
 }
 
+- (void)selectMenuItemAtIndex:(NSInteger)index
+{
+    CPSMenuItem *itemToSelect = self.menuInteractor.menuItems[index];
+    [self.menuInteractor selectMenuItem:itemToSelect];
+}
+
 @end
