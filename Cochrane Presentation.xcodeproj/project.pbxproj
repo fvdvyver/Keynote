@@ -22,7 +22,6 @@
 		6D61104B1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D61104A1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m */; };
 		6D78FC411A0B7A140097E4F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC401A0B7A140097E4F5 /* main.m */; };
 		6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC431A0B7A140097E4F5 /* AppDelegate.m */; };
-		6D78FC471A0B7A140097E4F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC461A0B7A140097E4F5 /* ViewController.m */; };
 		6D78FC4A1A0B7A140097E4F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC481A0B7A140097E4F5 /* Main.storyboard */; };
 		6D78FC4C1A0B7A140097E4F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC4B1A0B7A140097E4F5 /* Images.xcassets */; };
 		6D78FC4F1A0B7A140097E4F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC4D1A0B7A140097E4F5 /* LaunchScreen.xib */; };
@@ -90,8 +89,6 @@
 		6D78FC401A0B7A140097E4F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6D78FC421A0B7A140097E4F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D78FC431A0B7A140097E4F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6D78FC451A0B7A140097E4F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6D78FC461A0B7A140097E4F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6D78FC491A0B7A140097E4F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D78FC4B1A0B7A140097E4F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		6D78FC4E1A0B7A140097E4F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -241,8 +238,6 @@
 			children = (
 				6D78FC651A0B7AF00097E4F5 /* Classes */,
 				6D78FC671A0B7B850097E4F5 /* Resources */,
-				6D78FC451A0B7A140097E4F5 /* ViewController.h */,
-				6D78FC461A0B7A140097E4F5 /* ViewController.m */,
 				6D78FC3E1A0B7A140097E4F5 /* Supporting Files */,
 			);
 			path = "Cochrane Presentation";
@@ -313,15 +308,9 @@
 			isa = PBXGroup;
 			children = (
 				6D10E1131A10C63C006DD677 /* Menu */,
-				6DEA20CC1A15FF24001AAC42 /* View */,
-				6D10E1021A10B089006DD677 /* CPSViewControllerProvider.h */,
-				6D10E1031A10B19F006DD677 /* CPSRootPresenter.h */,
-				6D10E0FF1A10AFC5006DD677 /* CPSRootWireframe.h */,
-				6D10E1001A10AFC5006DD677 /* CPSRootWireframe.m */,
-				6D10E1071A10B866006DD677 /* CPSRevealRootPresenter.h */,
-				6D10E1081A10B866006DD677 /* CPSRevealRootPresenter.m */,
-				6DC8E6591A1247A200197DB3 /* CPSCachedViewControllerProvider.h */,
-				6DC8E65A1A1247A200197DB3 /* CPSCachedViewControllerProvider.m */,
+				6D8933E01A1B8B700099A818 /* Model */,
+				6D8933DD1A1B8A830099A818 /* UI */,
+				6D8933DC1A1B8A6E0099A818 /* Wireframe */,
 				6D6110491A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.h */,
 				6D61104A1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m */,
 			);
@@ -336,6 +325,53 @@
 				6D10E10F1A10BC3A006DD677 /* CPSRevealRootPresenterTests.m */,
 			);
 			path = "Application Navigation";
+			sourceTree = "<group>";
+		};
+		6D8933DC1A1B8A6E0099A818 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				6D10E0FF1A10AFC5006DD677 /* CPSRootWireframe.h */,
+				6D10E1001A10AFC5006DD677 /* CPSRootWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		6D8933DD1A1B8A830099A818 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6D8933DF1A1B8AC50099A818 /* Presenter */,
+				6D8933DE1A1B8A9B0099A818 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6D8933DE1A1B8A9B0099A818 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DEA20CD1A15FF3B001AAC42 /* CPSRevealController.h */,
+				6DEA20CE1A15FF3B001AAC42 /* CPSRevealController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D8933DF1A1B8AC50099A818 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6D10E1031A10B19F006DD677 /* CPSRootPresenter.h */,
+				6D10E1071A10B866006DD677 /* CPSRevealRootPresenter.h */,
+				6D10E1081A10B866006DD677 /* CPSRevealRootPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6D8933E01A1B8B700099A818 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D10E1021A10B089006DD677 /* CPSViewControllerProvider.h */,
+				6DC8E6591A1247A200197DB3 /* CPSCachedViewControllerProvider.h */,
+				6DC8E65A1A1247A200197DB3 /* CPSCachedViewControllerProvider.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6D8DEA171A13C509007C92F8 /* UI */ = {
@@ -434,15 +470,6 @@
 				6DC8E66A1A1388DE00197DB3 /* MCArrayTableViewDatasource.m */,
 			);
 			path = "Table View Data Sources";
-			sourceTree = "<group>";
-		};
-		6DEA20CC1A15FF24001AAC42 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6DEA20CD1A15FF3B001AAC42 /* CPSRevealController.h */,
-				6DEA20CE1A15FF3B001AAC42 /* CPSRevealController.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		6DEA20D01A160385001AAC42 /* Modules */ = {
@@ -719,7 +746,6 @@
 			files = (
 				6D10E1091A10B866006DD677 /* CPSRevealRootPresenter.m in Sources */,
 				6DC8E66E1A138A5300197DB3 /* CPSMenuItemCellPresenter.m in Sources */,
-				6D78FC471A0B7A140097E4F5 /* ViewController.m in Sources */,
 				6D8DEA131A139192007C92F8 /* CPSMenuItemTableViewDelegate.m in Sources */,
 				6D10E11A1A10C8C0006DD677 /* CPSMenuItem.m in Sources */,
 				6DEA20DD1A16070B001AAC42 /* CPSPlaceholderViewController.m in Sources */,
