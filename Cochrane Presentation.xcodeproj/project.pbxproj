@@ -530,6 +530,7 @@
 				EFB9CD08888E49B212479F5C /* Check Pods Manifest.lock */,
 				6D78FC371A0B7A140097E4F5 /* Sources */,
 				6D78FC381A0B7A140097E4F5 /* Frameworks */,
+				6DA1CB0E1A19DE7A005E44A0 /* ShellScript */,
 				6D78FC391A0B7A140097E4F5 /* Resources */,
 				2ABF28023AE12E7CC28A8D7C /* Copy Pods Resources */,
 			);
@@ -549,6 +550,7 @@
 				208620B3983DA95CB2943F11 /* Check Pods Manifest.lock */,
 				6D78FC501A0B7A140097E4F5 /* Sources */,
 				6D78FC511A0B7A140097E4F5 /* Frameworks */,
+				6DA1CB0F1A19E134005E44A0 /* ShellScript */,
 				6D78FC521A0B7A140097E4F5 /* Resources */,
 				09B595E9EA63F81A7056BF5A /* Copy Pods Resources */,
 			);
@@ -666,6 +668,32 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		6DA1CB0E1A19DE7A005E44A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
+		};
+		6DA1CB0F1A19E134005E44A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
 		};
 		EFB9CD08888E49B212479F5C /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
