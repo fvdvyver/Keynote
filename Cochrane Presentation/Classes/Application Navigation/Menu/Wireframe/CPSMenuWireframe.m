@@ -30,6 +30,10 @@
 
 @implementation CPSMenuWireframe
 
+// **********************************************************************************
+#pragma mark - Object Life Cycle
+// **********************************************************************************
+
 - (instancetype)initWithStoryboardName:(NSString*)storyboardname
                              menuItems:(NSArray *)menuItems
                               delegate:(id<CPSMenuItemDelegate>)menuItemDelegate
@@ -41,6 +45,10 @@
     }
     return self;
 }
+
+// **********************************************************************************
+#pragma mark - Private Implementation
+// **********************************************************************************
 
 - (void)configureWithMenuItems:(NSArray *)menuItems delegate:(id<CPSMenuItemDelegate>)menuItemDelegate
 {
@@ -71,15 +79,34 @@
     return [self.mainStoryboard instantiateViewControllerWithIdentifier:@"MenuTableViewController"];
 }
 
-- (UIViewController *)contentViewController
-{
-    return self.menuViewController;
-}
+// **********************************************************************************
+#pragma mark - Public Interface
+// **********************************************************************************
 
 - (void)selectMenuItemAtIndex:(NSInteger)index
 {
     CPSMenuItem *itemToSelect = self.menuInteractor.menuItems[index];
     [self.menuInteractor selectMenuItem:itemToSelect];
+}
+
+- (void)selectNextMenuItem
+{
+    id selectedItem = self.menuInteractor.selectedMenuItem;
+    NSUInteger currentIndex = [self.menuInteractor.menuItems indexOfObject:selectedItem];
+    
+    if (currentIndex < self.menuInteractor.menuItems.count - 1)
+    {
+        [self selectMenuItemAtIndex:currentIndex + 1];
+    }
+}
+
+// **********************************************************************************
+#pragma mark - CPSViewControllerProvider Implementation
+// **********************************************************************************
+
+- (UIViewController *)contentViewController
+{
+    return self.menuViewController;
 }
 
 @end

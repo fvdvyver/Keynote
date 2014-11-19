@@ -16,3 +16,10 @@
 - (void)advanceCurrentContentProvider;
 
 @end
+
+@protocol CPSSubContentWireframe <NSObject>
+
+- (void)setParentContentWireframe:(id<CPSContentWireframe>)parentWireframe;
+- (id<CPSContentWireframe>)parentContentWireframe;
+
+@end

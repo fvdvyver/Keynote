@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 
 #import "CPSViewControllerProvider.h"
+#import "CPSContentWireframe.h"
 
-@interface CPSPlaceholderWireframe : NSObject <CPSViewControllerProvider>
+@interface CPSPlaceholderWireframe : NSObject <CPSViewControllerProvider, CPSSubContentWireframe>
+
+@property (nonatomic, weak) id<CPSContentWireframe> parentContentWireframe;
 
 + (instancetype)wireframeWithStoryboardName:(NSString *)storyboardName placeholderText:(NSString *)placeholderText;
 

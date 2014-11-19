@@ -36,7 +36,7 @@
     CPSViewControllerContentWireframe *wireframe = [CPSViewControllerContentWireframe new];
     CPSViewControllerContentWireframe *parentWireframe = OCMProtocolMock(@protocol(CPSContentWireframe));
     
-    wireframe.parentWireframe = parentWireframe;
+    wireframe.parentContentWireframe = parentWireframe;
     wireframe.contentProviders = contentProviders;
     
     self.wireframe = wireframe;
@@ -72,7 +72,7 @@
 - (void)testWireframeCallsParentAdvanceMethodWhenAdvancingUnavailable
 {
     id parentWireframe = OCMStrictProtocolMock(@protocol(CPSContentWireframe));
-    self.wireframe.parentWireframe = parentWireframe;
+    self.wireframe.parentContentWireframe = parentWireframe;
     
     // Expect this once and only once
     OCMExpect([parentWireframe advanceCurrentContentProvider]);

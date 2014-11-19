@@ -14,12 +14,14 @@
 #import "CPSMenuWireframe.h"
 #import "CPSCachingMenuDelegate.h"
 
+#import "CPSRootContentWireframe.h"
+
 #import "CPSViewControllerMenuItem.h"
 
 #import "CPSRootWireframe+MCRevealPresentation.h"
 
 #import "CPSMenuItem.h"
-#import "CPSCachedViewControllerProvider.h"
+#import "CPSViewControllerContentWireframe.h"
 
 #import "CPSPlaceholderWireframe.h"
 
@@ -27,9 +29,15 @@
 
 @property (nonatomic, strong) CPSRootWireframe * rootWireframe;
 @property (nonatomic, strong) CPSMenuWireframe * menuWireframe;
+@property (nonatomic, strong) CPSRootContentWireframe *contentWireframe;
 
 - (void)configureDependencies;
+
 - (NSArray *)menuItems;
+- (CPSViewControllerContentWireframe *)contentWireframeForProviders:(NSArray *)providers;
+
+- (void)injectContentWireframe:(id<CPSContentWireframe>)contentWireframe asParentOfWireframe:(id)subwireframe;
+- (void)injectContentWireframe:(id<CPSContentWireframe>)wireframe asParentOfMenuItems:(NSArray *)menuItems;
 
 @end
 
@@ -66,8 +74,15 @@
     
     rootWireframe.presenter = presenter;
     
+    CPSRootContentWireframe *contentWireframe = [CPSRootContentWireframe new];
+    contentWireframe.rootWireframe = rootWireframe;
+    contentWireframe.menuWireframe = menuWireframe;
+    
+    [self injectContentWireframe:contentWireframe asParentOfMenuItems:menuItems];
+    
     self.rootWireframe = rootWireframe;
     self.menuWireframe = menuWireframe;
+    self.contentWireframe = contentWireframe;
 }
 
 - (NSArray *)menuItems
@@ -88,23 +103,58 @@
     return @[
              [[CPSViewControllerMenuItem alloc] initWithTitle:NSLocalizedString(@"Intro", nil)
                                                          icon:nil
-                                       viewControllerProvider:introProvider],
+                                       viewControllerProvider:[self contentWireframeForProviders:@[ introProvider ]] ],
              [[CPSViewControllerMenuItem alloc] initWithTitle:NSLocalizedString(@"Cost of Risk", nil)
                                                          icon:nil
-                                       viewControllerProvider:costOfRiskProvider],
+                                       viewControllerProvider:[self contentWireframeForProviders:@[ costOfRiskProvider ]] ],
              [[CPSViewControllerMenuItem alloc] initWithTitle:NSLocalizedString(@"Uses", nil)
                                                          icon:nil
-                                       viewControllerProvider:usesProvider],
+                                       viewControllerProvider:[self contentWireframeForProviders:@[ usesProvider ]] ],
              [[CPSViewControllerMenuItem alloc] initWithTitle:NSLocalizedString(@"Product Range", nil)
                                                          icon:nil
-                                       viewControllerProvider:productRangeProvider],
+                                       viewControllerProvider:[self contentWireframeForProviders:@[ productRangeProvider ]] ],
              [[CPSViewControllerMenuItem alloc] initWithTitle:NSLocalizedString(@"Deployment Information & Specifications", nil)
                                                          icon:nil
-                                       viewControllerProvider:deploymentInfoProvider],
+                                       viewControllerProvider:[self contentWireframeForProviders:@[ deploymentInfoProvider ]] ],
              [[CPSViewControllerMenuItem alloc] initWithTitle:NSLocalizedString(@"ClearVu", nil)
                                                          icon:nil
-                                       viewControllerProvider:clearVuProvider]
+                                       viewControllerProvider:[self contentWireframeForProviders:@[ clearVuProvider ]] ]
              ];
+}
+
+- (CPSViewControllerContentWireframe *)contentWireframeForProviders:(NSArray *)providers
+{
+    CPSViewControllerContentWireframe *wireframe = [CPSViewControllerContentWireframe new];
+    wireframe.contentProviders = providers;
+    
+    for (id provider in providers)
+    {
+        [self injectContentWireframe:wireframe asParentOfWireframe:provider];
+    }
+    
+    return wireframe;
+}
+
+- (void)injectContentWireframe:(id<CPSContentWireframe>)contentWireframe asParentOfWireframe:(id)subwireframe
+{
+    if ([subwireframe respondsToSelector:@selector(setParentContentWireframe:)])
+    {
+        [subwireframe setParentContentWireframe:contentWireframe];
+    }
+}
+
+- (void)injectContentWireframe:(id<CPSContentWireframe>)contentWireframe asParentOfMenuItems:(NSArray *)menuItems
+{
+    for (CPSMenuItem *menuItem in menuItems)
+    {
+        if ([menuItem isKindOfClass:[CPSViewControllerMenuItem class]])
+        {
+            CPSViewControllerMenuItem *controllerItem = (id)menuItem;
+            id provider = [controllerItem viewControllerProvider];
+            
+            [self injectContentWireframe:contentWireframe asParentOfWireframe:provider];
+        }
+    }
 }
 
 @end

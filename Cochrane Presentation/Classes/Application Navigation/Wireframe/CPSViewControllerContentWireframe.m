@@ -30,13 +30,13 @@
     }
     else
     {
-        [self.parentWireframe advanceCurrentContentProvider];
+        [self.parentContentWireframe advanceCurrentContentProvider];
     }
 }
 
 - (void)setContentControllerProvider:(id<CPSViewControllerProvider>)contentControllerProvider
 {
-    [self.parentWireframe setContentControllerProvider:contentControllerProvider];
+    [self.parentContentWireframe setContentControllerProvider:contentControllerProvider];
 }
 
 - (UIViewController *)contentViewController

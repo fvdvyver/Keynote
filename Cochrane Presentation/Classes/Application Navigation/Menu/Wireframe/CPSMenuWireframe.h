@@ -19,5 +19,6 @@
                               delegate:(id<CPSMenuItemDelegate>)menuItemDelegate;
 
 - (void)selectMenuItemAtIndex:(NSInteger)index;
+- (void)selectNextMenuItem;
 
 @end

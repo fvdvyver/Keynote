@@ -29,6 +29,8 @@
 		6D8933E91A1B93090099A818 /* CPSViewControllerContentWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8933E81A1B93090099A818 /* CPSViewControllerContentWireframe.m */; };
 		6D8933EF1A1B9CFF0099A818 /* CPSViewControllerContentWireframeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8933EE1A1B9CFF0099A818 /* CPSViewControllerContentWireframeTests.m */; };
 		6D8933F01A1B9D4F0099A818 /* CPSViewControllerContentWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8933E81A1B93090099A818 /* CPSViewControllerContentWireframe.m */; };
+		6D8933F61A1C86820099A818 /* CPSRootContentWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8933F51A1C86820099A818 /* CPSRootContentWireframe.m */; };
+		6D8933F81A1C88100099A818 /* CPSRootContentWireframeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8933F71A1C88100099A818 /* CPSRootContentWireframeTests.m */; };
 		6D8DEA131A139192007C92F8 /* CPSMenuItemTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DEA121A139192007C92F8 /* CPSMenuItemTableViewDelegate.m */; };
 		6D8DEA161A13C3D9007C92F8 /* CPSMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DEA151A13C3D9007C92F8 /* CPSMenuTableViewController.m */; };
 		6D8DEA1B1A13C5B8007C92F8 /* CPSMenuTableViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DEA1A1A13C5B8007C92F8 /* CPSMenuTableViewControllerTests.m */; };
@@ -102,6 +104,9 @@
 		6D8933E81A1B93090099A818 /* CPSViewControllerContentWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSViewControllerContentWireframe.m; sourceTree = "<group>"; };
 		6D8933EA1A1B93DC0099A818 /* CPSContentWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSContentWireframe.h; sourceTree = "<group>"; };
 		6D8933EE1A1B9CFF0099A818 /* CPSViewControllerContentWireframeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSViewControllerContentWireframeTests.m; sourceTree = "<group>"; };
+		6D8933F41A1C86820099A818 /* CPSRootContentWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSRootContentWireframe.h; sourceTree = "<group>"; };
+		6D8933F51A1C86820099A818 /* CPSRootContentWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRootContentWireframe.m; sourceTree = "<group>"; };
+		6D8933F71A1C88100099A818 /* CPSRootContentWireframeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRootContentWireframeTests.m; sourceTree = "<group>"; };
 		6D8DEA111A139192007C92F8 /* CPSMenuItemTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuItemTableViewDelegate.h; sourceTree = "<group>"; };
 		6D8DEA121A139192007C92F8 /* CPSMenuItemTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuItemTableViewDelegate.m; sourceTree = "<group>"; };
 		6D8DEA141A13C3D9007C92F8 /* CPSMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuTableViewController.h; sourceTree = "<group>"; };
@@ -340,6 +345,8 @@
 				6D10E0FF1A10AFC5006DD677 /* CPSRootWireframe.h */,
 				6D10E1001A10AFC5006DD677 /* CPSRootWireframe.m */,
 				6D8933EA1A1B93DC0099A818 /* CPSContentWireframe.h */,
+				6D8933F41A1C86820099A818 /* CPSRootContentWireframe.h */,
+				6D8933F51A1C86820099A818 /* CPSRootContentWireframe.m */,
 				6D8933E71A1B93090099A818 /* CPSViewControllerContentWireframe.h */,
 				6D8933E81A1B93090099A818 /* CPSViewControllerContentWireframe.m */,
 			);
@@ -388,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				6D78FC6C1A0B82B70097E4F5 /* CPSRootWireframeTests.m */,
+				6D8933F71A1C88100099A818 /* CPSRootContentWireframeTests.m */,
 				6D8933EE1A1B9CFF0099A818 /* CPSViewControllerContentWireframeTests.m */,
 			);
 			path = Wireframe;
@@ -794,6 +802,7 @@
 				6DEA20CF1A15FF3B001AAC42 /* CPSRevealController.m in Sources */,
 				6D10E1011A10AFC5006DD677 /* CPSRootWireframe.m in Sources */,
 				6D8DEA161A13C3D9007C92F8 /* CPSMenuTableViewController.m in Sources */,
+				6D8933F61A1C86820099A818 /* CPSRootContentWireframe.m in Sources */,
 				6D8DEA1E1A14A578007C92F8 /* CPSMenuItemTableViewCell.m in Sources */,
 				6DC8E6531A1205D100197DB3 /* CPSCachingMenuDelegate.m in Sources */,
 				6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */,
@@ -814,6 +823,7 @@
 				6D8933F01A1B9D4F0099A818 /* CPSViewControllerContentWireframe.m in Sources */,
 				6DC8E6701A138B1E00197DB3 /* CPSMenuItemCellPresenterTests.m in Sources */,
 				6DC8E6501A11F7D100197DB3 /* CPSMenuInteractorTests.m in Sources */,
+				6D8933F81A1C88100099A818 /* CPSRootContentWireframeTests.m in Sources */,
 				6D10E1101A10BC3A006DD677 /* CPSRevealRootPresenterTests.m in Sources */,
 				6D8DEA1B1A13C5B8007C92F8 /* CPSMenuTableViewControllerTests.m in Sources */,
 				6D10E10B1A10B8A4006DD677 /* CPSRootWireframe.m in Sources */,
