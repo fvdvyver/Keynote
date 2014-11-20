@@ -19,6 +19,13 @@
 		6D10E1221A10D65E006DD677 /* CPSViewControllerMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E11C1A10C8D8006DD677 /* CPSViewControllerMenuItem.m */; };
 		6D10E1231A10D660006DD677 /* CPSMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E1191A10C8C0006DD677 /* CPSMenuItem.m */; };
 		6D10E1241A10D666006DD677 /* CPSMenuInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E1151A10C677006DD677 /* CPSMenuInteractor.m */; };
+		6D5432391A1CD5FE00746CB7 /* CPSBaseWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432381A1CD5FE00746CB7 /* CPSBaseWireframe.m */; };
+		6D5432421A1CE02B00746CB7 /* CPSAccessPagePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432411A1CE02B00746CB7 /* CPSAccessPagePresenter.m */; };
+		6D54324A1A1CE46E00746CB7 /* CPSAccessPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432491A1CE46E00746CB7 /* CPSAccessPageViewController.m */; };
+		6D54324F1A1DEFE500746CB7 /* animated_background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D54324E1A1DEFE500746CB7 /* animated_background.mp4 */; };
+		6D5432501A1DF2D100746CB7 /* CPSPlaceholderWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA20D41A1603DD001AAC42 /* CPSPlaceholderWireframe.m */; };
+		6D5432511A1DF2D500746CB7 /* CPSAccessPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432491A1CE46E00746CB7 /* CPSAccessPageViewController.m */; };
+		6D5432521A1DF2D900746CB7 /* CPSAccessPagePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432411A1CE02B00746CB7 /* CPSAccessPagePresenter.m */; };
 		6D61104B1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D61104A1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m */; };
 		6D78FC411A0B7A140097E4F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC401A0B7A140097E4F5 /* main.m */; };
 		6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC431A0B7A140097E4F5 /* AppDelegate.m */; };
@@ -87,6 +94,16 @@
 		6D10E11C1A10C8D8006DD677 /* CPSViewControllerMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSViewControllerMenuItem.m; sourceTree = "<group>"; };
 		6D10E1201A10D065006DD677 /* CPSMenuItemTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuItemTests.m; sourceTree = "<group>"; };
 		6D10E12D1A11F3F2006DD677 /* CPSMenuInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuInteractorIO.h; sourceTree = "<group>"; };
+		6D5432371A1CD5FE00746CB7 /* CPSBaseWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSBaseWireframe.h; sourceTree = "<group>"; };
+		6D5432381A1CD5FE00746CB7 /* CPSBaseWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSBaseWireframe.m; sourceTree = "<group>"; };
+		6D54323C1A1CDE1000746CB7 /* CPSPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSPresenter.h; sourceTree = "<group>"; };
+		6D5432401A1CE02B00746CB7 /* CPSAccessPagePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSAccessPagePresenter.h; sourceTree = "<group>"; };
+		6D5432411A1CE02B00746CB7 /* CPSAccessPagePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSAccessPagePresenter.m; sourceTree = "<group>"; };
+		6D5432441A1CE0A500746CB7 /* CPSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSView.h; sourceTree = "<group>"; };
+		6D5432451A1CE22D00746CB7 /* CPSAccessPageInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSAccessPageInterface.h; sourceTree = "<group>"; };
+		6D5432481A1CE46E00746CB7 /* CPSAccessPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSAccessPageViewController.h; sourceTree = "<group>"; };
+		6D5432491A1CE46E00746CB7 /* CPSAccessPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSAccessPageViewController.m; sourceTree = "<group>"; };
+		6D54324E1A1DEFE500746CB7 /* animated_background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = animated_background.mp4; sourceTree = "<group>"; };
 		6D6110491A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPSRootWireframe+MCRevealPresentation.h"; sourceTree = "<group>"; };
 		6D61104A1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CPSRootWireframe+MCRevealPresentation.m"; sourceTree = "<group>"; };
 		6D78FC3B1A0B7A140097E4F5 /* Cochrane Presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cochrane Presentation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,6 +242,117 @@
 			path = Logic;
 			sourceTree = "<group>";
 		};
+		6D5432351A1CD5AF00746CB7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6D54323A1A1CDDE900746CB7 /* UI */,
+				6D5432361A1CD5C600746CB7 /* Wireframe */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6D5432361A1CD5C600746CB7 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				6D5432371A1CD5FE00746CB7 /* CPSBaseWireframe.h */,
+				6D5432381A1CD5FE00746CB7 /* CPSBaseWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		6D54323A1A1CDDE900746CB7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6D54323B1A1CDDF400746CB7 /* Presenter */,
+				6D5432431A1CE09100746CB7 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6D54323B1A1CDDF400746CB7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6D54323C1A1CDE1000746CB7 /* CPSPresenter.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6D54323D1A1CDFCA00746CB7 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				6D54323E1A1CDFDF00746CB7 /* Intro Access Page */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		6D54323E1A1CDFDF00746CB7 /* Intro Access Page */ = {
+			isa = PBXGroup;
+			children = (
+				6D54323F1A1CE01200746CB7 /* UI */,
+			);
+			path = "Intro Access Page";
+			sourceTree = "<group>";
+		};
+		6D54323F1A1CE01200746CB7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6D5432471A1CE42C00746CB7 /* Presenter */,
+				6D5432461A1CE42400746CB7 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6D5432431A1CE09100746CB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D5432441A1CE0A500746CB7 /* CPSView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D5432461A1CE42400746CB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D5432481A1CE46E00746CB7 /* CPSAccessPageViewController.h */,
+				6D5432491A1CE46E00746CB7 /* CPSAccessPageViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D5432471A1CE42C00746CB7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6D5432451A1CE22D00746CB7 /* CPSAccessPageInterface.h */,
+				6D5432401A1CE02B00746CB7 /* CPSAccessPagePresenter.h */,
+				6D5432411A1CE02B00746CB7 /* CPSAccessPagePresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6D54324B1A1DEA9200746CB7 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				6D54324C1A1DEAAC00746CB7 /* Intro */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		6D54324C1A1DEAAC00746CB7 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				6D54324D1A1DEABF00746CB7 /* Access Page */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		6D54324D1A1DEABF00746CB7 /* Access Page */ = {
+			isa = PBXGroup;
+			children = (
+				6D54324E1A1DEFE500746CB7 /* animated_background.mp4 */,
+			);
+			path = "Access Page";
+			sourceTree = "<group>";
+		};
 		6D78FC321A0B7A140097E4F5 = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +414,7 @@
 			children = (
 				6D78FC661A0B7AFF0097E4F5 /* Application */,
 				6D78FC681A0B7BEA0097E4F5 /* Application Navigation */,
+				6D5432351A1CD5AF00746CB7 /* Common */,
 				6DEA20D01A160385001AAC42 /* Modules */,
 				6DC8E6661A1387EB00197DB3 /* Utility */,
 			);
@@ -309,6 +438,7 @@
 			isa = PBXGroup;
 			children = (
 				6DEA20E61A16387E001AAC42 /* Fonts */,
+				6D54324B1A1DEA9200746CB7 /* Video */,
 				6D78FC481A0B7A140097E4F5 /* Main.storyboard */,
 				6D78FC4B1A0B7A140097E4F5 /* Images.xcassets */,
 				6D78FC4D1A0B7A140097E4F5 /* LaunchScreen.xib */,
@@ -518,6 +648,7 @@
 		6DEA20D01A160385001AAC42 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				6D54323D1A1CDFCA00746CB7 /* Intro */,
 				6DEA20D11A160396001AAC42 /* Placeholder */,
 			);
 			path = Modules;
@@ -677,6 +808,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D54324F1A1DEFE500746CB7 /* animated_background.mp4 in Resources */,
 				6DEA20E81A1638AA001AAC42 /* Planer_Reg.ttf in Resources */,
 				6D78FC4A1A0B7A140097E4F5 /* Main.storyboard in Resources */,
 				6D78FC4F1A0B7A140097E4F5 /* LaunchScreen.xib in Resources */,
@@ -795,6 +927,8 @@
 				6DEA20D91A1606AE001AAC42 /* CPSPlaceholderPresenter.m in Sources */,
 				6D8933E91A1B93090099A818 /* CPSViewControllerContentWireframe.m in Sources */,
 				6DC8E65B1A1247A200197DB3 /* CPSCachedViewControllerProvider.m in Sources */,
+				6D5432421A1CE02B00746CB7 /* CPSAccessPagePresenter.m in Sources */,
+				6D5432391A1CD5FE00746CB7 /* CPSBaseWireframe.m in Sources */,
 				6DEA20D51A1603DD001AAC42 /* CPSPlaceholderWireframe.m in Sources */,
 				6DC8E66B1A1388DE00197DB3 /* MCArrayTableViewDatasource.m in Sources */,
 				6DC8E6601A12949D00197DB3 /* CPSMenuPresenter.m in Sources */,
@@ -805,6 +939,7 @@
 				6D8933F61A1C86820099A818 /* CPSRootContentWireframe.m in Sources */,
 				6D8DEA1E1A14A578007C92F8 /* CPSMenuItemTableViewCell.m in Sources */,
 				6DC8E6531A1205D100197DB3 /* CPSCachingMenuDelegate.m in Sources */,
+				6D54324A1A1CE46E00746CB7 /* CPSAccessPageViewController.m in Sources */,
 				6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */,
 				6D10E1161A10C677006DD677 /* CPSMenuInteractor.m in Sources */,
 				6D61104B1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m in Sources */,
@@ -822,6 +957,7 @@
 			files = (
 				6D8933F01A1B9D4F0099A818 /* CPSViewControllerContentWireframe.m in Sources */,
 				6DC8E6701A138B1E00197DB3 /* CPSMenuItemCellPresenterTests.m in Sources */,
+				6D5432501A1DF2D100746CB7 /* CPSPlaceholderWireframe.m in Sources */,
 				6DC8E6501A11F7D100197DB3 /* CPSMenuInteractorTests.m in Sources */,
 				6D8933F81A1C88100099A818 /* CPSRootContentWireframeTests.m in Sources */,
 				6D10E1101A10BC3A006DD677 /* CPSRevealRootPresenterTests.m in Sources */,
@@ -831,11 +967,13 @@
 				6D78FC6D1A0B82B70097E4F5 /* CPSRootWireframeTests.m in Sources */,
 				6D10E1241A10D666006DD677 /* CPSMenuInteractor.m in Sources */,
 				6D10E1231A10D660006DD677 /* CPSMenuItem.m in Sources */,
+				6D5432511A1DF2D500746CB7 /* CPSAccessPageViewController.m in Sources */,
 				6DC8E6651A13810800197DB3 /* CPSMenuPresenterTests.m in Sources */,
 				6D8933EF1A1B9CFF0099A818 /* CPSViewControllerContentWireframeTests.m in Sources */,
 				6D10E1211A10D065006DD677 /* CPSMenuItemTests.m in Sources */,
 				6D10E1221A10D65E006DD677 /* CPSViewControllerMenuItem.m in Sources */,
 				6DC8E6551A12076300197DB3 /* CPSCachingMenuDelegateTests.m in Sources */,
+				6D5432521A1DF2D900746CB7 /* CPSAccessPagePresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

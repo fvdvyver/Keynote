@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Planer_Reg.ttf">
+            <string>Planer</string>
             <string>Planer</string>
             <string>Planer</string>
         </mutableArray>
@@ -74,7 +74,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GI3-gg-cD2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1177" y="322"/>
+            <point key="canvasLocation" x="1115" y="387"/>
+        </scene>
+        <!--Access Page View Controller-->
+        <scene sceneID="npe-bS-nwF">
+            <objects>
+                <viewController storyboardIdentifier="AccessPageViewController" id="zD3-x0-9Cd" customClass="CPSAccessPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rcd-ph-ybt"/>
+                        <viewControllerLayoutGuide type="bottom" id="eTS-Tr-S4Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gPH-HM-QoM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydH-2K-c23">
+                                <rect key="frame" x="162" y="237" width="275" height="126"/>
+                                <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="50"/>
+                                <state key="normal" title="ACCESS" backgroundImage="access_button_border">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" title="ACCESS" backgroundImage="access_button_border_highlighted"/>
+                                <connections>
+                                    <action selector="accessButtonTapped:" destination="zD3-x0-9Cd" eventType="touchUpInside" id="pKL-Ji-jRU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="ydH-2K-c23" secondAttribute="centerX" id="Goc-Ir-K30"/>
+                            <constraint firstAttribute="centerY" secondItem="ydH-2K-c23" secondAttribute="centerY" id="QSW-hT-YYW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6fP-lO-Nwg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1115" y="1133"/>
         </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="QQQ-eM-Rd1">
@@ -95,7 +131,7 @@
                                         <rect key="frame" x="8" y="0.0" width="526" height="119"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MENU" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mD-fK-4Un">
-                                        <rect key="frame" x="98" y="66" width="97" height="36"/>
+                                        <rect key="frame" x="98" y="61" width="97" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="FrR-U1-Ia5"/>
                                         </constraints>
@@ -106,7 +142,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="2mD-fK-4Un" firstAttribute="top" secondItem="8eN-9Z-mdl" secondAttribute="top" constant="66" id="C7l-Iy-rlJ"/>
+                                    <constraint firstItem="2mD-fK-4Un" firstAttribute="top" secondItem="8eN-9Z-mdl" secondAttribute="top" constant="61" id="C7l-Iy-rlJ"/>
                                     <constraint firstAttribute="bottom" secondItem="quu-pT-5cI" secondAttribute="bottom" id="He6-Dm-JRI"/>
                                     <constraint firstItem="2mD-fK-4Un" firstAttribute="leading" secondItem="8eN-9Z-mdl" secondAttribute="leading" constant="98" id="TfT-66-mee"/>
                                     <constraint firstItem="quu-pT-5cI" firstAttribute="top" secondItem="8eN-9Z-mdl" secondAttribute="top" id="c09-oP-Ss5"/>
@@ -143,10 +179,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEl-49-GBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="417" y="989"/>
+            <point key="canvasLocation" x="282" y="1133"/>
         </scene>
     </scenes>
     <resources>
+        <image name="access_button_border" width="275" height="126"/>
+        <image name="access_button_border_highlighted" width="275" height="126"/>
         <image name="hive_background" width="1024" height="768"/>
         <image name="left_border_line_stretch" width="454" height="241"/>
         <image name="logo_header_border" width="526" height="119"/>

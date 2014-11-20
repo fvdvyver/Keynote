@@ -23,6 +23,10 @@
 #import "CPSMenuItem.h"
 #import "CPSViewControllerContentWireframe.h"
 
+#import "CPSBaseWireframe.h"
+#import "CPSAccessPagePresenter.h"
+#import "CPSAccessPageViewController.h"
+
 #import "CPSPlaceholderWireframe.h"
 
 @interface CPSAppContext ()
@@ -87,6 +91,13 @@
 
 - (NSArray *)menuItems
 {
+    CPSBaseWireframe *accessWireframe = [CPSBaseWireframe wireframeWithStoryboardName:@"Main"
+                                                                     viewControllerID:@"AccessPageViewController"];
+    CPSAccessPagePresenter *presenter = [CPSAccessPagePresenter new];
+    
+    accessWireframe.presenter = presenter;
+    presenter.wireframe = accessWireframe;
+    
     CPSPlaceholderWireframe *introProvider = [CPSPlaceholderWireframe wireframeWithStoryboardName:@"Main"
                                                                                   placeholderText:NSLocalizedString(@"Introduction Video", nil)];
     CPSPlaceholderWireframe *costOfRiskProvider = [CPSPlaceholderWireframe wireframeWithStoryboardName:@"Main"
@@ -103,7 +114,7 @@
     return @[
              [[CPSViewControllerMenuItem alloc] initWithTitle:NSLocalizedString(@"Intro", nil)
                                                          icon:nil
-                                       viewControllerProvider:[self contentWireframeForProviders:@[ introProvider ]] ],
+                                       viewControllerProvider:[self contentWireframeForProviders:@[ accessWireframe, introProvider ]] ],
              [[CPSViewControllerMenuItem alloc] initWithTitle:NSLocalizedString(@"Cost of Risk", nil)
                                                          icon:nil
                                        viewControllerProvider:[self contentWireframeForProviders:@[ costOfRiskProvider ]] ],

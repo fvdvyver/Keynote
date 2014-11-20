@@ -17,3 +17,6 @@ build/*
 *.pbxuser
 *.xcworkspace
 xcuserdata
+
+# Exclude the media folder to keep the repo lightweight
+*/Resources/Video/

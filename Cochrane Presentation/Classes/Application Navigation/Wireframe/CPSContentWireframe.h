@@ -22,4 +22,6 @@
 - (void)setParentContentWireframe:(id<CPSContentWireframe>)parentWireframe;
 - (id<CPSContentWireframe>)parentContentWireframe;
 
+- (void)advanceCurrentContentProvider;
+
 @end

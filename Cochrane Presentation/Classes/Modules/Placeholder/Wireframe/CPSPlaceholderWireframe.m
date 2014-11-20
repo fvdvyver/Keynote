@@ -28,8 +28,7 @@
 
 + (instancetype)wireframeWithStoryboardName:(NSString *)storyboardName placeholderText:(NSString *)placeholderText
 {
-    CPSPlaceholderWireframe *wireframe = [[self class] new];
-    wireframe->_storyboardName = storyboardName;
+    CPSPlaceholderWireframe *wireframe = [self wireframeWithStoryboardName:storyboardName viewControllerID:@"PlaceholderViewController"];
     wireframe->_placeholderText = placeholderText;
     
     return wireframe;
