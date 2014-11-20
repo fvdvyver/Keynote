@@ -14,6 +14,7 @@
 @protocol CPSPlaceholderViewEventHandler <CPSPresenter>
 
 - (void)updateView;
+- (void)viewDoubleTapped;
 
 @end
 

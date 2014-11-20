@@ -8,6 +8,8 @@
 
 #import "CPSPlaceholderPresenter.h"
 
+#import "CPSBaseWireframe.h"
+
 @implementation CPSPlaceholderPresenter
 
 - (void)updateView
@@ -20,6 +22,11 @@
 {
     _placeholderText = placeholderText;
     [self updateView];
+}
+
+- (void)viewDoubleTapped
+{
+    [self.wireframe advanceCurrentContentProvider];
 }
 
 @end
