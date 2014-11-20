@@ -8,13 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol CPSPlaceholderViewEventHandler <NSObject>
+#import "CPSPresenter.h"
+#import "CPSView.h"
+
+@protocol CPSPlaceholderViewEventHandler <CPSPresenter>
 
 - (void)updateView;
 
 @end
 
-@protocol CPSPlaceholderViewInterface <NSObject>
+@protocol CPSPlaceholderViewInterface <CPSView>
 
 - (void)setPlacholderText:(NSString *)placeholderText;
 

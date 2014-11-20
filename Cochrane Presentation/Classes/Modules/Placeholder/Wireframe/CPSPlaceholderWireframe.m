@@ -14,7 +14,6 @@
 @interface CPSPlaceholderWireframe ()
 
 @property (nonatomic, readonly) NSString * storyboardName;
-@property (nonatomic, readonly) NSString * placeholderText;
 
 @property (nonatomic, strong) CPSPlaceholderPresenter *presenter;
 @property (nonatomic, strong) CPSPlaceholderViewController *viewController;
@@ -29,7 +28,7 @@
 + (instancetype)wireframeWithStoryboardName:(NSString *)storyboardName placeholderText:(NSString *)placeholderText
 {
     CPSPlaceholderWireframe *wireframe = [self wireframeWithStoryboardName:storyboardName viewControllerID:@"PlaceholderViewController"];
-    wireframe->_placeholderText = placeholderText;
+    wireframe.placeholderText = placeholderText;
     
     return wireframe;
 }

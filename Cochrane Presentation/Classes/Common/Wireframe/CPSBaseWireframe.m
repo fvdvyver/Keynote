@@ -10,9 +10,6 @@
 
 @interface CPSBaseWireframe ()
 
-@property (nonatomic, strong, readwrite) NSString * storyboardName;
-@property (nonatomic, strong, readwrite) NSString * viewControllerIdentifier;
-
 - (UIStoryboard *)storyboard;
 - (UIViewController *)instantiateNewViewController;
 

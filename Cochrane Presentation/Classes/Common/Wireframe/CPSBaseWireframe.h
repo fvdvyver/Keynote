@@ -25,8 +25,8 @@
 @property (nonatomic, strong) id interactor;
 @property (nonatomic, strong) id<CPSPresenter> presenter;
 
-@property (nonatomic, readonly) NSString * storyboardName;
-@property (nonatomic, readonly) NSString * viewControllerIdentifier;
+@property (nonatomic, strong) NSString * storyboardName;
+@property (nonatomic, strong) NSString * viewControllerIdentifier;
 
 + (instancetype)wireframeWithStoryboardName:(NSString *)storyboardName viewControllerID:(NSString *)identifer;
 

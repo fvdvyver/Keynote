@@ -29,6 +29,8 @@
 		6D5432551A1E055000746CB7 /* CPSRootWireframeMenuDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432541A1E055000746CB7 /* CPSRootWireframeMenuDelegate.m */; };
 		6D5432571A1E0D6C00746CB7 /* CPSRootWireframeMenuDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432561A1E0D6C00746CB7 /* CPSRootWireframeMenuDelegateTests.m */; };
 		6D54325A1A1E0F9500746CB7 /* CPSViewControllerProviderUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432591A1E0F9500746CB7 /* CPSViewControllerProviderUtils.m */; };
+		6D54325D1A1E1FD300746CB7 /* menu_item_description.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D54325C1A1E1FD300746CB7 /* menu_item_description.plist */; };
+		6D5432601A1E279700746CB7 /* CPSMenuItemLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54325F1A1E279700746CB7 /* CPSMenuItemLoader.m */; };
 		6D61104B1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D61104A1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m */; };
 		6D78FC411A0B7A140097E4F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC401A0B7A140097E4F5 /* main.m */; };
 		6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC431A0B7A140097E4F5 /* AppDelegate.m */; };
@@ -109,6 +111,9 @@
 		6D5432541A1E055000746CB7 /* CPSRootWireframeMenuDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRootWireframeMenuDelegate.m; sourceTree = "<group>"; };
 		6D5432561A1E0D6C00746CB7 /* CPSRootWireframeMenuDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRootWireframeMenuDelegateTests.m; sourceTree = "<group>"; };
 		6D5432591A1E0F9500746CB7 /* CPSViewControllerProviderUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSViewControllerProviderUtils.m; sourceTree = "<group>"; };
+		6D54325C1A1E1FD300746CB7 /* menu_item_description.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = menu_item_description.plist; sourceTree = "<group>"; };
+		6D54325E1A1E279700746CB7 /* CPSMenuItemLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuItemLoader.h; sourceTree = "<group>"; };
+		6D54325F1A1E279700746CB7 /* CPSMenuItemLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuItemLoader.m; sourceTree = "<group>"; };
 		6D6110491A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPSRootWireframe+MCRevealPresentation.h"; sourceTree = "<group>"; };
 		6D61104A1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CPSRootWireframe+MCRevealPresentation.m"; sourceTree = "<group>"; };
 		6D78FC3B1A0B7A140097E4F5 /* Cochrane Presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cochrane Presentation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -355,6 +360,14 @@
 			path = "Access Page";
 			sourceTree = "<group>";
 		};
+		6D54325B1A1E1F8800746CB7 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				6D54325C1A1E1FD300746CB7 /* menu_item_description.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
 		6D78FC321A0B7A140097E4F5 = {
 			isa = PBXGroup;
 			children = (
@@ -430,6 +443,8 @@
 				6D78FC431A0B7A140097E4F5 /* AppDelegate.m */,
 				6DBD91741A14AD2700FA6A51 /* CPSAppContext.h */,
 				6DBD91751A14AD2700FA6A51 /* CPSAppContext.m */,
+				6D54325E1A1E279700746CB7 /* CPSMenuItemLoader.h */,
+				6D54325F1A1E279700746CB7 /* CPSMenuItemLoader.m */,
 				6DEA20E91A163A16001AAC42 /* CPSAppearanceConfig.h */,
 				6DEA20EA1A163A16001AAC42 /* CPSAppearanceConfig.m */,
 			);
@@ -440,6 +455,7 @@
 			isa = PBXGroup;
 			children = (
 				6DEA20E61A16387E001AAC42 /* Fonts */,
+				6D54325B1A1E1F8800746CB7 /* Plist */,
 				6D54324B1A1DEA9200746CB7 /* Video */,
 				6D78FC481A0B7A140097E4F5 /* Main.storyboard */,
 				6D78FC4B1A0B7A140097E4F5 /* Images.xcassets */,
@@ -812,6 +828,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D54324F1A1DEFE500746CB7 /* animated_background.mp4 in Resources */,
+				6D54325D1A1E1FD300746CB7 /* menu_item_description.plist in Resources */,
 				6DEA20E81A1638AA001AAC42 /* Planer_Reg.ttf in Resources */,
 				6D78FC4A1A0B7A140097E4F5 /* Main.storyboard in Resources */,
 				6D78FC4F1A0B7A140097E4F5 /* LaunchScreen.xib in Resources */,
@@ -925,6 +942,7 @@
 				6D10E1091A10B866006DD677 /* CPSRevealRootPresenter.m in Sources */,
 				6DC8E66E1A138A5300197DB3 /* CPSMenuItemCellPresenter.m in Sources */,
 				6D8DEA131A139192007C92F8 /* CPSMenuItemTableViewDelegate.m in Sources */,
+				6D5432601A1E279700746CB7 /* CPSMenuItemLoader.m in Sources */,
 				6D10E11A1A10C8C0006DD677 /* CPSMenuItem.m in Sources */,
 				6DEA20DD1A16070B001AAC42 /* CPSPlaceholderViewController.m in Sources */,
 				6D5432551A1E055000746CB7 /* CPSRootWireframeMenuDelegate.m in Sources */,

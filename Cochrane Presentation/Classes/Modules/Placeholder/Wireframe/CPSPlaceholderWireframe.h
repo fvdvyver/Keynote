@@ -12,6 +12,8 @@
 
 @interface CPSPlaceholderWireframe : CPSBaseWireframe
 
+@property (nonatomic, strong) NSString * placeholderText;
+
 + (instancetype)wireframeWithStoryboardName:(NSString *)storyboardName placeholderText:(NSString *)placeholderText;
 
 @end
