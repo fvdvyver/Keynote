@@ -13,13 +13,13 @@
 - (void)setMenuControllerProvider:(id<CPSViewControllerProvider>)menuControllerProvider
 {
     _menuControllerProvider = menuControllerProvider;
-    [self.presenter setMenuViewController:[self.menuControllerProvider contentViewController]];
+    [self.presenter setMenuViewController:CPSContentViewControllerFromProvider(self.menuControllerProvider)];
 }
 
 - (void)setContentControllerProvider:(id<CPSViewControllerProvider>)contentControllerProvider
 {
     _contentControllerProvider = contentControllerProvider;
-    [self.presenter setContentViewController:[self.contentControllerProvider contentViewController]];
+    [self.presenter setContentViewController:CPSContentViewControllerFromProvider(self.contentControllerProvider)];
 }
 
 @end

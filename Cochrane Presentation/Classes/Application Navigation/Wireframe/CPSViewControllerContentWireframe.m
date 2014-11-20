@@ -39,10 +39,16 @@
     [self.parentContentWireframe setContentControllerProvider:contentControllerProvider];
 }
 
+// This will reset the current index, so when the menu item is selected again we start from the beginning
+- (void)prepareContentViewController
+{
+    self.currentContentProviderIndex = 0;
+}
+
 - (UIViewController *)contentViewController
 {
     id<CPSViewControllerProvider> provider = self.contentProviders[self.currentContentProviderIndex];
-    return [provider contentViewController];
+    return CPSContentViewControllerFromProvider(provider);
 }
 
 @end

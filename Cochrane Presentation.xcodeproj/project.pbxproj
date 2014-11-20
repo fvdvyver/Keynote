@@ -26,6 +26,9 @@
 		6D5432501A1DF2D100746CB7 /* CPSPlaceholderWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA20D41A1603DD001AAC42 /* CPSPlaceholderWireframe.m */; };
 		6D5432511A1DF2D500746CB7 /* CPSAccessPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432491A1CE46E00746CB7 /* CPSAccessPageViewController.m */; };
 		6D5432521A1DF2D900746CB7 /* CPSAccessPagePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432411A1CE02B00746CB7 /* CPSAccessPagePresenter.m */; };
+		6D5432551A1E055000746CB7 /* CPSRootWireframeMenuDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432541A1E055000746CB7 /* CPSRootWireframeMenuDelegate.m */; };
+		6D5432571A1E0D6C00746CB7 /* CPSRootWireframeMenuDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432561A1E0D6C00746CB7 /* CPSRootWireframeMenuDelegateTests.m */; };
+		6D54325A1A1E0F9500746CB7 /* CPSViewControllerProviderUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432591A1E0F9500746CB7 /* CPSViewControllerProviderUtils.m */; };
 		6D61104B1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D61104A1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m */; };
 		6D78FC411A0B7A140097E4F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC401A0B7A140097E4F5 /* main.m */; };
 		6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC431A0B7A140097E4F5 /* AppDelegate.m */; };
@@ -45,8 +48,6 @@
 		6DBD91731A14AC7200FA6A51 /* CPSMenuWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD91721A14AC7200FA6A51 /* CPSMenuWireframe.m */; };
 		6DBD91761A14AD2700FA6A51 /* CPSAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD91751A14AD2700FA6A51 /* CPSAppContext.m */; };
 		6DC8E6501A11F7D100197DB3 /* CPSMenuInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E64F1A11F7D100197DB3 /* CPSMenuInteractorTests.m */; };
-		6DC8E6531A1205D100197DB3 /* CPSCachingMenuDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E6521A1205D100197DB3 /* CPSCachingMenuDelegate.m */; };
-		6DC8E6551A12076300197DB3 /* CPSCachingMenuDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E6541A12076300197DB3 /* CPSCachingMenuDelegateTests.m */; };
 		6DC8E65B1A1247A200197DB3 /* CPSCachedViewControllerProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E65A1A1247A200197DB3 /* CPSCachedViewControllerProvider.m */; };
 		6DC8E6601A12949D00197DB3 /* CPSMenuPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E65F1A12949D00197DB3 /* CPSMenuPresenter.m */; };
 		6DC8E6651A13810800197DB3 /* CPSMenuPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E6641A13810800197DB3 /* CPSMenuPresenterTests.m */; };
@@ -104,6 +105,10 @@
 		6D5432481A1CE46E00746CB7 /* CPSAccessPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSAccessPageViewController.h; sourceTree = "<group>"; };
 		6D5432491A1CE46E00746CB7 /* CPSAccessPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSAccessPageViewController.m; sourceTree = "<group>"; };
 		6D54324E1A1DEFE500746CB7 /* animated_background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = animated_background.mp4; sourceTree = "<group>"; };
+		6D5432531A1E055000746CB7 /* CPSRootWireframeMenuDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSRootWireframeMenuDelegate.h; sourceTree = "<group>"; };
+		6D5432541A1E055000746CB7 /* CPSRootWireframeMenuDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRootWireframeMenuDelegate.m; sourceTree = "<group>"; };
+		6D5432561A1E0D6C00746CB7 /* CPSRootWireframeMenuDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRootWireframeMenuDelegateTests.m; sourceTree = "<group>"; };
+		6D5432591A1E0F9500746CB7 /* CPSViewControllerProviderUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSViewControllerProviderUtils.m; sourceTree = "<group>"; };
 		6D6110491A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPSRootWireframe+MCRevealPresentation.h"; sourceTree = "<group>"; };
 		6D61104A1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CPSRootWireframe+MCRevealPresentation.m"; sourceTree = "<group>"; };
 		6D78FC3B1A0B7A140097E4F5 /* Cochrane Presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cochrane Presentation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,9 +141,6 @@
 		6DBD91741A14AD2700FA6A51 /* CPSAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSAppContext.h; sourceTree = "<group>"; };
 		6DBD91751A14AD2700FA6A51 /* CPSAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSAppContext.m; sourceTree = "<group>"; };
 		6DC8E64F1A11F7D100197DB3 /* CPSMenuInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuInteractorTests.m; sourceTree = "<group>"; };
-		6DC8E6511A1205D100197DB3 /* CPSCachingMenuDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCachingMenuDelegate.h; sourceTree = "<group>"; };
-		6DC8E6521A1205D100197DB3 /* CPSCachingMenuDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCachingMenuDelegate.m; sourceTree = "<group>"; };
-		6DC8E6541A12076300197DB3 /* CPSCachingMenuDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCachingMenuDelegateTests.m; sourceTree = "<group>"; };
 		6DC8E6591A1247A200197DB3 /* CPSCachedViewControllerProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCachedViewControllerProvider.h; sourceTree = "<group>"; };
 		6DC8E65A1A1247A200197DB3 /* CPSCachedViewControllerProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCachedViewControllerProvider.m; sourceTree = "<group>"; };
 		6DC8E65E1A12949D00197DB3 /* CPSMenuPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuPresenter.h; sourceTree = "<group>"; };
@@ -236,8 +238,8 @@
 				6D10E12D1A11F3F2006DD677 /* CPSMenuInteractorIO.h */,
 				6D10E1141A10C677006DD677 /* CPSMenuInteractor.h */,
 				6D10E1151A10C677006DD677 /* CPSMenuInteractor.m */,
-				6DC8E6511A1205D100197DB3 /* CPSCachingMenuDelegate.h */,
-				6DC8E6521A1205D100197DB3 /* CPSCachingMenuDelegate.m */,
+				6D5432531A1E055000746CB7 /* CPSRootWireframeMenuDelegate.h */,
+				6D5432541A1E055000746CB7 /* CPSRootWireframeMenuDelegate.m */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -515,6 +517,7 @@
 			isa = PBXGroup;
 			children = (
 				6D10E1021A10B089006DD677 /* CPSViewControllerProvider.h */,
+				6D5432591A1E0F9500746CB7 /* CPSViewControllerProviderUtils.m */,
 				6DC8E6591A1247A200197DB3 /* CPSCachedViewControllerProvider.h */,
 				6DC8E65A1A1247A200197DB3 /* CPSCachedViewControllerProvider.m */,
 			);
@@ -586,7 +589,7 @@
 			isa = PBXGroup;
 			children = (
 				6DC8E64F1A11F7D100197DB3 /* CPSMenuInteractorTests.m */,
-				6DC8E6541A12076300197DB3 /* CPSCachingMenuDelegateTests.m */,
+				6D5432561A1E0D6C00746CB7 /* CPSRootWireframeMenuDelegateTests.m */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -924,6 +927,7 @@
 				6D8DEA131A139192007C92F8 /* CPSMenuItemTableViewDelegate.m in Sources */,
 				6D10E11A1A10C8C0006DD677 /* CPSMenuItem.m in Sources */,
 				6DEA20DD1A16070B001AAC42 /* CPSPlaceholderViewController.m in Sources */,
+				6D5432551A1E055000746CB7 /* CPSRootWireframeMenuDelegate.m in Sources */,
 				6DEA20D91A1606AE001AAC42 /* CPSPlaceholderPresenter.m in Sources */,
 				6D8933E91A1B93090099A818 /* CPSViewControllerContentWireframe.m in Sources */,
 				6DC8E65B1A1247A200197DB3 /* CPSCachedViewControllerProvider.m in Sources */,
@@ -938,13 +942,13 @@
 				6D8DEA161A13C3D9007C92F8 /* CPSMenuTableViewController.m in Sources */,
 				6D8933F61A1C86820099A818 /* CPSRootContentWireframe.m in Sources */,
 				6D8DEA1E1A14A578007C92F8 /* CPSMenuItemTableViewCell.m in Sources */,
-				6DC8E6531A1205D100197DB3 /* CPSCachingMenuDelegate.m in Sources */,
 				6D54324A1A1CE46E00746CB7 /* CPSAccessPageViewController.m in Sources */,
 				6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */,
 				6D10E1161A10C677006DD677 /* CPSMenuInteractor.m in Sources */,
 				6D61104B1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m in Sources */,
 				6D78FC411A0B7A140097E4F5 /* main.m in Sources */,
 				6DEA20EB1A163A16001AAC42 /* CPSAppearanceConfig.m in Sources */,
+				6D54325A1A1E0F9500746CB7 /* CPSViewControllerProviderUtils.m in Sources */,
 				6D10E11D1A10C8D8006DD677 /* CPSViewControllerMenuItem.m in Sources */,
 				6DEA20E51A162042001AAC42 /* MCMaskedTableView.m in Sources */,
 				6DBD91761A14AD2700FA6A51 /* CPSAppContext.m in Sources */,
@@ -968,11 +972,11 @@
 				6D10E1241A10D666006DD677 /* CPSMenuInteractor.m in Sources */,
 				6D10E1231A10D660006DD677 /* CPSMenuItem.m in Sources */,
 				6D5432511A1DF2D500746CB7 /* CPSAccessPageViewController.m in Sources */,
+				6D5432571A1E0D6C00746CB7 /* CPSRootWireframeMenuDelegateTests.m in Sources */,
 				6DC8E6651A13810800197DB3 /* CPSMenuPresenterTests.m in Sources */,
 				6D8933EF1A1B9CFF0099A818 /* CPSViewControllerContentWireframeTests.m in Sources */,
 				6D10E1211A10D065006DD677 /* CPSMenuItemTests.m in Sources */,
 				6D10E1221A10D65E006DD677 /* CPSViewControllerMenuItem.m in Sources */,
-				6DC8E6551A12076300197DB3 /* CPSCachingMenuDelegateTests.m in Sources */,
 				6D5432521A1DF2D900746CB7 /* CPSAccessPagePresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

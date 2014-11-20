@@ -128,4 +128,22 @@
     XCTAssertEqual(expectedViewController, actualViewController);
 }
 
+- (void)testCorrectViewControllerRetrievedWhenPreparingForNewContent
+{
+    // For this test, we advance the wireframe once, then make sure the first view controller is
+    // retrieved after preparing for new content
+    id controllerProvider = self.contentProviders[0];
+    id expectedViewController = OCMClassMock([UIViewController class]);
+    
+    [self.wireframe advanceCurrentContentProvider];
+    
+    OCMExpect([controllerProvider contentViewController]).andReturn(expectedViewController);
+    
+    [self.wireframe prepareContentViewController];
+    UIViewController *actualViewController = [self.wireframe contentViewController];
+    
+    OCMVerifyAll(controllerProvider);
+    XCTAssertEqual(expectedViewController, actualViewController);
+}
+
 @end

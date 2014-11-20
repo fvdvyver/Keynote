@@ -12,7 +12,7 @@
 #import "CPSRevealRootPresenter.h"
 
 #import "CPSMenuWireframe.h"
-#import "CPSCachingMenuDelegate.h"
+#import "CPSRootWireframeMenuDelegate.h"
 
 #import "CPSRootContentWireframe.h"
 
@@ -71,7 +71,7 @@
     
     NSArray *menuItems = [self menuItems];
     
-    CPSCachingMenuDelegate *menuDelegate = [[CPSCachingMenuDelegate alloc] initWithRootWireframe:rootWireframe];
+    CPSRootWireframeMenuDelegate *menuDelegate = [[CPSRootWireframeMenuDelegate alloc] initWithRootWireframe:rootWireframe];
     CPSMenuWireframe *menuWireframe = [[CPSMenuWireframe alloc] initWithStoryboardName:@"Main"
                                                                              menuItems:menuItems
                                                                               delegate:menuDelegate];

@@ -1,8 +1,8 @@
 //
-//  CPSCachingMenuDelegateTests.m
+//  CPSRootWireframeMenuDelegateTests.m
 //  Cochrane Presentation
 //
-//  Created by Rayman Rosevear on 2014/11/11.
+//  Created by Rayman Rosevear on 2014/11/20.
 //  Copyright (c) 2014 Mushroom Cloud. All rights reserved.
 //
 
@@ -10,12 +10,12 @@
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
 
-#import "CPSCachingMenuDelegate.h"
+#import "CPSRootWireframeMenuDelegate.h"
 #import "CPSRootWireframe.h"
 
-@interface CPSCachingMenuDelegateTests : XCTestCase
+@interface CPSRootWireframeMenuDelegateTests : XCTestCase
 
-@property (nonatomic, strong) CPSCachingMenuDelegate * menuDelegate;
+@property (nonatomic, strong) CPSRootWireframeMenuDelegate * menuDelegate;
 
 // mock objects
 @property (nonatomic, strong) id rootWireframe;
@@ -25,7 +25,7 @@
 
 @end
 
-@implementation CPSCachingMenuDelegateTests
+@implementation CPSRootWireframeMenuDelegateTests
 
 - (void)setUp
 {
@@ -35,11 +35,11 @@
     id menuItem = OCMClassMock([CPSViewControllerMenuItem class]);
     id viewControllerProvider = OCMProtocolMock(@protocol(CPSViewControllerProvider));
     id viewController = [UIViewController new];
-
+    
     OCMStub([menuItem viewControllerProvider]).andReturn(viewControllerProvider);
     OCMStub([viewControllerProvider contentViewController]).andReturn(viewController);
     
-    CPSCachingMenuDelegate *menuDelegate = [[CPSCachingMenuDelegate alloc] initWithRootWireframe:wireframe];
+    CPSRootWireframeMenuDelegate *menuDelegate = [[CPSRootWireframeMenuDelegate alloc] initWithRootWireframe:wireframe];
     
     self.rootWireframe = wireframe;
     self.menuDelegate = menuDelegate;
@@ -74,34 +74,6 @@
     [self.menuDelegate viewControllerMenuItemSelected:menuItem];
     
     OCMVerifyAll(wireframe);
-}
-
-- (void)testMenuDelegateReturnsCachedViewController
-{
-    // 1. Select other menu item
-    // 2. Select this menu item
-    // 3. Reselect first menu item
-    // 4. Ensure view controller for other item is requested once only
-    // 5. Profit?
-    
-    id menuItem = OCMClassMock([CPSViewControllerMenuItem class]);;
-    id viewControllerProvider = OCMStrictProtocolMock(@protocol(CPSViewControllerProvider)); // needs to be a strict mock
-    id viewController = [UIViewController new];
-    OCMStub([menuItem viewControllerProvider]).andReturn(viewControllerProvider);
-    
-    // The delegate sticks the menu item in a dictionary, but mock items don't conform to NSCopying
-    OCMStub([menuItem copyWithZone:[OCMArg anyPointer]]).andReturn(menuItem);
-    
-    id otherMenuItem = (id)self.menuItem;
-    
-    // Must be called exactly once
-    OCMExpect([viewControllerProvider contentViewController]).andReturn(viewController);
-    
-    [self.menuDelegate viewControllerMenuItemSelected:menuItem];
-    [self.menuDelegate viewControllerMenuItemSelected:otherMenuItem];
-    [self.menuDelegate viewControllerMenuItemSelected:menuItem];
-    
-    OCMVerifyAll(viewControllerProvider);
 }
 
 @end

@@ -10,6 +10,15 @@
 
 @protocol CPSViewControllerProvider <NSObject>
 
+@required
 - (UIViewController *)contentViewController;
 
+@optional
+- (void)prepareContentViewController;
+
 @end
+
+/**
+ *  This will retrieve the view controller from the provider, calling -prepareContentViewController if the instance responds to it first
+ */
+UIViewController *CPSContentViewControllerFromProvider(id<CPSViewControllerProvider>provider);
