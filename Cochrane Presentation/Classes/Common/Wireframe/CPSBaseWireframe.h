@@ -11,6 +11,7 @@
 #import "CPSViewControllerProvider.h"
 #import "CPSContentWireframe.h"
 
+#import "CPSInteractor.h"
 #import "CPSPresenter.h"
 #import "CPSView.h"
 
@@ -22,8 +23,8 @@
 
 @property (nonatomic, weak) id<CPSContentWireframe> parentContentWireframe;
 
-@property (nonatomic, strong) id interactor;
-@property (nonatomic, strong) id<CPSPresenter> presenter;
+@property (nonatomic, strong) id<CPSInteractor> interactor;
+@property (nonatomic, strong) id<CPSPresenter>  presenter;
 
 @property (nonatomic, strong) NSString * storyboardName;
 @property (nonatomic, strong) NSString * viewControllerIdentifier;

@@ -173,6 +173,7 @@
 		6DEA20E71A163890001AAC42 /* Planer_Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planer_Reg.ttf; sourceTree = "<group>"; };
 		6DEA20E91A163A16001AAC42 /* CPSAppearanceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSAppearanceConfig.h; sourceTree = "<group>"; };
 		6DEA20EA1A163A16001AAC42 /* CPSAppearanceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSAppearanceConfig.m; sourceTree = "<group>"; };
+		6DF03C4F1A1F246E003A0DF1 /* CPSInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSInteractor.h; sourceTree = "<group>"; };
 		74A31BB7765D6B7908888057 /* Pods-Cochrane PresentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cochrane PresentationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cochrane PresentationTests/Pods-Cochrane PresentationTests.release.xcconfig"; sourceTree = "<group>"; };
 		888BB7766EC1DFB252B3FBBC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -252,6 +253,7 @@
 		6D5432351A1CD5AF00746CB7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6DF03C4E1A1F243A003A0DF1 /* Logic */,
 				6D54323A1A1CDDE900746CB7 /* UI */,
 				6D5432361A1CD5C600746CB7 /* Wireframe */,
 			);
@@ -667,6 +669,7 @@
 		6DEA20D01A160385001AAC42 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				6DF03C481A1F239C003A0DF1 /* Common */,
 				6D54323D1A1CDFCA00746CB7 /* Intro */,
 				6DEA20D11A160396001AAC42 /* Placeholder */,
 			);
@@ -718,6 +721,61 @@
 				6DEA20E71A163890001AAC42 /* Planer_Reg.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6DF03C481A1F239C003A0DF1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6DF03C491A1F23E4003A0DF1 /* Single Video Playback */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6DF03C491A1F23E4003A0DF1 /* Single Video Playback */ = {
+			isa = PBXGroup;
+			children = (
+				6DF03C4B1A1F2402003A0DF1 /* Logic */,
+				6DF03C4A1A1F23F1003A0DF1 /* UI */,
+			);
+			path = "Single Video Playback";
+			sourceTree = "<group>";
+		};
+		6DF03C4A1A1F23F1003A0DF1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6DF03C4D1A1F241A003A0DF1 /* Presentation */,
+				6DF03C4C1A1F240F003A0DF1 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6DF03C4B1A1F2402003A0DF1 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		6DF03C4C1A1F240F003A0DF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DF03C4D1A1F241A003A0DF1 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6DF03C4E1A1F243A003A0DF1 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6DF03C4F1A1F246E003A0DF1 /* CPSInteractor.h */,
+			);
+			path = Logic;
 			sourceTree = "<group>";
 		};
 		A149F60FFEF6ED2290EABEEA /* Frameworks */ = {

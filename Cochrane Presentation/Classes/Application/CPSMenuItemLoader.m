@@ -107,6 +107,7 @@
 + (CPSBaseWireframe *)baseWireframeFromDescription:(NSDictionary *)wireframeDescription
 {
     NSDictionary *wireframeDict = wireframeDescription[@"wireframe"];
+    NSDictionary *interactorDict = wireframeDescription[@"interactor"];
     NSDictionary *presenterDict = wireframeDescription[@"presenter"];
     NSDictionary *viewDict = wireframeDescription[@"view"];
     
@@ -116,6 +117,7 @@
              @"Each content wireframe must have a view of type Dictionary");
     
     CPSBaseWireframe *wireframe = nil;
+    id<CPSInteractor> interactor;
     id<CPSPresenter> presenter = [self newGenericObjectWithArgumentsFromDictionary:presenterDict objectName:@"presenter"];
     if (wireframeDict != nil)
     {
@@ -124,6 +126,10 @@
     else
     {
         wireframe = [CPSBaseWireframe new];
+    }
+    if (interactorDict != nil)
+    {
+        interactor = [self newGenericObjectWithArgumentsFromDictionary:interactorDict objectName:@"interactor"];
     }
     
     NSString *storyboardName = viewDict[@"storyboard"];
@@ -137,6 +143,15 @@
     wireframe.presenter = presenter;
     wireframe.storyboardName = storyboardName ?: @"Main";
     wireframe.viewControllerIdentifier = viewControllerIdentifier;
+    
+    if (interactor != nil)
+    {
+        wireframe.interactor = interactor;
+        
+        [interactor setWireframe:wireframe];
+        [interactor setPresenter:presenter];
+        [presenter setInteractor:interactor];
+    }
     
     return wireframe;
 }

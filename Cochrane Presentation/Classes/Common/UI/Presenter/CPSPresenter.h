@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class CPSBaseWireframe;
+@protocol CPSInteractor;
 @protocol CPSView;
 
 @protocol CPSPresenter <NSObject>
 
-@property (nonatomic, weak) id wireframe;
-@property (nonatomic, strong) id<CPSView> userInterface;
+@property (nonatomic, weak)   CPSBaseWireframe * wireframe;
+@property (nonatomic, weak)   id<CPSInteractor>  interactor;
+@property (nonatomic, strong) id<CPSView>        userInterface;
 
 @end
