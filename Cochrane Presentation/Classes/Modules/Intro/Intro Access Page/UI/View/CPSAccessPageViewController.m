@@ -39,12 +39,15 @@
     backgroundVideoController.controlStyle = MPMovieControlStyleNone;
     backgroundVideoController.repeatMode = MPMovieRepeatModeOne;
     
-    UIView *videoView = [backgroundVideoController view];
-    videoView.frame = self.view.bounds;
-    videoView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    
-    [self.view addSubview:videoView];
-    [self.view sendSubviewToBack:videoView];
+    [UIView performWithoutAnimation:^
+    {
+        UIView *videoView = [backgroundVideoController view];
+        videoView.frame = self.view.bounds;
+        videoView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        
+        [self.view addSubview:videoView];
+        [self.view sendSubviewToBack:videoView];
+    }];
     
     self.backgroundVideoController = backgroundVideoController;
 }
