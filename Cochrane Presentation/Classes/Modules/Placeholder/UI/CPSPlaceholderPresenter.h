@@ -10,11 +10,7 @@
 
 #import "CPSPlaceholderViewInterface.h"
 
-@class CPSBaseWireframe;
-
 @interface CPSPlaceholderPresenter : NSObject <CPSPlaceholderViewEventHandler>
-
-@property (nonatomic, weak) CPSBaseWireframe * wireframe;
 
 @property (nonatomic, strong) NSString * placeholderText;
 @property (nonatomic, strong) id<CPSPlaceholderViewInterface> userInterface;

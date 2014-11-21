@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CPSVideoPlayerInteractor : NSObject
+#import "CPSInteractor.h"
+#import "CPSVideoPlayerInteractorIO.h"
+
+@interface CPSVideoPlayerInteractor : NSObject <CPSInteractor, CPSVideoPlayerInteractorInput>
+
+@property (nonatomic, strong) id<CPSVideoPlayerInteractorOutput> presenter;
+
+@property (nonatomic, strong) NSString * videoName;
 
 @end

@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol CPSVideoPlayerPresenterInterface <NSObject>
+#import "CPSPresenter.h"
+
+@protocol CPSVideoPlayerEventHandler <CPSPresenter>
+
+- (void)updateView;
+- (void)viewDoubleTapped;
+- (void)videoPlaybackFinished;
 
 @end

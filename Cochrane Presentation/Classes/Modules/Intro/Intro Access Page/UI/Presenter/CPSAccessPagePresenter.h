@@ -9,12 +9,9 @@
 #import <Foundation/Foundation.h>
 
 #import "CPSPresenter.h"
-#import "CPSBaseWireframe.h"
 
 #import "CPSAccessPageInterface.h"
 
 @interface CPSAccessPagePresenter : NSObject <CPSPresenter, CPSAccessPageEventHandler>
-
-@property (nonatomic, weak) CPSBaseWireframe * wireframe;
 
 @end

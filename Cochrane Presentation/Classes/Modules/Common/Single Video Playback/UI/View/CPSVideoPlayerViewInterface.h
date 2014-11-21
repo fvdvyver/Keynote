@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol CPSVideoPlayerViewInterface <NSObject>
+#import "CPSView.h"
+
+@protocol CPSVideoPlayerViewInterface <CPSView>
+
+- (void)playVideoAtURL:(NSURL *)videoURL;
 
 @end

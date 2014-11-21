@@ -6,8 +6,13 @@
 //  Copyright (c) 2014 Mushroom Cloud. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface CPSVideoPlaybackViewController : NSObject
+#import "CPSVideoPlayerViewInterface.h"
+#import "CPSVideoPlayerPresenterInterface.h"
+
+@interface CPSVideoPlaybackViewController : UIViewController <CPSVideoPlayerViewInterface>
+
+@property (nonatomic, weak) id<CPSVideoPlayerEventHandler> eventHandler;
 
 @end

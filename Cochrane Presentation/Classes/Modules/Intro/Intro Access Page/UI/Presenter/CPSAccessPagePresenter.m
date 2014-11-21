@@ -8,8 +8,12 @@
 
 #import "CPSAccessPagePresenter.h"
 
+#import "CPSBaseWireframe.h"
+
 @implementation CPSAccessPagePresenter
 
+@synthesize wireframe = _wireframe;
+@synthesize interactor = _interactor;
 @synthesize userInterface = _userInterface;
 
 - (void)accessTapped

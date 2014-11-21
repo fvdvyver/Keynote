@@ -10,4 +10,16 @@
 
 @implementation CPSVideoPlayerInteractor
 
+@synthesize wireframe = _wireframe;
+@synthesize presenter = _presenter;
+
+- (void)requestVideoFilepath
+{
+    NSString *resourceName = [self.videoName stringByDeletingPathExtension];
+    NSString *pathExtension = [self.videoName pathExtension];
+    NSString *path = [[NSBundle mainBundle] pathForResource:resourceName ofType:pathExtension];
+    
+    [self.presenter playVideoAtPath:path];
+}
+
 @end

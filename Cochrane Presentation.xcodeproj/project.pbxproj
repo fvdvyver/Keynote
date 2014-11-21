@@ -19,6 +19,8 @@
 		6D10E1221A10D65E006DD677 /* CPSViewControllerMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E11C1A10C8D8006DD677 /* CPSViewControllerMenuItem.m */; };
 		6D10E1231A10D660006DD677 /* CPSMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E1191A10C8C0006DD677 /* CPSMenuItem.m */; };
 		6D10E1241A10D666006DD677 /* CPSMenuInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E1151A10C677006DD677 /* CPSMenuInteractor.m */; };
+		6D2115581A1F3FCF00F2620B /* B_Slide_02_Cochrane_Logo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D2115561A1F3FCF00F2620B /* B_Slide_02_Cochrane_Logo.mp4 */; };
+		6D2115591A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D2115571A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 */; };
 		6D5432391A1CD5FE00746CB7 /* CPSBaseWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432381A1CD5FE00746CB7 /* CPSBaseWireframe.m */; };
 		6D5432421A1CE02B00746CB7 /* CPSAccessPagePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432411A1CE02B00746CB7 /* CPSAccessPagePresenter.m */; };
 		6D54324A1A1CE46E00746CB7 /* CPSAccessPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432491A1CE46E00746CB7 /* CPSAccessPageViewController.m */; };
@@ -63,6 +65,15 @@
 		6DEA20E51A162042001AAC42 /* MCMaskedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA20E41A162042001AAC42 /* MCMaskedTableView.m */; };
 		6DEA20E81A1638AA001AAC42 /* Planer_Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA20E71A163890001AAC42 /* Planer_Reg.ttf */; };
 		6DEA20EB1A163A16001AAC42 /* CPSAppearanceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA20EA1A163A16001AAC42 /* CPSAppearanceConfig.m */; };
+		6DF03C521A1F2528003A0DF1 /* CPSVideoPlayerInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF03C511A1F2528003A0DF1 /* CPSVideoPlayerInteractor.m */; };
+		6DF03C601A1F2AA8003A0DF1 /* CPSVideoPlayerInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF03C5F1A1F2AA8003A0DF1 /* CPSVideoPlayerInteractorTests.m */; };
+		6DF03C621A1F2C61003A0DF1 /* test_resource.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6DF03C611A1F2C61003A0DF1 /* test_resource.txt */; };
+		6DF03C651A1F2F5A003A0DF1 /* CPSVideoPlayerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF03C641A1F2F5A003A0DF1 /* CPSVideoPlayerPresenter.m */; };
+		6DF03C671A1F3065003A0DF1 /* CPSVideoPlayerPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF03C661A1F3065003A0DF1 /* CPSVideoPlayerPresenterTests.m */; };
+		6DF03C6A1A1F33B1003A0DF1 /* CPSVideoPlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF03C691A1F33B1003A0DF1 /* CPSVideoPlaybackViewController.m */; };
+		6DF03C6B1A1F3442003A0DF1 /* CPSVideoPlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF03C691A1F33B1003A0DF1 /* CPSVideoPlaybackViewController.m */; };
+		6DF03C6C1A1F3445003A0DF1 /* CPSVideoPlayerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF03C641A1F2F5A003A0DF1 /* CPSVideoPlayerPresenter.m */; };
+		6DF03C6D1A1F3448003A0DF1 /* CPSVideoPlayerInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF03C511A1F2528003A0DF1 /* CPSVideoPlayerInteractor.m */; };
 		76C13A78658DA88850DD7979 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 888BB7766EC1DFB252B3FBBC /* libPods.a */; };
 		E0BF00AE3AD224C668B6E35D /* libPods-Cochrane PresentationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC7C682EDA3593D283FE74A /* libPods-Cochrane PresentationTests.a */; };
 /* End PBXBuildFile section */
@@ -97,6 +108,8 @@
 		6D10E11C1A10C8D8006DD677 /* CPSViewControllerMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSViewControllerMenuItem.m; sourceTree = "<group>"; };
 		6D10E1201A10D065006DD677 /* CPSMenuItemTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuItemTests.m; sourceTree = "<group>"; };
 		6D10E12D1A11F3F2006DD677 /* CPSMenuInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuInteractorIO.h; sourceTree = "<group>"; };
+		6D2115561A1F3FCF00F2620B /* B_Slide_02_Cochrane_Logo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = B_Slide_02_Cochrane_Logo.mp4; sourceTree = "<group>"; };
+		6D2115571A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = B_Slide_03_to_Slide_05.mp4; sourceTree = "<group>"; };
 		6D5432371A1CD5FE00746CB7 /* CPSBaseWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSBaseWireframe.h; sourceTree = "<group>"; };
 		6D5432381A1CD5FE00746CB7 /* CPSBaseWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSBaseWireframe.m; sourceTree = "<group>"; };
 		6D54323C1A1CDE1000746CB7 /* CPSPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSPresenter.h; sourceTree = "<group>"; };
@@ -174,6 +187,18 @@
 		6DEA20E91A163A16001AAC42 /* CPSAppearanceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSAppearanceConfig.h; sourceTree = "<group>"; };
 		6DEA20EA1A163A16001AAC42 /* CPSAppearanceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSAppearanceConfig.m; sourceTree = "<group>"; };
 		6DF03C4F1A1F246E003A0DF1 /* CPSInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSInteractor.h; sourceTree = "<group>"; };
+		6DF03C501A1F2528003A0DF1 /* CPSVideoPlayerInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSVideoPlayerInteractor.h; sourceTree = "<group>"; };
+		6DF03C511A1F2528003A0DF1 /* CPSVideoPlayerInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSVideoPlayerInteractor.m; sourceTree = "<group>"; };
+		6DF03C551A1F27DA003A0DF1 /* CPSVideoPlayerViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSVideoPlayerViewInterface.h; sourceTree = "<group>"; };
+		6DF03C561A1F2803003A0DF1 /* CPSVideoPlayerPresenterInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSVideoPlayerPresenterInterface.h; sourceTree = "<group>"; };
+		6DF03C571A1F28CA003A0DF1 /* CPSVideoPlayerInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSVideoPlayerInteractorIO.h; sourceTree = "<group>"; };
+		6DF03C5F1A1F2AA8003A0DF1 /* CPSVideoPlayerInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSVideoPlayerInteractorTests.m; sourceTree = "<group>"; };
+		6DF03C611A1F2C61003A0DF1 /* test_resource.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_resource.txt; sourceTree = "<group>"; };
+		6DF03C631A1F2F5A003A0DF1 /* CPSVideoPlayerPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSVideoPlayerPresenter.h; sourceTree = "<group>"; };
+		6DF03C641A1F2F5A003A0DF1 /* CPSVideoPlayerPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSVideoPlayerPresenter.m; sourceTree = "<group>"; };
+		6DF03C661A1F3065003A0DF1 /* CPSVideoPlayerPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSVideoPlayerPresenterTests.m; sourceTree = "<group>"; };
+		6DF03C681A1F33B1003A0DF1 /* CPSVideoPlaybackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSVideoPlaybackViewController.h; sourceTree = "<group>"; };
+		6DF03C691A1F33B1003A0DF1 /* CPSVideoPlaybackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSVideoPlaybackViewController.m; sourceTree = "<group>"; };
 		74A31BB7765D6B7908888057 /* Pods-Cochrane PresentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cochrane PresentationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cochrane PresentationTests/Pods-Cochrane PresentationTests.release.xcconfig"; sourceTree = "<group>"; };
 		888BB7766EC1DFB252B3FBBC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -350,6 +375,8 @@
 			isa = PBXGroup;
 			children = (
 				6D54324D1A1DEABF00746CB7 /* Access Page */,
+				6D2115561A1F3FCF00F2620B /* B_Slide_02_Cochrane_Logo.mp4 */,
+				6D2115571A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -413,6 +440,7 @@
 			isa = PBXGroup;
 			children = (
 				6D78FC691A0B80C90097E4F5 /* Application Navigation */,
+				6DF03C581A1F2A3C003A0DF1 /* Modules */,
 				6D78FC581A0B7A140097E4F5 /* Supporting Files */,
 			);
 			path = "Cochrane PresentationTests";
@@ -422,8 +450,9 @@
 			isa = PBXGroup;
 			children = (
 				6D78FC591A0B7A140097E4F5 /* Info.plist */,
+				6DF03C611A1F2C61003A0DF1 /* test_resource.txt */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6D78FC651A0B7AF00097E4F5 /* Classes */ = {
@@ -752,6 +781,9 @@
 		6DF03C4B1A1F2402003A0DF1 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				6DF03C571A1F28CA003A0DF1 /* CPSVideoPlayerInteractorIO.h */,
+				6DF03C501A1F2528003A0DF1 /* CPSVideoPlayerInteractor.h */,
+				6DF03C511A1F2528003A0DF1 /* CPSVideoPlayerInteractor.m */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -759,6 +791,9 @@
 		6DF03C4C1A1F240F003A0DF1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6DF03C551A1F27DA003A0DF1 /* CPSVideoPlayerViewInterface.h */,
+				6DF03C681A1F33B1003A0DF1 /* CPSVideoPlaybackViewController.h */,
+				6DF03C691A1F33B1003A0DF1 /* CPSVideoPlaybackViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -766,6 +801,9 @@
 		6DF03C4D1A1F241A003A0DF1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				6DF03C561A1F2803003A0DF1 /* CPSVideoPlayerPresenterInterface.h */,
+				6DF03C631A1F2F5A003A0DF1 /* CPSVideoPlayerPresenter.h */,
+				6DF03C641A1F2F5A003A0DF1 /* CPSVideoPlayerPresenter.m */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -776,6 +814,55 @@
 				6DF03C4F1A1F246E003A0DF1 /* CPSInteractor.h */,
 			);
 			path = Logic;
+			sourceTree = "<group>";
+		};
+		6DF03C581A1F2A3C003A0DF1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6DF03C591A1F2A5B003A0DF1 /* Common */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6DF03C591A1F2A5B003A0DF1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6DF03C5A1A1F2A6C003A0DF1 /* Single Video Playback */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6DF03C5A1A1F2A6C003A0DF1 /* Single Video Playback */ = {
+			isa = PBXGroup;
+			children = (
+				6DF03C5C1A1F2A7F003A0DF1 /* Logic */,
+				6DF03C5B1A1F2A75003A0DF1 /* UI */,
+			);
+			path = "Single Video Playback";
+			sourceTree = "<group>";
+		};
+		6DF03C5B1A1F2A75003A0DF1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6DF03C5E1A1F2A91003A0DF1 /* Presenter */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6DF03C5C1A1F2A7F003A0DF1 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6DF03C5F1A1F2AA8003A0DF1 /* CPSVideoPlayerInteractorTests.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		6DF03C5E1A1F2A91003A0DF1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6DF03C661A1F3065003A0DF1 /* CPSVideoPlayerPresenterTests.m */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		A149F60FFEF6ED2290EABEEA /* Frameworks */ = {
@@ -887,6 +974,8 @@
 			files = (
 				6D54324F1A1DEFE500746CB7 /* animated_background.mp4 in Resources */,
 				6D54325D1A1E1FD300746CB7 /* menu_item_description.plist in Resources */,
+				6D2115581A1F3FCF00F2620B /* B_Slide_02_Cochrane_Logo.mp4 in Resources */,
+				6D2115591A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 in Resources */,
 				6DEA20E81A1638AA001AAC42 /* Planer_Reg.ttf in Resources */,
 				6D78FC4A1A0B7A140097E4F5 /* Main.storyboard in Resources */,
 				6D78FC4F1A0B7A140097E4F5 /* LaunchScreen.xib in Resources */,
@@ -898,6 +987,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DF03C621A1F2C61003A0DF1 /* test_resource.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1001,6 +1091,7 @@
 				6DC8E66E1A138A5300197DB3 /* CPSMenuItemCellPresenter.m in Sources */,
 				6D8DEA131A139192007C92F8 /* CPSMenuItemTableViewDelegate.m in Sources */,
 				6D5432601A1E279700746CB7 /* CPSMenuItemLoader.m in Sources */,
+				6DF03C6A1A1F33B1003A0DF1 /* CPSVideoPlaybackViewController.m in Sources */,
 				6D10E11A1A10C8C0006DD677 /* CPSMenuItem.m in Sources */,
 				6DEA20DD1A16070B001AAC42 /* CPSPlaceholderViewController.m in Sources */,
 				6D5432551A1E055000746CB7 /* CPSRootWireframeMenuDelegate.m in Sources */,
@@ -1021,8 +1112,10 @@
 				6D54324A1A1CE46E00746CB7 /* CPSAccessPageViewController.m in Sources */,
 				6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */,
 				6D10E1161A10C677006DD677 /* CPSMenuInteractor.m in Sources */,
+				6DF03C651A1F2F5A003A0DF1 /* CPSVideoPlayerPresenter.m in Sources */,
 				6D61104B1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m in Sources */,
 				6D78FC411A0B7A140097E4F5 /* main.m in Sources */,
+				6DF03C521A1F2528003A0DF1 /* CPSVideoPlayerInteractor.m in Sources */,
 				6DEA20EB1A163A16001AAC42 /* CPSAppearanceConfig.m in Sources */,
 				6D54325A1A1E0F9500746CB7 /* CPSViewControllerProviderUtils.m in Sources */,
 				6D10E11D1A10C8D8006DD677 /* CPSViewControllerMenuItem.m in Sources */,
@@ -1037,9 +1130,13 @@
 			files = (
 				6D8933F01A1B9D4F0099A818 /* CPSViewControllerContentWireframe.m in Sources */,
 				6DC8E6701A138B1E00197DB3 /* CPSMenuItemCellPresenterTests.m in Sources */,
+				6DF03C6D1A1F3448003A0DF1 /* CPSVideoPlayerInteractor.m in Sources */,
 				6D5432501A1DF2D100746CB7 /* CPSPlaceholderWireframe.m in Sources */,
 				6DC8E6501A11F7D100197DB3 /* CPSMenuInteractorTests.m in Sources */,
+				6DF03C6B1A1F3442003A0DF1 /* CPSVideoPlaybackViewController.m in Sources */,
+				6DF03C6C1A1F3445003A0DF1 /* CPSVideoPlayerPresenter.m in Sources */,
 				6D8933F81A1C88100099A818 /* CPSRootContentWireframeTests.m in Sources */,
+				6DF03C671A1F3065003A0DF1 /* CPSVideoPlayerPresenterTests.m in Sources */,
 				6D10E1101A10BC3A006DD677 /* CPSRevealRootPresenterTests.m in Sources */,
 				6D8DEA1B1A13C5B8007C92F8 /* CPSMenuTableViewControllerTests.m in Sources */,
 				6D10E10B1A10B8A4006DD677 /* CPSRootWireframe.m in Sources */,
@@ -1053,6 +1150,7 @@
 				6D8933EF1A1B9CFF0099A818 /* CPSViewControllerContentWireframeTests.m in Sources */,
 				6D10E1211A10D065006DD677 /* CPSMenuItemTests.m in Sources */,
 				6D10E1221A10D65E006DD677 /* CPSViewControllerMenuItem.m in Sources */,
+				6DF03C601A1F2AA8003A0DF1 /* CPSVideoPlayerInteractorTests.m in Sources */,
 				6D5432521A1DF2D900746CB7 /* CPSAccessPagePresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1204,7 +1302,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Cochrane PresentationTests/Info.plist";
+				INFOPLIST_FILE = "Cochrane PresentationTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cochrane Presentation.app/Cochrane Presentation";
@@ -1220,7 +1318,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Cochrane PresentationTests/Info.plist";
+				INFOPLIST_FILE = "Cochrane PresentationTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cochrane Presentation.app/Cochrane Presentation";

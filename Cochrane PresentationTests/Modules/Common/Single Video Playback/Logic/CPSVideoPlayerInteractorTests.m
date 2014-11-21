@@ -8,33 +8,56 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import <OCMock/OCMock.h>
+
+#import "CPSVideoPlayerInteractor.h"
 
 @interface CPSVideoPlayerInteractorTests : XCTestCase
+
+@property (nonatomic, strong) CPSVideoPlayerInteractor * interactor;
+
+@property (nonatomic, strong) NSString * videoFileName;
+@property (nonatomic, strong) id<CPSVideoPlayerInteractorOutput> presenterMock;
 
 @end
 
 @implementation CPSVideoPlayerInteractorTests
 
-- (void)setUp {
+- (void)setUp
+{
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    CPSVideoPlayerInteractor *interactor = [CPSVideoPlayerInteractor new];
+    NSString *videoFileName = @"test_resource.txt";
+    id<CPSVideoPlayerInteractorOutput> presenter = OCMProtocolMock(@protocol(CPSVideoPlayerInteractorOutput));
+    
+    interactor.videoName = videoFileName;
+    interactor.presenter = presenter;
+    
+    self.interactor = interactor;
+    self.videoFileName = videoFileName;
+    self.presenterMock = presenter;
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+- (void)tearDown
+{
+    self.interactor = nil;
+    self.videoFileName = nil;
+    self.presenterMock = nil;
+    
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testInteractorPassesFullPathOfVideoToPresenter
+{
+    id presenter = self.presenterMock;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"test_resource" ofType:@"txt"];
+    
+    OCMExpect([presenter playVideoAtPath:path]);
+    
+    [self.interactor requestVideoFilepath];
+    
+    OCMVerifyAll(presenter);
 }
 
 @end

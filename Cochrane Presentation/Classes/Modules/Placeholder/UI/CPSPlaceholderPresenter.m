@@ -12,6 +12,9 @@
 
 @implementation CPSPlaceholderPresenter
 
+@synthesize wireframe = _wireframe;
+@synthesize interactor = _interactor;
+
 - (void)updateView
 {
     NSString *text = self.placeholderText ?: @"";

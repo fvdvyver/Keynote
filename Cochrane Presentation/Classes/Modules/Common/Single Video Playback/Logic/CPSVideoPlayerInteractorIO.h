@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol CPSVideoPlayerInteractorIO <NSObject>
+@protocol CPSInteractor;
+@protocol CPSPresenter;
+
+@protocol CPSVideoPlayerInteractorInput <CPSInteractor>
+
+- (void)requestVideoFilepath;
+
+@end
+
+@protocol CPSVideoPlayerInteractorOutput <CPSPresenter>
+
+- (void)playVideoAtPath:(NSString *)videoPath;
 
 @end

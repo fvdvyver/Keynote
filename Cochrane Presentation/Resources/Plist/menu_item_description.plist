@@ -26,25 +26,47 @@
 					</dict>
 				</dict>
 				<dict>
-					<key>wireframe</key>
+					<key>interactor</key>
 					<dict>
 						<key>class</key>
-						<string>CPSPlaceholderWireframe</string>
+						<string>CPSVideoPlayerInteractor</string>
 						<key>arguments</key>
 						<dict>
-							<key>placeholderText</key>
-							<string>Introduction Video</string>
+							<key>videoName</key>
+							<string>B_Slide_02_Cochrane_Logo.mp4</string>
 						</dict>
 					</dict>
 					<key>presenter</key>
 					<dict>
 						<key>class</key>
-						<string>CPSPlaceholderPresenter</string>
+						<string>CPSVideoPlayerPresenter</string>
 					</dict>
 					<key>view</key>
 					<dict>
 						<key>identifier</key>
-						<string>PlaceholderViewController</string>
+						<string>VideoPlayerViewController</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>interactor</key>
+					<dict>
+						<key>class</key>
+						<string>CPSVideoPlayerInteractor</string>
+						<key>arguments</key>
+						<dict>
+							<key>videoName</key>
+							<string>B_Slide_03_to_Slide_05.mp4</string>
+						</dict>
+					</dict>
+					<key>presenter</key>
+					<dict>
+						<key>class</key>
+						<string>CPSVideoPlayerPresenter</string>
+					</dict>
+					<key>view</key>
+					<dict>
+						<key>identifier</key>
+						<string>VideoPlayerViewController</string>
 					</dict>
 				</dict>
 			</array>
