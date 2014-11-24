@@ -21,6 +21,8 @@
 		6D10E1241A10D666006DD677 /* CPSMenuInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E1151A10C677006DD677 /* CPSMenuInteractor.m */; };
 		6D2115581A1F3FCF00F2620B /* B_Slide_02_Cochrane_Logo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D2115561A1F3FCF00F2620B /* B_Slide_02_Cochrane_Logo.mp4 */; };
 		6D2115591A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D2115571A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 */; };
+		6D21155F1A231AE500F2620B /* CPSResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D21155E1A231AE500F2620B /* CPSResourceLoader.m */; };
+		6D2115621A231CDE00F2620B /* CPSKeyValueResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2115611A231CDE00F2620B /* CPSKeyValueResourceLoader.m */; };
 		6D5432391A1CD5FE00746CB7 /* CPSBaseWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432381A1CD5FE00746CB7 /* CPSBaseWireframe.m */; };
 		6D5432421A1CE02B00746CB7 /* CPSAccessPagePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432411A1CE02B00746CB7 /* CPSAccessPagePresenter.m */; };
 		6D54324A1A1CE46E00746CB7 /* CPSAccessPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432491A1CE46E00746CB7 /* CPSAccessPageViewController.m */; };
@@ -110,6 +112,10 @@
 		6D10E12D1A11F3F2006DD677 /* CPSMenuInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuInteractorIO.h; sourceTree = "<group>"; };
 		6D2115561A1F3FCF00F2620B /* B_Slide_02_Cochrane_Logo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = B_Slide_02_Cochrane_Logo.mp4; sourceTree = "<group>"; };
 		6D2115571A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = B_Slide_03_to_Slide_05.mp4; sourceTree = "<group>"; };
+		6D21155D1A231AE500F2620B /* CPSResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceLoader.h; sourceTree = "<group>"; };
+		6D21155E1A231AE500F2620B /* CPSResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSResourceLoader.m; sourceTree = "<group>"; };
+		6D2115601A231CDE00F2620B /* CPSKeyValueResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyValueResourceLoader.h; sourceTree = "<group>"; };
+		6D2115611A231CDE00F2620B /* CPSKeyValueResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSKeyValueResourceLoader.m; sourceTree = "<group>"; };
 		6D5432371A1CD5FE00746CB7 /* CPSBaseWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSBaseWireframe.h; sourceTree = "<group>"; };
 		6D5432381A1CD5FE00746CB7 /* CPSBaseWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSBaseWireframe.m; sourceTree = "<group>"; };
 		6D54323C1A1CDE1000746CB7 /* CPSPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSPresenter.h; sourceTree = "<group>"; };
@@ -273,6 +279,17 @@
 				6D5432541A1E055000746CB7 /* CPSRootWireframeMenuDelegate.m */,
 			);
 			path = Logic;
+			sourceTree = "<group>";
+		};
+		6D21155C1A231AD200F2620B /* Resource Loader */ = {
+			isa = PBXGroup;
+			children = (
+				6D21155D1A231AE500F2620B /* CPSResourceLoader.h */,
+				6D21155E1A231AE500F2620B /* CPSResourceLoader.m */,
+				6D2115601A231CDE00F2620B /* CPSKeyValueResourceLoader.h */,
+				6D2115611A231CDE00F2620B /* CPSKeyValueResourceLoader.m */,
+			);
+			path = "Resource Loader";
 			sourceTree = "<group>";
 		};
 		6D5432351A1CD5AF00746CB7 /* Common */ = {
@@ -679,6 +696,7 @@
 		6DC8E6661A1387EB00197DB3 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				6D21155C1A231AD200F2620B /* Resource Loader */,
 				6DC8E6671A13881D00197DB3 /* Table View Data Sources */,
 				6DEA20E21A16201E001AAC42 /* View */,
 			);
@@ -1114,11 +1132,13 @@
 				6D10E1161A10C677006DD677 /* CPSMenuInteractor.m in Sources */,
 				6DF03C651A1F2F5A003A0DF1 /* CPSVideoPlayerPresenter.m in Sources */,
 				6D61104B1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m in Sources */,
+				6D21155F1A231AE500F2620B /* CPSResourceLoader.m in Sources */,
 				6D78FC411A0B7A140097E4F5 /* main.m in Sources */,
 				6DF03C521A1F2528003A0DF1 /* CPSVideoPlayerInteractor.m in Sources */,
 				6DEA20EB1A163A16001AAC42 /* CPSAppearanceConfig.m in Sources */,
 				6D54325A1A1E0F9500746CB7 /* CPSViewControllerProviderUtils.m in Sources */,
 				6D10E11D1A10C8D8006DD677 /* CPSViewControllerMenuItem.m in Sources */,
+				6D2115621A231CDE00F2620B /* CPSKeyValueResourceLoader.m in Sources */,
 				6DEA20E51A162042001AAC42 /* MCMaskedTableView.m in Sources */,
 				6DBD91761A14AD2700FA6A51 /* CPSAppContext.m in Sources */,
 			);

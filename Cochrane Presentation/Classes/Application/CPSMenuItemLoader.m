@@ -12,6 +12,7 @@
 #import "CPSViewControllerContentWireframe.h"
 
 #import "CPSBaseWireframe.h"
+#import "CPSKeyValueResourceLoader.h"
 
 @interface CPSMenuItemLoader ()
 
@@ -25,6 +26,9 @@
 
 + (CPSBaseWireframe *)baseWireframeFromDescription:(NSDictionary *)wireframeDescription;
 + (id)newGenericObjectWithArgumentsFromDictionary:(NSDictionary *)dictionary objectName:(NSString *)name;
+
++ (void)loadResourcesForInstance:(id)instance withResourceLoaders:(NSArray *)resourceLoaders;
++ (void)loadResourcesForInstance:(id)instance withArguments:(NSDictionary *)args usingClass:(Class)loaderClass;
 
 @end
 
@@ -160,21 +164,55 @@
 {
     NSString *objectClass = dictionary[@"class"];
     NSDictionary *objectArgs = dictionary[@"arguments"];
+    NSArray *resourceLoaders = dictionary[@"resource_loaders"];
+    
+    NSMutableArray *mutableResourceLoaders = [NSMutableArray array];
     
     NSAssert([objectClass isKindOfClass:[NSString class]],
              @"The %@ of a content wireframe must have a class name specified as a string", name);
     
     id instance = [NSClassFromString(objectClass) new];
+    
     if (objectArgs != nil)
     {
-        for (NSString *key in [objectArgs allKeys])
-        {
-            id value = objectArgs[key];
-            [instance setValue:value forKey:key];
-        }
+        [mutableResourceLoaders addObject:@{
+                                     @"class" : NSStringFromClass([CPSKeyValueResourceLoader class]),
+                                     @"arguments" : objectArgs
+                                     }];
+    }
+    if (resourceLoaders != nil)
+    {
+        NSAssert([resourceLoaders isKindOfClass:[NSArray class]], @"The resource loaders for a %@ should be an array", name);
+        [mutableResourceLoaders addObjectsFromArray:resourceLoaders];
     }
     
+    [self loadResourcesForInstance:instance withResourceLoaders:mutableResourceLoaders];
+    
     return instance;
+}
+
++ (void)loadResourcesForInstance:(id)instance withResourceLoaders:(NSArray *)resourceLoaders
+{
+    for (NSDictionary *resourceLoader in resourceLoaders)
+    {
+        NSAssert([resourceLoader isKindOfClass:[NSDictionary class]], @"A resource loader must be specified as a Dictionary");
+        
+        NSString *loaderClass = resourceLoader[@"class"];
+        NSDictionary *loaderArgs = resourceLoader[@"arguments"];
+        
+        NSAssert([loaderClass isKindOfClass:[NSString class]], @"A resource loader must have a loader class specified");
+        
+        [self loadResourcesForInstance:instance withArguments:loaderArgs usingClass:NSClassFromString(loaderClass)];
+    }
+}
+
++ (void)loadResourcesForInstance:(id)instance withArguments:(NSDictionary *)args usingClass:(Class)loaderClass
+{
+    CPSResourceLoader *resourceLoader = [loaderClass new];
+    resourceLoader.targetObject = instance;
+    resourceLoader.arguments = args;
+    
+    [resourceLoader loadResources];
 }
 
 + (void)injectContentWireframe:(id<CPSContentWireframe>)contentWireframe asParentOfWireframe:(id)subwireframe
