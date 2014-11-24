@@ -79,15 +79,24 @@
 			<key>content_wireframes</key>
 			<array>
 				<dict>
-					<key>wireframe</key>
+					<key>interactor</key>
 					<dict>
 						<key>class</key>
-						<string>CPSPlaceholderWireframe</string>
-						<key>arguments</key>
-						<dict>
-							<key>placeholderText</key>
-							<string>Cost of Risk</string>
-						</dict>
+						<string>CPSCostOfRiskInteractor</string>
+						<key>resource_loaders</key>
+						<array>
+							<dict>
+								<key>class</key>
+								<string>CPSCostOfRiskResourceLoader</string>
+								<key>arguments</key>
+								<dict>
+									<key>datasource_keypath</key>
+									<string>presentationItems</string>
+									<key>data_file</key>
+									<string>cost_of_risk_resource</string>
+								</dict>
+							</dict>
+						</array>
 					</dict>
 					<key>presenter</key>
 					<dict>

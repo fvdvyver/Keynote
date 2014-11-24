@@ -23,6 +23,10 @@
 		6D2115591A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D2115571A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 */; };
 		6D21155F1A231AE500F2620B /* CPSResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D21155E1A231AE500F2620B /* CPSResourceLoader.m */; };
 		6D2115621A231CDE00F2620B /* CPSKeyValueResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2115611A231CDE00F2620B /* CPSKeyValueResourceLoader.m */; };
+		6D2115681A2325D200F2620B /* CPSCostOfRiskInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2115671A2325D200F2620B /* CPSCostOfRiskInteractor.m */; };
+		6D21156C1A23267E00F2620B /* CPSCostOfRiskResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D21156B1A23267E00F2620B /* CPSCostOfRiskResourceLoader.m */; };
+		6D21156F1A232AA700F2620B /* cost_of_risk_resource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D21156E1A232AA700F2620B /* cost_of_risk_resource.plist */; };
+		6D2115731A23316800F2620B /* CPSCostOfRiskItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2115721A23316800F2620B /* CPSCostOfRiskItem.m */; };
 		6D5432391A1CD5FE00746CB7 /* CPSBaseWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432381A1CD5FE00746CB7 /* CPSBaseWireframe.m */; };
 		6D5432421A1CE02B00746CB7 /* CPSAccessPagePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432411A1CE02B00746CB7 /* CPSAccessPagePresenter.m */; };
 		6D54324A1A1CE46E00746CB7 /* CPSAccessPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432491A1CE46E00746CB7 /* CPSAccessPageViewController.m */; };
@@ -116,6 +120,13 @@
 		6D21155E1A231AE500F2620B /* CPSResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSResourceLoader.m; sourceTree = "<group>"; };
 		6D2115601A231CDE00F2620B /* CPSKeyValueResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyValueResourceLoader.h; sourceTree = "<group>"; };
 		6D2115611A231CDE00F2620B /* CPSKeyValueResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSKeyValueResourceLoader.m; sourceTree = "<group>"; };
+		6D2115661A2325D200F2620B /* CPSCostOfRiskInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCostOfRiskInteractor.h; sourceTree = "<group>"; };
+		6D2115671A2325D200F2620B /* CPSCostOfRiskInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCostOfRiskInteractor.m; sourceTree = "<group>"; };
+		6D21156A1A23267E00F2620B /* CPSCostOfRiskResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPSCostOfRiskResourceLoader.h; path = "Cochrane Presentation/Classes/Modules/Cost of Risk/Resource/CPSCostOfRiskResourceLoader.h"; sourceTree = SOURCE_ROOT; };
+		6D21156B1A23267E00F2620B /* CPSCostOfRiskResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPSCostOfRiskResourceLoader.m; path = "Cochrane Presentation/Classes/Modules/Cost of Risk/Resource/CPSCostOfRiskResourceLoader.m"; sourceTree = SOURCE_ROOT; };
+		6D21156E1A232AA700F2620B /* cost_of_risk_resource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cost_of_risk_resource.plist; sourceTree = "<group>"; };
+		6D2115711A23316800F2620B /* CPSCostOfRiskItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCostOfRiskItem.h; sourceTree = "<group>"; };
+		6D2115721A23316800F2620B /* CPSCostOfRiskItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCostOfRiskItem.m; sourceTree = "<group>"; };
 		6D5432371A1CD5FE00746CB7 /* CPSBaseWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSBaseWireframe.h; sourceTree = "<group>"; };
 		6D5432381A1CD5FE00746CB7 /* CPSBaseWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSBaseWireframe.m; sourceTree = "<group>"; };
 		6D54323C1A1CDE1000746CB7 /* CPSPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSPresenter.h; sourceTree = "<group>"; };
@@ -290,6 +301,44 @@
 				6D2115611A231CDE00F2620B /* CPSKeyValueResourceLoader.m */,
 			);
 			path = "Resource Loader";
+			sourceTree = "<group>";
+		};
+		6D2115631A23257000F2620B /* Cost of Risk */ = {
+			isa = PBXGroup;
+			children = (
+				6D2115651A2325AA00F2620B /* Logic */,
+				6D2115701A23314F00F2620B /* Model */,
+				6D21156D1A232A6900F2620B /* Resource */,
+			);
+			path = "Cost of Risk";
+			sourceTree = "<group>";
+		};
+		6D2115651A2325AA00F2620B /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6D2115661A2325D200F2620B /* CPSCostOfRiskInteractor.h */,
+				6D2115671A2325D200F2620B /* CPSCostOfRiskInteractor.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		6D21156D1A232A6900F2620B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6D21156A1A23267E00F2620B /* CPSCostOfRiskResourceLoader.h */,
+				6D21156B1A23267E00F2620B /* CPSCostOfRiskResourceLoader.m */,
+				6D21156E1A232AA700F2620B /* cost_of_risk_resource.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		6D2115701A23314F00F2620B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D2115711A23316800F2620B /* CPSCostOfRiskItem.h */,
+				6D2115721A23316800F2620B /* CPSCostOfRiskItem.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6D5432351A1CD5AF00746CB7 /* Common */ = {
@@ -717,6 +766,7 @@
 			isa = PBXGroup;
 			children = (
 				6DF03C481A1F239C003A0DF1 /* Common */,
+				6D2115631A23257000F2620B /* Cost of Risk */,
 				6D54323D1A1CDFCA00746CB7 /* Intro */,
 				6DEA20D11A160396001AAC42 /* Placeholder */,
 			);
@@ -995,6 +1045,7 @@
 				6D2115581A1F3FCF00F2620B /* B_Slide_02_Cochrane_Logo.mp4 in Resources */,
 				6D2115591A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 in Resources */,
 				6DEA20E81A1638AA001AAC42 /* Planer_Reg.ttf in Resources */,
+				6D21156F1A232AA700F2620B /* cost_of_risk_resource.plist in Resources */,
 				6D78FC4A1A0B7A140097E4F5 /* Main.storyboard in Resources */,
 				6D78FC4F1A0B7A140097E4F5 /* LaunchScreen.xib in Resources */,
 				6D78FC4C1A0B7A140097E4F5 /* Images.xcassets in Resources */,
@@ -1119,6 +1170,7 @@
 				6D5432421A1CE02B00746CB7 /* CPSAccessPagePresenter.m in Sources */,
 				6D5432391A1CD5FE00746CB7 /* CPSBaseWireframe.m in Sources */,
 				6DEA20D51A1603DD001AAC42 /* CPSPlaceholderWireframe.m in Sources */,
+				6D21156C1A23267E00F2620B /* CPSCostOfRiskResourceLoader.m in Sources */,
 				6DC8E66B1A1388DE00197DB3 /* MCArrayTableViewDatasource.m in Sources */,
 				6DC8E6601A12949D00197DB3 /* CPSMenuPresenter.m in Sources */,
 				6DBD91731A14AC7200FA6A51 /* CPSMenuWireframe.m in Sources */,
@@ -1129,6 +1181,7 @@
 				6D8DEA1E1A14A578007C92F8 /* CPSMenuItemTableViewCell.m in Sources */,
 				6D54324A1A1CE46E00746CB7 /* CPSAccessPageViewController.m in Sources */,
 				6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */,
+				6D2115731A23316800F2620B /* CPSCostOfRiskItem.m in Sources */,
 				6D10E1161A10C677006DD677 /* CPSMenuInteractor.m in Sources */,
 				6DF03C651A1F2F5A003A0DF1 /* CPSVideoPlayerPresenter.m in Sources */,
 				6D61104B1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m in Sources */,
@@ -1141,6 +1194,7 @@
 				6D2115621A231CDE00F2620B /* CPSKeyValueResourceLoader.m in Sources */,
 				6DEA20E51A162042001AAC42 /* MCMaskedTableView.m in Sources */,
 				6DBD91761A14AD2700FA6A51 /* CPSAppContext.m in Sources */,
+				6D2115681A2325D200F2620B /* CPSCostOfRiskInteractor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

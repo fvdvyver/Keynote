@@ -4,6 +4,7 @@ source 'git://github.com/MushroomCloud/Specs'
 platform :ios, '7.0'
 
 pod 'MCiOSControls/MCRevealController', '~> 0.1.11'
+pod 'KZPropertyMapper', '~> 2.5.1'
 
 target 'Cochrane PresentationTests', :exclusive => true do
 	pod 'OCMock', '~> 3.1.1'

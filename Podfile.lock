@@ -1,14 +1,17 @@
 PODS:
+  - KZPropertyMapper (2.5.1)
   - MCiOSControls/MCFrameAdditions (0.1.11)
   - MCiOSControls/MCRevealController (0.1.11):
     - MCiOSControls/MCFrameAdditions
   - OCMock (3.1.1)
 
 DEPENDENCIES:
+  - KZPropertyMapper (~> 2.5.1)
   - MCiOSControls/MCRevealController (~> 0.1.11)
   - OCMock (~> 3.1.1)
 
 SPEC CHECKSUMS:
+  KZPropertyMapper: f06b00ff0c114bf8db45754a694b57278a628b5b
   MCiOSControls: 2cdd9560e6327a890c4577151d33875a7003d950
   OCMock: f6cb8c162ab9d5620dddf411282c7b2c0ee78854
 

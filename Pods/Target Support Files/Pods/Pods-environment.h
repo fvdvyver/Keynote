@@ -6,6 +6,12 @@
 // project.
 
 
+// KZPropertyMapper
+#define COCOAPODS_POD_AVAILABLE_KZPropertyMapper
+#define COCOAPODS_VERSION_MAJOR_KZPropertyMapper 2
+#define COCOAPODS_VERSION_MINOR_KZPropertyMapper 5
+#define COCOAPODS_VERSION_PATCH_KZPropertyMapper 1
+
 // MCiOSControls/MCFrameAdditions
 #define COCOAPODS_POD_AVAILABLE_MCiOSControls_MCFrameAdditions
 #define COCOAPODS_VERSION_MAJOR_MCiOSControls_MCFrameAdditions 0
