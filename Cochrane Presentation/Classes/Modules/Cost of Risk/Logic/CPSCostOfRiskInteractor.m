@@ -47,7 +47,7 @@
 
 - (void)itemSelectedAtIndex:(NSUInteger)index
 {
-    CPSCostOfRiskItem *item = self.presentationItems[self.currentItemIndex];
+    CPSCostOfRiskItem *item = self.presentationItems[index];
     [self playVideoForItem:item];
 }
 
@@ -57,7 +57,14 @@
     NSString *pathExtension = [item.videoFile pathExtension];
     NSString *path = [[NSBundle mainBundle] pathForResource:resourceName ofType:pathExtension];
     
-//    [self.presenter playVideoAtPath:path];
+    if (path == nil)
+    {
+        NSLog(@"WARNING: video for The Cost of Risk item (%@) not found.", item.titleText);
+    }
+    else
+    {
+        [self.presenter playVideoAtPath:path];
+    }
 }
 
 @end

@@ -15,5 +15,8 @@
 @property (nonatomic, weak) id<CPSCostOfRiskEventHandler> eventHandler;
 
 @property (nonatomic, weak) IBOutlet UITableView * tableView;
+@property (nonatomic, weak) IBOutlet UIView * contentView;
+@property (nonatomic, weak) IBOutlet UIView * contentVideoContainerView;
+@property (nonatomic, weak) IBOutlet UIView * backgroundVideoContainerView;
 
 @end

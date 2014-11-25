@@ -90,58 +90,106 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x23-5P-pjV" userLabel="Background Video Container View">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQ7-YM-0w7" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="hive_background" translatesAutoresizingMaskIntoConstraints="NO" id="cyf-OP-gZ3">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    </imageView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ked-DP-cE1" customClass="MCMaskedTableView">
+                                        <rect key="frame" x="16" y="127" width="454" height="633"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="1" image="left_border_line_stretch" translatesAutoresizingMaskIntoConstraints="NO" id="4Hz-xS-25E">
+                                        <rect key="frame" x="16" y="127" width="454" height="633"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fpw-ln-c8T" userLabel="Content Video Container View">
+                                        <rect key="frame" x="559" y="132" width="371" height="556"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="556" id="5kF-Cx-fKK"/>
+                                            <constraint firstAttribute="width" constant="371" id="K3z-iQ-yOs"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="4Hz-xS-25E" firstAttribute="leading" secondItem="RQ7-YM-0w7" secondAttribute="leading" constant="16" id="G97-T1-SLH"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Hz-xS-25E" secondAttribute="bottom" constant="8" id="IRe-Nd-z2a"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ked-DP-cE1" secondAttribute="bottom" constant="8" id="XQM-cU-F12"/>
+                                    <constraint firstItem="4Hz-xS-25E" firstAttribute="top" secondItem="Ked-DP-cE1" secondAttribute="top" id="bcK-Cy-5XF"/>
+                                    <constraint firstItem="Ked-DP-cE1" firstAttribute="leading" secondItem="RQ7-YM-0w7" secondAttribute="leading" constant="16" id="e1j-zW-lgs"/>
+                                    <constraint firstItem="Fpw-ln-c8T" firstAttribute="top" secondItem="RQ7-YM-0w7" secondAttribute="top" constant="132" id="fKr-jh-VAp"/>
+                                    <constraint firstItem="Fpw-ln-c8T" firstAttribute="leading" secondItem="4Hz-xS-25E" secondAttribute="trailing" constant="559" id="j8Q-Xt-qnH"/>
+                                    <constraint firstItem="Fpw-ln-c8T" firstAttribute="leading" secondItem="RQ7-YM-0w7" secondAttribute="leading" constant="559" id="lNX-m5-72Y"/>
+                                    <constraint firstItem="Ked-DP-cE1" firstAttribute="width" secondItem="4Hz-xS-25E" secondAttribute="width" id="wMc-fM-sLe"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="j8Q-Xt-qnH"/>
+                                    </mask>
+                                </variation>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaX-Gn-6cE" userLabel="Header View">
-                                <rect key="frame" x="16" y="40" width="600" height="119"/>
+                                <rect key="frame" x="0.0" y="8" width="606" height="119"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="logo_header_border" translatesAutoresizingMaskIntoConstraints="NO" id="8ww-f5-aiZ">
-                                        <rect key="frame" x="8" y="0.0" width="526" height="119"/>
+                                        <rect key="frame" x="14" y="0.0" width="526" height="119"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE COST OF RISK" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XP7-z1-zZs">
-                                        <rect key="frame" x="98" y="61" width="311.5" height="36"/>
+                                        <rect key="frame" x="102" y="56" width="350.5" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="93s-jW-jt8"/>
+                                            <constraint firstAttribute="height" constant="40" id="93s-jW-jt8"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="40"/>
+                                        <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="45"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="XP7-z1-zZs" firstAttribute="leading" secondItem="oaX-Gn-6cE" secondAttribute="leading" constant="98" id="9Iy-bE-X1P"/>
-                                    <constraint firstItem="8ww-f5-aiZ" firstAttribute="leading" secondItem="oaX-Gn-6cE" secondAttribute="leading" constant="8" id="A7j-mK-HTD"/>
+                                    <constraint firstItem="XP7-z1-zZs" firstAttribute="leading" secondItem="oaX-Gn-6cE" secondAttribute="leading" constant="102" id="9Iy-bE-X1P"/>
+                                    <constraint firstItem="8ww-f5-aiZ" firstAttribute="leading" secondItem="oaX-Gn-6cE" secondAttribute="leading" constant="14" id="A7j-mK-HTD"/>
                                     <constraint firstAttribute="bottom" secondItem="8ww-f5-aiZ" secondAttribute="bottom" id="DwI-xf-hVI"/>
                                     <constraint firstItem="8ww-f5-aiZ" firstAttribute="top" secondItem="oaX-Gn-6cE" secondAttribute="top" id="MY9-QG-8JF"/>
-                                    <constraint firstItem="XP7-z1-zZs" firstAttribute="top" secondItem="oaX-Gn-6cE" secondAttribute="top" constant="61" id="S17-Qc-dmn"/>
+                                    <constraint firstItem="XP7-z1-zZs" firstAttribute="top" secondItem="oaX-Gn-6cE" secondAttribute="top" constant="56" id="S17-Qc-dmn"/>
                                     <constraint firstAttribute="trailing" secondItem="8ww-f5-aiZ" secondAttribute="trailing" constant="66" id="tqZ-KN-X4f"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ked-DP-cE1" customClass="MCMaskedTableView">
-                                <rect key="frame" x="0.0" y="159" width="454" height="609"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="1" image="left_border_line_stretch" translatesAutoresizingMaskIntoConstraints="NO" id="4Hz-xS-25E">
-                                <rect key="frame" x="0.0" y="159" width="454" height="609"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4Hz-xS-25E" firstAttribute="leading" secondItem="qxr-G6-wXt" secondAttribute="leading" id="3OJ-GN-to0"/>
-                            <constraint firstItem="2O9-iG-beI" firstAttribute="top" secondItem="4Hz-xS-25E" secondAttribute="bottom" id="4lf-qD-oaQ"/>
-                            <constraint firstItem="4Hz-xS-25E" firstAttribute="top" secondItem="oaX-Gn-6cE" secondAttribute="bottom" id="7hg-MR-S7k"/>
-                            <constraint firstItem="Ked-DP-cE1" firstAttribute="leading" secondItem="qxr-G6-wXt" secondAttribute="leading" id="DAu-vB-MgU"/>
-                            <constraint firstItem="oaX-Gn-6cE" firstAttribute="leading" secondItem="qxr-G6-wXt" secondAttribute="leadingMargin" id="NL8-Rr-IhI"/>
-                            <constraint firstItem="Ked-DP-cE1" firstAttribute="top" secondItem="oaX-Gn-6cE" secondAttribute="bottom" id="Vw6-ev-Jk1"/>
-                            <constraint firstItem="4Hz-xS-25E" firstAttribute="width" secondItem="Ked-DP-cE1" secondAttribute="width" id="XsN-jy-R1b"/>
-                            <constraint firstItem="2O9-iG-beI" firstAttribute="top" secondItem="Ked-DP-cE1" secondAttribute="bottom" id="hHt-Jp-1o5"/>
+                            <constraint firstItem="RQ7-YM-0w7" firstAttribute="leading" secondItem="qxr-G6-wXt" secondAttribute="leading" id="0Q3-PP-y4J"/>
+                            <constraint firstItem="x23-5P-pjV" firstAttribute="leading" secondItem="qxr-G6-wXt" secondAttribute="leading" id="5ie-r6-9X0"/>
+                            <constraint firstAttribute="trailing" secondItem="x23-5P-pjV" secondAttribute="trailing" id="JkQ-GV-VGd"/>
+                            <constraint firstItem="oaX-Gn-6cE" firstAttribute="leading" secondItem="qxr-G6-wXt" secondAttribute="leading" id="NL8-Rr-IhI"/>
+                            <constraint firstAttribute="bottom" secondItem="RQ7-YM-0w7" secondAttribute="bottom" id="PbU-xd-0BP"/>
+                            <constraint firstItem="RQ7-YM-0w7" firstAttribute="top" secondItem="qxr-G6-wXt" secondAttribute="top" id="SXT-o2-tRn"/>
+                            <constraint firstAttribute="bottom" secondItem="x23-5P-pjV" secondAttribute="bottom" id="b5k-6X-7XK"/>
+                            <constraint firstItem="x23-5P-pjV" firstAttribute="top" secondItem="qxr-G6-wXt" secondAttribute="top" id="deF-JG-JFd"/>
+                            <constraint firstAttribute="trailing" secondItem="RQ7-YM-0w7" secondAttribute="trailing" id="gE2-Jx-E3b"/>
                             <constraint firstItem="oaX-Gn-6cE" firstAttribute="top" secondItem="cEe-RD-6rE" secondAttribute="bottom" constant="20" id="ioa-qd-NO0"/>
+                            <constraint firstItem="Ked-DP-cE1" firstAttribute="top" secondItem="oaX-Gn-6cE" secondAttribute="bottom" id="lND-Ju-dxd"/>
+                            <constraint firstItem="oaX-Gn-6cE" firstAttribute="top" secondItem="qxr-G6-wXt" secondAttribute="topMargin" constant="8" id="oQP-eP-AQZ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ioa-qd-NO0"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="backgroundVideoContainerView" destination="x23-5P-pjV" id="ElN-aH-6Gl"/>
+                        <outlet property="contentVideoContainerView" destination="Fpw-ln-c8T" id="OBB-07-TEA"/>
+                        <outlet property="contentView" destination="RQ7-YM-0w7" id="4zy-pN-J36"/>
                         <outlet property="tableView" destination="Ked-DP-cE1" id="nZ9-YB-7bG"/>
                     </connections>
                 </viewController>

@@ -57,6 +57,9 @@
 		6D82E8D41A24ABAD00122582 /* MCTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D82E8D31A24ABAD00122582 /* MCTableViewDelegate.m */; };
 		6D82E8D71A24ACEF00122582 /* CPSCostOfRiskTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D82E8D61A24ACEF00122582 /* CPSCostOfRiskTableViewDelegate.m */; };
 		6D82E8DB1A24B7B500122582 /* MCDescendentViewGestureDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D82E8DA1A24B7B500122582 /* MCDescendentViewGestureDelegate.m */; };
+		6D82E8DE1A24C11600122582 /* CoR_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D82E8DD1A24C11600122582 /* CoR_1.mp4 */; };
+		6D82E8E01A24CCAE00122582 /* CoR_Background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D82E8DF1A24CCAE00122582 /* CoR_Background.mp4 */; };
+		6D82E8E21A24DBD800122582 /* CoR_2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D82E8E11A24DBD800122582 /* CoR_2.mp4 */; };
 		6D8933E91A1B93090099A818 /* CPSViewControllerContentWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8933E81A1B93090099A818 /* CPSViewControllerContentWireframe.m */; };
 		6D8933EF1A1B9CFF0099A818 /* CPSViewControllerContentWireframeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8933EE1A1B9CFF0099A818 /* CPSViewControllerContentWireframeTests.m */; };
 		6D8933F01A1B9D4F0099A818 /* CPSViewControllerContentWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8933E81A1B93090099A818 /* CPSViewControllerContentWireframe.m */; };
@@ -191,6 +194,9 @@
 		6D82E8D61A24ACEF00122582 /* CPSCostOfRiskTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCostOfRiskTableViewDelegate.m; sourceTree = "<group>"; };
 		6D82E8D91A24B7B500122582 /* MCDescendentViewGestureDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDescendentViewGestureDelegate.h; sourceTree = "<group>"; };
 		6D82E8DA1A24B7B500122582 /* MCDescendentViewGestureDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDescendentViewGestureDelegate.m; sourceTree = "<group>"; };
+		6D82E8DD1A24C11600122582 /* CoR_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoR_1.mp4; sourceTree = "<group>"; };
+		6D82E8DF1A24CCAE00122582 /* CoR_Background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoR_Background.mp4; sourceTree = "<group>"; };
+		6D82E8E11A24DBD800122582 /* CoR_2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoR_2.mp4; sourceTree = "<group>"; };
 		6D8933E71A1B93090099A818 /* CPSViewControllerContentWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSViewControllerContentWireframe.h; sourceTree = "<group>"; };
 		6D8933E81A1B93090099A818 /* CPSViewControllerContentWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSViewControllerContentWireframe.m; sourceTree = "<group>"; };
 		6D8933EA1A1B93DC0099A818 /* CPSContentWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSContentWireframe.h; sourceTree = "<group>"; };
@@ -549,6 +555,7 @@
 			isa = PBXGroup;
 			children = (
 				6D54324C1A1DEAAC00746CB7 /* Intro */,
+				6D82E8DC1A24C03000122582 /* The Cost of Risk */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -707,6 +714,16 @@
 				6D82E8DA1A24B7B500122582 /* MCDescendentViewGestureDelegate.m */,
 			);
 			path = "Gesture Recognizer Delegates";
+			sourceTree = "<group>";
+		};
+		6D82E8DC1A24C03000122582 /* The Cost of Risk */ = {
+			isa = PBXGroup;
+			children = (
+				6D82E8DF1A24CCAE00122582 /* CoR_Background.mp4 */,
+				6D82E8DD1A24C11600122582 /* CoR_1.mp4 */,
+				6D82E8E11A24DBD800122582 /* CoR_2.mp4 */,
+			);
+			path = "The Cost of Risk";
 			sourceTree = "<group>";
 		};
 		6D8933DC1A1B8A6E0099A818 /* Wireframe */ = {
@@ -1170,7 +1187,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D54324F1A1DEFE500746CB7 /* animated_background.mp4 in Resources */,
+				6D82E8E21A24DBD800122582 /* CoR_2.mp4 in Resources */,
 				6D54325D1A1E1FD300746CB7 /* menu_item_description.plist in Resources */,
+				6D82E8E01A24CCAE00122582 /* CoR_Background.mp4 in Resources */,
+				6D82E8DE1A24C11600122582 /* CoR_1.mp4 in Resources */,
 				6D2115581A1F3FCF00F2620B /* B_Slide_02_Cochrane_Logo.mp4 in Resources */,
 				6D2115591A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 in Resources */,
 				6DEA20E81A1638AA001AAC42 /* Planer_Reg.ttf in Resources */,

@@ -53,7 +53,7 @@
     [self.userInterface setTableViewDatasource:self.datasource];
     [self.userInterface setTableViewDelegate:self.delegate];
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"animated_background" withExtension:@"mp4"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"CoR_Background" withExtension:@"mp4"];
     
     typeof(self) __weak weakself = self;
     [self.userInterface playBackgroundVideoAtURL:url withCompletion:^
