@@ -27,6 +27,13 @@
 		6D21156C1A23267E00F2620B /* CPSCostOfRiskResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D21156B1A23267E00F2620B /* CPSCostOfRiskResourceLoader.m */; };
 		6D21156F1A232AA700F2620B /* cost_of_risk_resource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D21156E1A232AA700F2620B /* cost_of_risk_resource.plist */; };
 		6D2115731A23316800F2620B /* CPSCostOfRiskItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2115721A23316800F2620B /* CPSCostOfRiskItem.m */; };
+		6D21157B1A23449900F2620B /* CPSCostOfRiskPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D21157A1A23449900F2620B /* CPSCostOfRiskPresenter.m */; };
+		6D21157E1A23459900F2620B /* CPSCostOfRiskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D21157D1A23459900F2620B /* CPSCostOfRiskViewController.m */; };
+		6D2115861A2347EA00F2620B /* CPSCostOfRiskInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2115851A2347EA00F2620B /* CPSCostOfRiskInteractorTests.m */; };
+		6D2115881A2347F900F2620B /* CPSCostOfRiskPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2115871A2347F900F2620B /* CPSCostOfRiskPresenterTests.m */; };
+		6D21158C1A23696D00F2620B /* CPSCostOfRiskWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D21158B1A23696D00F2620B /* CPSCostOfRiskWireframe.m */; };
+		6D2BD99C1A237A6D0035189C /* CPSCostOfRiskCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2BD99B1A237A6D0035189C /* CPSCostOfRiskCellPresenter.m */; };
+		6D2BD9A11A237C9C0035189C /* CPSCostOfRiskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2BD9A01A237C9C0035189C /* CPSCostOfRiskCell.m */; };
 		6D5432391A1CD5FE00746CB7 /* CPSBaseWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432381A1CD5FE00746CB7 /* CPSBaseWireframe.m */; };
 		6D5432421A1CE02B00746CB7 /* CPSAccessPagePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432411A1CE02B00746CB7 /* CPSAccessPagePresenter.m */; };
 		6D54324A1A1CE46E00746CB7 /* CPSAccessPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5432491A1CE46E00746CB7 /* CPSAccessPageViewController.m */; };
@@ -46,6 +53,10 @@
 		6D78FC4C1A0B7A140097E4F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC4B1A0B7A140097E4F5 /* Images.xcassets */; };
 		6D78FC4F1A0B7A140097E4F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC4D1A0B7A140097E4F5 /* LaunchScreen.xib */; };
 		6D78FC6D1A0B82B70097E4F5 /* CPSRootWireframeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC6C1A0B82B70097E4F5 /* CPSRootWireframeTests.m */; };
+		6D82E8D11A23816300122582 /* UITableView+CPSBorderMaskStretchAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D82E8D01A23816300122582 /* UITableView+CPSBorderMaskStretchAdditions.m */; };
+		6D82E8D41A24ABAD00122582 /* MCTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D82E8D31A24ABAD00122582 /* MCTableViewDelegate.m */; };
+		6D82E8D71A24ACEF00122582 /* CPSCostOfRiskTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D82E8D61A24ACEF00122582 /* CPSCostOfRiskTableViewDelegate.m */; };
+		6D82E8DB1A24B7B500122582 /* MCDescendentViewGestureDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D82E8DA1A24B7B500122582 /* MCDescendentViewGestureDelegate.m */; };
 		6D8933E91A1B93090099A818 /* CPSViewControllerContentWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8933E81A1B93090099A818 /* CPSViewControllerContentWireframe.m */; };
 		6D8933EF1A1B9CFF0099A818 /* CPSViewControllerContentWireframeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8933EE1A1B9CFF0099A818 /* CPSViewControllerContentWireframeTests.m */; };
 		6D8933F01A1B9D4F0099A818 /* CPSViewControllerContentWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8933E81A1B93090099A818 /* CPSViewControllerContentWireframe.m */; };
@@ -127,6 +138,21 @@
 		6D21156E1A232AA700F2620B /* cost_of_risk_resource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cost_of_risk_resource.plist; sourceTree = "<group>"; };
 		6D2115711A23316800F2620B /* CPSCostOfRiskItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCostOfRiskItem.h; sourceTree = "<group>"; };
 		6D2115721A23316800F2620B /* CPSCostOfRiskItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCostOfRiskItem.m; sourceTree = "<group>"; };
+		6D2115741A23413F00F2620B /* CPSCostOfRiskInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCostOfRiskInteractorIO.h; sourceTree = "<group>"; };
+		6D2115781A23421500F2620B /* CPSCostOfRiskViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCostOfRiskViewInterface.h; sourceTree = "<group>"; };
+		6D2115791A23449900F2620B /* CPSCostOfRiskPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCostOfRiskPresenter.h; sourceTree = "<group>"; };
+		6D21157A1A23449900F2620B /* CPSCostOfRiskPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCostOfRiskPresenter.m; sourceTree = "<group>"; };
+		6D21157C1A23459900F2620B /* CPSCostOfRiskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCostOfRiskViewController.h; sourceTree = "<group>"; };
+		6D21157D1A23459900F2620B /* CPSCostOfRiskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCostOfRiskViewController.m; sourceTree = "<group>"; };
+		6D2115851A2347EA00F2620B /* CPSCostOfRiskInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCostOfRiskInteractorTests.m; sourceTree = "<group>"; };
+		6D2115871A2347F900F2620B /* CPSCostOfRiskPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCostOfRiskPresenterTests.m; sourceTree = "<group>"; };
+		6D21158A1A23696D00F2620B /* CPSCostOfRiskWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCostOfRiskWireframe.h; sourceTree = "<group>"; };
+		6D21158B1A23696D00F2620B /* CPSCostOfRiskWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCostOfRiskWireframe.m; sourceTree = "<group>"; };
+		6D2BD99A1A237A6D0035189C /* CPSCostOfRiskCellPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCostOfRiskCellPresenter.h; sourceTree = "<group>"; };
+		6D2BD99B1A237A6D0035189C /* CPSCostOfRiskCellPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCostOfRiskCellPresenter.m; sourceTree = "<group>"; };
+		6D2BD99E1A237B440035189C /* CPSCostOfRiskItemCellInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCostOfRiskItemCellInterface.h; sourceTree = "<group>"; };
+		6D2BD99F1A237C9C0035189C /* CPSCostOfRiskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCostOfRiskCell.h; sourceTree = "<group>"; };
+		6D2BD9A01A237C9C0035189C /* CPSCostOfRiskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCostOfRiskCell.m; sourceTree = "<group>"; };
 		6D5432371A1CD5FE00746CB7 /* CPSBaseWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSBaseWireframe.h; sourceTree = "<group>"; };
 		6D5432381A1CD5FE00746CB7 /* CPSBaseWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSBaseWireframe.m; sourceTree = "<group>"; };
 		6D54323C1A1CDE1000746CB7 /* CPSPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSPresenter.h; sourceTree = "<group>"; };
@@ -157,6 +183,14 @@
 		6D78FC541A0B7A140097E4F5 /* Cochrane PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cochrane PresentationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D78FC591A0B7A140097E4F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D78FC6C1A0B82B70097E4F5 /* CPSRootWireframeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRootWireframeTests.m; sourceTree = "<group>"; };
+		6D82E8CF1A23816300122582 /* UITableView+CPSBorderMaskStretchAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CPSBorderMaskStretchAdditions.h"; sourceTree = "<group>"; };
+		6D82E8D01A23816300122582 /* UITableView+CPSBorderMaskStretchAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CPSBorderMaskStretchAdditions.m"; sourceTree = "<group>"; };
+		6D82E8D21A24ABAD00122582 /* MCTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTableViewDelegate.h; sourceTree = "<group>"; };
+		6D82E8D31A24ABAD00122582 /* MCTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTableViewDelegate.m; sourceTree = "<group>"; };
+		6D82E8D51A24ACEF00122582 /* CPSCostOfRiskTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSCostOfRiskTableViewDelegate.h; sourceTree = "<group>"; };
+		6D82E8D61A24ACEF00122582 /* CPSCostOfRiskTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSCostOfRiskTableViewDelegate.m; sourceTree = "<group>"; };
+		6D82E8D91A24B7B500122582 /* MCDescendentViewGestureDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDescendentViewGestureDelegate.h; sourceTree = "<group>"; };
+		6D82E8DA1A24B7B500122582 /* MCDescendentViewGestureDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDescendentViewGestureDelegate.m; sourceTree = "<group>"; };
 		6D8933E71A1B93090099A818 /* CPSViewControllerContentWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSViewControllerContentWireframe.h; sourceTree = "<group>"; };
 		6D8933E81A1B93090099A818 /* CPSViewControllerContentWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSViewControllerContentWireframe.m; sourceTree = "<group>"; };
 		6D8933EA1A1B93DC0099A818 /* CPSContentWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSContentWireframe.h; sourceTree = "<group>"; };
@@ -309,6 +343,8 @@
 				6D2115651A2325AA00F2620B /* Logic */,
 				6D2115701A23314F00F2620B /* Model */,
 				6D21156D1A232A6900F2620B /* Resource */,
+				6D2115751A2341D300F2620B /* UI */,
+				6D2115891A23694F00F2620B /* Wireframe */,
 			);
 			path = "Cost of Risk";
 			sourceTree = "<group>";
@@ -316,6 +352,7 @@
 		6D2115651A2325AA00F2620B /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				6D2115741A23413F00F2620B /* CPSCostOfRiskInteractorIO.h */,
 				6D2115661A2325D200F2620B /* CPSCostOfRiskInteractor.h */,
 				6D2115671A2325D200F2620B /* CPSCostOfRiskInteractor.m */,
 			);
@@ -339,6 +376,85 @@
 				6D2115721A23316800F2620B /* CPSCostOfRiskItem.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6D2115751A2341D300F2620B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6D2115761A2341E600F2620B /* Presenter */,
+				6D2115771A2341EE00F2620B /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6D2115761A2341E600F2620B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6D2115791A23449900F2620B /* CPSCostOfRiskPresenter.h */,
+				6D21157A1A23449900F2620B /* CPSCostOfRiskPresenter.m */,
+				6D2BD99A1A237A6D0035189C /* CPSCostOfRiskCellPresenter.h */,
+				6D2BD99B1A237A6D0035189C /* CPSCostOfRiskCellPresenter.m */,
+				6D82E8D51A24ACEF00122582 /* CPSCostOfRiskTableViewDelegate.h */,
+				6D82E8D61A24ACEF00122582 /* CPSCostOfRiskTableViewDelegate.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6D2115771A2341EE00F2620B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D2115781A23421500F2620B /* CPSCostOfRiskViewInterface.h */,
+				6D2BD99E1A237B440035189C /* CPSCostOfRiskItemCellInterface.h */,
+				6D21157C1A23459900F2620B /* CPSCostOfRiskViewController.h */,
+				6D21157D1A23459900F2620B /* CPSCostOfRiskViewController.m */,
+				6D2BD99F1A237C9C0035189C /* CPSCostOfRiskCell.h */,
+				6D2BD9A01A237C9C0035189C /* CPSCostOfRiskCell.m */,
+				6D82E8CF1A23816300122582 /* UITableView+CPSBorderMaskStretchAdditions.h */,
+				6D82E8D01A23816300122582 /* UITableView+CPSBorderMaskStretchAdditions.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D21157F1A23477D00F2620B /* Cost of Risk */ = {
+			isa = PBXGroup;
+			children = (
+				6D2115841A2347D100F2620B /* Logic */,
+				6D2115811A2347B100F2620B /* UI */,
+			);
+			path = "Cost of Risk";
+			sourceTree = "<group>";
+		};
+		6D2115811A2347B100F2620B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6D2115821A2347B100F2620B /* Presenter */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6D2115821A2347B100F2620B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6D2115871A2347F900F2620B /* CPSCostOfRiskPresenterTests.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6D2115841A2347D100F2620B /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6D2115851A2347EA00F2620B /* CPSCostOfRiskInteractorTests.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		6D2115891A23694F00F2620B /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				6D21158A1A23696D00F2620B /* CPSCostOfRiskWireframe.h */,
+				6D21158B1A23696D00F2620B /* CPSCostOfRiskWireframe.m */,
+			);
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		6D5432351A1CD5AF00746CB7 /* Common */ = {
@@ -584,6 +700,15 @@
 			path = "Application Navigation";
 			sourceTree = "<group>";
 		};
+		6D82E8D81A24B79900122582 /* Gesture Recognizer Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				6D82E8D91A24B7B500122582 /* MCDescendentViewGestureDelegate.h */,
+				6D82E8DA1A24B7B500122582 /* MCDescendentViewGestureDelegate.m */,
+			);
+			path = "Gesture Recognizer Delegates";
+			sourceTree = "<group>";
+		};
 		6D8933DC1A1B8A6E0099A818 /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
@@ -745,6 +870,7 @@
 		6DC8E6661A1387EB00197DB3 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				6D82E8D81A24B79900122582 /* Gesture Recognizer Delegates */,
 				6D21155C1A231AD200F2620B /* Resource Loader */,
 				6DC8E6671A13881D00197DB3 /* Table View Data Sources */,
 				6DEA20E21A16201E001AAC42 /* View */,
@@ -758,6 +884,8 @@
 				6DC8E6681A13885500197DB3 /* MCTableViewCellPresenter.h */,
 				6DC8E6691A1388DE00197DB3 /* MCArrayTableViewDatasource.h */,
 				6DC8E66A1A1388DE00197DB3 /* MCArrayTableViewDatasource.m */,
+				6D82E8D21A24ABAD00122582 /* MCTableViewDelegate.h */,
+				6D82E8D31A24ABAD00122582 /* MCTableViewDelegate.m */,
 			);
 			path = "Table View Data Sources";
 			sourceTree = "<group>";
@@ -888,6 +1016,7 @@
 			isa = PBXGroup;
 			children = (
 				6DF03C591A1F2A5B003A0DF1 /* Common */,
+				6D21157F1A23477D00F2620B /* Cost of Risk */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1163,8 +1292,10 @@
 				6DF03C6A1A1F33B1003A0DF1 /* CPSVideoPlaybackViewController.m in Sources */,
 				6D10E11A1A10C8C0006DD677 /* CPSMenuItem.m in Sources */,
 				6DEA20DD1A16070B001AAC42 /* CPSPlaceholderViewController.m in Sources */,
+				6D82E8D71A24ACEF00122582 /* CPSCostOfRiskTableViewDelegate.m in Sources */,
 				6D5432551A1E055000746CB7 /* CPSRootWireframeMenuDelegate.m in Sources */,
 				6DEA20D91A1606AE001AAC42 /* CPSPlaceholderPresenter.m in Sources */,
+				6D82E8DB1A24B7B500122582 /* MCDescendentViewGestureDelegate.m in Sources */,
 				6D8933E91A1B93090099A818 /* CPSViewControllerContentWireframe.m in Sources */,
 				6DC8E65B1A1247A200197DB3 /* CPSCachedViewControllerProvider.m in Sources */,
 				6D5432421A1CE02B00746CB7 /* CPSAccessPagePresenter.m in Sources */,
@@ -1172,13 +1303,16 @@
 				6DEA20D51A1603DD001AAC42 /* CPSPlaceholderWireframe.m in Sources */,
 				6D21156C1A23267E00F2620B /* CPSCostOfRiskResourceLoader.m in Sources */,
 				6DC8E66B1A1388DE00197DB3 /* MCArrayTableViewDatasource.m in Sources */,
+				6D21157B1A23449900F2620B /* CPSCostOfRiskPresenter.m in Sources */,
 				6DC8E6601A12949D00197DB3 /* CPSMenuPresenter.m in Sources */,
 				6DBD91731A14AC7200FA6A51 /* CPSMenuWireframe.m in Sources */,
+				6D2BD9A11A237C9C0035189C /* CPSCostOfRiskCell.m in Sources */,
 				6DEA20CF1A15FF3B001AAC42 /* CPSRevealController.m in Sources */,
 				6D10E1011A10AFC5006DD677 /* CPSRootWireframe.m in Sources */,
 				6D8DEA161A13C3D9007C92F8 /* CPSMenuTableViewController.m in Sources */,
 				6D8933F61A1C86820099A818 /* CPSRootContentWireframe.m in Sources */,
 				6D8DEA1E1A14A578007C92F8 /* CPSMenuItemTableViewCell.m in Sources */,
+				6D21157E1A23459900F2620B /* CPSCostOfRiskViewController.m in Sources */,
 				6D54324A1A1CE46E00746CB7 /* CPSAccessPageViewController.m in Sources */,
 				6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */,
 				6D2115731A23316800F2620B /* CPSCostOfRiskItem.m in Sources */,
@@ -1192,8 +1326,12 @@
 				6D54325A1A1E0F9500746CB7 /* CPSViewControllerProviderUtils.m in Sources */,
 				6D10E11D1A10C8D8006DD677 /* CPSViewControllerMenuItem.m in Sources */,
 				6D2115621A231CDE00F2620B /* CPSKeyValueResourceLoader.m in Sources */,
+				6D2BD99C1A237A6D0035189C /* CPSCostOfRiskCellPresenter.m in Sources */,
+				6D82E8D41A24ABAD00122582 /* MCTableViewDelegate.m in Sources */,
 				6DEA20E51A162042001AAC42 /* MCMaskedTableView.m in Sources */,
+				6D82E8D11A23816300122582 /* UITableView+CPSBorderMaskStretchAdditions.m in Sources */,
 				6DBD91761A14AD2700FA6A51 /* CPSAppContext.m in Sources */,
+				6D21158C1A23696D00F2620B /* CPSCostOfRiskWireframe.m in Sources */,
 				6D2115681A2325D200F2620B /* CPSCostOfRiskInteractor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1208,9 +1346,11 @@
 				6D5432501A1DF2D100746CB7 /* CPSPlaceholderWireframe.m in Sources */,
 				6DC8E6501A11F7D100197DB3 /* CPSMenuInteractorTests.m in Sources */,
 				6DF03C6B1A1F3442003A0DF1 /* CPSVideoPlaybackViewController.m in Sources */,
+				6D2115881A2347F900F2620B /* CPSCostOfRiskPresenterTests.m in Sources */,
 				6DF03C6C1A1F3445003A0DF1 /* CPSVideoPlayerPresenter.m in Sources */,
 				6D8933F81A1C88100099A818 /* CPSRootContentWireframeTests.m in Sources */,
 				6DF03C671A1F3065003A0DF1 /* CPSVideoPlayerPresenterTests.m in Sources */,
+				6D2115861A2347EA00F2620B /* CPSCostOfRiskInteractorTests.m in Sources */,
 				6D10E1101A10BC3A006DD677 /* CPSRevealRootPresenterTests.m in Sources */,
 				6D8DEA1B1A13C5B8007C92F8 /* CPSMenuTableViewControllerTests.m in Sources */,
 				6D10E10B1A10B8A4006DD677 /* CPSRootWireframe.m in Sources */,

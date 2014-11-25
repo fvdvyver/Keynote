@@ -79,6 +79,11 @@
 			<key>content_wireframes</key>
 			<array>
 				<dict>
+					<key>wireframe</key>
+					<dict>
+						<key>class</key>
+						<string>CPSCostOfRiskWireframe</string>
+					</dict>
 					<key>interactor</key>
 					<dict>
 						<key>class</key>
@@ -101,12 +106,12 @@
 					<key>presenter</key>
 					<dict>
 						<key>class</key>
-						<string>CPSPlaceholderPresenter</string>
+						<string>CPSCostOfRiskPresenter</string>
 					</dict>
 					<key>view</key>
 					<dict>
 						<key>identifier</key>
-						<string>PlaceholderViewController</string>
+						<string>CostOfRiskViewController</string>
 					</dict>
 				</dict>
 			</array>

@@ -8,10 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-#import "CPSInteractor.h"
+#import "CPSCostOfRiskInteractorIO.h"
 
-@interface CPSCostOfRiskInteractor : NSObject <CPSInteractor>
+@interface CPSCostOfRiskInteractor : NSObject <CPSCostOfRiskInteractorInput>
 
-@property (nonatomic, strong) NSArray *presentationItems;
+@property (nonatomic, strong) id<CPSCostOfRiskInteractorOutput> presenter;
+
+// must be an array of CPSCostOfRiskItem
+@property (nonatomic, copy) NSArray *presentationItems;
+
+- (void)resetState;
 
 @end

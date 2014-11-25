@@ -20,10 +20,18 @@
                cellIdentifier:(NSString *)cellReuseIdentifier
                     presenter:(id<MCTableViewCellPresenter>)presenter;
 
+- (NSUInteger)count;
+
 - (void)setItems:(NSArray *)items;
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath;
 - (NSIndexPath *)indexPathOfItem:(id)item;
 
 - (NSArray *)indexPathsOfAllItems;
+
+// Mutability methods
+// Adds item at the end of the array
+- (void)addItem:(id)item;
+- (void)removeItem:(id)item;
+- (void)removeItemAtIndex:(NSUInteger)itemIndex;
 
 @end
