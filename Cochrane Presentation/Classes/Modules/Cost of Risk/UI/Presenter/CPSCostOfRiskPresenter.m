@@ -56,9 +56,13 @@
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"CoR_Background" withExtension:@"mp4"];
     
     typeof(self) __weak weakself = self;
+    [self.userInterface setUserInteractionEnabled:NO];
     [self.userInterface playBackgroundVideoAtURL:url withCompletion:^
     {
-        [weakself.interactor advanceCurrentItem];
+        typeof(weakself) __strong strongself = weakself;
+        
+        [strongself.userInterface setUserInteractionEnabled:YES];
+        [strongself.interactor advanceCurrentItem];
     }];
 }
 

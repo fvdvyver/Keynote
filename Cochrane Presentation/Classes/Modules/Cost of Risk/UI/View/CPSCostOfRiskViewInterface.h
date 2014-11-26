@@ -18,6 +18,8 @@
 - (void)setTableViewDatasource:(id<UITableViewDataSource>)datasource;
 - (void)setTableViewDelegate:(id<UITableViewDelegate>)delegate;
 
+- (void)setUserInteractionEnabled:(BOOL)enabled;
+
 - (void)reloadData;
 - (void)addRowAtIndexPath:(NSIndexPath *)indexPath;
 - (void)selectRowAtIndexPath:(NSIndexPath *)indexPath;

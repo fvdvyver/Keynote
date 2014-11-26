@@ -110,6 +110,11 @@
     [self.tableView setDelegate:delegate];
 }
 
+- (void)setUserInteractionEnabled:(BOOL)enabled
+{
+    self.view.userInteractionEnabled = enabled;
+}
+
 - (void)reloadData
 {
     [self.tableView reloadData];
