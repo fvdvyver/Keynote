@@ -18,55 +18,55 @@
 		<key>title_text</key>
 		<string>Replacement cost of assets</string>
 		<key>video_file</key>
-		<string></string>
+		<string>CoR_3.mp4</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>Impact on reputation</string>
 		<key>video_file</key>
-		<string></string>
+		<string>CoR_4.mp4</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>Negative media coverage</string>
 		<key>video_file</key>
-		<string></string>
+		<string>CoR_5.mp4</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>Lack of insurance coverage</string>
 		<key>video_file</key>
-		<string></string>
+		<string>CoR_6.mp4</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>Poor employee morale, leading to work stoppages</string>
 		<key>video_file</key>
-		<string></string>
+		<string>CoR_7.mp4</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>Management time</string>
 		<key>video_file</key>
-		<string></string>
+		<string>CoR_8.mp4</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>Additional man guards</string>
 		<key>video_file</key>
-		<string></string>
+		<string>CoR_9.mp4</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>Additional CCTV cameras</string>
 		<key>video_file</key>
-		<string></string>
+		<string>CoR_10.mp4</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>Restricted movement of key personnel</string>
 		<key>video_file</key>
-		<string></string>
+		<string>CoR_11.mp4</string>
 	</dict>
 </array>
 </plist>
