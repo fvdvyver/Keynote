@@ -89,7 +89,7 @@
     NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:count inSection:0];
     
     [self.cellPresenter setSelectedIndexPath:newIndexPath];
-    [self.datasource addItem:[NSString stringWithFormat:@"%lu.\t%@", (unsigned long)count + 1, itemTitle]];
+    [self.datasource addItem:itemTitle];
     [self.delegate setIndexPathToAnimate:newIndexPath];
     [self.userInterface addRowAtIndexPath:newIndexPath];
 }

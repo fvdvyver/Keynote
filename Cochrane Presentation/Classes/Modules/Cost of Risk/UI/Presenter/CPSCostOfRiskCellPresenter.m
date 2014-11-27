@@ -15,6 +15,7 @@
           atIndexPath:(NSIndexPath *)indexPath
           inTableView:(UITableView *)tableView
 {
+    [cell setItemNumber:indexPath.row + 1];
     [cell setTitleText:item];
     
     if ([indexPath isEqual:self.selectedIndexPath])

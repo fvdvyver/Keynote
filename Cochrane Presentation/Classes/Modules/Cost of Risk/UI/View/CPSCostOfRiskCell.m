@@ -37,7 +37,12 @@
 
 - (void)setUpCostOfRiskCell
 {
+    UIFont *textFont = [UIFont fontWithName:kCPSApplicationFontDefaultName size:23];
+    
     self.backgroundColor = [UIColor clearColor];
+    self.textLabel.textColor = [UIColor whiteColor];
+    self.textLabel.font = textFont;
+    self.textLabel.backgroundColor = [UIColor clearColor];
     
     UIView *backgroundView = [UIView new];
     backgroundView.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.2];
@@ -46,9 +51,9 @@
     
     CPSAnimatedTextView *textView = [CPSAnimatedTextView new];
     textView.textContainer.lineFragmentPadding = 0;
-    textView.textContainerInset = UIEdgeInsetsMake(-3, 0, 3, 0); // this is to make sure the bottom of the text is not clipped with the specific font used
+    textView.textContainerInset = UIEdgeInsetsZero;
     textView.textColor = [UIColor whiteColor];
-    textView.font = [UIFont fontWithName:kCPSApplicationFontDefaultName size:23];
+    textView.font = textFont;
     textView.backgroundColor = [UIColor clearColor];
     textView.userInteractionEnabled = NO;
     
@@ -61,17 +66,29 @@
     [super layoutSubviews];
     
     const CGFloat textInset = 15.0;
+    const CGFloat contentTextInset = 55.0;
     
     NSString *text = self.animatedTextView.originalText;
-    CGRect textRect = [text boundingRectWithSize:CGRectInset(self.contentView.bounds, textInset, 0.0).size
+    CGSize boundingSize = CGSizeMake(CGRectGetWidth(self.contentView.bounds) - (textInset * 2 + contentTextInset), CGFLOAT_MAX);
+    CGRect textRect = [text boundingRectWithSize:boundingSize
                                          options:(NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading)
                                       attributes:@{ NSFontAttributeName : self.animatedTextView.font }
                                          context:nil];
     
-    self.animatedTextView.frame = CGRectIntegral(CGRectMake(textInset,
+    self.animatedTextView.frame = CGRectIntegral(CGRectMake(contentTextInset,
                                                             (CGRectGetHeight(self.contentView.bounds) - CGRectGetHeight(textRect)) / 2.0,
-                                                            CGRectGetWidth(textRect),
+                                                            boundingSize.width,
                                                             CGRectGetHeight(textRect)));
+    
+    [self.textLabel sizeToFit];
+    textRect = self.textLabel.frame;
+    textRect.origin = CGPointMake(textInset, CGRectGetMinY(self.animatedTextView.frame));
+    self.textLabel.frame = textRect;
+}
+
+- (void)setItemNumber:(NSInteger)number
+{
+    self.textLabel.text = [NSString stringWithFormat:@"%li.", (long)number];
 }
 
 - (void)setTitleText:(NSString *)text

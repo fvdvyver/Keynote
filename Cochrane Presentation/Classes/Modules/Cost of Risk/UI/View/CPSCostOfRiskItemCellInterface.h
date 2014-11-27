@@ -10,7 +10,9 @@
 
 @protocol CPSCostOfRiskItemCellInterface <NSObject>
 
+- (void)setItemNumber:(NSInteger)number;
 - (void)setTitleText:(NSString *)text;
+
 - (void)animateIn;
 - (void)stopAnimating;
 
