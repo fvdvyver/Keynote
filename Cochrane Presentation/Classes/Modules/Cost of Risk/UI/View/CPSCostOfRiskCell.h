@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 #import "CPSCostOfRiskItemCellInterface.h"
+#import "CPSAnimatedTextView.h"
 
 @interface CPSCostOfRiskCell : UITableViewCell <CPSCostOfRiskItemCellInterface>
+
+@property (nonatomic, strong) CPSAnimatedTextView * animatedTextView;
 
 @end

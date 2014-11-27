@@ -10,6 +10,12 @@
 
 #import "CPSCostOfRiskItemCellInterface.h"
 
+@interface CPSCostOfRiskTableViewDelegate ()
+
+@property (nonatomic, weak) id<CPSCostOfRiskItemCellInterface> animatingCell;
+
+@end
+
 @implementation CPSCostOfRiskTableViewDelegate
 
 - (void)tableView:(UITableView *)tableView
@@ -20,7 +26,13 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
     {
         [cell animateIn];
         self.indexPathToAnimate = nil;
+        self.animatingCell = cell;
     }
+}
+
+- (void)stopAnimatingCells;
+{
+    [self.animatingCell stopAnimating];
 }
 
 @end

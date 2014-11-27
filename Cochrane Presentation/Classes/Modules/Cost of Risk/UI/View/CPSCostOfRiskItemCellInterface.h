@@ -12,5 +12,6 @@
 
 - (void)setTitleText:(NSString *)text;
 - (void)animateIn;
+- (void)stopAnimating;
 
 @end

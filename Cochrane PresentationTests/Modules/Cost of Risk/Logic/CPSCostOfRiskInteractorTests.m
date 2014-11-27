@@ -71,8 +71,8 @@
 {
     id<CPSCostOfRiskInteractorOutput> presenterMock = self.presenterMock;
     
-    OCMExpect([presenterMock addItem:@"item 1"]); OCMExpect([presenterMock playVideoAtPath:[OCMArg any]]);
-    OCMExpect([presenterMock addItem:@"item 2"]); OCMExpect([presenterMock playVideoAtPath:[OCMArg any]]);
+    OCMExpect([presenterMock addItem:@"item 1"]);
+    OCMExpect([presenterMock addItem:@"item 2"]);
     
     [self.interactor advanceCurrentItem];
     [self.interactor advanceCurrentItem];
@@ -84,12 +84,12 @@
 {
     id<CPSCostOfRiskInteractorOutput> presenterMock = self.presenterMock;
     
-    OCMExpect([presenterMock addItem:@"item 1"]); OCMExpect([presenterMock playVideoAtPath:[OCMArg any]]);
-    OCMExpect([presenterMock addItem:@"item 2"]); OCMExpect([presenterMock playVideoAtPath:[OCMArg any]]);
+    OCMExpect([presenterMock addItem:@"item 1"]);
+    OCMExpect([presenterMock addItem:@"item 2"]);
     
     OCMExpect([presenterMock resetState]);
     
-    OCMExpect([presenterMock addItem:@"item 1"]); OCMExpect([presenterMock playVideoAtPath:[OCMArg any]]);
+    OCMExpect([presenterMock addItem:@"item 1"]);
     
     [self.interactor advanceCurrentItem];
     [self.interactor advanceCurrentItem];
@@ -128,17 +128,6 @@
     [self.interactor advanceCurrentItem];
     
     OCMVerifyAll((id)wireframe);
-}
-
-- (void)testInteractorPlaysVideoWhenItemIsSelected
-{
-    id<CPSCostOfRiskInteractorOutput> presenterMock = self.presenterMock;
-    
-    OCMExpect([presenterMock playVideoAtPath:[OCMArg any]]);
-    
-    [self.interactor itemSelectedAtIndex:0];
-    
-    OCMVerifyAll((id)presenterMock);
 }
 
 @end

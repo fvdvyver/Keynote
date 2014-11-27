@@ -56,6 +56,7 @@
 		6D65A1681A25CF89006519C2 /* CoR_9.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D65A1631A25CF89006519C2 /* CoR_9.mp4 */; };
 		6D65A1691A25CF89006519C2 /* CoR_10.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D65A1641A25CF89006519C2 /* CoR_10.mp4 */; };
 		6D65A16A1A25CF89006519C2 /* CoR_11.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D65A1651A25CF89006519C2 /* CoR_11.mp4 */; };
+		6D65A16E1A25DE36006519C2 /* CPSAnimatedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D65A16D1A25DE36006519C2 /* CPSAnimatedTextView.m */; };
 		6D78FC411A0B7A140097E4F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC401A0B7A140097E4F5 /* main.m */; };
 		6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC431A0B7A140097E4F5 /* AppDelegate.m */; };
 		6D78FC4A1A0B7A140097E4F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC481A0B7A140097E4F5 /* Main.storyboard */; };
@@ -193,6 +194,8 @@
 		6D65A1631A25CF89006519C2 /* CoR_9.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoR_9.mp4; sourceTree = "<group>"; };
 		6D65A1641A25CF89006519C2 /* CoR_10.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoR_10.mp4; sourceTree = "<group>"; };
 		6D65A1651A25CF89006519C2 /* CoR_11.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoR_11.mp4; sourceTree = "<group>"; };
+		6D65A16C1A25DE36006519C2 /* CPSAnimatedTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSAnimatedTextView.h; sourceTree = "<group>"; };
+		6D65A16D1A25DE36006519C2 /* CPSAnimatedTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSAnimatedTextView.m; sourceTree = "<group>"; };
 		6D78FC3B1A0B7A140097E4F5 /* Cochrane Presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cochrane Presentation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D78FC3F1A0B7A140097E4F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D78FC401A0B7A140097E4F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -604,6 +607,15 @@
 			path = Plist;
 			sourceTree = "<group>";
 		};
+		6D65A16B1A25DD4A006519C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D65A16C1A25DE36006519C2 /* CPSAnimatedTextView.h */,
+				6D65A16D1A25DE36006519C2 /* CPSAnimatedTextView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6D78FC321A0B7A140097E4F5 = {
 			isa = PBXGroup;
 			children = (
@@ -996,6 +1008,7 @@
 			isa = PBXGroup;
 			children = (
 				6DF03C491A1F23E4003A0DF1 /* Single Video Playback */,
+				6D65A16B1A25DD4A006519C2 /* View */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1355,6 +1368,7 @@
 				6D8933E91A1B93090099A818 /* CPSViewControllerContentWireframe.m in Sources */,
 				6DC8E65B1A1247A200197DB3 /* CPSCachedViewControllerProvider.m in Sources */,
 				6D5432421A1CE02B00746CB7 /* CPSAccessPagePresenter.m in Sources */,
+				6D65A16E1A25DE36006519C2 /* CPSAnimatedTextView.m in Sources */,
 				6D5432391A1CD5FE00746CB7 /* CPSBaseWireframe.m in Sources */,
 				6DEA20D51A1603DD001AAC42 /* CPSPlaceholderWireframe.m in Sources */,
 				6D21156C1A23267E00F2620B /* CPSCostOfRiskResourceLoader.m in Sources */,

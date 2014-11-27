@@ -9,6 +9,7 @@
 #import "CPSCostOfRiskCellPresenter.h"
 
 @implementation CPSCostOfRiskCellPresenter
+
 - (void)configureCell:(id<CPSCostOfRiskItemCellInterface>)cell
               forItem:(NSString *)item
           atIndexPath:(NSIndexPath *)indexPath

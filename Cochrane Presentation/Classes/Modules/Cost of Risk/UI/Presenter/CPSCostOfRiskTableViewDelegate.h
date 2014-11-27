@@ -18,4 +18,6 @@
  */
 @property (nonatomic, strong) NSIndexPath *indexPathToAnimate;
 
+- (void)stopAnimatingCells;
+
 @end

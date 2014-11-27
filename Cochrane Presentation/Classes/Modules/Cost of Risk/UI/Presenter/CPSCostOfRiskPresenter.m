@@ -83,6 +83,8 @@
 
 - (void)addItem:(NSString *)itemTitle
 {
+    [self.delegate stopAnimatingCells];
+    
     NSUInteger count = [self.datasource count];
     NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:count inSection:0];
     
