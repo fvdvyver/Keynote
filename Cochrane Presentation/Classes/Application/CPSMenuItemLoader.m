@@ -73,7 +73,7 @@
              @"Each menu item needs an Array of content_wireframe");
     
     CPSViewControllerContentWireframe *wireframe = [self wireframeForContentWireframes:wireframeDescriptions];
-    UIImage *iconImage = (iconName == nil) ? nil : [UIImage imageNamed:iconName];
+    UIImage *iconImage = (iconName.length == 0) ? nil : [UIImage imageNamed:iconName];
     
     return [[CPSViewControllerMenuItem alloc] initWithTitle:NSLocalizedString(title, nil)
                                                        icon:iconImage
