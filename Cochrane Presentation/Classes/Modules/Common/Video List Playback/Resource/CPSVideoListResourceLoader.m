@@ -1,24 +1,17 @@
 //
-//  CPSCostOfRiskResourceLoader.m
+//  CPSVideoListResourceLoader.m
 //  Cochrane Presentation
 //
-//  Created by Rayman Rosevear on 2014/11/24.
+//  Created by Rayman Rosevear on 2014/11/27.
 //  Copyright (c) 2014 Mushroom Cloud. All rights reserved.
 //
 
-#import "CPSCostOfRiskResourceLoader.h"
-
 #import <KZPropertyMapper/KZPropertyMapper.h>
 
-#import "CPSCostOfRiskItem.h"
+#import "CPSVideoListResourceLoader.h"
+#import "CPSVideoListItem.h"
 
-@interface CPSCostOfRiskResourceLoader ()
-
-- (NSDictionary *)itemMapping;
-
-@end
-
-@implementation CPSCostOfRiskResourceLoader
+@implementation CPSVideoListResourceLoader
 
 - (void)loadResources
 {
@@ -33,26 +26,31 @@
     NSArray *datasourceArray = [NSArray arrayWithContentsOfFile:filepath];
     NSMutableArray *datasource = [NSMutableArray arrayWithCapacity:datasourceArray.count];
     
-    NSDictionary *itemMapping = [self itemMapping];
+    NSDictionary *itemMapping = [self videoListItemMapping];
     
     for (NSDictionary *sourceItem in datasourceArray)
     {
-        CPSCostOfRiskItem *item = [CPSCostOfRiskItem new];
+        CPSVideoListItem *newItem = [[self videoListItemClass] new];
         [KZPropertyMapper mapValuesFrom:sourceItem
-                             toInstance:item
+                             toInstance:newItem
                            usingMapping:itemMapping];
         
-        [datasource addObject:item];
+        [datasource addObject:newItem];
     }
     
     [self.targetObject setValue:datasource forKeyPath:datasourceKeypath];
 }
 
-- (NSDictionary *)itemMapping
+- (Class)videoListItemClass
+{
+    return [CPSVideoListItem class];
+}
+
+- (NSDictionary *)videoListItemMapping
 {
     return @{
              @"title_text" : @"titleText",
-             @"video_file" : @"videoFile"
+             @"video_file" : @"videoFilename"
              };
 }
 

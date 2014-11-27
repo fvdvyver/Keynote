@@ -9,21 +9,15 @@
 #import "CPSCostOfRiskInteractor.h"
 
 #import "CPSBaseWireframe.h"
-
-#import "CPSCostOfRiskItem.h"
+#import "CPSVideoListItem.h"
 
 @interface CPSCostOfRiskInteractor ()
 
 @property (nonatomic, assign) NSUInteger currentItemIndex;
 
-- (void)playVideoForItem:(CPSCostOfRiskItem *)item;
-
 @end
 
 @implementation CPSCostOfRiskInteractor
-
-@synthesize wireframe = _wireframe;
-@synthesize presenter = _presenter;
 
 - (void)resetState
 {
@@ -33,37 +27,15 @@
 
 - (void)advanceCurrentItem
 {
-    if (self.currentItemIndex < self.presentationItems.count)
+    if (self.currentItemIndex < self.videoItems.count)
     {
-        CPSCostOfRiskItem *item = self.presentationItems[self.currentItemIndex++];
+        CPSVideoListItem *item = self.videoItems[self.currentItemIndex++];
         [self.presenter addItem:item.titleText];
         [self playVideoForItem:item];
     }
     else
     {
         [self.wireframe advanceCurrentContentProvider];
-    }
-}
-
-- (void)itemSelectedAtIndex:(NSUInteger)index
-{
-    CPSCostOfRiskItem *item = self.presentationItems[index];
-    [self playVideoForItem:item];
-}
-
-- (void)playVideoForItem:(CPSCostOfRiskItem *)item
-{
-    NSString *resourceName = [item.videoFile stringByDeletingPathExtension];
-    NSString *pathExtension = [item.videoFile pathExtension];
-    NSString *path = [[NSBundle mainBundle] pathForResource:resourceName ofType:pathExtension];
-    
-    if (path == nil)
-    {
-        NSLog(@"WARNING: video for The Cost of Risk item (%@) not found.", item.titleText);
-    }
-    else
-    {
-        [self.presenter playVideoAtPath:path];
     }
 }
 

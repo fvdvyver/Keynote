@@ -92,11 +92,11 @@
 						<array>
 							<dict>
 								<key>class</key>
-								<string>CPSCostOfRiskResourceLoader</string>
+								<string>CPSVideoListResourceLoader</string>
 								<key>arguments</key>
 								<dict>
 									<key>datasource_keypath</key>
-									<string>presentationItems</string>
+									<string>videoItems</string>
 									<key>data_file</key>
 									<string>cost_of_risk_resource</string>
 								</dict>
@@ -107,6 +107,11 @@
 					<dict>
 						<key>class</key>
 						<string>CPSCostOfRiskPresenter</string>
+						<key>arguments</key>
+						<dict>
+							<key>introVideoFilename</key>
+							<string>CoR_Background.mp4</string>
+						</dict>
 					</dict>
 					<key>view</key>
 					<dict>

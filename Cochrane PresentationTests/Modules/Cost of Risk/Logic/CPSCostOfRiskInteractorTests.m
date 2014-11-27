@@ -11,8 +11,9 @@
 #import <OCMock/OCMock.h>
 
 #import "CPSCostOfRiskInteractor.h"
-#import "CPSCostOfRiskItem.h"
 #import "CPSCostOfRiskInteractorIO.h"
+
+#import "CPSVideoListItem.h"
 
 #import "CPSBaseWireframe.h"
 
@@ -20,7 +21,7 @@
 
 @property (nonatomic, strong) CPSCostOfRiskInteractor * interactor;
 
-@property (nonatomic, strong) NSArray * presentationItems;
+@property (nonatomic, strong) NSArray * videoItems;
 @property (nonatomic, strong) CPSBaseWireframe * wireframeMock;
 @property (nonatomic, strong) id<CPSCostOfRiskInteractorOutput> presenterMock;
 
@@ -35,13 +36,13 @@
     id wireframe = OCMClassMock([CPSBaseWireframe class]);
     id presenter = OCMStrictProtocolMock(@protocol(CPSCostOfRiskInteractorOutput));
 
-    CPSCostOfRiskItem *item1 = [CPSCostOfRiskItem new];
-    CPSCostOfRiskItem *item2 = [CPSCostOfRiskItem new];
+    CPSVideoListItem *item1 = [CPSVideoListItem new];
+    CPSVideoListItem *item2 = [CPSVideoListItem new];
     
-    item1.titleText = @"item 1";
-    item1.videoFile = @"viedo 1";
-    item2.titleText = @"item 2";
-    item2.videoFile = @"viedo 2";
+    item1.titleText     = @"item 1";
+    item1.videoFilename = @"viedo 1";
+    item2.titleText     = @"item 2";
+    item2.videoFilename = @"viedo 2";
     
     NSArray *items = @[ item1, item2 ];
     
@@ -49,10 +50,10 @@
     
     interactor.wireframe = wireframe;
     interactor.presenter = presenter;
-    interactor.presentationItems = items;
+    interactor.videoItems = items;
     
     self.interactor = interactor;
-    self.presentationItems = items;
+    self.videoItems = items;
     self.wireframeMock = wireframe;
     self.presenterMock = presenter;
 }
@@ -60,7 +61,7 @@
 - (void)tearDown
 {
     self.interactor = nil;
-    self.presentationItems = nil;
+    self.videoItems = nil;
     self.wireframeMock = nil;
     self.presenterMock = nil;
     

@@ -8,8 +8,6 @@
 
 #import "CPSCostOfRiskViewController.h"
 
-#import <MediaPlayer/MediaPlayer.h>
-
 #import "CPSCostOfRiskCell.h"
 #import "UITableView+CPSBorderMaskStretchAdditions.h"
 
@@ -19,29 +17,15 @@
 
 @property (nonatomic, strong) MCDescendentViewGestureDelegate *tapGestureDelegate;
 
-@property (nonatomic, strong) MPMoviePlayerController * contentVideoController;
-@property (nonatomic, strong) MPMoviePlayerController * backgroundVideoController;
-
-@property (nonatomic, copy) dispatch_block_t backgroundVideoCompletionBlock;
-
 - (void)configureTableView;
 - (void)configureGestureRecognisers;
 
 - (void)handleSignleTap:(UITapGestureRecognizer *)gestureRecognizer;
 - (void)handleDoubleTap:(UITapGestureRecognizer *)gestureRecognizer;
 
-- (void)backgroundVideoPlaybackDidFinish;
-
-- (void)removeSubviewsFromBackgroundVideoContainerView;
-
 @end
 
 @implementation CPSCostOfRiskViewController
-
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
 
 - (void)configureTableView
 {
@@ -76,18 +60,6 @@
     [self configureGestureRecognisers];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    [self.eventHandler updateView];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-    [self.contentVideoController stop];
-}
-
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
@@ -100,19 +72,9 @@
     maskLayer.frame = maskFrame;
 }
 
-- (void)setTableViewDatasource:(id<UITableViewDataSource>)datasource
+- (NSString *)cellReuseIdentifier
 {
-    [self.tableView setDataSource:datasource];
-}
-
-- (void)setTableViewDelegate:(id<UITableViewDelegate>)delegate
-{
-    [self.tableView setDelegate:delegate];
-}
-
-- (void)setUserInteractionEnabled:(BOOL)enabled
-{
-    self.view.userInteractionEnabled = enabled;
+    return @"cost_of_risk_cell";
 }
 
 - (void)reloadData
@@ -130,68 +92,6 @@
     [self.tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionBottom];
 }
 
-- (void)playContentVideoAtURL:(NSURL *)url
-{
-    MPMoviePlayerController *videoController = [[MPMoviePlayerController alloc] initWithContentURL:url];
-    
-    // Set the control style to none initially so that the user has to tap first to show the controls
-    videoController.controlStyle = MPMovieControlStyleNone;
-    videoController.repeatMode = MPMovieRepeatModeNone;
-    videoController.scalingMode = MPMovieScalingModeNone;
-    
-    [UIView performWithoutAnimation:^
-    {
-        UIView *videoView = [videoController view];
-        videoView.frame = self.contentVideoContainerView.bounds;
-        videoView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        videoView.userInteractionEnabled = NO;
-        
-        [self.contentVideoContainerView addSubview:videoView];
-    }];
-    
-    self.contentVideoController = videoController;
-    [self.contentVideoController play];
-}
-
-- (void)playBackgroundVideoAtURL:(NSURL *)url withCompletion:(dispatch_block_t)completion
-{
-    if (self.backgroundVideoController != nil)
-    {
-        [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                        name:MPMoviePlayerPlaybackDidFinishNotification
-                                                      object:self.backgroundVideoController];
-    }
-    
-    self.contentView.alpha = 0.0;
-    [self removeSubviewsFromBackgroundVideoContainerView];
-    
-    MPMoviePlayerController *videoController = [[MPMoviePlayerController alloc] initWithContentURL:url];
-    
-    // Set the control style to none initially so that the user has to tap first to show the controls
-    videoController.controlStyle = MPMovieControlStyleNone;
-    videoController.repeatMode = MPMovieRepeatModeNone;
-    videoController.scalingMode = MPMovieScalingModeNone;
-    
-    [UIView performWithoutAnimation:^
-    {
-        UIView *videoView = [videoController view];
-        videoView.frame = self.backgroundVideoContainerView.bounds;
-        videoView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        videoView.userInteractionEnabled = NO;
-        
-        [self.backgroundVideoContainerView addSubview:videoView];
-    }];
-    
-    self.backgroundVideoController = videoController;
-    [self.backgroundVideoController play];
-    
-    self.backgroundVideoCompletionBlock = completion;
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(backgroundVideoPlaybackDidFinish)
-                                                 name:MPMoviePlayerPlaybackDidFinishNotification
-                                               object:videoController];
-}
-
 - (void)handleSignleTap:(UITapGestureRecognizer *)gestureRecognizer
 {
     [self.eventHandler handleSingleTap];
@@ -200,45 +100,6 @@
 - (void)handleDoubleTap:(UITapGestureRecognizer *)gestureRecognizer
 {
     [self.eventHandler handleDoubleTap];
-}
-
-- (void)backgroundVideoPlaybackDidFinish
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:MPMoviePlayerPlaybackDidFinishNotification
-                                                  object:self.backgroundVideoController];
-    
-    UIView *background = [self.backgroundVideoContainerView snapshotViewAfterScreenUpdates:NO];
-    [self removeSubviewsFromBackgroundVideoContainerView];
-    
-    [self.backgroundVideoContainerView addSubview:background];
-    
-    [UIView animateWithDuration:1.0 animations:^
-    {
-        self.contentView.alpha = 1.0;
-    }
-    completion:^(BOOL finished)
-    {
-        [self removeSubviewsFromBackgroundVideoContainerView];
-    }];
-    
-    if (self.backgroundVideoCompletionBlock != nil)
-    {
-        self.backgroundVideoCompletionBlock();
-    }
-}
-
-- (void)removeSubviewsFromBackgroundVideoContainerView
-{
-    for (UIView *subview in self.backgroundVideoContainerView.subviews)
-    {
-        [subview removeFromSuperview];
-    }
-}
-
-- (NSString *)cellReuseIdentifier
-{
-    return @"cell";
 }
 
 @end

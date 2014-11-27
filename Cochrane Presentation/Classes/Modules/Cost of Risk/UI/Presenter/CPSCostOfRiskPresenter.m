@@ -53,17 +53,13 @@
     [self.userInterface setTableViewDatasource:self.datasource];
     [self.userInterface setTableViewDelegate:self.delegate];
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"CoR_Background" withExtension:@"mp4"];
-    
-    typeof(self) __weak weakself = self;
-    [self.userInterface setUserInteractionEnabled:NO];
-    [self.userInterface playBackgroundVideoAtURL:url withCompletion:^
-    {
-        typeof(weakself) __strong strongself = weakself;
-        
-        [strongself.userInterface setUserInteractionEnabled:YES];
-        [strongself.interactor advanceCurrentItem];
-    }];
+    [super updateView];
+}
+
+- (void)introVideoPlaybackCompleted
+{
+    [super introVideoPlaybackCompleted];
+    [self.interactor advanceCurrentItem];
 }
 
 - (void)handleSingleTap
@@ -79,6 +75,7 @@
 - (void)resetState
 {
     [self.datasource setItems:nil];
+    [self.userInterface reloadData];
 }
 
 - (void)addItem:(NSString *)itemTitle
@@ -92,12 +89,6 @@
     [self.datasource addItem:itemTitle];
     [self.delegate setIndexPathToAnimate:newIndexPath];
     [self.userInterface addRowAtIndexPath:newIndexPath];
-}
-
-- (void)playVideoAtPath:(NSString *)path
-{
-    NSURL *url = [NSURL fileURLWithPath:path];
-    [self.userInterface playContentVideoAtURL:url];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

@@ -43,6 +43,7 @@
     self.wireframeMock = wireframe;
     self.interactorMock = interactor;
     self.presenter = presenter;
+    self.userInterfaceMock = userInterface;
 }
 
 - (void)tearDown
@@ -77,20 +78,6 @@
     OCMVerifyAll((id)userInterface);
 }
 
-- (void)testPresenterPlaysVideoWhenRequested
-{
-    id<CPSCostOfRiskView> userInterface = self.userInterfaceMock;
-    
-    NSString *path = @"file:///fake/path";
-    NSURL *url = [NSURL fileURLWithPath:path];
-    
-    OCMExpect([userInterface playContentVideoAtURL:url]);
-    
-    [self.presenter playVideoAtPath:path];
-    
-    OCMVerifyAll((id)userInterface);
-}
-
 - (void)testReceivingSingleTapAdvancesInteractorInput
 {
     id<CPSCostOfRiskInteractorInput> interactor = self.interactorMock;
@@ -111,17 +98,6 @@
     [self.presenter handleDoubleTap];
     
     OCMVerifyAll((id)wireframe);
-}
-
-- (void)testPresenterPlaysBackgroundVideoWhenViewRequestsUpdate
-{
-    id<CPSCostOfRiskView> userInterface = self.userInterfaceMock;
-    
-    OCMExpect([userInterface playBackgroundVideoAtURL:[OCMArg any] withCompletion:[OCMArg any]]);
-    
-    [self.presenter updateView];
-    
-    OCMVerifyAll((id)userInterface);
 }
 
 @end

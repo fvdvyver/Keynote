@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "CPSVideoListPresenter.h"
+
 #import "CPSCostOfRiskInteractorIO.h"
 #import "CPSCostOfRiskViewInterface.h"
 
-@interface CPSCostOfRiskPresenter : NSObject <CPSCostOfRiskInteractorOutput, CPSCostOfRiskEventHandler>
+@interface CPSCostOfRiskPresenter : CPSVideoListPresenter <CPSCostOfRiskInteractorOutput, CPSCostOfRiskEventHandler>
 
 @property (nonatomic, weak)   id <CPSCostOfRiskInteractorInput> interactor;
 @property (nonatomic, strong) id <CPSCostOfRiskView> userInterface;

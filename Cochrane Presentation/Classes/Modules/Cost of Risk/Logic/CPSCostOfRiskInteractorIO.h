@@ -8,21 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-#import "CPSInteractor.h"
-#import "CPSPresenter.h"
+#import "CPSVideoListInteractorIO.h"
 
-@protocol CPSCostOfRiskInteractorInput <CPSInteractor>
+@protocol CPSCostOfRiskInteractorInput <CPSVideoListInteractorInput>
 
 - (void)advanceCurrentItem;
-- (void)itemSelectedAtIndex:(NSUInteger)index;
 
 @end
 
-@protocol CPSCostOfRiskInteractorOutput <CPSPresenter>
+@protocol CPSCostOfRiskInteractorOutput <CPSVideoListInteractorOutput>
 
 - (void)resetState;
-
 - (void)addItem:(NSString *)itemTitle;
-- (void)playVideoAtPath:(NSString *)path;
 
 @end

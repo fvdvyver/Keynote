@@ -8,30 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-#import "CPSView.h"
-#import "CPSPresenter.h"
+#import "CPSVideoListView.h"
 
-@protocol CPSCostOfRiskView <CPSView>
-
-- (NSString *)cellReuseIdentifier;
-
-- (void)setTableViewDatasource:(id<UITableViewDataSource>)datasource;
-- (void)setTableViewDelegate:(id<UITableViewDelegate>)delegate;
-
-- (void)setUserInteractionEnabled:(BOOL)enabled;
+@protocol CPSCostOfRiskView <CPSVideoListView>
 
 - (void)reloadData;
 - (void)addRowAtIndexPath:(NSIndexPath *)indexPath;
 - (void)selectRowAtIndexPath:(NSIndexPath *)indexPath;
 
-- (void)playContentVideoAtURL:(NSURL *)url;
-- (void)playBackgroundVideoAtURL:(NSURL *)url withCompletion:(dispatch_block_t)completion;
-
 @end
 
-@protocol CPSCostOfRiskEventHandler <CPSPresenter>
-
-- (void)updateView;
+@protocol CPSCostOfRiskEventHandler <CPSVideoListViewEventHandler>
 
 - (void)handleSingleTap;
 - (void)handleDoubleTap;
