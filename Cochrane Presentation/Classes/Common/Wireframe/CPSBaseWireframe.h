@@ -33,4 +33,7 @@
 
 - (void)configureNewContentViewController:(UIViewController *)viewController;
 
+- (UIStoryboard *)storyboard;
+- (UIViewController *)instantiateNewViewControllerWithIdentifier:(NSString *)identifier;
+
 @end

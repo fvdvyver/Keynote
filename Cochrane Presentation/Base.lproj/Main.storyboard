@@ -11,6 +11,7 @@
             <string>Planer</string>
             <string>Planer</string>
             <string>Planer</string>
+            <string>Planer</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -259,6 +260,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="34n-bX-zKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2155" y="1443"/>
+        </scene>
+        <!--Key Industries Detail View Controller-->
+        <scene sceneID="tOS-vE-zdq">
+            <objects>
+                <viewController storyboardIdentifier="KeyIndustriesDetailViewController" id="MCb-SD-ECo" customClass="CPSKeyIndustriesDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LaE-Fv-bqb"/>
+                        <viewControllerLayoutGuide type="bottom" id="KiT-nM-INt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M34-Mx-um8">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="hive_background" translatesAutoresizingMaskIntoConstraints="NO" id="hdJ-tK-qwb">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Znh-M0-66j">
+                                <rect key="frame" x="41" y="31" width="942" height="706"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="942" id="QEl-bB-0JU"/>
+                                    <constraint firstAttribute="height" constant="706" id="W4O-1w-7mG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUS-2p-BMN">
+                                <rect key="frame" x="41" y="639.5" width="942" height="97"/>
+                                <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="86"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rUS-2p-BMN" firstAttribute="bottom" secondItem="Znh-M0-66j" secondAttribute="bottom" id="R5X-Kn-Nrm"/>
+                            <constraint firstItem="rUS-2p-BMN" firstAttribute="trailing" secondItem="Znh-M0-66j" secondAttribute="trailing" id="RUH-aI-wQ4"/>
+                            <constraint firstAttribute="centerY" secondItem="Znh-M0-66j" secondAttribute="centerY" id="RtN-jm-HKk"/>
+                            <constraint firstAttribute="centerX" secondItem="Znh-M0-66j" secondAttribute="centerX" id="VZY-iP-LNM"/>
+                            <constraint firstItem="rUS-2p-BMN" firstAttribute="leading" secondItem="Znh-M0-66j" secondAttribute="trailing" constant="-492" id="WxL-DI-hP8"/>
+                            <constraint firstItem="rUS-2p-BMN" firstAttribute="leading" secondItem="Znh-M0-66j" secondAttribute="leading" id="zdW-VH-nBt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WxL-DI-hP8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="imageView" destination="Znh-M0-66j" id="tLu-wB-gXi"/>
+                        <outlet property="titleLabel" destination="rUS-2p-BMN" id="S8r-My-h06"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pOt-h6-Aav" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2155" y="2398"/>
         </scene>
         <!--Access Page View Controller-->
         <scene sceneID="npe-bS-nwF">

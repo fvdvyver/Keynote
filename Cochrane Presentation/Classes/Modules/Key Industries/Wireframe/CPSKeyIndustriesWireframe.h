@@ -10,6 +10,8 @@
 
 @interface CPSKeyIndustriesWireframe : CPSBaseWireframe
 
+@property (nonatomic, strong) NSString * detailViewControllerIdentifier;
+
 - (void)showIndustryWithTitle:(NSString *)title imageName:(NSString *)imageName;
 - (void)showMainViewController;
 - (void)navigateToProductRange;

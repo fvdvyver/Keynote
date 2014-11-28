@@ -137,6 +137,11 @@
 					<dict>
 						<key>class</key>
 						<string>CPSKeyIndustriesWireframe</string>
+						<key>arguments</key>
+						<dict>
+							<key>detailViewControllerIdentifier</key>
+							<string>KeyIndustriesDetailViewController</string>
+						</dict>
 					</dict>
 					<key>interactor</key>
 					<dict>

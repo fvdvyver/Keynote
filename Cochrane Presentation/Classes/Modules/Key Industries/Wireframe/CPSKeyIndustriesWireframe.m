@@ -10,12 +10,12 @@
 
 #import "CPSCachedViewControllerProvider.h"
 
-#import "CPSPlaceholderWireframe.h"
-#import "CPSPlaceholderPresenter.h"
+#import "CPSKeyIndustriesDetailPresenter.h"
 
 @interface CPSKeyIndustriesWireframe ()
 
 @property (nonatomic, strong) UIViewController * mainViewController;
+@property (nonatomic, strong) CPSKeyIndustriesDetailPresenter * detailPresenter;
 
 @end
 
@@ -25,6 +25,7 @@
 {
     // purge the cached content view controller because we have been requested to provide a new one
     self.mainViewController = nil;
+    self.detailPresenter = nil;
 }
 
 - (UIViewController *)contentViewController
@@ -37,21 +38,25 @@
 
 - (void)showMainViewController
 {
+    self.detailPresenter = nil;
     [self.parentContentWireframe setContentControllerProvider:[CPSCachedViewControllerProvider providerWithCachedViewController:self.mainViewController]];
 }
 
 - (void)showIndustryWithTitle:(NSString *)title imageName:(NSString *)imageName
 {
-    CPSPlaceholderWireframe *wireframe = [CPSPlaceholderWireframe wireframeWithStoryboardName:self.storyboardName placeholderText:title];
-    wireframe.presenter = [CPSPlaceholderPresenter new];
-    [wireframe.presenter setWireframe:self];
+    UIViewController<CPSView> *viewController = (id)[self instantiateNewViewControllerWithIdentifier:self.detailViewControllerIdentifier];
+    CPSKeyIndustriesDetailPresenter *presenter = [CPSKeyIndustriesDetailPresenter new];
+    presenter.title = title;
+    presenter.imageName = imageName;
     
-    [self.parentContentWireframe setContentControllerProvider:wireframe];
-}
-
-- (void)advanceCurrentContentProvider
-{
-    [self showMainViewController];
+    viewController.eventHandler = presenter;
+    
+    presenter.wireframe = self;
+    presenter.userInterface = (id)viewController;
+    
+    self.detailPresenter = presenter;
+    
+    [self.parentContentWireframe setContentControllerProvider:[CPSCachedViewControllerProvider providerWithCachedViewController:viewController]];
 }
 
 - (void)navigateToProductRange

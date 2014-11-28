@@ -8,13 +8,6 @@
 
 #import "CPSBaseWireframe.h"
 
-@interface CPSBaseWireframe ()
-
-- (UIStoryboard *)storyboard;
-- (UIViewController *)instantiateNewViewController;
-
-@end
-
 @implementation CPSBaseWireframe
 
 + (instancetype)wireframeWithStoryboardName:(NSString *)storyboardName viewControllerID:(NSString *)identifer
@@ -31,9 +24,9 @@
     return [UIStoryboard storyboardWithName:self.storyboardName bundle:nil];
 }
 
-- (UIViewController *)instantiateNewViewController
+- (UIViewController *)instantiateNewViewControllerWithIdentifier:(NSString *)identifier
 {
-    return [self.storyboard instantiateViewControllerWithIdentifier:self.viewControllerIdentifier];
+    return [self.storyboard instantiateViewControllerWithIdentifier:identifier];
 }
 
 - (void)configureNewContentViewController:(UIViewController *)viewController
@@ -47,7 +40,7 @@
 
 - (UIViewController *)contentViewController
 {
-    UIViewController *viewController = [self instantiateNewViewController];
+    UIViewController *viewController = [self instantiateNewViewControllerWithIdentifier:self.viewControllerIdentifier];
     [self configureNewContentViewController:viewController];
     
     return viewController;

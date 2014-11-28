@@ -64,6 +64,8 @@
 		6D5432601A1E279700746CB7 /* CPSMenuItemLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54325F1A1E279700746CB7 /* CPSMenuItemLoader.m */; };
 		6D54D9CB1A28AB5F0070A1D4 /* cost_of_risk_item_mapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D54D9CA1A28AB5F0070A1D4 /* cost_of_risk_item_mapping.plist */; };
 		6D54DA011A28BC730070A1D4 /* MCCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA001A28BC730070A1D4 /* MCCollectionViewDelegate.m */; };
+		6D54DA0E1A28C4430070A1D4 /* CPSKeyIndustriesDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA0D1A28C4430070A1D4 /* CPSKeyIndustriesDetailPresenter.m */; };
+		6D54DA111A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA101A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.m */; };
 		6D61104B1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D61104A1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m */; };
 		6D65A15D1A25CD08006519C2 /* CoR_3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D65A1591A25CD08006519C2 /* CoR_3.mp4 */; };
 		6D65A15E1A25CD08006519C2 /* CoR_4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D65A15A1A25CD08006519C2 /* CoR_4.mp4 */; };
@@ -236,6 +238,11 @@
 		6D54D9CA1A28AB5F0070A1D4 /* cost_of_risk_item_mapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cost_of_risk_item_mapping.plist; sourceTree = "<group>"; };
 		6D54D9FF1A28BC730070A1D4 /* MCCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCollectionViewDelegate.h; sourceTree = "<group>"; };
 		6D54DA001A28BC730070A1D4 /* MCCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCollectionViewDelegate.m; sourceTree = "<group>"; };
+		6D54DA0B1A28C3CD0070A1D4 /* CPSKeyIndustriesDetailViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustriesDetailViewInterface.h; sourceTree = "<group>"; };
+		6D54DA0C1A28C4430070A1D4 /* CPSKeyIndustriesDetailPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustriesDetailPresenter.h; sourceTree = "<group>"; };
+		6D54DA0D1A28C4430070A1D4 /* CPSKeyIndustriesDetailPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSKeyIndustriesDetailPresenter.m; sourceTree = "<group>"; };
+		6D54DA0F1A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustriesDetailViewController.h; sourceTree = "<group>"; };
+		6D54DA101A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSKeyIndustriesDetailViewController.m; sourceTree = "<group>"; };
 		6D6110491A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPSRootWireframe+MCRevealPresentation.h"; sourceTree = "<group>"; };
 		6D61104A1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CPSRootWireframe+MCRevealPresentation.m"; sourceTree = "<group>"; };
 		6D65A1591A25CD08006519C2 /* CoR_3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoR_3.mp4; sourceTree = "<group>"; };
@@ -827,6 +834,42 @@
 			path = Plist;
 			sourceTree = "<group>";
 		};
+		6D54DA071A28C35C0070A1D4 /* Key Industries Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6D54DA081A28C36F0070A1D4 /* UI */,
+			);
+			path = "Key Industries Detail";
+			sourceTree = "<group>";
+		};
+		6D54DA081A28C36F0070A1D4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6D54DA0A1A28C3AE0070A1D4 /* Presenter */,
+				6D54DA091A28C3980070A1D4 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6D54DA091A28C3980070A1D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D54DA0B1A28C3CD0070A1D4 /* CPSKeyIndustriesDetailViewInterface.h */,
+				6D54DA0F1A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.h */,
+				6D54DA101A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D54DA0A1A28C3AE0070A1D4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6D54DA0C1A28C4430070A1D4 /* CPSKeyIndustriesDetailPresenter.h */,
+				6D54DA0D1A28C4430070A1D4 /* CPSKeyIndustriesDetailPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		6D65A16B1A25DD4A006519C2 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1174,6 +1217,7 @@
 				6D54323D1A1CDFCA00746CB7 /* Intro */,
 				6D2115631A23257000F2620B /* Cost of Risk */,
 				6D1871D71A276A1600F886B9 /* Key Industries */,
+				6D54DA071A28C35C0070A1D4 /* Key Industries Detail */,
 				6DEA20D11A160396001AAC42 /* Placeholder */,
 			);
 			path = Modules;
@@ -1611,6 +1655,7 @@
 				6DBD91731A14AC7200FA6A51 /* CPSMenuWireframe.m in Sources */,
 				6D1872081A2788B000F886B9 /* CPSKeyIndustriesItemDatasource.m in Sources */,
 				6D2BD9A11A237C9C0035189C /* CPSCostOfRiskCell.m in Sources */,
+				6D54DA111A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.m in Sources */,
 				6DEA20CF1A15FF3B001AAC42 /* CPSRevealController.m in Sources */,
 				6D10E1011A10AFC5006DD677 /* CPSRootWireframe.m in Sources */,
 				6D8DEA161A13C3D9007C92F8 /* CPSMenuTableViewController.m in Sources */,
@@ -1619,6 +1664,7 @@
 				6D8DEA1E1A14A578007C92F8 /* CPSMenuItemTableViewCell.m in Sources */,
 				6D21157E1A23459900F2620B /* CPSCostOfRiskViewController.m in Sources */,
 				6D54324A1A1CE46E00746CB7 /* CPSAccessPageViewController.m in Sources */,
+				6D54DA0E1A28C4430070A1D4 /* CPSKeyIndustriesDetailPresenter.m in Sources */,
 				6D1871E71A276D6700F886B9 /* CPSPropertyMappingResourceLoader.m in Sources */,
 				6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */,
 				6D10E1161A10C677006DD677 /* CPSMenuInteractor.m in Sources */,
