@@ -10,6 +10,7 @@
 
 @interface CPSKeyIndustriesDetailViewController ()
 
+- (void)setupImageClippingMask;
 - (void)setupGestureRecognizers;
 
 - (void)viewTapped:(UITapGestureRecognizer *)gestureRecognizer;
@@ -17,6 +18,14 @@
 @end
 
 @implementation CPSKeyIndustriesDetailViewController
+
+- (void)setupImageClippingMask
+{
+    CALayer *imageMask = [CALayer layer];
+    imageMask.contents = (id)[UIImage imageNamed:@"key_industry_image_clipping_mask"].CGImage;
+    
+    self.imageView.layer.mask = imageMask;
+}
 
 - (void)setupGestureRecognizers
 {
@@ -27,6 +36,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self setupImageClippingMask];
     [self setupGestureRecognizers];
 }
 
@@ -34,6 +45,12 @@
 {
     [super viewWillAppear:animated];
     [self.eventHandler updateView];
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    self.imageView.layer.mask.frame = self.imageView.bounds;
 }
 
 - (void)setTitle:(NSString *)title

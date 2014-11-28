@@ -232,7 +232,7 @@
                                 <rect key="frame" x="851" y="646" width="143" height="107"/>
                                 <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="23"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="1" maxX="0.0" maxY="-1"/>
-                                <state key="normal" title="Products" backgroundImage="key_industry_item_glass_panel">
+                                <state key="normal" title="Products" backgroundImage="key_industry_icon_glass_panel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -447,7 +447,7 @@
         <image name="access_button_border_highlighted" width="275" height="126"/>
         <image name="cochrane_logo" width="326" height="94"/>
         <image name="hive_background" width="1024" height="768"/>
-        <image name="key_industry_item_glass_panel" width="143" height="107"/>
+        <image name="key_industry_icon_glass_panel" width="143" height="107"/>
         <image name="left_border_line_stretch" width="454" height="241"/>
         <image name="logo_header_border" width="526" height="119"/>
     </resources>

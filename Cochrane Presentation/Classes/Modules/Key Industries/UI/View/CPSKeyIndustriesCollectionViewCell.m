@@ -20,7 +20,7 @@
     self.textView.textContainerInset = UIEdgeInsetsZero;
     
     CALayer *imageMask = [CALayer layer];
-    imageMask.contents = (id)[UIImage imageNamed:@"key_industry_item_clipping_mask"].CGImage;
+    imageMask.contents = (id)[UIImage imageNamed:@"key_industry_icon_clipping_mask"].CGImage;
     
     self.imageView.layer.mask = imageMask;
     
