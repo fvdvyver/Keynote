@@ -157,7 +157,7 @@
 									<key>instance_class</key>
 									<string>CPSAssetItem</string>
 									<key>mapping</key>
-									<string>default_asset_mapping</string>
+									<string>secondary_asset_mapping</string>
 									<key>data_file</key>
 									<string>key_industries_resource</string>
 									<key>target_data_keypath</key>

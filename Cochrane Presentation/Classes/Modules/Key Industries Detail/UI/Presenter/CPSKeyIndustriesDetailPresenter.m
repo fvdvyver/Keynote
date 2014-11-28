@@ -14,8 +14,14 @@
 
 - (void)updateView
 {
+    UIImage *image = [UIImage imageNamed:self.imageName];
+    if (image == nil)
+    {
+        NSLog(@"WARNING: content image (%@) for key industry item %@ not found", self.imageName, self.title);
+    }
+    
     [self.userInterface setTitle:self.title];
-    [self.userInterface setImage:[UIImage imageNamed:self.imageName]];
+    [self.userInterface setImage:image];
 }
 
 - (void)viewTapped

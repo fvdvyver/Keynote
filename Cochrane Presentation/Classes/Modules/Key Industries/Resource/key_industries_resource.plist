@@ -7,180 +7,240 @@
 		<string>AIRPORTS</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_0</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_0</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>AUTO DEALERSHIPS</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_1</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_1</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>BASE &amp; FORCE PROTECTION</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_2</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_2</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>CARGO TERMINALS</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_3</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_3</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>CHEMICAL PLANTS</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_4</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_4</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>COMMERCIAL</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_5</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_5</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>CORPORATE CAMPUSES</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_6</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_6</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>CORRECTIONS</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_7</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_7</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>DATA CENTRES</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_8</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_8</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>EDUCATIONAL</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_9</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_9</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>ELECTRICITY FACILITIES</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_10</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_10</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>EMBASSIES &amp; CONSULATES</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_11</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_11</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>GATED COMMUNITIES</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_12</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_12</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>GOVERNMENT</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_13</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_13</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>HEALTH FACILITIES</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_14</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_14</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>INDUSTRIAL</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_15</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_15</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>JUSTICE</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_16</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_16</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>LIFESTYLE &amp; GOLF ESTATES</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_17</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_17</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>LUXURY HOTELS</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_18</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_18</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>MINING</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_19</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_19</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>NAVAL BASES</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_20</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_20</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>NUCLEAR POWER PLANTS</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_21</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_21</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>OIL &amp; GAS</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_22</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_22</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>REFINERIES</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_23</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_23</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>RETAIL PARKS</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_24</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_24</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>ROAD INFRASTRUCTURE</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_25</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_25</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>SOLAR &amp; WIND FARMS</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_26</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_26</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>SPORT FACILITIES</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_27</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_27</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>TELECOMMUNICATION SITES</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_28</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_28</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>THEME PARKS</string>
 		<key>primary_asset_name</key>
 		<string>key_industries_icon_29</string>
+		<key>secondary_asset_name</key>
+		<string>key_industries_image_29</string>
 	</dict>
 </array>
 </plist>
