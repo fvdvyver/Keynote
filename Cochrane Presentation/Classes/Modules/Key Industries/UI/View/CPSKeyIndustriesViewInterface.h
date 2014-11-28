@@ -30,5 +30,6 @@
 
 - (void)updateView;
 - (void)item:(id)item selectedAtIndex:(NSInteger)index;
+- (void)productsButtonTapped;
 
 @end

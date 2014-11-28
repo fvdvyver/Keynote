@@ -38,4 +38,9 @@
 //    [self.wireframe showIndustryWithTitle:item.title imageName:item.primaryFilename];
 }
 
+- (void)productsButtonTapped
+{
+    [self.wireframe navigateToProductRange];
+}
+
 @end

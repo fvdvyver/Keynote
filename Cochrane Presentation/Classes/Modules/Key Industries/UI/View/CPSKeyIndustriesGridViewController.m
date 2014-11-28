@@ -69,4 +69,9 @@
     [self.collectionView setDataSource:datasource];
 }
 
+- (IBAction)productsButtonTapped:(id)sender
+{
+    [self.eventHandler productsButtonTapped];
+}
+
 @end

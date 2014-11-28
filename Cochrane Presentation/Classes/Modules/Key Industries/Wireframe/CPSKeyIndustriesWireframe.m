@@ -10,4 +10,10 @@
 
 @implementation CPSKeyIndustriesWireframe
 
+- (void)navigateToProductRange
+{
+#warning TODO: change navigation system so we can specify which menu item to navigate to
+    [self.parentContentWireframe advanceCurrentContentProvider];
+}
+
 @end

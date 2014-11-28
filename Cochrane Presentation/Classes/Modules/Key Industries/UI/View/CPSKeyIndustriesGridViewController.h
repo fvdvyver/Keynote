@@ -16,4 +16,6 @@
 
 @property (nonatomic, weak) IBOutlet UICollectionView * collectionView;
 
+- (IBAction)productsButtonTapped:(id)sender;
+
 @end
