@@ -92,10 +92,14 @@
 						<array>
 							<dict>
 								<key>class</key>
-								<string>CPSVideoListResourceLoader</string>
+								<string>CPSPropertyMappingResourceLoader</string>
 								<key>arguments</key>
 								<dict>
-									<key>datasource_keypath</key>
+									<key>mapping</key>
+									<string>cost_of_risk_item_mapping</string>
+									<key>instance_class</key>
+									<string>CPSAssetItem</string>
+									<key>target_data_keypath</key>
 									<string>videoItems</string>
 									<key>data_file</key>
 									<string>cost_of_risk_resource</string>

@@ -13,7 +13,7 @@
 #import "CPSCostOfRiskInteractor.h"
 #import "CPSCostOfRiskInteractorIO.h"
 
-#import "CPSVideoListItem.h"
+#import "CPSAssetItem.h"
 
 #import "CPSBaseWireframe.h"
 
@@ -36,13 +36,13 @@
     id wireframe = OCMClassMock([CPSBaseWireframe class]);
     id presenter = OCMStrictProtocolMock(@protocol(CPSCostOfRiskInteractorOutput));
 
-    CPSVideoListItem *item1 = [CPSVideoListItem new];
-    CPSVideoListItem *item2 = [CPSVideoListItem new];
+    CPSAssetItem *item1 = [CPSAssetItem new];
+    CPSAssetItem *item2 = [CPSAssetItem new];
     
-    item1.titleText     = @"item 1";
-    item1.videoFilename = @"viedo 1";
-    item2.titleText     = @"item 2";
-    item2.videoFilename = @"viedo 2";
+    item1.title = @"item 1";
+    item1.primaryFilename = @"video 1";
+    item2.title = @"item 2";
+    item2.primaryFilename = @"video 2";
     
     NSArray *items = @[ item1, item2 ];
     

@@ -10,7 +10,7 @@
 
 #import "CPSVideoListInteractorIO.h"
 
-@class CPSVideoListItem;
+@class CPSAssetItem;
 
 /**
  *  Abstract base class interactor for video list playback. This class can be subclassed to provide the presenter with video list data.
@@ -22,6 +22,6 @@
 // must be an array of CPSVideoListItem
 @property (nonatomic, copy) NSArray *videoItems;
 
-- (void)playVideoForItem:(CPSVideoListItem *)item;
+- (void)playVideoForItem:(CPSAssetItem *)item;
 
 @end

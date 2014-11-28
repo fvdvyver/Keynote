@@ -9,7 +9,7 @@
 #import "CPSCostOfRiskInteractor.h"
 
 #import "CPSBaseWireframe.h"
-#import "CPSVideoListItem.h"
+#import "CPSAssetItem.h"
 
 @interface CPSCostOfRiskInteractor ()
 
@@ -29,8 +29,8 @@
 {
     if (self.currentItemIndex < self.videoItems.count)
     {
-        CPSVideoListItem *item = self.videoItems[self.currentItemIndex++];
-        [self.presenter addItem:item.titleText];
+        CPSAssetItem *item = self.videoItems[self.currentItemIndex++];
+        [self.presenter addItem:item.title];
         [self playVideoForItem:item];
     }
     else

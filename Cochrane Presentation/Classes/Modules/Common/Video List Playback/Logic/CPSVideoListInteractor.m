@@ -8,7 +8,7 @@
 
 #import "CPSVideoListInteractor.h"
 
-#import "CPSVideoListItem.h"
+#import "CPSAssetItem.h"
 
 @implementation CPSVideoListInteractor
 
@@ -17,19 +17,19 @@
 
 - (void)itemSelectedAtIndex:(NSUInteger)index
 {
-    CPSVideoListItem *item = self.videoItems[index];
+    CPSAssetItem *item = self.videoItems[index];
     [self playVideoForItem:item];
 }
 
-- (void)playVideoForItem:(CPSVideoListItem *)item
+- (void)playVideoForItem:(CPSAssetItem *)item
 {
-    NSString *resourceName = [item.videoFilename stringByDeletingPathExtension];
-    NSString *pathExtension = [item.videoFilename pathExtension];
+    NSString *resourceName = [item.primaryFilename stringByDeletingPathExtension];
+    NSString *pathExtension = [item.primaryFilename pathExtension];
     NSString *path = [[NSBundle mainBundle] pathForResource:resourceName ofType:pathExtension];
     
     if (path == nil)
     {
-        NSLog(@"WARNING: video (%@) not found in the application's main bundle.", item.titleText);
+        NSLog(@"WARNING: video (%@) not found in the application's main bundle.", item.title);
     }
     else
     {
