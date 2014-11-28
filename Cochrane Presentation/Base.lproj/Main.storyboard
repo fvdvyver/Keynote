@@ -10,6 +10,7 @@
             <string>Planer</string>
             <string>Planer</string>
             <string>Planer</string>
+            <string>Planer</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -197,6 +198,65 @@
             </objects>
             <point key="canvasLocation" x="2155" y="471"/>
         </scene>
+        <!--Key Industries Grid View Controller-->
+        <scene sceneID="aHM-lH-VOc">
+            <objects>
+                <viewController storyboardIdentifier="KeyIndustriesViewController" id="25v-SV-cxf" customClass="CPSKeyIndustriesGridViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C64-6n-eoB"/>
+                        <viewControllerLayoutGuide type="bottom" id="vaL-Kf-A9i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B9m-ir-uNy">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="hive_background" translatesAutoresizingMaskIntoConstraints="NO" id="btl-ss-whb">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3KO-d3-C5F">
+                                <rect key="frame" x="0.0" y="30" width="1024" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="20" id="47v-jA-cdY">
+                                    <size key="itemSize" width="143" height="107"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="cochrane_logo" translatesAutoresizingMaskIntoConstraints="NO" id="8PG-6U-J6d">
+                                <rect key="frame" x="16" y="648" width="326" height="94"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgN-MH-jMJ">
+                                <rect key="frame" x="851" y="646" width="143" height="107"/>
+                                <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="23"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="1" maxX="0.0" maxY="-1"/>
+                                <state key="normal" title="Products" backgroundImage="key_industry_item_glass_panel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3KO-d3-C5F" secondAttribute="trailing" id="2SD-63-kkO"/>
+                            <constraint firstItem="3KO-d3-C5F" firstAttribute="leading" secondItem="B9m-ir-uNy" secondAttribute="leading" id="EMP-G7-TK4"/>
+                            <constraint firstItem="vaL-Kf-A9i" firstAttribute="top" secondItem="HgN-MH-jMJ" secondAttribute="bottom" constant="15" id="JfJ-ps-eiN"/>
+                            <constraint firstAttribute="trailing" secondItem="HgN-MH-jMJ" secondAttribute="trailing" constant="30" id="RjB-xK-8iJ"/>
+                            <constraint firstItem="vaL-Kf-A9i" firstAttribute="top" secondItem="3KO-d3-C5F" secondAttribute="bottom" constant="135" id="ybc-ZC-Atx"/>
+                            <constraint firstItem="3KO-d3-C5F" firstAttribute="top" secondItem="B9m-ir-uNy" secondAttribute="top" constant="30" id="zQF-z9-LU5"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="collectionView" destination="3KO-d3-C5F" id="xZb-8y-Fti"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="34n-bX-zKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2155" y="1443"/>
+        </scene>
         <!--Access Page View Controller-->
         <scene sceneID="npe-bS-nwF">
             <objects>
@@ -326,7 +386,9 @@
     <resources>
         <image name="access_button_border" width="275" height="126"/>
         <image name="access_button_border_highlighted" width="275" height="126"/>
+        <image name="cochrane_logo" width="326" height="94"/>
         <image name="hive_background" width="1024" height="768"/>
+        <image name="key_industry_item_glass_panel" width="143" height="107"/>
         <image name="left_border_line_stretch" width="454" height="241"/>
         <image name="logo_header_border" width="526" height="119"/>
     </resources>

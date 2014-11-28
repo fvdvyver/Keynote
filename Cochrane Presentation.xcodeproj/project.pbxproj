@@ -25,6 +25,20 @@
 		6D1871D01A273BFA00F886B9 /* CPSVideoListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1871CF1A273BFA00F886B9 /* CPSVideoListPresenter.m */; };
 		6D1871D41A273FD700F886B9 /* CPSVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1871D31A273FD700F886B9 /* CPSVideoListViewController.m */; };
 		6D1871D61A2755A500F886B9 /* CPSVideoListPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1871D51A2755A500F886B9 /* CPSVideoListPresenterTests.m */; };
+		6D1871DC1A276A7E00F886B9 /* CPSAssetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1871DB1A276A7E00F886B9 /* CPSAssetItem.m */; };
+		6D1871E01A276B0600F886B9 /* CPSKeyIndustryGridInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1871DF1A276B0600F886B9 /* CPSKeyIndustryGridInteractor.m */; };
+		6D1871E71A276D6700F886B9 /* CPSPropertyMappingResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1871E61A276D6700F886B9 /* CPSPropertyMappingResourceLoader.m */; };
+		6D1871EA1A27716300F886B9 /* key_industries_resource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D1871E91A27716300F886B9 /* key_industries_resource.plist */; };
+		6D1871F01A2772F600F886B9 /* key_industries.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D1871EF1A2772F600F886B9 /* key_industries.xcassets */; };
+		6D1871F51A27737100F886B9 /* CPSKeyIndustriesWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1871F41A27737100F886B9 /* CPSKeyIndustriesWireframe.m */; };
+		6D1871FA1A2777FD00F886B9 /* CPSKeyIndustriesGridPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1871F91A2777FD00F886B9 /* CPSKeyIndustriesGridPresenter.m */; };
+		6D1871FF1A2779EE00F886B9 /* MCArrayCollectionViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1871FE1A2779EE00F886B9 /* MCArrayCollectionViewDatasource.m */; };
+		6D1872031A277D0C00F886B9 /* CPSKeyIndustriesGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1872021A277D0C00F886B9 /* CPSKeyIndustriesGridViewController.m */; };
+		6D1872051A2780B000F886B9 /* default_asset_mapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D1872041A2780B000F886B9 /* default_asset_mapping.plist */; };
+		6D1872081A2788B000F886B9 /* CPSKeyIndustriesItemDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1872071A2788B000F886B9 /* CPSKeyIndustriesItemDatasource.m */; };
+		6D18720B1A28660B00F886B9 /* CPSKeyIndustriesCollectionCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D18720A1A28660B00F886B9 /* CPSKeyIndustriesCollectionCellPresenter.m */; };
+		6D18720E1A2866D000F886B9 /* CPSKeyIndustriesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D18720D1A2866D000F886B9 /* CPSKeyIndustriesCollectionViewCell.m */; };
+		6D1872101A28679600F886B9 /* CPSKeyIndustriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D18720F1A28679600F886B9 /* CPSKeyIndustriesCollectionViewCell.xib */; };
 		6D2115581A1F3FCF00F2620B /* B_Slide_02_Cochrane_Logo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D2115561A1F3FCF00F2620B /* B_Slide_02_Cochrane_Logo.mp4 */; };
 		6D2115591A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D2115571A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 */; };
 		6D21155F1A231AE500F2620B /* CPSResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D21155E1A231AE500F2620B /* CPSResourceLoader.m */; };
@@ -155,6 +169,33 @@
 		6D1871D21A273FD700F886B9 /* CPSVideoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSVideoListViewController.h; sourceTree = "<group>"; };
 		6D1871D31A273FD700F886B9 /* CPSVideoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSVideoListViewController.m; sourceTree = "<group>"; };
 		6D1871D51A2755A500F886B9 /* CPSVideoListPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSVideoListPresenterTests.m; sourceTree = "<group>"; };
+		6D1871DA1A276A7E00F886B9 /* CPSAssetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSAssetItem.h; sourceTree = "<group>"; };
+		6D1871DB1A276A7E00F886B9 /* CPSAssetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSAssetItem.m; sourceTree = "<group>"; };
+		6D1871DD1A276AE200F886B9 /* CPSKeyIndustryGridInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustryGridInteractorIO.h; sourceTree = "<group>"; };
+		6D1871DE1A276B0600F886B9 /* CPSKeyIndustryGridInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustryGridInteractor.h; sourceTree = "<group>"; };
+		6D1871DF1A276B0600F886B9 /* CPSKeyIndustryGridInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSKeyIndustryGridInteractor.m; sourceTree = "<group>"; };
+		6D1871E51A276D6700F886B9 /* CPSPropertyMappingResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSPropertyMappingResourceLoader.h; sourceTree = "<group>"; };
+		6D1871E61A276D6700F886B9 /* CPSPropertyMappingResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSPropertyMappingResourceLoader.m; sourceTree = "<group>"; };
+		6D1871E91A27716300F886B9 /* key_industries_resource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = key_industries_resource.plist; sourceTree = "<group>"; };
+		6D1871EF1A2772F600F886B9 /* key_industries.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = key_industries.xcassets; sourceTree = "<group>"; };
+		6D1871F31A27737100F886B9 /* CPSKeyIndustriesWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustriesWireframe.h; sourceTree = "<group>"; };
+		6D1871F41A27737100F886B9 /* CPSKeyIndustriesWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSKeyIndustriesWireframe.m; sourceTree = "<group>"; };
+		6D1871F81A2777FD00F886B9 /* CPSKeyIndustriesGridPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustriesGridPresenter.h; sourceTree = "<group>"; };
+		6D1871F91A2777FD00F886B9 /* CPSKeyIndustriesGridPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSKeyIndustriesGridPresenter.m; sourceTree = "<group>"; };
+		6D1871FB1A27784300F886B9 /* CPSKeyIndustriesViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustriesViewInterface.h; sourceTree = "<group>"; };
+		6D1871FD1A2779EE00F886B9 /* MCArrayCollectionViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCArrayCollectionViewDatasource.h; sourceTree = "<group>"; };
+		6D1871FE1A2779EE00F886B9 /* MCArrayCollectionViewDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCArrayCollectionViewDatasource.m; sourceTree = "<group>"; };
+		6D1872001A277A3300F886B9 /* MCCollectionViewCellPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCollectionViewCellPresenter.h; sourceTree = "<group>"; };
+		6D1872011A277D0C00F886B9 /* CPSKeyIndustriesGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustriesGridViewController.h; sourceTree = "<group>"; };
+		6D1872021A277D0C00F886B9 /* CPSKeyIndustriesGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSKeyIndustriesGridViewController.m; sourceTree = "<group>"; };
+		6D1872041A2780B000F886B9 /* default_asset_mapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_asset_mapping.plist; sourceTree = "<group>"; };
+		6D1872061A2788B000F886B9 /* CPSKeyIndustriesItemDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustriesItemDatasource.h; sourceTree = "<group>"; };
+		6D1872071A2788B000F886B9 /* CPSKeyIndustriesItemDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSKeyIndustriesItemDatasource.m; sourceTree = "<group>"; };
+		6D1872091A28660B00F886B9 /* CPSKeyIndustriesCollectionCellPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustriesCollectionCellPresenter.h; sourceTree = "<group>"; };
+		6D18720A1A28660B00F886B9 /* CPSKeyIndustriesCollectionCellPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSKeyIndustriesCollectionCellPresenter.m; sourceTree = "<group>"; };
+		6D18720C1A2866D000F886B9 /* CPSKeyIndustriesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustriesCollectionViewCell.h; sourceTree = "<group>"; };
+		6D18720D1A2866D000F886B9 /* CPSKeyIndustriesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSKeyIndustriesCollectionViewCell.m; sourceTree = "<group>"; };
+		6D18720F1A28679600F886B9 /* CPSKeyIndustriesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPSKeyIndustriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		6D2115561A1F3FCF00F2620B /* B_Slide_02_Cochrane_Logo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = B_Slide_02_Cochrane_Logo.mp4; sourceTree = "<group>"; };
 		6D2115571A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = B_Slide_03_to_Slide_05.mp4; sourceTree = "<group>"; };
 		6D21155D1A231AE500F2620B /* CPSResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceLoader.h; sourceTree = "<group>"; };
@@ -457,6 +498,109 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		6D1871D71A276A1600F886B9 /* Key Industries */ = {
+			isa = PBXGroup;
+			children = (
+				6D1871D81A276A5600F886B9 /* Logic */,
+				6D1871E81A27714300F886B9 /* Resource */,
+				6D1871F11A27733400F886B9 /* UI */,
+				6D1871F21A27734900F886B9 /* Wireframe */,
+			);
+			path = "Key Industries";
+			sourceTree = "<group>";
+		};
+		6D1871D81A276A5600F886B9 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6D1871DD1A276AE200F886B9 /* CPSKeyIndustryGridInteractorIO.h */,
+				6D1871DE1A276B0600F886B9 /* CPSKeyIndustryGridInteractor.h */,
+				6D1871DF1A276B0600F886B9 /* CPSKeyIndustryGridInteractor.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		6D1871D91A276A6100F886B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D1871DA1A276A7E00F886B9 /* CPSAssetItem.h */,
+				6D1871DB1A276A7E00F886B9 /* CPSAssetItem.m */,
+				6D1872041A2780B000F886B9 /* default_asset_mapping.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D1871E11A276CEC00F886B9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6D1871E51A276D6700F886B9 /* CPSPropertyMappingResourceLoader.h */,
+				6D1871E61A276D6700F886B9 /* CPSPropertyMappingResourceLoader.m */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		6D1871E81A27714300F886B9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6D1871E91A27716300F886B9 /* key_industries_resource.plist */,
+				6D1871EF1A2772F600F886B9 /* key_industries.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		6D1871F11A27733400F886B9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6D1871F71A2777D200F886B9 /* Presenter */,
+				6D1871F61A2777C600F886B9 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6D1871F21A27734900F886B9 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				6D1871F31A27737100F886B9 /* CPSKeyIndustriesWireframe.h */,
+				6D1871F41A27737100F886B9 /* CPSKeyIndustriesWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		6D1871F61A2777C600F886B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D1871FB1A27784300F886B9 /* CPSKeyIndustriesViewInterface.h */,
+				6D1872011A277D0C00F886B9 /* CPSKeyIndustriesGridViewController.h */,
+				6D1872021A277D0C00F886B9 /* CPSKeyIndustriesGridViewController.m */,
+				6D18720C1A2866D000F886B9 /* CPSKeyIndustriesCollectionViewCell.h */,
+				6D18720D1A2866D000F886B9 /* CPSKeyIndustriesCollectionViewCell.m */,
+				6D18720F1A28679600F886B9 /* CPSKeyIndustriesCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D1871F71A2777D200F886B9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6D1871F81A2777FD00F886B9 /* CPSKeyIndustriesGridPresenter.h */,
+				6D1871F91A2777FD00F886B9 /* CPSKeyIndustriesGridPresenter.m */,
+				6D1872061A2788B000F886B9 /* CPSKeyIndustriesItemDatasource.h */,
+				6D1872071A2788B000F886B9 /* CPSKeyIndustriesItemDatasource.m */,
+				6D1872091A28660B00F886B9 /* CPSKeyIndustriesCollectionCellPresenter.h */,
+				6D18720A1A28660B00F886B9 /* CPSKeyIndustriesCollectionCellPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6D1871FC1A2779C600F886B9 /* Collection View Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6D1872001A277A3300F886B9 /* MCCollectionViewCellPresenter.h */,
+				6D1871FD1A2779EE00F886B9 /* MCArrayCollectionViewDatasource.h */,
+				6D1871FE1A2779EE00F886B9 /* MCArrayCollectionViewDatasource.m */,
+			);
+			path = "Collection View Data Sources";
+			sourceTree = "<group>";
+		};
 		6D21155C1A231AD200F2620B /* Resource Loader */ = {
 			isa = PBXGroup;
 			children = (
@@ -580,6 +724,8 @@
 			isa = PBXGroup;
 			children = (
 				6DF03C4E1A1F243A003A0DF1 /* Logic */,
+				6D1871D91A276A6100F886B9 /* Model */,
+				6D1871E11A276CEC00F886B9 /* Resource */,
 				6D54323A1A1CDDE900746CB7 /* UI */,
 				6D5432361A1CD5C600746CB7 /* Wireframe */,
 			);
@@ -1018,6 +1164,7 @@
 		6DC8E6661A1387EB00197DB3 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				6D1871FC1A2779C600F886B9 /* Collection View Data Sources */,
 				6D82E8D81A24B79900122582 /* Gesture Recognizer Delegates */,
 				6D21155C1A231AD200F2620B /* Resource Loader */,
 				6DC8E6671A13881D00197DB3 /* Table View Data Sources */,
@@ -1042,8 +1189,9 @@
 			isa = PBXGroup;
 			children = (
 				6DF03C481A1F239C003A0DF1 /* Common */,
-				6D2115631A23257000F2620B /* Cost of Risk */,
 				6D54323D1A1CDFCA00746CB7 /* Intro */,
+				6D2115631A23257000F2620B /* Cost of Risk */,
+				6D1871D71A276A1600F886B9 /* Key Industries */,
 				6DEA20D11A160396001AAC42 /* Placeholder */,
 			);
 			path = Modules;
@@ -1324,13 +1472,16 @@
 				6D65A1601A25CD08006519C2 /* CoR_6.mp4 in Resources */,
 				6D82E8E21A24DBD800122582 /* CoR_2.mp4 in Resources */,
 				6D54325D1A1E1FD300746CB7 /* menu_item_description.plist in Resources */,
+				6D1871F01A2772F600F886B9 /* key_industries.xcassets in Resources */,
 				6D82E8E01A24CCAE00122582 /* CoR_Background.mp4 in Resources */,
 				6D65A1691A25CF89006519C2 /* CoR_10.mp4 in Resources */,
 				6D65A1661A25CF89006519C2 /* CoR_7.mp4 in Resources */,
 				6D65A15F1A25CD08006519C2 /* CoR_5.mp4 in Resources */,
 				6D65A1671A25CF89006519C2 /* CoR_8.mp4 in Resources */,
+				6D1872101A28679600F886B9 /* CPSKeyIndustriesCollectionViewCell.xib in Resources */,
 				6D82E8DE1A24C11600122582 /* CoR_1.mp4 in Resources */,
 				6D2115581A1F3FCF00F2620B /* B_Slide_02_Cochrane_Logo.mp4 in Resources */,
+				6D1872051A2780B000F886B9 /* default_asset_mapping.plist in Resources */,
 				6D65A16A1A25CF89006519C2 /* CoR_11.mp4 in Resources */,
 				6D2115591A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 in Resources */,
 				6D65A15E1A25CD08006519C2 /* CoR_4.mp4 in Resources */,
@@ -1338,6 +1489,7 @@
 				6D21156F1A232AA700F2620B /* cost_of_risk_resource.plist in Resources */,
 				6D78FC4A1A0B7A140097E4F5 /* Main.storyboard in Resources */,
 				6D65A15D1A25CD08006519C2 /* CoR_3.mp4 in Resources */,
+				6D1871EA1A27716300F886B9 /* key_industries_resource.plist in Resources */,
 				6D78FC4F1A0B7A140097E4F5 /* LaunchScreen.xib in Resources */,
 				6D78FC4C1A0B7A140097E4F5 /* Images.xcassets in Resources */,
 				6D65A1681A25CF89006519C2 /* CoR_9.mp4 in Resources */,
@@ -1465,28 +1617,37 @@
 				6D5432421A1CE02B00746CB7 /* CPSAccessPagePresenter.m in Sources */,
 				6D65A16E1A25DE36006519C2 /* CPSAnimatedTextView.m in Sources */,
 				6D5432391A1CD5FE00746CB7 /* CPSBaseWireframe.m in Sources */,
+				6D1871FF1A2779EE00F886B9 /* MCArrayCollectionViewDatasource.m in Sources */,
 				6DEA20D51A1603DD001AAC42 /* CPSPlaceholderWireframe.m in Sources */,
+				6D1871FA1A2777FD00F886B9 /* CPSKeyIndustriesGridPresenter.m in Sources */,
 				6DC8E66B1A1388DE00197DB3 /* MCArrayTableViewDatasource.m in Sources */,
+				6D18720E1A2866D000F886B9 /* CPSKeyIndustriesCollectionViewCell.m in Sources */,
 				6D21157B1A23449900F2620B /* CPSCostOfRiskPresenter.m in Sources */,
 				6DC8E6601A12949D00197DB3 /* CPSMenuPresenter.m in Sources */,
 				6DBD91731A14AC7200FA6A51 /* CPSMenuWireframe.m in Sources */,
+				6D1872081A2788B000F886B9 /* CPSKeyIndustriesItemDatasource.m in Sources */,
 				6D2BD9A11A237C9C0035189C /* CPSCostOfRiskCell.m in Sources */,
 				6DEA20CF1A15FF3B001AAC42 /* CPSRevealController.m in Sources */,
 				6D10E1011A10AFC5006DD677 /* CPSRootWireframe.m in Sources */,
 				6D8DEA161A13C3D9007C92F8 /* CPSMenuTableViewController.m in Sources */,
+				6D1872031A277D0C00F886B9 /* CPSKeyIndustriesGridViewController.m in Sources */,
 				6D8933F61A1C86820099A818 /* CPSRootContentWireframe.m in Sources */,
 				6D8DEA1E1A14A578007C92F8 /* CPSMenuItemTableViewCell.m in Sources */,
 				6D21157E1A23459900F2620B /* CPSCostOfRiskViewController.m in Sources */,
 				6D1871C11A27375D00F886B9 /* CPSVideoListItem.m in Sources */,
 				6D54324A1A1CE46E00746CB7 /* CPSAccessPageViewController.m in Sources */,
+				6D1871E71A276D6700F886B9 /* CPSPropertyMappingResourceLoader.m in Sources */,
 				6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */,
 				6D10E1161A10C677006DD677 /* CPSMenuInteractor.m in Sources */,
+				6D18720B1A28660B00F886B9 /* CPSKeyIndustriesCollectionCellPresenter.m in Sources */,
 				6DF03C651A1F2F5A003A0DF1 /* CPSVideoPlayerPresenter.m in Sources */,
 				6D61104B1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m in Sources */,
 				6D21155F1A231AE500F2620B /* CPSResourceLoader.m in Sources */,
 				6D1871CB1A273AA900F886B9 /* CPSVideoListResourceLoader.m in Sources */,
+				6D1871DC1A276A7E00F886B9 /* CPSAssetItem.m in Sources */,
 				6D78FC411A0B7A140097E4F5 /* main.m in Sources */,
 				6DF03C521A1F2528003A0DF1 /* CPSVideoPlayerInteractor.m in Sources */,
+				6D1871F51A27737100F886B9 /* CPSKeyIndustriesWireframe.m in Sources */,
 				6DEA20EB1A163A16001AAC42 /* CPSAppearanceConfig.m in Sources */,
 				6D54325A1A1E0F9500746CB7 /* CPSViewControllerProviderUtils.m in Sources */,
 				6D10E11D1A10C8D8006DD677 /* CPSViewControllerMenuItem.m in Sources */,
@@ -1500,6 +1661,7 @@
 				6D1871BE1A2736C800F886B9 /* CPSVideoListInteractor.m in Sources */,
 				6D21158C1A23696D00F2620B /* CPSCostOfRiskWireframe.m in Sources */,
 				6D2115681A2325D200F2620B /* CPSCostOfRiskInteractor.m in Sources */,
+				6D1871E01A276B0600F886B9 /* CPSKeyIndustryGridInteractor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
