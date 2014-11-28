@@ -11,6 +11,7 @@
 @interface CPSKeyIndustriesWireframe : CPSBaseWireframe
 
 - (void)showIndustryWithTitle:(NSString *)title imageName:(NSString *)imageName;
+- (void)showMainViewController;
 - (void)navigateToProductRange;
 
 @end

@@ -63,6 +63,7 @@
 		6D54325D1A1E1FD300746CB7 /* menu_item_description.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D54325C1A1E1FD300746CB7 /* menu_item_description.plist */; };
 		6D5432601A1E279700746CB7 /* CPSMenuItemLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54325F1A1E279700746CB7 /* CPSMenuItemLoader.m */; };
 		6D54D9CB1A28AB5F0070A1D4 /* cost_of_risk_item_mapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D54D9CA1A28AB5F0070A1D4 /* cost_of_risk_item_mapping.plist */; };
+		6D54DA011A28BC730070A1D4 /* MCCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA001A28BC730070A1D4 /* MCCollectionViewDelegate.m */; };
 		6D61104B1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D61104A1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m */; };
 		6D65A15D1A25CD08006519C2 /* CoR_3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D65A1591A25CD08006519C2 /* CoR_3.mp4 */; };
 		6D65A15E1A25CD08006519C2 /* CoR_4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D65A15A1A25CD08006519C2 /* CoR_4.mp4 */; };
@@ -233,6 +234,8 @@
 		6D54325E1A1E279700746CB7 /* CPSMenuItemLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuItemLoader.h; sourceTree = "<group>"; };
 		6D54325F1A1E279700746CB7 /* CPSMenuItemLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuItemLoader.m; sourceTree = "<group>"; };
 		6D54D9CA1A28AB5F0070A1D4 /* cost_of_risk_item_mapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cost_of_risk_item_mapping.plist; sourceTree = "<group>"; };
+		6D54D9FF1A28BC730070A1D4 /* MCCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCollectionViewDelegate.h; sourceTree = "<group>"; };
+		6D54DA001A28BC730070A1D4 /* MCCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCollectionViewDelegate.m; sourceTree = "<group>"; };
 		6D6110491A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPSRootWireframe+MCRevealPresentation.h"; sourceTree = "<group>"; };
 		6D61104A1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CPSRootWireframe+MCRevealPresentation.m"; sourceTree = "<group>"; };
 		6D65A1591A25CD08006519C2 /* CoR_3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoR_3.mp4; sourceTree = "<group>"; };
@@ -573,6 +576,8 @@
 				6D1872001A277A3300F886B9 /* MCCollectionViewCellPresenter.h */,
 				6D1871FD1A2779EE00F886B9 /* MCArrayCollectionViewDatasource.h */,
 				6D1871FE1A2779EE00F886B9 /* MCArrayCollectionViewDatasource.m */,
+				6D54D9FF1A28BC730070A1D4 /* MCCollectionViewDelegate.h */,
+				6D54DA001A28BC730070A1D4 /* MCCollectionViewDelegate.m */,
 			);
 			path = "Collection View Data Sources";
 			sourceTree = "<group>";
@@ -1601,6 +1606,7 @@
 				6DC8E66B1A1388DE00197DB3 /* MCArrayTableViewDatasource.m in Sources */,
 				6D18720E1A2866D000F886B9 /* CPSKeyIndustriesCollectionViewCell.m in Sources */,
 				6D21157B1A23449900F2620B /* CPSCostOfRiskPresenter.m in Sources */,
+				6D54DA011A28BC730070A1D4 /* MCCollectionViewDelegate.m in Sources */,
 				6DC8E6601A12949D00197DB3 /* CPSMenuPresenter.m in Sources */,
 				6DBD91731A14AC7200FA6A51 /* CPSMenuWireframe.m in Sources */,
 				6D1872081A2788B000F886B9 /* CPSKeyIndustriesItemDatasource.m in Sources */,

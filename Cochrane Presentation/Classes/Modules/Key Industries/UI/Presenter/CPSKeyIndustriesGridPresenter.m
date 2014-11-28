@@ -35,7 +35,7 @@
 
 - (void)item:(CPSAssetItem *)item selectedAtIndex:(NSInteger)index
 {
-//    [self.wireframe showIndustryWithTitle:item.title imageName:item.primaryFilename];
+    [self.wireframe showIndustryWithTitle:item.title imageName:item.primaryFilename];
 }
 
 - (void)productsButtonTapped
