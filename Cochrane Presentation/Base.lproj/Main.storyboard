@@ -283,6 +283,9 @@
                                     <constraint firstAttribute="height" constant="706" id="W4O-1w-7mG"/>
                                 </constraints>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="key_industry_image_glass_panel" translatesAutoresizingMaskIntoConstraints="NO" id="HHS-Yc-iCw">
+                                <rect key="frame" x="23" y="18" width="978" height="733"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUS-2p-BMN">
                                 <rect key="frame" x="41" y="647" width="942" height="90"/>
                                 <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="80"/>
@@ -292,6 +295,8 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="HHS-Yc-iCw" firstAttribute="centerX" secondItem="Znh-M0-66j" secondAttribute="centerX" id="CQD-SN-OrD"/>
+                            <constraint firstItem="HHS-Yc-iCw" firstAttribute="centerY" secondItem="Znh-M0-66j" secondAttribute="centerY" id="IrF-9f-k9t"/>
                             <constraint firstItem="rUS-2p-BMN" firstAttribute="bottom" secondItem="Znh-M0-66j" secondAttribute="bottom" id="R5X-Kn-Nrm"/>
                             <constraint firstItem="rUS-2p-BMN" firstAttribute="trailing" secondItem="Znh-M0-66j" secondAttribute="trailing" id="RUH-aI-wQ4"/>
                             <constraint firstAttribute="centerY" secondItem="Znh-M0-66j" secondAttribute="centerY" id="RtN-jm-HKk"/>
@@ -448,6 +453,7 @@
         <image name="cochrane_logo" width="326" height="94"/>
         <image name="hive_background" width="1024" height="768"/>
         <image name="key_industry_icon_glass_panel" width="143" height="107"/>
+        <image name="key_industry_image_glass_panel" width="978" height="733"/>
         <image name="left_border_line_stretch" width="454" height="241"/>
         <image name="logo_header_border" width="526" height="119"/>
     </resources>
