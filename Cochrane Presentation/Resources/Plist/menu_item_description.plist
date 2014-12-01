@@ -5,6 +5,8 @@
 	<key>menu_items</key>
 	<array>
 		<dict>
+			<key>identifier</key>
+			<string>menu.introduction</string>
 			<key>title</key>
 			<string>Intro</string>
 			<key>icon</key>
@@ -72,6 +74,8 @@
 			</array>
 		</dict>
 		<dict>
+			<key>identifier</key>
+			<string>menu.cost_of_risk</string>
 			<key>title</key>
 			<string>Cost of Risk</string>
 			<key>icon</key>
@@ -126,6 +130,8 @@
 			</array>
 		</dict>
 		<dict>
+			<key>identifier</key>
+			<string>menu.key_industries</string>
 			<key>title</key>
 			<string>Key Industries</string>
 			<key>icon</key>
@@ -180,6 +186,8 @@
 			</array>
 		</dict>
 		<dict>
+			<key>identifier</key>
+			<string>menu.product_range</string>
 			<key>title</key>
 			<string>Product Range</string>
 			<key>icon</key>
@@ -211,6 +219,8 @@
 			</array>
 		</dict>
 		<dict>
+			<key>identifier</key>
+			<string>menu.info_specifications</string>
 			<key>title</key>
 			<string>Deployment Information and Specifications</string>
 			<key>icon</key>
@@ -242,6 +252,8 @@
 			</array>
 		</dict>
 		<dict>
+			<key>identifier</key>
+			<string>menu.clearvu</string>
 			<key>title</key>
 			<string>ClearVu</string>
 			<key>icon</key>

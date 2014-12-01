@@ -18,11 +18,12 @@
 
 @synthesize viewControllerProvider = _viewControllerProvider;
 
-- (instancetype)initWithTitle:(NSString *)title
-                         icon:(UIImage *)icon
-       viewControllerProvider:(id<CPSViewControllerProvider>)viewControllerProvider
+- (instancetype)initWithIdentifier:(NSString *)identifier
+                             title:(NSString *)title
+                              icon:(UIImage *)icon
+            viewControllerProvider:(id<CPSViewControllerProvider>)viewControllerProvider
 {
-    if (self = [super initWithTitle:title icon:icon])
+    if (self = [super initWithIdentifier:identifier title:title icon:icon])
     {
         _viewControllerProvider = viewControllerProvider;
     }
@@ -31,9 +32,10 @@
 
 - (instancetype)copyWithZone:(NSZone *)zone
 {
-    return [[[self class] alloc] initWithTitle:self.title
-                                          icon:self.iconImage
-                        viewControllerProvider:self.viewControllerProvider];
+    return [[[self class] alloc] initWithIdentifier:self.identifier
+                                              title:self.title
+                                               icon:self.iconImage
+                             viewControllerProvider:self.viewControllerProvider];
 }
 
 - (NSUInteger)hash

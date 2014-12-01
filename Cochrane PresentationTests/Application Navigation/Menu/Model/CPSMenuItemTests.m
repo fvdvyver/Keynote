@@ -57,13 +57,16 @@
 
 - (void)testViewControllerMenuItemEquality
 {
-    CPSViewControllerMenuItem *item1 = [[CPSViewControllerMenuItem alloc] initWithTitle:@"title"
+    CPSViewControllerMenuItem *item1 = [[CPSViewControllerMenuItem alloc] initWithIdentifier:@"1"
+                                                                                       title:@"title"
                                                                                    icon:[UIImage new]
                                                                  viewControllerProvider:OCMProtocolMock(@protocol(CPSViewControllerProvider))];
-    CPSViewControllerMenuItem *item2 = [[CPSViewControllerMenuItem alloc] initWithTitle:item1.title
+    CPSViewControllerMenuItem *item2 = [[CPSViewControllerMenuItem alloc] initWithIdentifier:@"2"
+                                                                                       title:item1.title
                                                                                    icon:item1.iconImage
                                                                  viewControllerProvider:item1.viewControllerProvider];
-    CPSViewControllerMenuItem *item3 = [[CPSViewControllerMenuItem alloc] initWithTitle:@"title"
+    CPSViewControllerMenuItem *item3 = [[CPSViewControllerMenuItem alloc] initWithIdentifier:@"1"
+                                                                                       title:@"title"
                                                                                    icon:[UIImage new]
                                                                  viewControllerProvider:OCMProtocolMock(@protocol(CPSViewControllerProvider))];
     
@@ -74,15 +77,18 @@
 
 - (void)testViewControllerMenuItemHash
 {
-    CPSViewControllerMenuItem *item1 = [[CPSViewControllerMenuItem alloc] initWithTitle:@"title"
-                                                                                   icon:[UIImage new]
-                                                                 viewControllerProvider:OCMProtocolMock(@protocol(CPSViewControllerProvider))];
-    CPSViewControllerMenuItem *item2 = [[CPSViewControllerMenuItem alloc] initWithTitle:item1.title
-                                                                                   icon:item1.iconImage
-                                                                 viewControllerProvider:item1.viewControllerProvider];
-    CPSViewControllerMenuItem *item3 = [[CPSViewControllerMenuItem alloc] initWithTitle:@"title"
-                                                                                   icon:[UIImage new]
-                                                                 viewControllerProvider:OCMProtocolMock(@protocol(CPSViewControllerProvider))];
+    CPSViewControllerMenuItem *item1 = [[CPSViewControllerMenuItem alloc] initWithIdentifier:@"1"
+                                                                                       title:@"title"
+                                                                                        icon:[UIImage new]
+                                                                      viewControllerProvider:OCMProtocolMock(@protocol(CPSViewControllerProvider))];
+    CPSViewControllerMenuItem *item2 = [[CPSViewControllerMenuItem alloc] initWithIdentifier:@"1"
+                                                                                       title:item1.title
+                                                                                        icon:item1.iconImage
+                                                                      viewControllerProvider:item1.viewControllerProvider];
+    CPSViewControllerMenuItem *item3 = [[CPSViewControllerMenuItem alloc] initWithIdentifier:@"1"
+                                                                                       title:@"title"
+                                                                                        icon:[UIImage new]
+                                                                      viewControllerProvider:OCMProtocolMock(@protocol(CPSViewControllerProvider))];
     
     XCTAssertEqual([item1 hash], [item1 hash]);
     XCTAssertEqual([item1 hash], [item2 hash]);

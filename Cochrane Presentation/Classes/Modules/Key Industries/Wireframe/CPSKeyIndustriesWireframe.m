@@ -61,8 +61,7 @@
 
 - (void)navigateToProductRange
 {
-#warning TODO: change navigation system so we can specify which menu item to navigate to
-    [self.parentContentWireframe advanceCurrentContentProvider];
+    [self.parentContentWireframe setContentControllerProviderWithIdentifer:@"menu.product_range"];
 }
 
 @end

@@ -15,6 +15,11 @@
     [self.rootWireframe setContentControllerProvider:contentControllerProvider];
 }
 
+- (void)setContentControllerProviderWithIdentifer:(NSString *)identifier
+{
+    [self.menuWireframe selectMenuItemWithIdentifier:identifier];
+}
+
 - (void)advanceCurrentContentProvider
 {
     [self.menuWireframe selectNextMenuItem];

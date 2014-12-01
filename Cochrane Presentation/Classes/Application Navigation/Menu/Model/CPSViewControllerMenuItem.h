@@ -16,9 +16,10 @@
  */
 @interface CPSViewControllerMenuItem : CPSMenuItem <NSCopying>
 
-- (instancetype)initWithTitle:(NSString *)title
-                         icon:(UIImage *)icon
-       viewControllerProvider:(id<CPSViewControllerProvider>)viewControllerProvider;
+- (instancetype)initWithIdentifier:(NSString *)identifier
+                             title:(NSString *)title
+                              icon:(UIImage *)icon
+            viewControllerProvider:(id<CPSViewControllerProvider>)viewControllerProvider;
 
 - (id<CPSViewControllerProvider>)viewControllerProvider;
 

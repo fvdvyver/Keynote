@@ -12,10 +12,11 @@
 
 @interface CPSMenuItem : NSObject
 
-@property (nonatomic, strong) UIImage *  iconImage;
+@property (nonatomic, strong) NSString * identifier;
 @property (nonatomic, strong) NSString * title;
+@property (nonatomic, strong) UIImage *  iconImage;
 
-- (instancetype)initWithTitle:(NSString *)title icon:(UIImage *)icon;
+- (instancetype)initWithIdentifier:(NSString *)identifier title:(NSString *)title icon:(UIImage *)icon;
 
 /**
  *  This simulates double dispatch to ensure the correct method is called.

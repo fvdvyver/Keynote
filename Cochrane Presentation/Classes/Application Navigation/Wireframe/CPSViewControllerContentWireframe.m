@@ -34,6 +34,11 @@
     }
 }
 
+- (void)setContentControllerProviderWithIdentifer:(NSString *)identifier
+{
+    [self.parentContentWireframe setContentControllerProviderWithIdentifer:identifier];
+}
+
 - (void)setContentControllerProvider:(id<CPSViewControllerProvider>)contentControllerProvider
 {
     [self.parentContentWireframe setContentControllerProvider:contentControllerProvider];

@@ -38,6 +38,19 @@
     [self updateOutput];
 }
 
+// Select the first item with the given identifier
+- (void)selectMenuItemWithIdentifier:(NSString *)identifier
+{
+    for (CPSMenuItem *item in self.menuItems)
+    {
+        if ([item.identifier isEqualToString:identifier])
+        {
+            [self selectMenuItem:item];
+            break;
+        }
+    }
+}
+
 // **********************************************************************************
 #pragma mark - CPSMenuInteractorInput Protocol Methods
 // **********************************************************************************

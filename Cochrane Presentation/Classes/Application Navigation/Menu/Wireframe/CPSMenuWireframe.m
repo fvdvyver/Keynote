@@ -89,6 +89,11 @@
     [self.menuInteractor selectMenuItem:itemToSelect];
 }
 
+- (void)selectMenuItemWithIdentifier:(NSString *)identifier
+{
+    [self.menuInteractor selectMenuItemWithIdentifier:identifier];
+}
+
 - (void)selectNextMenuItem
 {
     id selectedItem = self.menuInteractor.selectedMenuItem;

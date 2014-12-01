@@ -64,6 +64,7 @@
 
 + (CPSViewControllerMenuItem *)menuItemForPlistItem:(NSDictionary *)plistMenuItem
 {
+    NSString *identifier = plistMenuItem[@"identifier"];
     NSString *title = plistMenuItem[@"title"];
     NSString *iconName = plistMenuItem[@"icon"];
     NSArray *wireframeDescriptions = plistMenuItem[@"content_wireframes"];
@@ -75,9 +76,10 @@
     CPSViewControllerContentWireframe *wireframe = [self wireframeForContentWireframes:wireframeDescriptions];
     UIImage *iconImage = (iconName.length == 0) ? nil : [UIImage imageNamed:iconName];
     
-    return [[CPSViewControllerMenuItem alloc] initWithTitle:NSLocalizedString(title, nil)
-                                                       icon:iconImage
-                                     viewControllerProvider:wireframe];
+    return [[CPSViewControllerMenuItem alloc] initWithIdentifier:identifier
+                                                           title:NSLocalizedString(title, nil)
+                                                            icon:iconImage
+                                          viewControllerProvider:wireframe];
 }
 
 + (CPSViewControllerContentWireframe *)wireframeForContentWireframes:(NSArray *)wireframeDescriptions

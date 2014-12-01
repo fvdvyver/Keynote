@@ -13,6 +13,7 @@
 @protocol CPSContentWireframe <NSObject>
 
 - (void)setContentControllerProvider:(id<CPSViewControllerProvider>)contentControllerProvider;
+- (void)setContentControllerProviderWithIdentifer:(NSString *)identifier;
 - (void)advanceCurrentContentProvider;
 
 @end
@@ -23,5 +24,6 @@
 - (id<CPSContentWireframe>)parentContentWireframe;
 
 - (void)advanceCurrentContentProvider;
+- (void)setContentControllerProviderWithIdentifer:(NSString *)identifier;
 
 @end

@@ -51,4 +51,9 @@
     [self.parentContentWireframe advanceCurrentContentProvider];
 }
 
+- (void)setContentControllerProviderWithIdentifer:(NSString *)identifier;
+{
+    [self.parentContentWireframe setContentControllerProviderWithIdentifer:identifier];
+}
+
 @end

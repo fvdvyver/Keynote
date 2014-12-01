@@ -16,6 +16,7 @@
 - (void)updateOutput;
 
 - (void)selectMenuItem:(CPSMenuItem *)item;
+- (void)selectMenuItemWithIdentifier:(NSString *)identifier;
 
 @end
 

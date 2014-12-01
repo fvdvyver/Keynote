@@ -19,10 +19,11 @@
 
 @implementation CPSMenuItem
 
-- (instancetype)initWithTitle:(NSString *)title icon:(UIImage *)icon
+- (instancetype)initWithIdentifier:(NSString *)identifier title:(NSString *)title icon:(UIImage *)icon
 {
     if (self = [super init])
     {
+        _identifier = identifier;
         _title = title;
         _iconImage = icon;
     }
