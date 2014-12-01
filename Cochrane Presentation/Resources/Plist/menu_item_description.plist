@@ -198,22 +198,40 @@
 					<key>wireframe</key>
 					<dict>
 						<key>class</key>
-						<string>CPSPlaceholderWireframe</string>
-						<key>arguments</key>
-						<dict>
-							<key>placeholderText</key>
-							<string>Product Range</string>
-						</dict>
+						<string>CPSProductRangeWireframe</string>
+					</dict>
+					<key>interactor</key>
+					<dict>
+						<key>class</key>
+						<string>CPSProductRangeListInteractor</string>
+						<key>resource_loaders</key>
+						<array>
+							<dict>
+								<key>class</key>
+								<string>CPSPropertyMappingResourceLoader</string>
+								<key>arguments</key>
+								<dict>
+									<key>instance_class</key>
+									<string>CPSProductAssetItem</string>
+									<key>mapping</key>
+									<string>product_range_item_mapping</string>
+									<key>data_file</key>
+									<string>product_range_list_resource</string>
+									<key>target_data_keypath</key>
+									<string>productItems</string>
+								</dict>
+							</dict>
+						</array>
 					</dict>
 					<key>presenter</key>
 					<dict>
 						<key>class</key>
-						<string>CPSPlaceholderPresenter</string>
+						<string>CPSProductRangeListPresenter</string>
 					</dict>
 					<key>view</key>
 					<dict>
 						<key>identifier</key>
-						<string>PlaceholderViewController</string>
+						<string>ProductRangeViewController</string>
 					</dict>
 				</dict>
 			</array>

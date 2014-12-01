@@ -67,6 +67,15 @@
 		6D54DA0E1A28C4430070A1D4 /* CPSKeyIndustriesDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA0D1A28C4430070A1D4 /* CPSKeyIndustriesDetailPresenter.m */; };
 		6D54DA111A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA101A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.m */; };
 		6D54DA131A28CED30070A1D4 /* secondary_asset_mapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D54DA121A28CED30070A1D4 /* secondary_asset_mapping.plist */; };
+		6D54DA1A1A2C6E820070A1D4 /* CPSProductRangeListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA191A2C6E820070A1D4 /* CPSProductRangeListInteractor.m */; };
+		6D54DA1E1A2C6F4E0070A1D4 /* CPSProductRangeWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA1D1A2C6F4E0070A1D4 /* CPSProductRangeWireframe.m */; };
+		6D54DA261A2C72AB0070A1D4 /* CPSProductRangeListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA251A2C72AB0070A1D4 /* CPSProductRangeListPresenter.m */; };
+		6D54DA2A1A2C76320070A1D4 /* CPSProductAssetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA291A2C76320070A1D4 /* CPSProductAssetItem.m */; };
+		6D54DA2C1A2C77F60070A1D4 /* product_range_item_mapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D54DA2B1A2C77F60070A1D4 /* product_range_item_mapping.plist */; };
+		6D54DA2F1A2C78B60070A1D4 /* product_range_list_resource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D54DA2E1A2C78B60070A1D4 /* product_range_list_resource.plist */; };
+		6D54DA351A2C7D8A0070A1D4 /* CPSProductRangeGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA341A2C7D8A0070A1D4 /* CPSProductRangeGridViewController.m */; };
+		6D54DA3C1A2C82280070A1D4 /* CPSProductItemCollectionCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA3B1A2C82280070A1D4 /* CPSProductItemCollectionCellPresenter.m */; };
+		6D54DA3F1A2C825B0070A1D4 /* CPSProductItemPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA3E1A2C825B0070A1D4 /* CPSProductItemPresenter.m */; };
 		6D61104B1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D61104A1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m */; };
 		6D65A15D1A25CD08006519C2 /* CoR_3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D65A1591A25CD08006519C2 /* CoR_3.mp4 */; };
 		6D65A15E1A25CD08006519C2 /* CoR_4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D65A15A1A25CD08006519C2 /* CoR_4.mp4 */; };
@@ -109,6 +118,10 @@
 		6DC8E66B1A1388DE00197DB3 /* MCArrayTableViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E66A1A1388DE00197DB3 /* MCArrayTableViewDatasource.m */; };
 		6DC8E66E1A138A5300197DB3 /* CPSMenuItemCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E66D1A138A5300197DB3 /* CPSMenuItemCellPresenter.m */; };
 		6DC8E6701A138B1E00197DB3 /* CPSMenuItemCellPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E66F1A138B1E00197DB3 /* CPSMenuItemCellPresenterTests.m */; };
+		6DE057A61A2C839600EFA18C /* CPSProductItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057A51A2C839600EFA18C /* CPSProductItemCollectionViewCell.m */; };
+		6DE057A81A2C87DF00EFA18C /* CPSProductItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE057A71A2C87DF00EFA18C /* CPSProductItemCollectionViewCell.xib */; };
+		6DE057AA1A2C8B2B00EFA18C /* product_range.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE057A91A2C8B2B00EFA18C /* product_range.xcassets */; };
+		6DE057AE1A2C8E5B00EFA18C /* CPSRightToLeftFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057AD1A2C8E5B00EFA18C /* CPSRightToLeftFlowLayout.m */; };
 		6DEA20CF1A15FF3B001AAC42 /* CPSRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA20CE1A15FF3B001AAC42 /* CPSRevealController.m */; };
 		6DEA20D51A1603DD001AAC42 /* CPSPlaceholderWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA20D41A1603DD001AAC42 /* CPSPlaceholderWireframe.m */; };
 		6DEA20D91A1606AE001AAC42 /* CPSPlaceholderPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA20D81A1606AE001AAC42 /* CPSPlaceholderPresenter.m */; };
@@ -245,6 +258,25 @@
 		6D54DA0F1A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustriesDetailViewController.h; sourceTree = "<group>"; };
 		6D54DA101A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSKeyIndustriesDetailViewController.m; sourceTree = "<group>"; };
 		6D54DA121A28CED30070A1D4 /* secondary_asset_mapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = secondary_asset_mapping.plist; sourceTree = "<group>"; };
+		6D54DA171A2C64080070A1D4 /* CPSProductRangeListInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSProductRangeListInteractorIO.h; sourceTree = "<group>"; };
+		6D54DA181A2C6E820070A1D4 /* CPSProductRangeListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSProductRangeListInteractor.h; sourceTree = "<group>"; };
+		6D54DA191A2C6E820070A1D4 /* CPSProductRangeListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSProductRangeListInteractor.m; sourceTree = "<group>"; };
+		6D54DA1C1A2C6F4E0070A1D4 /* CPSProductRangeWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSProductRangeWireframe.h; sourceTree = "<group>"; };
+		6D54DA1D1A2C6F4E0070A1D4 /* CPSProductRangeWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSProductRangeWireframe.m; sourceTree = "<group>"; };
+		6D54DA221A2C70D20070A1D4 /* CPSProductRangeListViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSProductRangeListViewInterface.h; sourceTree = "<group>"; };
+		6D54DA231A2C713C0070A1D4 /* CPSProductItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSProductItemView.h; sourceTree = "<group>"; };
+		6D54DA241A2C72AB0070A1D4 /* CPSProductRangeListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSProductRangeListPresenter.h; sourceTree = "<group>"; };
+		6D54DA251A2C72AB0070A1D4 /* CPSProductRangeListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSProductRangeListPresenter.m; sourceTree = "<group>"; };
+		6D54DA281A2C76320070A1D4 /* CPSProductAssetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSProductAssetItem.h; sourceTree = "<group>"; };
+		6D54DA291A2C76320070A1D4 /* CPSProductAssetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSProductAssetItem.m; sourceTree = "<group>"; };
+		6D54DA2B1A2C77F60070A1D4 /* product_range_item_mapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = product_range_item_mapping.plist; sourceTree = "<group>"; };
+		6D54DA2E1A2C78B60070A1D4 /* product_range_list_resource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = product_range_list_resource.plist; sourceTree = "<group>"; };
+		6D54DA331A2C7D8A0070A1D4 /* CPSProductRangeGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSProductRangeGridViewController.h; sourceTree = "<group>"; };
+		6D54DA341A2C7D8A0070A1D4 /* CPSProductRangeGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSProductRangeGridViewController.m; sourceTree = "<group>"; };
+		6D54DA3A1A2C82280070A1D4 /* CPSProductItemCollectionCellPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSProductItemCollectionCellPresenter.h; sourceTree = "<group>"; };
+		6D54DA3B1A2C82280070A1D4 /* CPSProductItemCollectionCellPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSProductItemCollectionCellPresenter.m; sourceTree = "<group>"; };
+		6D54DA3D1A2C825B0070A1D4 /* CPSProductItemPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSProductItemPresenter.h; sourceTree = "<group>"; };
+		6D54DA3E1A2C825B0070A1D4 /* CPSProductItemPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSProductItemPresenter.m; sourceTree = "<group>"; };
 		6D6110491A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPSRootWireframe+MCRevealPresentation.h"; sourceTree = "<group>"; };
 		6D61104A1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CPSRootWireframe+MCRevealPresentation.m"; sourceTree = "<group>"; };
 		6D65A1591A25CD08006519C2 /* CoR_3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoR_3.mp4; sourceTree = "<group>"; };
@@ -312,6 +344,12 @@
 		6DC8E66D1A138A5300197DB3 /* CPSMenuItemCellPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuItemCellPresenter.m; sourceTree = "<group>"; };
 		6DC8E66F1A138B1E00197DB3 /* CPSMenuItemCellPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuItemCellPresenterTests.m; sourceTree = "<group>"; };
 		6DC8E6711A138C8500197DB3 /* CPSMenuItemCellInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuItemCellInterface.h; sourceTree = "<group>"; };
+		6DE057A41A2C839600EFA18C /* CPSProductItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSProductItemCollectionViewCell.h; sourceTree = "<group>"; };
+		6DE057A51A2C839600EFA18C /* CPSProductItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSProductItemCollectionViewCell.m; sourceTree = "<group>"; };
+		6DE057A71A2C87DF00EFA18C /* CPSProductItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPSProductItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		6DE057A91A2C8B2B00EFA18C /* product_range.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = product_range.xcassets; sourceTree = "<group>"; };
+		6DE057AC1A2C8E5B00EFA18C /* CPSRightToLeftFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSRightToLeftFlowLayout.h; sourceTree = "<group>"; };
+		6DE057AD1A2C8E5B00EFA18C /* CPSRightToLeftFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRightToLeftFlowLayout.m; sourceTree = "<group>"; };
 		6DEA20CD1A15FF3B001AAC42 /* CPSRevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSRevealController.h; sourceTree = "<group>"; };
 		6DEA20CE1A15FF3B001AAC42 /* CPSRevealController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSRevealController.m; sourceTree = "<group>"; };
 		6DEA20D31A1603DD001AAC42 /* CPSPlaceholderWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSPlaceholderWireframe.h; sourceTree = "<group>"; };
@@ -873,6 +911,101 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		6D54DA141A2C638D0070A1D4 /* Product Range */ = {
+			isa = PBXGroup;
+			children = (
+				6D54DA151A2C639B0070A1D4 /* Grid */,
+				6D54DA2D1A2C78930070A1D4 /* Resource */,
+			);
+			path = "Product Range";
+			sourceTree = "<group>";
+		};
+		6D54DA151A2C639B0070A1D4 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				6D54DA161A2C63CA0070A1D4 /* Logic */,
+				6D54DA271A2C75F40070A1D4 /* Model */,
+				6D54DA1F1A2C709E0070A1D4 /* UI */,
+				6D54DA1B1A2C6F330070A1D4 /* Wireframe */,
+				6DE057AB1A2C8E4000EFA18C /* Utility */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		6D54DA161A2C63CA0070A1D4 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6D54DA171A2C64080070A1D4 /* CPSProductRangeListInteractorIO.h */,
+				6D54DA181A2C6E820070A1D4 /* CPSProductRangeListInteractor.h */,
+				6D54DA191A2C6E820070A1D4 /* CPSProductRangeListInteractor.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		6D54DA1B1A2C6F330070A1D4 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				6D54DA1C1A2C6F4E0070A1D4 /* CPSProductRangeWireframe.h */,
+				6D54DA1D1A2C6F4E0070A1D4 /* CPSProductRangeWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		6D54DA1F1A2C709E0070A1D4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6D54DA201A2C70AD0070A1D4 /* Presenter */,
+				6D54DA211A2C70B60070A1D4 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6D54DA201A2C70AD0070A1D4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6D54DA241A2C72AB0070A1D4 /* CPSProductRangeListPresenter.h */,
+				6D54DA251A2C72AB0070A1D4 /* CPSProductRangeListPresenter.m */,
+				6D54DA3D1A2C825B0070A1D4 /* CPSProductItemPresenter.h */,
+				6D54DA3E1A2C825B0070A1D4 /* CPSProductItemPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6D54DA211A2C70B60070A1D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D54DA221A2C70D20070A1D4 /* CPSProductRangeListViewInterface.h */,
+				6D54DA231A2C713C0070A1D4 /* CPSProductItemView.h */,
+				6D54DA331A2C7D8A0070A1D4 /* CPSProductRangeGridViewController.h */,
+				6D54DA341A2C7D8A0070A1D4 /* CPSProductRangeGridViewController.m */,
+				6D54DA3A1A2C82280070A1D4 /* CPSProductItemCollectionCellPresenter.h */,
+				6D54DA3B1A2C82280070A1D4 /* CPSProductItemCollectionCellPresenter.m */,
+				6DE057A41A2C839600EFA18C /* CPSProductItemCollectionViewCell.h */,
+				6DE057A51A2C839600EFA18C /* CPSProductItemCollectionViewCell.m */,
+				6DE057A71A2C87DF00EFA18C /* CPSProductItemCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D54DA271A2C75F40070A1D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D54DA281A2C76320070A1D4 /* CPSProductAssetItem.h */,
+				6D54DA291A2C76320070A1D4 /* CPSProductAssetItem.m */,
+				6D54DA2B1A2C77F60070A1D4 /* product_range_item_mapping.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D54DA2D1A2C78930070A1D4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6D54DA2E1A2C78B60070A1D4 /* product_range_list_resource.plist */,
+				6DE057A91A2C8B2B00EFA18C /* product_range.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		6D65A16B1A25DD4A006519C2 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1213,6 +1346,15 @@
 			path = "Table View Data Sources";
 			sourceTree = "<group>";
 		};
+		6DE057AB1A2C8E4000EFA18C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6DE057AC1A2C8E5B00EFA18C /* CPSRightToLeftFlowLayout.h */,
+				6DE057AD1A2C8E5B00EFA18C /* CPSRightToLeftFlowLayout.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		6DEA20D01A160385001AAC42 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -1221,6 +1363,7 @@
 				6D2115631A23257000F2620B /* Cost of Risk */,
 				6D1871D71A276A1600F886B9 /* Key Industries */,
 				6D54DA071A28C35C0070A1D4 /* Key Industries Detail */,
+				6D54DA141A2C638D0070A1D4 /* Product Range */,
 				6DEA20D11A160396001AAC42 /* Placeholder */,
 			);
 			path = Modules;
@@ -1497,6 +1640,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE057AA1A2C8B2B00EFA18C /* product_range.xcassets in Resources */,
 				6D54324F1A1DEFE500746CB7 /* animated_background.mp4 in Resources */,
 				6D65A1601A25CD08006519C2 /* CoR_6.mp4 in Resources */,
 				6D54DA131A28CED30070A1D4 /* secondary_asset_mapping.plist in Resources */,
@@ -1513,11 +1657,14 @@
 				6D2115581A1F3FCF00F2620B /* B_Slide_02_Cochrane_Logo.mp4 in Resources */,
 				6D1872051A2780B000F886B9 /* default_asset_mapping.plist in Resources */,
 				6D65A16A1A25CF89006519C2 /* CoR_11.mp4 in Resources */,
+				6DE057A81A2C87DF00EFA18C /* CPSProductItemCollectionViewCell.xib in Resources */,
 				6D2115591A1F3FCF00F2620B /* B_Slide_03_to_Slide_05.mp4 in Resources */,
 				6D65A15E1A25CD08006519C2 /* CoR_4.mp4 in Resources */,
 				6DEA20E81A1638AA001AAC42 /* Planer_Reg.ttf in Resources */,
 				6D21156F1A232AA700F2620B /* cost_of_risk_resource.plist in Resources */,
+				6D54DA2C1A2C77F60070A1D4 /* product_range_item_mapping.plist in Resources */,
 				6D78FC4A1A0B7A140097E4F5 /* Main.storyboard in Resources */,
+				6D54DA2F1A2C78B60070A1D4 /* product_range_list_resource.plist in Resources */,
 				6D65A15D1A25CD08006519C2 /* CoR_3.mp4 in Resources */,
 				6D54D9CB1A28AB5F0070A1D4 /* cost_of_risk_item_mapping.plist in Resources */,
 				6D1871EA1A27716300F886B9 /* key_industries_resource.plist in Resources */,
@@ -1636,6 +1783,7 @@
 				6D8DEA131A139192007C92F8 /* CPSMenuItemTableViewDelegate.m in Sources */,
 				6D5432601A1E279700746CB7 /* CPSMenuItemLoader.m in Sources */,
 				6D1871D01A273BFA00F886B9 /* CPSVideoListPresenter.m in Sources */,
+				6DE057AE1A2C8E5B00EFA18C /* CPSRightToLeftFlowLayout.m in Sources */,
 				6DF03C6A1A1F33B1003A0DF1 /* CPSVideoPlaybackViewController.m in Sources */,
 				6D10E11A1A10C8C0006DD677 /* CPSMenuItem.m in Sources */,
 				6DEA20DD1A16070B001AAC42 /* CPSPlaceholderViewController.m in Sources */,
@@ -1663,11 +1811,14 @@
 				6DEA20CF1A15FF3B001AAC42 /* CPSRevealController.m in Sources */,
 				6D10E1011A10AFC5006DD677 /* CPSRootWireframe.m in Sources */,
 				6D8DEA161A13C3D9007C92F8 /* CPSMenuTableViewController.m in Sources */,
+				6D54DA3C1A2C82280070A1D4 /* CPSProductItemCollectionCellPresenter.m in Sources */,
 				6D1872031A277D0C00F886B9 /* CPSKeyIndustriesGridViewController.m in Sources */,
 				6D8933F61A1C86820099A818 /* CPSRootContentWireframe.m in Sources */,
 				6D8DEA1E1A14A578007C92F8 /* CPSMenuItemTableViewCell.m in Sources */,
+				6DE057A61A2C839600EFA18C /* CPSProductItemCollectionViewCell.m in Sources */,
 				6D21157E1A23459900F2620B /* CPSCostOfRiskViewController.m in Sources */,
 				6D54324A1A1CE46E00746CB7 /* CPSAccessPageViewController.m in Sources */,
+				6D54DA1A1A2C6E820070A1D4 /* CPSProductRangeListInteractor.m in Sources */,
 				6D54DA0E1A28C4430070A1D4 /* CPSKeyIndustriesDetailPresenter.m in Sources */,
 				6D1871E71A276D6700F886B9 /* CPSPropertyMappingResourceLoader.m in Sources */,
 				6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */,
@@ -1675,6 +1826,9 @@
 				6D18720B1A28660B00F886B9 /* CPSKeyIndustriesCollectionCellPresenter.m in Sources */,
 				6DF03C651A1F2F5A003A0DF1 /* CPSVideoPlayerPresenter.m in Sources */,
 				6D61104B1A14BFAA00210E5D /* CPSRootWireframe+MCRevealPresentation.m in Sources */,
+				6D54DA261A2C72AB0070A1D4 /* CPSProductRangeListPresenter.m in Sources */,
+				6D54DA2A1A2C76320070A1D4 /* CPSProductAssetItem.m in Sources */,
+				6D54DA1E1A2C6F4E0070A1D4 /* CPSProductRangeWireframe.m in Sources */,
 				6D21155F1A231AE500F2620B /* CPSResourceLoader.m in Sources */,
 				6D1871DC1A276A7E00F886B9 /* CPSAssetItem.m in Sources */,
 				6D78FC411A0B7A140097E4F5 /* main.m in Sources */,
@@ -1685,11 +1839,13 @@
 				6D10E11D1A10C8D8006DD677 /* CPSViewControllerMenuItem.m in Sources */,
 				6D2115621A231CDE00F2620B /* CPSKeyValueResourceLoader.m in Sources */,
 				6D1871D41A273FD700F886B9 /* CPSVideoListViewController.m in Sources */,
+				6D54DA3F1A2C825B0070A1D4 /* CPSProductItemPresenter.m in Sources */,
 				6D2BD99C1A237A6D0035189C /* CPSCostOfRiskCellPresenter.m in Sources */,
 				6D82E8D41A24ABAD00122582 /* MCTableViewDelegate.m in Sources */,
 				6DEA20E51A162042001AAC42 /* MCMaskedTableView.m in Sources */,
 				6D82E8D11A23816300122582 /* UITableView+CPSBorderMaskStretchAdditions.m in Sources */,
 				6DBD91761A14AD2700FA6A51 /* CPSAppContext.m in Sources */,
+				6D54DA351A2C7D8A0070A1D4 /* CPSProductRangeGridViewController.m in Sources */,
 				6D1871BE1A2736C800F886B9 /* CPSVideoListInteractor.m in Sources */,
 				6D21158C1A23696D00F2620B /* CPSCostOfRiskWireframe.m in Sources */,
 				6D2115681A2325D200F2620B /* CPSCostOfRiskInteractor.m in Sources */,
