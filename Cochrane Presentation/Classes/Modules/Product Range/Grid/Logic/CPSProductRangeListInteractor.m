@@ -8,6 +8,8 @@
 
 #import "CPSProductRangeListInteractor.h"
 
+#import "CPSProductAssetItem.h"
+
 @implementation CPSProductRangeListInteractor
 
 @synthesize wireframe = _wireframe;

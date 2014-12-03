@@ -9,29 +9,52 @@
 #import "CPSProductItemPresenter.h"
 
 #import "CPSProductAssetItem.h"
+#import "LSImageMap.h"
 
 @interface CPSProductItemPresenter ()
 
-- (NSURL *)videoFileURLForFilename:(NSString *)filename;
+@property (nonatomic, strong) NSMutableDictionary * spriteMapDict;
+
+- (LSImageMap *)spriteMapWithName:(NSString *)name;
 
 @end
 
 @implementation CPSProductItemPresenter
 
-- (void)configureVideoView:(id<CPSProductItemVideoView>)view withItem:(CPSProductAssetItem *)item
+- (instancetype)init
 {
-    NSURL *videoURL = [self videoFileURLForFilename:item.primaryFilename];
-    
-    [view setTitle:item.title];
-    [view setVideoURL:videoURL loopVideo:item.loopsVideo];
+    if (self = [super init])
+    {
+        _spriteMapDict = [NSMutableDictionary dictionary];
+    }
+    return self;
 }
 
-- (NSURL *)videoFileURLForFilename:(NSString *)filename
+- (void)configureVideoView:(id<CPSProductItemVideoView>)view withItem:(CPSProductAssetItem *)item
 {
-    NSString *resourceName = [filename stringByDeletingPathExtension];
-    NSString *pathExtension = [filename pathExtension];
+    LSImageMap *spriteMap = [self spriteMapWithName:item.primaryFilename];
     
-    return [[NSBundle mainBundle] URLForResource:resourceName withExtension:pathExtension];
+    [view setTitle:item.title];
+    [view setSpriteMap:spriteMap];
+}
+
+- (LSImageMap *)spriteMapWithName:(NSString *)name
+{
+    LSImageMap *map = self.spriteMapDict[name];
+    if (map == nil)
+    {
+        map = [LSImageMap imageMapWithContentsOfFile:name];
+        if (map == nil)
+        {
+            NSLog(@"WARNING: sprite map (%@) for product not found", name);
+        }
+        else
+        {
+            self.spriteMapDict[name] = map;
+        }
+    }
+    
+    return map;
 }
 
 @end

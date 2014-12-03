@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 
 #import "CPSProductRangeListViewInterface.h"
+
 #import "CPSAnimatedTextView.h"
+#import "CPSAnimatedImageView.h"
 
 @interface CPSProductItemCollectionViewCell : UICollectionViewCell <CPSProductItemVideoView>
 
 @property (weak, nonatomic) IBOutlet CPSAnimatedTextView * textView;
-@property (weak, nonatomic) IBOutlet UIImageView * imageView;
+@property (weak, nonatomic) IBOutlet CPSAnimatedImageView *imageView;
 
 @end

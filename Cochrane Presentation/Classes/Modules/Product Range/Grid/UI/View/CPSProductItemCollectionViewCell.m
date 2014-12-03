@@ -8,14 +8,25 @@
 
 #import "CPSProductItemCollectionViewCell.h"
 
+#import "LSImageMap.h"
+#import "CPSImageViewAnimator.h"
+
+@interface CPSProductItemCollectionViewCell ()
+
+@end
+
 @implementation CPSProductItemCollectionViewCell
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 - (void)prepareForReuse
 {
     [super prepareForReuse];
 
     self.textView.text = nil;
-    self.imageView.image = nil;
 }
 
 - (void)setTitle:(NSString *)title
@@ -23,9 +34,31 @@
     self.textView.text = title;
 }
 
-- (void)setVideoURL:(NSURL *)videoURL loopVideo:(BOOL)loop
+- (void)setSpriteMap:(LSImageMap *)spriteMap
 {
+    self.imageView.spriteImageMap = spriteMap;
+    if (spriteMap.imageCount > 0)
+    {
+        self.imageView.animator = [CPSImageViewAnimator sharedAnimator];
+    }
+    else
+    {
+        self.imageView.animator = nil;
+    }
     
+    [self setNeedsLayout];
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    if (self.imageView.spriteImageMap.imageCount > 0)
+    {
+        [self.imageView sizeToFit];
+        self.imageView.center = CGPointMake(CGRectGetWidth(self.contentView.bounds) / 2.0,
+                                            CGRectGetMinY(self.textView.frame) / 2.0);
+    }
 }
 
 @end

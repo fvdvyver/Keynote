@@ -4,9 +4,9 @@
 <array>
 	<dict>
 		<key>title_text</key>
-		<string>CLEARVU</string>
+		<string>CRITICAL INFRASTRUCTURE</string>
 		<key>primary_asset_name</key>
-		<string></string>
+		<string>product_sprite_0</string>
 		<key>secondary_asset_name</key>
 		<string></string>
 		<key>loop_video</key>
@@ -16,9 +16,9 @@
 	</dict>
 	<dict>
 		<key>title_text</key>
-		<string>CLEARVU</string>
+		<string>SHADOW WALL</string>
 		<key>primary_asset_name</key>
-		<string></string>
+		<string>product_sprite_1</string>
 		<key>secondary_asset_name</key>
 		<string></string>
 		<key>loop_video</key>
@@ -30,7 +30,7 @@
 		<key>title_text</key>
 		<string>CLEARVU REINFORCED</string>
 		<key>primary_asset_name</key>
-		<string></string>
+		<string>product_sprite_2</string>
 		<key>secondary_asset_name</key>
 		<string></string>
 		<key>loop_video</key>
@@ -42,7 +42,7 @@
 		<key>title_text</key>
 		<string>CLEARVU</string>
 		<key>primary_asset_name</key>
-		<string></string>
+		<string>product_sprite_3</string>
 		<key>secondary_asset_name</key>
 		<string></string>
 		<key>loop_video</key>
@@ -52,9 +52,9 @@
 	</dict>
 	<dict>
 		<key>title_text</key>
-		<string>CLEARVU</string>
+		<string>RAPID DEPL. TRAILER</string>
 		<key>primary_asset_name</key>
-		<string></string>
+		<string>product_sprite_4</string>
 		<key>secondary_asset_name</key>
 		<string></string>
 		<key>loop_video</key>
@@ -64,9 +64,9 @@
 	</dict>
 	<dict>
 		<key>title_text</key>
-		<string>CLEARVU</string>
+		<string>SMART COIL</string>
 		<key>primary_asset_name</key>
-		<string></string>
+		<string>product_sprite_5</string>
 		<key>secondary_asset_name</key>
 		<string></string>
 		<key>loop_video</key>
@@ -76,9 +76,9 @@
 	</dict>
 	<dict>
 		<key>title_text</key>
-		<string>CLEARVU</string>
+		<string>FLOATING BARRIER</string>
 		<key>primary_asset_name</key>
-		<string></string>
+		<string>product_sprite_6</string>
 		<key>secondary_asset_name</key>
 		<string></string>
 		<key>loop_video</key>
@@ -88,9 +88,9 @@
 	</dict>
 	<dict>
 		<key>title_text</key>
-		<string>CLEARVU</string>
+		<string>ROCKET BARRIER</string>
 		<key>primary_asset_name</key>
-		<string></string>
+		<string>product_sprite_7</string>
 		<key>secondary_asset_name</key>
 		<string></string>
 		<key>loop_video</key>
@@ -100,9 +100,9 @@
 	</dict>
 	<dict>
 		<key>title_text</key>
-		<string>CLEARVU</string>
+		<string>TANGLE TAPE</string>
 		<key>primary_asset_name</key>
-		<string></string>
+		<string>product_sprite_8</string>
 		<key>secondary_asset_name</key>
 		<string></string>
 		<key>loop_video</key>
@@ -112,9 +112,9 @@
 	</dict>
 	<dict>
 		<key>title_text</key>
-		<string>CLEARVU</string>
+		<string>RIBBON STRIP</string>
 		<key>primary_asset_name</key>
-		<string></string>
+		<string>product_sprite_9</string>
 		<key>secondary_asset_name</key>
 		<string></string>
 		<key>loop_video</key>
@@ -124,9 +124,9 @@
 	</dict>
 	<dict>
 		<key>title_text</key>
-		<string>CLEARVU</string>
+		<string>RAZOR MESH</string>
 		<key>primary_asset_name</key>
-		<string></string>
+		<string>product_sprite_10</string>
 		<key>secondary_asset_name</key>
 		<string></string>
 		<key>loop_video</key>
@@ -136,9 +136,9 @@
 	</dict>
 	<dict>
 		<key>title_text</key>
-		<string>CLEARVU</string>
+		<string>ANTI-RAM</string>
 		<key>primary_asset_name</key>
-		<string></string>
+		<string>product_sprite_11</string>
 		<key>secondary_asset_name</key>
 		<string></string>
 		<key>loop_video</key>
@@ -148,9 +148,21 @@
 	</dict>
 	<dict>
 		<key>title_text</key>
-		<string>CLEARVU</string>
+		<string>SPECS</string>
 		<key>primary_asset_name</key>
+		<string>product_sprite_12</string>
+		<key>secondary_asset_name</key>
 		<string></string>
+		<key>loop_video</key>
+		<false/>
+		<key>action_type</key>
+		<string>show detail</string>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>WALL SPIKES</string>
+		<key>primary_asset_name</key>
+		<string>product_sprite_13</string>
 		<key>secondary_asset_name</key>
 		<string></string>
 		<key>loop_video</key>
@@ -160,21 +172,9 @@
 	</dict>
 	<dict>
 		<key>title_text</key>
-		<string>CLEARVU</string>
+		<string>FLAT WRAP</string>
 		<key>primary_asset_name</key>
-		<string></string>
-		<key>secondary_asset_name</key>
-		<string></string>
-		<key>loop_video</key>
-		<true/>
-		<key>action_type</key>
-		<string>show detail</string>
-	</dict>
-	<dict>
-		<key>title_text</key>
-		<string>CLEARVU</string>
-		<key>primary_asset_name</key>
-		<string></string>
+		<string>product_sprite_14</string>
 		<key>secondary_asset_name</key>
 		<string></string>
 		<key>loop_video</key>

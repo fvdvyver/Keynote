@@ -19,15 +19,22 @@
 
 @implementation CPSProductRangeListPresenter
 
+- (instancetype)init
+{
+    if (self = [super init])
+    {
+        _presenter = [CPSProductItemPresenter new];
+    }
+    return self;
+}
+
 - (void)updateView
 {
     [self.interactor requestData];
 }
 
 - (void)setProductItems:(NSArray *)products
-{
-    self.presenter = [CPSProductItemPresenter new];
-    
+{   
     [self.userInterface setItemPresenter:self.presenter];
     [self.userInterface setProductItems:products];
 }
@@ -44,7 +51,7 @@
     }
     else
     {
-        NSLog(@"WARNING: action type (%li) for product item %@ not supported", item.actionType, item.title);
+        NSLog(@"WARNING: action type (%li) for product item %@ not supported", (long)item.actionType, item.title);
     }
 }
 

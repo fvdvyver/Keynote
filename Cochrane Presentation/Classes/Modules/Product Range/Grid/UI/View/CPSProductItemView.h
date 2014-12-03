@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class LSImageMap;
+
 @protocol CPSProductItemVideoView <NSObject>
 
 - (void)setTitle:(NSString *)title;
-- (void)setVideoURL:(NSURL *)videoURL loopVideo:(BOOL)loop;
+- (void)setSpriteMap:(LSImageMap *)spriteMap;
 
 @end

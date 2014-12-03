@@ -13,12 +13,18 @@
 
 #import "CPSProductItemCollectionViewCell.h"
 
+#import "CPSImageViewAnimator.h"
+
 #define kCellIdentifier @"cell"
 
 @interface CPSProductRangeGridViewController ()
 
 @property (nonatomic, strong) MCArrayCollectionViewDatasource * datasource;
 @property (nonatomic, strong) CPSProductItemCollectionCellPresenter * presenter;
+
+@property (nonatomic, assign) BOOL animateTextOnViewWillAppear;
+
+- (void)animateCellText;
 
 @end
 
@@ -30,7 +36,32 @@
     [self.collectionView registerNib:[UINib nibWithNibName:@"CPSProductItemCollectionViewCell" bundle:nil]
             forCellWithReuseIdentifier:kCellIdentifier];
     
+    self.animateTextOnViewWillAppear = YES;
     [self.eventHandler updateView];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+ 
+    if (self.animateTextOnViewWillAppear)
+    {
+        self.presenter.hidesTextView = YES;
+        [self.collectionView reloadData];
+        
+        [self performSelector:@selector(animateCellText) withObject:nil afterDelay:0.5];
+        self.animateTextOnViewWillAppear = NO;
+    }
+    
+    [[CPSImageViewAnimator sharedAnimator] setEnabled:YES];
+    [[CPSImageViewAnimator sharedAnimator] setFramerate:25.0];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+    [[CPSImageViewAnimator sharedAnimator] setEnabled:YES];
 }
 
 - (void)setItemPresenter:(id<CPSProductItemPresenter>)itemPresenter
@@ -47,6 +78,16 @@
     
     self.collectionView.dataSource = datasource;
     self.datasource = datasource;
+}
+
+- (void)animateCellText
+{
+    self.presenter.hidesTextView = NO;
+    for (CPSAnimatedTextView *textView in [self.collectionView.visibleCells valueForKey:@"textView"])
+    {
+        textView.hidden = NO;
+        [textView animateTextWithDuration:1.2 letterRate:textView.text.length];
+    }
 }
 
 @end

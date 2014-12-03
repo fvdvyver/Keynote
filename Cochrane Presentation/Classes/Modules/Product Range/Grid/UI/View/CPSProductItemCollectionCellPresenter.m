@@ -18,6 +18,7 @@
      inCollectionView:(UICollectionView *)collectionView
 {
     [self.itemPresenter configureVideoView:cell withItem:item];
+    cell.textView.hidden = self.hidesTextView;
 }
 
 @end

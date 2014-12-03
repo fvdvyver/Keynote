@@ -16,6 +16,7 @@
 @interface CPSProductItemCollectionCellPresenter : NSObject <MCCollectionViewCellPresenter>
 
 @property (nonatomic, weak) id<CPSProductItemPresenter> itemPresenter;
+@property (nonatomic, assign) BOOL hidesTextView;
 
 - (void)configureCell:(CPSProductItemCollectionViewCell *)cell
               forItem:(id)item
