@@ -56,7 +56,10 @@
     
     self.detailPresenter = presenter;
     
-    [self.parentContentWireframe setContentControllerProvider:[CPSCachedViewControllerProvider providerWithCachedViewController:viewController]];
+    // Do this on the next run loop so the UI can update first
+    [(id)self.parentContentWireframe performSelector:@selector(setContentControllerProvider:)
+                                          withObject:[CPSCachedViewControllerProvider providerWithCachedViewController:viewController]
+                                          afterDelay:0.0];
 }
 
 - (void)navigateToProductRange

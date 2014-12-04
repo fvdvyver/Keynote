@@ -70,7 +70,10 @@
     // We now need to maintain a strong reference to the mainViewController while it is not part of the view hierarchy
     self.strongMainViewController = self.weakMainViewController;
     
-    [self.parentContentWireframe setContentControllerProvider:[CPSCachedViewControllerProvider providerWithCachedViewController:viewController]];
+    // Do this on the next run loop so the UI can update first
+    [(id)self.parentContentWireframe performSelector:@selector(setContentControllerProvider:)
+                                          withObject:[CPSCachedViewControllerProvider providerWithCachedViewController:viewController]
+                                          afterDelay:0.0];
 }
 
 @end
