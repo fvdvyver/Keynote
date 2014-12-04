@@ -20,7 +20,10 @@
 @interface CPSProductRangeGridViewController () <UICollectionViewDelegate>
 
 @property (nonatomic, strong) MCArrayCollectionViewDatasource * datasource;
+
+@property (nonatomic, strong) id<CPSProductItemPresenter> itemPresenter;
 @property (nonatomic, strong) CPSProductItemCollectionCellPresenter * presenter;
+
 
 @property (nonatomic, assign) BOOL animateTextOnViewWillAppear;
 
@@ -71,6 +74,7 @@
 
 - (void)setItemPresenter:(id<CPSProductItemPresenter>)itemPresenter
 {
+    _itemPresenter = itemPresenter;
     self.presenter = [CPSProductItemCollectionCellPresenter new];
     self.presenter.itemPresenter = itemPresenter;
 }

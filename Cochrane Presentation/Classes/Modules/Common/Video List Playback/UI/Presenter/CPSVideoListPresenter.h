@@ -16,8 +16,8 @@
  */
 @interface CPSVideoListPresenter : NSObject <CPSVideoListInteractorOutput, CPSVideoListViewEventHandler>
 
-@property (nonatomic, weak)   id <CPSVideoListInteractorInput> interactor;
-@property (nonatomic, strong) id <CPSVideoListView> userInterface;
+@property (nonatomic, weak) id <CPSVideoListInteractorInput> interactor;
+@property (nonatomic, weak) id <CPSVideoListView> userInterface;
 
 @property (nonatomic, strong) NSString * introVideoFilename;
 

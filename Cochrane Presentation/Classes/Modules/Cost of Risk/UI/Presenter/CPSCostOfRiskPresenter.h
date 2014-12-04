@@ -15,7 +15,7 @@
 
 @interface CPSCostOfRiskPresenter : CPSVideoListPresenter <CPSCostOfRiskInteractorOutput, CPSCostOfRiskEventHandler>
 
-@property (nonatomic, weak)   id <CPSCostOfRiskInteractorInput> interactor;
-@property (nonatomic, strong) id <CPSCostOfRiskView> userInterface;
+@property (nonatomic, weak) id <CPSCostOfRiskInteractorInput> interactor;
+@property (nonatomic, weak) id <CPSCostOfRiskView> userInterface;
 
 @end

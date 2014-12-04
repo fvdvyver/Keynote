@@ -14,7 +14,7 @@
 
 @interface CPSVideoPlayerPresenter : NSObject <CPSVideoPlayerInteractorOutput, CPSVideoPlayerEventHandler>
 
-@property (nonatomic, weak)   id<CPSVideoPlayerInteractorInput> interactor;
-@property (nonatomic, strong) id<CPSVideoPlayerViewInterface>   userInterface;
+@property (nonatomic, weak) id<CPSVideoPlayerInteractorInput> interactor;
+@property (nonatomic, weak) id<CPSVideoPlayerViewInterface>   userInterface;
 
 @end

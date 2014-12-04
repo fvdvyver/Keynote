@@ -13,20 +13,9 @@
 
 @interface CPSProductRangeListPresenter ()
 
-@property (nonatomic, strong) CPSProductItemPresenter * presenter;
-
 @end
 
 @implementation CPSProductRangeListPresenter
-
-- (instancetype)init
-{
-    if (self = [super init])
-    {
-        _presenter = [CPSProductItemPresenter new];
-    }
-    return self;
-}
 
 - (void)updateView
 {
@@ -35,7 +24,7 @@
 
 - (void)setProductItems:(NSArray *)products
 {   
-    [self.userInterface setItemPresenter:self.presenter];
+    [self.userInterface setItemPresenter:[CPSProductItemPresenter new]];
     [self.userInterface setProductItems:products];
 }
 

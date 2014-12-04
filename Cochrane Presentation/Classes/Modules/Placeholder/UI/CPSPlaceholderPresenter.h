@@ -12,7 +12,8 @@
 
 @interface CPSPlaceholderPresenter : NSObject <CPSPlaceholderViewEventHandler>
 
+@property (nonatomic, weak) id<CPSPlaceholderViewInterface> userInterface;
+
 @property (nonatomic, strong) NSString * placeholderText;
-@property (nonatomic, strong) id<CPSPlaceholderViewInterface> userInterface;
 
 @end

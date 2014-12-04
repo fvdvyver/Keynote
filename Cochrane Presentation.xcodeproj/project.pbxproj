@@ -187,7 +187,7 @@
 		6DE058031A2CA55600EFA18C /* AVAssetJoinAlphaResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057CE1A2CA55600EFA18C /* AVAssetJoinAlphaResourceLoader.m */; };
 		6DE058041A2CA55600EFA18C /* AVAssetReaderConvertMaxvid.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057D01A2CA55600EFA18C /* AVAssetReaderConvertMaxvid.m */; };
 		6DE058051A2CA55600EFA18C /* AVAssetWriterConvertFromMaxvid.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057D21A2CA55600EFA18C /* AVAssetWriterConvertFromMaxvid.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		6DE058061A2CA55600EFA18C /* AVFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057D41A2CA55600EFA18C /* AVFileUtil.m */; };
+		6DE058061A2CA55600EFA18C /* AVFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057D41A2CA55600EFA18C /* AVFileUtil.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		6DE058071A2CA55600EFA18C /* AVFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057D61A2CA55600EFA18C /* AVFrame.m */; };
 		6DE058081A2CA55600EFA18C /* AVFrameDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057D81A2CA55600EFA18C /* AVFrameDecoder.m */; };
 		6DE058091A2CA55600EFA18C /* AVGIF89A2MvidResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057DA1A2CA55600EFA18C /* AVGIF89A2MvidResourceLoader.m */; };

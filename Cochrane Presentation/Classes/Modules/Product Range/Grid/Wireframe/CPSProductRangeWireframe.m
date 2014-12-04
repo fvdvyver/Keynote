@@ -13,7 +13,9 @@
 
 @interface CPSProductRangeWireframe ()
 
-@property (nonatomic, strong) UIViewController * mainViewController;
+@property (nonatomic, strong) UIViewController * strongMainViewController;
+@property (nonatomic, weak)   UIViewController * weakMainViewController;
+
 @property (nonatomic, strong) CPSProductDetailPresenter * detailPresenter;
 
 @end
@@ -23,22 +25,32 @@
 - (void)prepareContentViewController
 {
     // purge the cached content view controller because we have been requested to provide a new one
-    self.mainViewController = nil;
+    self.strongMainViewController = nil;
+    self.weakMainViewController = nil;;
     self.detailPresenter = nil;
 }
 
 - (UIViewController *)contentViewController
 {
     UIViewController *viewController = [super contentViewController];
-    self.mainViewController = viewController;
+    self.weakMainViewController = viewController;
     
     return viewController;
+}
+
+- (void)advanceCurrentContentProvider
+{
+    [super advanceCurrentContentProvider];
+    self.strongMainViewController = nil;
 }
 
 - (void)showMainViewController
 {
     self.detailPresenter = nil;
-    [self.parentContentWireframe setContentControllerProvider:[CPSCachedViewControllerProvider providerWithCachedViewController:self.mainViewController]];
+    [self.parentContentWireframe setContentControllerProvider:[CPSCachedViewControllerProvider providerWithCachedViewController:self.strongMainViewController]];
+    
+    // We no longer need to maintain a strong reference to the mainViewController
+    self.strongMainViewController = nil;
 }
 
 - (void)showProductWithTitle:(NSString *)title videoName:(NSString *)videoName
@@ -54,6 +66,9 @@
     presenter.userInterface = (id)viewController;
     
     self.detailPresenter = presenter;
+    
+    // We now need to maintain a strong reference to the mainViewController while it is not part of the view hierarchy
+    self.strongMainViewController = self.weakMainViewController;
     
     [self.parentContentWireframe setContentControllerProvider:[CPSCachedViewControllerProvider providerWithCachedViewController:viewController]];
 }

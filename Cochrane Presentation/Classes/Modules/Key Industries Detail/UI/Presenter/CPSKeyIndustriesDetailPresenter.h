@@ -16,7 +16,7 @@
 @interface CPSKeyIndustriesDetailPresenter : NSObject <CPSKeyIndustriesDetailViewEventHandler>
 
 @property (nonatomic, weak) CPSKeyIndustriesWireframe * wireframe;
-@property (nonatomic, strong) id<CPSKeyIndustriesDetailView> userInterface;
+@property (nonatomic, weak) id<CPSKeyIndustriesDetailView> userInterface;
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *imageName;

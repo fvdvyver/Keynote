@@ -14,8 +14,8 @@
 
 @protocol CPSPresenter <NSObject>
 
-@property (nonatomic, weak)   CPSBaseWireframe * wireframe;
-@property (nonatomic, weak)   id<CPSInteractor>  interactor;
-@property (nonatomic, strong) id<CPSView>        userInterface;
+@property (nonatomic, weak) CPSBaseWireframe * wireframe;
+@property (nonatomic, weak) id<CPSInteractor>  interactor;
+@property (nonatomic, weak) id<CPSView>        userInterface;
 
 @end

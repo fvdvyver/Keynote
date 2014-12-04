@@ -13,8 +13,8 @@
 
 @interface CPSProductDetailPresenter : NSObject <CPSProductDetailViewEventHandler>
 
-@property (nonatomic, weak)   CPSProductRangeWireframe * wireframe;
-@property (nonatomic, strong) id<CPSProductDetailView>   userInterface;
+@property (nonatomic, weak) CPSProductRangeWireframe * wireframe;
+@property (nonatomic, weak) id<CPSProductDetailView>   userInterface;
 
 @property (nonatomic, strong) NSString * title;
 @property (nonatomic, strong) NSString * videoName;

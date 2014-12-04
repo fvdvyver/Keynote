@@ -17,9 +17,9 @@
 
 @interface CPSKeyIndustriesGridPresenter : NSObject <CPSKeyIndustryGridInteractorOutput, CPSKeyIndustriesViewEventHandler>
 
-@property (nonatomic, weak)   CPSKeyIndustriesWireframe * wireframe;
-@property (nonatomic, weak)   id<CPSKeyIndustryGridInteractorInput> interactor;
-@property (nonatomic, strong) id<CPSKeyIndustriesView> userInterface;
+@property (nonatomic, weak) CPSKeyIndustriesWireframe * wireframe;
+@property (nonatomic, weak) id<CPSKeyIndustryGridInteractorInput> interactor;
+@property (nonatomic, weak) id<CPSKeyIndustriesView> userInterface;
 
 - (void)item:(CPSAssetItem *)item selectedAtIndex:(NSInteger)index;
 
