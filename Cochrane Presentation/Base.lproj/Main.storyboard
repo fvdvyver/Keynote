@@ -12,6 +12,7 @@
             <string>Planer</string>
             <string>Planer</string>
             <string>Planer</string>
+            <string>Planer</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -368,6 +369,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrs-Ec-UqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2155" y="3351"/>
+        </scene>
+        <!--Product Detail View Controller-->
+        <scene sceneID="EaE-7h-4Zg">
+            <objects>
+                <viewController storyboardIdentifier="ProductDetailViewController" id="Qrn-gp-n6I" customClass="CPSProductDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ycm-Ja-5sN"/>
+                        <viewControllerLayoutGuide type="bottom" id="c5G-Qy-fgL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cTl-8M-ibd">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ia-uq-Fq5" userLabel="Video Container View">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drR-5x-kNh">
+                                <rect key="frame" x="0.0" y="674.5" width="1024" height="73.5"/>
+                                <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="65"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Ia-uq-Fq5" firstAttribute="leading" secondItem="cTl-8M-ibd" secondAttribute="leading" id="87R-VX-ezs"/>
+                            <constraint firstItem="c5G-Qy-fgL" firstAttribute="top" secondItem="1Ia-uq-Fq5" secondAttribute="bottom" id="Aee-ZL-yzn"/>
+                            <constraint firstAttribute="trailing" secondItem="drR-5x-kNh" secondAttribute="trailing" id="Awh-tm-A07"/>
+                            <constraint firstItem="c5G-Qy-fgL" firstAttribute="top" secondItem="drR-5x-kNh" secondAttribute="bottom" constant="20" id="ORO-sM-1gd"/>
+                            <constraint firstAttribute="trailing" secondItem="1Ia-uq-Fq5" secondAttribute="trailing" id="gEk-Rq-xLr"/>
+                            <constraint firstItem="1Ia-uq-Fq5" firstAttribute="top" secondItem="cTl-8M-ibd" secondAttribute="top" id="r2c-Eb-R3Z"/>
+                            <constraint firstItem="drR-5x-kNh" firstAttribute="leading" secondItem="cTl-8M-ibd" secondAttribute="leading" id="v7c-Cl-1pC"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="drR-5x-kNh" id="8fc-nq-2xu"/>
+                        <outlet property="videoContainerView" destination="1Ia-uq-Fq5" id="Wtj-AY-5c6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQd-IB-GF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2155" y="4269"/>
         </scene>
         <!--Access Page View Controller-->
         <scene sceneID="npe-bS-nwF">

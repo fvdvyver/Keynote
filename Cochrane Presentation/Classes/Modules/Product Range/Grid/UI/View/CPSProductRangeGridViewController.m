@@ -17,7 +17,7 @@
 
 #define kCellIdentifier @"cell"
 
-@interface CPSProductRangeGridViewController ()
+@interface CPSProductRangeGridViewController () <UICollectionViewDelegate>
 
 @property (nonatomic, strong) MCArrayCollectionViewDatasource * datasource;
 @property (nonatomic, strong) CPSProductItemCollectionCellPresenter * presenter;
@@ -33,6 +33,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    self.collectionView.delegate = self;
     [self.collectionView registerNib:[UINib nibWithNibName:@"CPSProductItemCollectionViewCell" bundle:nil]
             forCellWithReuseIdentifier:kCellIdentifier];
     
@@ -88,6 +90,12 @@
         textView.hidden = NO;
         [textView animateTextWithDuration:1.2 letterRate:textView.text.length];
     }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    id item = [self.datasource itemAtIndexPath:indexPath];
+    [self.eventHandler item:item selectedAtIndex:indexPath.item];
 }
 
 @end

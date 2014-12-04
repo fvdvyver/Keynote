@@ -8,7 +8,7 @@
 		<key>primary_asset_name</key>
 		<string>product_sprite_0</string>
 		<key>secondary_asset_name</key>
-		<string></string>
+		<string>product_large_00.mp4</string>
 		<key>loop_video</key>
 		<true/>
 		<key>action_type</key>
@@ -20,7 +20,7 @@
 		<key>primary_asset_name</key>
 		<string>product_sprite_1</string>
 		<key>secondary_asset_name</key>
-		<string></string>
+		<string>product_large_01.mp4</string>
 		<key>loop_video</key>
 		<true/>
 		<key>action_type</key>
@@ -32,7 +32,7 @@
 		<key>primary_asset_name</key>
 		<string>product_sprite_2</string>
 		<key>secondary_asset_name</key>
-		<string></string>
+		<string>product_large_02.mp4</string>
 		<key>loop_video</key>
 		<true/>
 		<key>action_type</key>
@@ -44,7 +44,7 @@
 		<key>primary_asset_name</key>
 		<string>product_sprite_3</string>
 		<key>secondary_asset_name</key>
-		<string></string>
+		<string>product_large_03.mp4</string>
 		<key>loop_video</key>
 		<true/>
 		<key>action_type</key>
@@ -56,7 +56,7 @@
 		<key>primary_asset_name</key>
 		<string>product_sprite_4</string>
 		<key>secondary_asset_name</key>
-		<string></string>
+		<string>product_large_04.mp4</string>
 		<key>loop_video</key>
 		<true/>
 		<key>action_type</key>
@@ -68,7 +68,7 @@
 		<key>primary_asset_name</key>
 		<string>product_sprite_5</string>
 		<key>secondary_asset_name</key>
-		<string></string>
+		<string>product_large_05.mp4</string>
 		<key>loop_video</key>
 		<true/>
 		<key>action_type</key>
@@ -80,7 +80,7 @@
 		<key>primary_asset_name</key>
 		<string>product_sprite_6</string>
 		<key>secondary_asset_name</key>
-		<string></string>
+		<string>product_large_06.mp4</string>
 		<key>loop_video</key>
 		<true/>
 		<key>action_type</key>
@@ -92,7 +92,7 @@
 		<key>primary_asset_name</key>
 		<string>product_sprite_7</string>
 		<key>secondary_asset_name</key>
-		<string></string>
+		<string>product_large_07.mp4</string>
 		<key>loop_video</key>
 		<true/>
 		<key>action_type</key>
@@ -104,7 +104,7 @@
 		<key>primary_asset_name</key>
 		<string>product_sprite_8</string>
 		<key>secondary_asset_name</key>
-		<string></string>
+		<string>product_large_08.mp4</string>
 		<key>loop_video</key>
 		<true/>
 		<key>action_type</key>
@@ -116,7 +116,7 @@
 		<key>primary_asset_name</key>
 		<string>product_sprite_9</string>
 		<key>secondary_asset_name</key>
-		<string></string>
+		<string>product_large_09.mp4</string>
 		<key>loop_video</key>
 		<true/>
 		<key>action_type</key>
@@ -128,7 +128,7 @@
 		<key>primary_asset_name</key>
 		<string>product_sprite_10</string>
 		<key>secondary_asset_name</key>
-		<string></string>
+		<string>product_large_10.mp4</string>
 		<key>loop_video</key>
 		<true/>
 		<key>action_type</key>
@@ -140,7 +140,7 @@
 		<key>primary_asset_name</key>
 		<string>product_sprite_11</string>
 		<key>secondary_asset_name</key>
-		<string></string>
+		<string>product_large_11.mp4</string>
 		<key>loop_video</key>
 		<true/>
 		<key>action_type</key>
@@ -152,11 +152,11 @@
 		<key>primary_asset_name</key>
 		<string>product_sprite_12</string>
 		<key>secondary_asset_name</key>
-		<string></string>
+		<string>menu.info_specifications</string>
 		<key>loop_video</key>
 		<false/>
 		<key>action_type</key>
-		<string>show detail</string>
+		<string>navigate</string>
 	</dict>
 	<dict>
 		<key>title_text</key>
@@ -164,7 +164,7 @@
 		<key>primary_asset_name</key>
 		<string>product_sprite_13</string>
 		<key>secondary_asset_name</key>
-		<string></string>
+		<string>product_large_13.mp4</string>
 		<key>loop_video</key>
 		<true/>
 		<key>action_type</key>
@@ -176,7 +176,7 @@
 		<key>primary_asset_name</key>
 		<string>product_sprite_14</string>
 		<key>secondary_asset_name</key>
-		<string></string>
+		<string>product_large_14.mp4</string>
 		<key>loop_video</key>
 		<true/>
 		<key>action_type</key>

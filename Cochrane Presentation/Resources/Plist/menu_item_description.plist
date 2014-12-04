@@ -199,6 +199,11 @@
 					<dict>
 						<key>class</key>
 						<string>CPSProductRangeWireframe</string>
+						<key>arguments</key>
+						<dict>
+							<key>detailViewControllerIdentifier</key>
+							<string>ProductDetailViewController</string>
+						</dict>
 					</dict>
 					<key>interactor</key>
 					<dict>

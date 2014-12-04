@@ -10,6 +10,9 @@
 
 @interface CPSProductRangeWireframe : CPSBaseWireframe
 
+@property (nonatomic, strong) NSString * detailViewControllerIdentifier;
+
 - (void)showProductWithTitle:(NSString *)title videoName:(NSString *)videoName;
+- (void)showMainViewController;
 
 @end

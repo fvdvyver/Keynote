@@ -16,7 +16,7 @@
     {
         self.actionType = CPSProductAssetActionTypeShowDetail;
     }
-    else if ([actionType isEqualToString:@"video"])
+    else if ([actionType isEqualToString:@"navigate"])
     {
         self.actionType = CPSProductAssetActionTypeNavigate;
     }
