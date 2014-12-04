@@ -13,6 +13,8 @@
 
 @interface CPSProductItemCollectionViewCell ()
 
+- (void)updateTransformForState;
+
 @end
 
 @implementation CPSProductItemCollectionViewCell
@@ -59,6 +61,31 @@
         self.imageView.center = CGPointMake(CGRectGetWidth(self.contentView.bounds) / 2.0,
                                             CGRectGetMinY(self.textView.frame) / 2.0);
     }
+}
+
+- (void)setHighlighted:(BOOL)highlighted
+{
+    [super setHighlighted:highlighted];
+    [self updateTransformForState];
+}
+
+- (void)setSelected:(BOOL)selected
+{
+    [super setSelected:selected];
+    [self updateTransformForState];
+}
+
+- (void)updateTransformForState
+{
+    CGAffineTransform transform = (self.highlighted || self.selected) ? CGAffineTransformMakeScale(0.92, 0.92) : CGAffineTransformIdentity;
+    [UIView animateWithDuration:0.2
+                          delay:0.0f
+                        options:0
+                     animations:^
+                     {
+                         self.transform = transform;
+                     }
+                     completion:nil];
 }
 
 @end

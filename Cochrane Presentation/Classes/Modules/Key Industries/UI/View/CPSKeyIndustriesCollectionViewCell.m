@@ -10,6 +10,12 @@
 
 #import "CPSAppearanceConfig.h"
 
+@interface CPSKeyIndustriesCollectionViewCell ()
+
+- (void)updateTransformForState;
+
+@end
+
 @implementation CPSKeyIndustriesCollectionViewCell
 
 - (void)awakeFromNib
@@ -34,6 +40,31 @@
     
     CALayer *imageMask = self.imageView.layer.mask;
     imageMask.frame = self.imageView.bounds;
+}
+
+- (void)setHighlighted:(BOOL)highlighted
+{
+    [super setHighlighted:highlighted];
+    [self updateTransformForState];
+}
+
+- (void)setSelected:(BOOL)selected
+{
+    [super setSelected:selected];
+    [self updateTransformForState];
+}
+
+- (void)updateTransformForState
+{
+    CGAffineTransform transform = (self.highlighted || self.selected) ? CGAffineTransformMakeScale(0.92, 0.92) : CGAffineTransformIdentity;
+    [UIView animateWithDuration:0.2
+                          delay:0.0f
+                        options:0
+                     animations:^
+     {
+         self.transform = transform;
+     }
+                     completion:nil];
 }
 
 @end

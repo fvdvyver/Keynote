@@ -57,6 +57,9 @@
     
     [[CPSImageViewAnimator sharedAnimator] setEnabled:YES];
     [[CPSImageViewAnimator sharedAnimator] setFramerate:25.0];
+    
+    [self.collectionView deselectItemAtIndexPath:[[self.collectionView indexPathsForSelectedItems] firstObject]
+                                        animated:YES];
 }
 
 - (void)viewDidDisappear:(BOOL)animated

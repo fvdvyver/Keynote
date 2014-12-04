@@ -196,7 +196,7 @@
 		6DE0580C1A2CA55600EFA18C /* AVMvidFrameDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057E01A2CA55600EFA18C /* AVMvidFrameDecoder.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		6DE0580D1A2CA55600EFA18C /* AVOfflineComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057E21A2CA55600EFA18C /* AVOfflineComposition.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		6DE0580E1A2CA55600EFA18C /* AVResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057E41A2CA55600EFA18C /* AVResourceLoader.m */; };
-		6DE0580F1A2CA55600EFA18C /* CGFrameBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057E61A2CA55600EFA18C /* CGFrameBuffer.m */; };
+		6DE0580F1A2CA55600EFA18C /* CGFrameBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057E61A2CA55600EFA18C /* CGFrameBuffer.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		6DE058101A2CA55600EFA18C /* libapng.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057E71A2CA55600EFA18C /* libapng.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		6DE058111A2CA55600EFA18C /* maxvid_decode_arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057E91A2CA55600EFA18C /* maxvid_decode_arm.s */; };
 		6DE058121A2CA55600EFA18C /* maxvid_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057EA1A2CA55600EFA18C /* maxvid_decode.c */; settings = {COMPILER_FLAGS = "-w"; }; };
@@ -205,7 +205,7 @@
 		6DE058151A2CA55600EFA18C /* maxvid_file.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057F01A2CA55600EFA18C /* maxvid_file.c */; };
 		6DE058161A2CA55600EFA18C /* movdata.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057F21A2CA55600EFA18C /* movdata.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		6DE058171A2CA55600EFA18C /* MutableAttrString.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057F51A2CA55600EFA18C /* MutableAttrString.m */; };
-		6DE058181A2CA55600EFA18C /* SegmentedMappedData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057F71A2CA55600EFA18C /* SegmentedMappedData.m */; };
+		6DE058181A2CA55600EFA18C /* SegmentedMappedData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE057F71A2CA55600EFA18C /* SegmentedMappedData.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		6DE0583B1A2CA58300EFA18C /* 7zBuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DE0581C1A2CA58300EFA18C /* 7zBuf.c */; };
 		6DE0583C1A2CA58300EFA18C /* 7zBuf2.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DE0581E1A2CA58300EFA18C /* 7zBuf2.c */; };
 		6DE0583D1A2CA58300EFA18C /* 7zDec.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DE0581F1A2CA58300EFA18C /* 7zDec.c */; };

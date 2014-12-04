@@ -53,6 +53,9 @@
         [self performSelector:@selector(animateCellText) withObject:nil afterDelay:0.5];
         self.animateTextOnViewWillAppear = NO;
     }
+    
+    [self.collectionView deselectItemAtIndexPath:[[self.collectionView indexPathsForSelectedItems] firstObject]
+                                        animated:YES];
 }
 
 - (void)animateCellText
