@@ -10,13 +10,55 @@
 
 #import "CPSProductAssetItem.h"
 
-@implementation CPSProductRangeListInteractor
+#import "LSImageMap.h"
 
-@synthesize wireframe = _wireframe;
+@interface CPSProductRangeListInteractor ()
+
+- (void)loadImageMapsAsyncWithCompletion:(void (^)(NSArray *products, NSDictionary *maps))completion;
+
+
+@end
+
+@implementation CPSProductRangeListInteractor
 
 - (void)requestData
 {
-    [self.presenter setProductItems:self.productItems];
+    typeof(self) __weak weakself = self;
+    [self loadImageMapsAsyncWithCompletion:^(NSArray *products, NSDictionary *maps)
+    {
+        typeof(weakself) __strong strongself = weakself;
+        
+        [strongself.presenter setProductItems:products withImageMapDictionary:maps];
+        [strongself.wireframe performSelector:@selector(hideLoadingView) withObject:nil afterDelay:0.0];
+    }];
+}
+
+- (void)loadImageMapsAsyncWithCompletion:(void (^)(NSArray *, NSDictionary *))completion
+{
+    NSArray *products = self.productItems;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^
+    {
+        NSMutableDictionary *imageMaps = [NSMutableDictionary dictionaryWithCapacity:products.count];
+        for (CPSProductAssetItem *item in products)
+        {
+            NSString *mapName = item.primaryFilename;
+            LSImageMap *imageMap = [LSImageMap imageMapWithContentsOfFile:mapName];
+            
+            if (imageMap == nil)
+            {
+                NSLog(@"WARNING: sprite map (%@) for product %@ not found", mapName, item.title);
+            }
+            else
+            {
+                imageMaps[mapName] = imageMap;
+            }
+        }
+        
+        dispatch_async(dispatch_get_main_queue(), ^
+        {
+            completion(products, imageMaps);
+        });
+    });
 }
 
 @end

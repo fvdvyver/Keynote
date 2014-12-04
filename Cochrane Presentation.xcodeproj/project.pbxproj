@@ -160,6 +160,7 @@
 		6DAA21661A3068AC00B5CB18 /* product_large_11.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DAA215C1A3068AC00B5CB18 /* product_large_11.mp4 */; };
 		6DAA21671A3068AC00B5CB18 /* product_large_13.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DAA215D1A3068AC00B5CB18 /* product_large_13.mp4 */; };
 		6DAA21681A3068AC00B5CB18 /* product_large_14.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DAA215E1A3068AC00B5CB18 /* product_large_14.mp4 */; };
+		6DB8995B1A3090F90046EBC9 /* CPSLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB8995A1A3090F90046EBC9 /* CPSLoadingViewController.m */; };
 		6DBD91731A14AC7200FA6A51 /* CPSMenuWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD91721A14AC7200FA6A51 /* CPSMenuWireframe.m */; };
 		6DBD91761A14AD2700FA6A51 /* CPSAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD91751A14AD2700FA6A51 /* CPSAppContext.m */; };
 		6DC8E6501A11F7D100197DB3 /* CPSMenuInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8E64F1A11F7D100197DB3 /* CPSMenuInteractorTests.m */; };
@@ -489,6 +490,8 @@
 		6DAA215C1A3068AC00B5CB18 /* product_large_11.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = product_large_11.mp4; sourceTree = "<group>"; };
 		6DAA215D1A3068AC00B5CB18 /* product_large_13.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = product_large_13.mp4; sourceTree = "<group>"; };
 		6DAA215E1A3068AC00B5CB18 /* product_large_14.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = product_large_14.mp4; sourceTree = "<group>"; };
+		6DB899591A3090F90046EBC9 /* CPSLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSLoadingViewController.h; sourceTree = "<group>"; };
+		6DB8995A1A3090F90046EBC9 /* CPSLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSLoadingViewController.m; sourceTree = "<group>"; };
 		6DBD91711A14AC7200FA6A51 /* CPSMenuWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuWireframe.h; sourceTree = "<group>"; };
 		6DBD91721A14AC7200FA6A51 /* CPSMenuWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMenuWireframe.m; sourceTree = "<group>"; };
 		6DBD91741A14AD2700FA6A51 /* CPSAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSAppContext.h; sourceTree = "<group>"; };
@@ -1664,6 +1667,15 @@
 			path = Large;
 			sourceTree = "<group>";
 		};
+		6DB899581A3090E50046EBC9 /* Loading Page */ = {
+			isa = PBXGroup;
+			children = (
+				6DB899591A3090F90046EBC9 /* CPSLoadingViewController.h */,
+				6DB8995A1A3090F90046EBC9 /* CPSLoadingViewController.m */,
+			);
+			path = "Loading Page";
+			sourceTree = "<group>";
+		};
 		6DBD91701A14AC5B00FA6A51 /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
@@ -1971,6 +1983,7 @@
 		6DF03C481A1F239C003A0DF1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6DB899581A3090E50046EBC9 /* Loading Page */,
 				6DF03C491A1F23E4003A0DF1 /* Single Video Playback */,
 				6D1871B71A2734D000F886B9 /* Video List Playback */,
 				6D65A16B1A25DD4A006519C2 /* View */,
@@ -2491,6 +2504,7 @@
 				6DE0580A1A2CA55600EFA18C /* AVImageFrameDecoder.m in Sources */,
 				6D8A14B91A2F054D006A4BEC /* LSImageView.m in Sources */,
 				6DE058001A2CA55600EFA18C /* AVAppResourceLoader.m in Sources */,
+				6DB8995B1A3090F90046EBC9 /* CPSLoadingViewController.m in Sources */,
 				6DE058141A2CA55600EFA18C /* maxvid_encode.m in Sources */,
 				6DE057FB1A2CA55600EFA18C /* AVAnimatorLayer.m in Sources */,
 				6D21158C1A23696D00F2620B /* CPSCostOfRiskWireframe.m in Sources */,

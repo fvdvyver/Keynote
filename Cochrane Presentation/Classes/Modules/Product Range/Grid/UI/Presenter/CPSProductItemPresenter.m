@@ -13,13 +13,21 @@
 
 @interface CPSProductItemPresenter ()
 
-@property (nonatomic, strong) NSMutableDictionary * spriteMapDict;
+@property (nonatomic, strong) NSDictionary * spriteMapDict;
 
 - (LSImageMap *)spriteMapWithName:(NSString *)name;
 
 @end
 
 @implementation CPSProductItemPresenter
+
++ (instancetype)presenterWithImageMaps:(NSDictionary *)imageMaps
+{
+    CPSProductItemPresenter *presenter = [[self class] new];
+    presenter.spriteMapDict = imageMaps;
+    
+    return presenter;
+}
 
 - (instancetype)init
 {
@@ -40,21 +48,7 @@
 
 - (LSImageMap *)spriteMapWithName:(NSString *)name
 {
-    LSImageMap *map = self.spriteMapDict[name];
-    if (map == nil)
-    {
-        map = [LSImageMap imageMapWithContentsOfFile:name];
-        if (map == nil)
-        {
-            NSLog(@"WARNING: sprite map (%@) for product not found", name);
-        }
-        else
-        {
-            self.spriteMapDict[name] = map;
-        }
-    }
-    
-    return map;
+    return self.spriteMapDict[name];
 }
 
 @end

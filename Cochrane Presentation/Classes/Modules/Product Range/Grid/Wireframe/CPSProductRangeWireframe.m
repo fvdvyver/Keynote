@@ -16,7 +16,11 @@
 @property (nonatomic, strong) UIViewController * strongMainViewController;
 @property (nonatomic, weak)   UIViewController * weakMainViewController;
 
+@property (nonatomic, strong) UIViewController * loadingViewController;
+
 @property (nonatomic, strong) CPSProductDetailPresenter * detailPresenter;
+
+- (void)addLoadingViewControllerToViewController:(UIViewController *)viewController;
 
 @end
 
@@ -35,6 +39,11 @@
     UIViewController *viewController = [super contentViewController];
     self.weakMainViewController = viewController;
     
+    if (self.loadingViewControllerIdentifier != nil)
+    {
+        [self addLoadingViewControllerToViewController:viewController];
+    }
+    
     return viewController;
 }
 
@@ -42,6 +51,35 @@
 {
     [super advanceCurrentContentProvider];
     self.strongMainViewController = nil;
+}
+
+- (void)addLoadingViewControllerToViewController:(UIViewController *)viewController
+{
+    UIViewController *loadingController = [self instantiateNewViewControllerWithIdentifier:self.loadingViewControllerIdentifier];
+
+    loadingController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    loadingController.view.frame = viewController.view.bounds;
+    
+    [viewController addChildViewController:loadingController];
+    [viewController.view addSubview:loadingController.view];
+    [loadingController didMoveToParentViewController:viewController];
+    
+    self.loadingViewController = loadingController;
+}
+
+- (void)hideLoadingView
+{
+    UIViewController *loadingController = self.loadingViewController;
+    self.loadingViewController = nil;
+    
+    [UIView animateWithDuration:1.3 animations:^
+    {
+        loadingController.view.alpha = 0.0;
+    }
+    completion:^(BOOL finished)
+    {
+        [loadingController.view removeFromSuperview];
+    }];
 }
 
 - (void)showMainViewController

@@ -19,13 +19,14 @@
 
 - (void)updateView
 {
-    [self.interactor requestData];
+    // Only request data after a small delay to ensure the old resources are deallocated before any new ones are created
+    [(id)self.interactor performSelector:@selector(requestData) withObject:nil afterDelay:0.01];
 }
 
-- (void)setProductItems:(NSArray *)products
+- (void)setProductItems:(NSArray *)productItems withImageMapDictionary:(NSDictionary *)imageMaps
 {   
-    [self.userInterface setItemPresenter:[CPSProductItemPresenter new]];
-    [self.userInterface setProductItems:products];
+    [self.userInterface setItemPresenter:[CPSProductItemPresenter presenterWithImageMaps:imageMaps]];
+    [self.userInterface setProductItems:productItems];
 }
 
 - (void)item:(CPSProductAssetItem *)item selectedAtIndex:(NSInteger)index

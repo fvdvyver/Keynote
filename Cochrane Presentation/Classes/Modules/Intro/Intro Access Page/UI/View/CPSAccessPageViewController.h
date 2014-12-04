@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "CPSLoadingViewController.h"
+
 #import "CPSView.h"
 #import "CPSAccessPageInterface.h"
 
-@interface CPSAccessPageViewController : UIViewController <CPSView>
+@interface CPSAccessPageViewController : CPSLoadingViewController <CPSView>
 
 @property (nonatomic, weak) id<CPSAccessPageEventHandler> eventHandler;
 

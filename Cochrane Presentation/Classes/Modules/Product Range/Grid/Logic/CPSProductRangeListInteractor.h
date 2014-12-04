@@ -10,8 +10,11 @@
 
 #import "CPSProductRangeListInteractorIO.h"
 
+#import "CPSProductRangeWireframe.h"
+
 @interface CPSProductRangeListInteractor : NSObject <CPSProductRangeListInteractorInput>
 
+@property (nonatomic, weak)   CPSProductRangeWireframe * wireframe;
 @property (nonatomic, strong) id<CPSProductRangeListInteractorOutput> presenter;
 
 @property (nonatomic, strong) NSArray * productItems;

@@ -201,6 +201,8 @@
 						<string>CPSProductRangeWireframe</string>
 						<key>arguments</key>
 						<dict>
+							<key>loadingViewControllerIdentifier</key>
+							<string>LoadingViewController</string>
 							<key>detailViewControllerIdentifier</key>
 							<string>ProductDetailViewController</string>
 						</dict>

@@ -14,6 +14,8 @@
 
 @interface CPSProductItemPresenter : NSObject <CPSProductItemPresenter>
 
++ (instancetype)presenterWithImageMaps:(NSDictionary *)imageMaps;
+
 - (void)configureVideoView:(id<CPSProductItemVideoView>)view withItem:(CPSProductAssetItem *)item;
 
 @end

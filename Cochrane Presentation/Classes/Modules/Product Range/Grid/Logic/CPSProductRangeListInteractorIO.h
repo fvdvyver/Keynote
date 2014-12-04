@@ -18,6 +18,7 @@
 
 @protocol CPSProductRangeListInteractorOutput <CPSPresenter>
 
-- (void)setProductItems:(NSArray *)industryItems;
+// The image map dictionary will map the name of the image map to the LSImageMap instance
+- (void)setProductItems:(NSArray *)productItems withImageMapDictionary:(NSDictionary *)imageMaps;
 
 @end

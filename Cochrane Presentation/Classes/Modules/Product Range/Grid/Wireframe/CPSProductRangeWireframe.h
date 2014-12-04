@@ -10,8 +10,10 @@
 
 @interface CPSProductRangeWireframe : CPSBaseWireframe
 
+@property (nonatomic, strong) NSString * loadingViewControllerIdentifier;
 @property (nonatomic, strong) NSString * detailViewControllerIdentifier;
 
+- (void)hideLoadingView;
 - (void)showProductWithTitle:(NSString *)title videoName:(NSString *)videoName;
 - (void)showMainViewController;
 
