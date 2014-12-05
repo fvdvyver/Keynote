@@ -20,7 +20,7 @@
 - (void)updateView
 {
     // Only request data after a small delay to ensure the old resources are deallocated before any new ones are created
-    [(id)self.interactor performSelector:@selector(requestData) withObject:nil afterDelay:0.01];
+    [(id)self.interactor performSelector:@selector(requestData) withObject:nil afterDelay:0.1];
 }
 
 - (void)setProductItems:(NSArray *)productItems withImageMapDictionary:(NSDictionary *)imageMaps

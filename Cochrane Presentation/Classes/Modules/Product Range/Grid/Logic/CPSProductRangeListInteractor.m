@@ -7,15 +7,23 @@
 //
 
 #import "CPSProductRangeListInteractor.h"
+#import <MCObserver.h>
 
 #import "CPSProductAssetItem.h"
 
-#import "LSImageMap.h"
+#import "CPSProductSpriteLoadOperationQueue.h"
+
+#define CPSPropertyString(x) NSStringFromSelector(@selector(x))
 
 @interface CPSProductRangeListInteractor ()
 
-- (void)loadImageMapsAsyncWithCompletion:(void (^)(NSArray *products, NSDictionary *maps))completion;
+@property (nonatomic, strong) MCObserver * operationQueueFinishedObserver;
+@property (nonatomic, strong) CPSProductSpriteLoadOperationQueue * operationQueue;
 
+- (void)loadImageMapsForProducts:(NSArray *)products;
+- (void)enqueueSpriteLoadOperations:(NSArray *)operations;
+
+- (void)spriteLoadOperationsFinished;
 
 @end
 
@@ -23,42 +31,64 @@
 
 - (void)requestData
 {
-    typeof(self) __weak weakself = self;
-    [self loadImageMapsAsyncWithCompletion:^(NSArray *products, NSDictionary *maps)
-    {
-        typeof(weakself) __strong strongself = weakself;
-        
-        [strongself.presenter setProductItems:products withImageMapDictionary:maps];
-        [strongself.wireframe performSelector:@selector(hideLoadingView) withObject:nil afterDelay:0.0];
-    }];
+    self.operationQueue = nil;
+    [self loadImageMapsForProducts:self.productItems];
 }
 
-- (void)loadImageMapsAsyncWithCompletion:(void (^)(NSArray *, NSDictionary *))completion
+- (void)setOperationQueue:(CPSProductSpriteLoadOperationQueue *)operationQueue
 {
-    NSArray *products = self.productItems;
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^
+    [self.operationQueueFinishedObserver stopObserving];
+    self.operationQueueFinishedObserver = nil;
+    
+    [self.operationQueue cancelAllOperations];
+    _operationQueue = operationQueue;
+    
+    if (self.operationQueue != nil)
     {
-        NSMutableDictionary *imageMaps = [NSMutableDictionary dictionaryWithCapacity:products.count];
-        for (CPSProductAssetItem *item in products)
-        {
-            NSString *mapName = item.primaryFilename;
-            LSImageMap *imageMap = [LSImageMap imageMapWithContentsOfFile:mapName];
-            
-            if (imageMap == nil)
-            {
-                NSLog(@"WARNING: sprite map (%@) for product %@ not found", mapName, item.title);
-            }
-            else
-            {
-                imageMaps[mapName] = imageMap;
-            }
-        }
+        self.operationQueueFinishedObserver = [MCObserver observerForObject:_operationQueue
+                                                                    keyPath:CPSPropertyString(operationCount)
+                                                                     target:self
+                                                                     action:@selector(spriteLoadOperationsFinished)];
+    }
+}
+
+- (void)loadImageMapsForProducts:(NSArray *)products
+{
+    NSMutableArray *loadOperations = [NSMutableArray arrayWithCapacity:products.count];
+    for (CPSAssetItem *asset in products)
+    {
+        NSOperation *operation = [CPSProductSpriteLoadOperation spriteLoadOperationWithMapName:asset.primaryFilename];
+        [loadOperations addObject:operation];
+    }
+    
+    [self enqueueSpriteLoadOperations:loadOperations];
+}
+
+- (void)enqueueSpriteLoadOperations:(NSArray *)operations
+{
+    CPSProductSpriteLoadOperationQueue *queue = [CPSProductSpriteLoadOperationQueue new];
+    queue.maxConcurrentOperationCount = 2;
+    
+    [queue addOperations:operations waitUntilFinished:NO];
+    self.operationQueue = queue;
+}
+
+- (void)spriteLoadOperationsFinished
+{
+    if (![NSThread isMainThread])
+    {
+        [self performSelectorOnMainThread:@selector(spriteLoadOperationsFinished) withObject:nil waitUntilDone:NO];
+        return;
+    }
+    
+    if (self.operationQueue != nil && self.operationQueue.operationCount == 0)
+    {   
+        NSDictionary *spriteMaps = [self.operationQueue productSpriteMaps];
+        self.operationQueue = nil;
         
-        dispatch_async(dispatch_get_main_queue(), ^
-        {
-            completion(products, imageMaps);
-        });
-    });
+        [self.presenter setProductItems:self.productItems withImageMapDictionary:spriteMaps];
+        [self.wireframe performSelector:@selector(hideLoadingView) withObject:nil afterDelay:0.0];
+    }
 }
 
 @end

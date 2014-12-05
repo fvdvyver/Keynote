@@ -16,8 +16,8 @@
 
 @interface CPSProductRangeListPresenter : NSObject <CPSProductRangeListInteractorOutput, CPSProductRangeListViewEventHandler>
 
-@property (nonatomic, weak)   CPSProductRangeWireframe * wireframe;
-@property (nonatomic, weak)   id<CPSProductRangeListInteractorInput> interactor;
+@property (nonatomic, weak) CPSProductRangeWireframe * wireframe;
+@property (nonatomic, weak) id<CPSProductRangeListInteractorInput> interactor;
 @property (nonatomic, weak) id<CPSProductRangeListView> userInterface;
 
 - (void)item:(CPSProductAssetItem *)item selectedAtIndex:(NSInteger)index;
