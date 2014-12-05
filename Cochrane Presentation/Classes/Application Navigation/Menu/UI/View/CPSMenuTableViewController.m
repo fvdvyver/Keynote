@@ -9,7 +9,7 @@
 #import "CPSMenuTableViewController.h"
 
 #import "CPSMenuItemTableViewCell.h"
-#import "UITableView+CPSBorderMaskStretchAdditions.h"
+#import "UITableView+CPSMaskingAdditions.h"
 
 @interface CPSMenuTableViewController ()
 
@@ -26,8 +26,8 @@
     [self.tableView registerClass:[CPSMenuItemTableViewCell class]
            forCellReuseIdentifier:[self menuItemCellReuseIdentifier]];
     
-    [self.tableView cps_configureTableViewInsetsForMask];
-    [self.tableView cps_configureTableViewMask];
+    [self.tableView cps_configureTableViewMaskWithImage:[UITableView cps_maskImageNameForCostOfRiskTable]
+                                                 insets:[UITableView cps_insetsForCostOfRiskTableMask]];
 }
 
 - (void)viewDidLoad

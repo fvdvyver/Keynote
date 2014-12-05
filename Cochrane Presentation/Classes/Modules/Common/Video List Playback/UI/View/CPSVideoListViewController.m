@@ -17,8 +17,6 @@
 
 @property (nonatomic, copy) dispatch_block_t backgroundVideoCompletionBlock;
 
-- (MPMoviePlayerController *)configureNewMovieControllerWithURL:(NSURL*)contentURL inContainer:(UIView *)containerView;
-
 @end
 
 @implementation CPSVideoListViewController
@@ -63,7 +61,8 @@
 - (void)playContentVideoAtURL:(NSURL *)url
 {
     MPMoviePlayerController *controller = [self configureNewMovieControllerWithURL:url
-                                                                       inContainer:self.contentVideoContainerView];
+                                                                       inContainer:self.contentVideoContainerView
+                                                                 isBackgroundVideo:NO];
     if (self.contentVideoShowsControls)
     {
         controller.controlStyle = MPMovieControlStyleEmbedded;
@@ -86,7 +85,8 @@
     [self removeSubviewsFromBackgroundVideoContainerView];
     
     MPMoviePlayerController *videoController = [self configureNewMovieControllerWithURL:url
-                                                                            inContainer:self.backgroundVideoContainerView];
+                                                                            inContainer:self.backgroundVideoContainerView
+                                                                      isBackgroundVideo:YES];
     
     self.backgroundVideoController = videoController;
     [self.backgroundVideoController play];
@@ -98,7 +98,9 @@
                                                object:videoController];
 }
 
-- (MPMoviePlayerController *)configureNewMovieControllerWithURL:(NSURL*)contentURL inContainer:(UIView *)containerView
+- (MPMoviePlayerController *)configureNewMovieControllerWithURL:(NSURL*)contentURL
+                                                    inContainer:(UIView *)containerView
+                                              isBackgroundVideo:(BOOL)isBackgroundVideo
 {
     MPMoviePlayerController *videoController = [[MPMoviePlayerController alloc] initWithContentURL:contentURL];
     videoController.controlStyle = MPMovieControlStyleNone;
@@ -135,13 +137,18 @@
     }
     completion:^(BOOL finished)
     {
-        [self removeSubviewsFromBackgroundVideoContainerView];
+        [self contentViewDidAnimateIn];
     }];
     
     if (self.backgroundVideoCompletionBlock != nil)
     {
         self.backgroundVideoCompletionBlock();
     }
+}
+
+- (void)contentViewDidAnimateIn
+{
+    [self removeSubviewsFromBackgroundVideoContainerView];
 }
 
 - (void)removeSubviewsFromBackgroundVideoContainerView

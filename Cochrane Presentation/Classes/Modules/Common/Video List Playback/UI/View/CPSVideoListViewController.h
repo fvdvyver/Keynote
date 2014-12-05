@@ -10,6 +10,8 @@
 
 #import "CPSVideoListView.h"
 
+@class MPMoviePlayerController;
+
 @interface CPSVideoListViewController : UIViewController <CPSVideoListView>
 
 @property (nonatomic, weak) id<CPSVideoListViewEventHandler> eventHandler;
@@ -21,7 +23,12 @@
 
 @property (nonatomic, assign) BOOL contentVideoShowsControls;
 
-// This can be overridden to customize behaviour, but remember to call the super implementation
+// These methods can be overridden to customize behaviour, but remember to call the super implementation
+- (MPMoviePlayerController *)configureNewMovieControllerWithURL:(NSURL*)contentURL
+                                                    inContainer:(UIView *)containerView
+                                              isBackgroundVideo:(BOOL)isBackgroundVideo;
+
 - (void)backgroundVideoPlaybackDidFinish;
+- (void)contentViewDidAnimateIn;
 
 @end

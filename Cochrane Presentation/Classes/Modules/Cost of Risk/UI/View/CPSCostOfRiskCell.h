@@ -6,13 +6,9 @@
 //  Copyright (c) 2014 Mushroom Cloud. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
+#import "CPSAnimatedTextTableViewCell.h"
 #import "CPSCostOfRiskItemCellInterface.h"
-#import "CPSAnimatedTextView.h"
 
-@interface CPSCostOfRiskCell : UITableViewCell <CPSCostOfRiskItemCellInterface>
-
-@property (nonatomic, strong) CPSAnimatedTextView * animatedTextView;
+@interface CPSCostOfRiskCell : CPSAnimatedTextTableViewCell <CPSCostOfRiskItemCellInterface>
 
 @end

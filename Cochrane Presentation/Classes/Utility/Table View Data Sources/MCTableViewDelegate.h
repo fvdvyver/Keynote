@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol MCMenuTableViewDelegateEventHandler;
+@protocol MCTableViewDelegateEventHandler;
 
 @interface MCTableViewDelegate : NSObject <UITableViewDelegate>
 
-@property (nonatomic, weak) id<MCMenuTableViewDelegateEventHandler> eventHandler;
+@property (nonatomic, weak) id<MCTableViewDelegateEventHandler> eventHandler;
 
 @end
 
-@protocol MCMenuTableViewDelegateEventHandler <NSObject>
+@protocol MCTableViewDelegateEventHandler <NSObject>
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 

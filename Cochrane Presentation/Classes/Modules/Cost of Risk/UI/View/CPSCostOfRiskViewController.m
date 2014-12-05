@@ -9,7 +9,7 @@
 #import "CPSCostOfRiskViewController.h"
 
 #import "CPSCostOfRiskCell.h"
-#import "UITableView+CPSBorderMaskStretchAdditions.h"
+#import "UITableView+CPSMaskingAdditions.h"
 
 #import "MCDescendentViewGestureDelegate.h"
 
@@ -34,8 +34,8 @@
     [self.tableView registerClass:[CPSCostOfRiskCell class]
            forCellReuseIdentifier:[self cellReuseIdentifier]];
     
-    [self.tableView cps_configureTableViewInsetsForMask];
-    [self.tableView cps_configureTableViewMask];
+    [self.tableView cps_configureTableViewMaskWithImage:[UITableView cps_maskImageNameForCostOfRiskTable]
+                                                 insets:[UITableView cps_insetsForCostOfRiskTableMask]];
 }
 
 - (void)configureGestureRecognisers

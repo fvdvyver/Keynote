@@ -6,9 +6,10 @@
 //  Copyright (c) 2014 Mushroom Cloud. All rights reserved.
 //
 
-#import "CPSVideoPlaybackViewController.h"
-
 #import <MediaPlayer/MediaPlayer.h>
+
+#import "CPSVideoPlaybackViewController.h"
+#import "MPMoviePlayerController+CPSAdditions.h"
 
 @interface CPSVideoPlaybackViewController () <UIGestureRecognizerDelegate>
 
@@ -66,7 +67,7 @@
     MPMoviePlayerController *videoController = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
     
     // Set the control style to none initially so that the user has to tap first to show the controls
-    videoController.controlStyle = MPMovieControlStyleNone;
+    [videoController setControlStyleHidingInitially:MPMovieControlStyleFullscreen];
     videoController.repeatMode = MPMovieRepeatModeNone;
     
     [UIView performWithoutAnimation:^
@@ -81,12 +82,6 @@
     
     self.videoController = videoController;
     [self.videoController play];
-    
-    // remember to enable fullscreen style controls after a delay
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^
-    {
-        self.videoController.controlStyle = MPMovieControlStyleFullscreen;
-    });
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(playbackDidFinish)

@@ -14,6 +14,11 @@
 @interface CPSAnimatedTextView : UITextView
 
 /**
+ *  When non nil, any text set will be attributed using these attributes
+ */
+@property (nonatomic, strong) NSDictionary * textAttributes;
+
+/**
  *  Begin the text animation using the default letter rate, which is dependent on the length of the text to animate and the duration given
  *
  *  @param  duration    the total duration of the animation

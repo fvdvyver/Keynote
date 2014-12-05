@@ -14,6 +14,8 @@
             <string>Planer</string>
             <string>Planer</string>
             <string>Planer</string>
+            <string>Planer</string>
+            <string>Planer</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -292,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="34n-bX-zKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1631" y="1449"/>
+            <point key="canvasLocation" x="2895" y="-457"/>
         </scene>
         <!--Key Industries Detail View Controller-->
         <scene sceneID="tOS-vE-zdq">
@@ -352,7 +354,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOt-h6-Aav" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1631" y="2380"/>
+            <point key="canvasLocation" x="2895" y="456"/>
         </scene>
         <!--Product Range Grid View Controller-->
         <scene sceneID="nKL-IN-iuq">
@@ -400,7 +402,137 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrs-Ec-UqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1631" y="3345"/>
+            <point key="canvasLocation" x="1631" y="1425"/>
+        </scene>
+        <!--Info Spec View Controller-->
+        <scene sceneID="qRa-Ek-lW2">
+            <objects>
+                <viewController storyboardIdentifier="InfoSpecViewController" id="0AW-jT-bW1" customClass="CPSInfoSpecViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ihv-gY-ziO"/>
+                        <viewControllerLayoutGuide type="bottom" id="bSg-G8-f4L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sCe-gd-ohf">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJS-Q2-Wes" userLabel="Background Video Container View">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txg-04-WRs" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="main_interface_background" translatesAutoresizingMaskIntoConstraints="NO" id="kAe-xg-i8q">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    </imageView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Fuk-X4-7WV" customClass="MCMaskedTableView">
+                                        <rect key="frame" x="0.0" y="358" width="222" height="410"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="410" id="KPo-de-gp0"/>
+                                            <constraint firstAttribute="width" constant="222" id="eWd-0P-cNe"/>
+                                        </constraints>
+                                        <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oiO-co-ox5" userLabel="Content Video Container View">
+                                        <rect key="frame" x="238" y="231" width="757" height="499"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="499" id="452-CB-ghC"/>
+                                            <constraint firstAttribute="width" constant="757" id="H9A-nm-nFi"/>
+                                            <constraint firstAttribute="height" constant="499" id="HuV-oZ-kBC"/>
+                                            <constraint firstAttribute="width" constant="756" id="rWZ-tU-6ym"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="HuV-oZ-kBC"/>
+                                                <exclude reference="rWZ-tU-6ym"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9Dc-NS-CQe" customClass="CPSAnimatedTextView">
+                                        <rect key="frame" x="344" y="28" width="640" height="38"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="640" id="0FA-gl-bRI"/>
+                                            <constraint firstAttribute="height" constant="38" id="xTj-C6-oUV"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="40"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J7o-gF-rN3" customClass="CPSAnimatedTextView">
+                                        <rect key="frame" x="343" y="90" width="294" height="120"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="QNS-Rj-6sX"/>
+                                            <constraint firstAttribute="width" constant="294" id="ZBf-ON-bG6"/>
+                                            <constraint firstAttribute="width" constant="240" id="cMm-kL-7FZ"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="cMm-kL-7FZ"/>
+                                            </mask>
+                                        </variation>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="J7o-gF-rN3" firstAttribute="top" secondItem="txg-04-WRs" secondAttribute="top" constant="90" id="2mc-5y-01J"/>
+                                    <constraint firstItem="oiO-co-ox5" firstAttribute="top" secondItem="txg-04-WRs" secondAttribute="top" constant="238" id="4GH-Gf-nC1"/>
+                                    <constraint firstAttribute="trailing" secondItem="J7o-gF-rN3" secondAttribute="trailing" constant="387" id="Dcm-U1-yjY"/>
+                                    <constraint firstAttribute="trailing" secondItem="J7o-gF-rN3" secondAttribute="trailing" constant="441" id="Na2-hH-zfa"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fuk-X4-7WV" secondAttribute="bottom" id="O4c-yo-pwb"/>
+                                    <constraint firstItem="oiO-co-ox5" firstAttribute="top" secondItem="txg-04-WRs" secondAttribute="top" constant="231" id="RAd-Lh-4Zc"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Dc-NS-CQe" secondAttribute="trailing" constant="40" id="UPW-aT-pcG"/>
+                                    <constraint firstItem="oiO-co-ox5" firstAttribute="top" secondItem="txg-04-WRs" secondAttribute="top" constant="238" id="iQp-Ph-gzc"/>
+                                    <constraint firstItem="oiO-co-ox5" firstAttribute="leading" secondItem="Fuk-X4-7WV" secondAttribute="trailing" constant="215" id="igq-aI-Bhl"/>
+                                    <constraint firstItem="oiO-co-ox5" firstAttribute="leading" secondItem="txg-04-WRs" secondAttribute="leading" constant="238" id="jzw-Kk-L1V"/>
+                                    <constraint firstItem="oiO-co-ox5" firstAttribute="leading" secondItem="txg-04-WRs" secondAttribute="leading" constant="437" id="mFf-vp-Ttn"/>
+                                    <constraint firstItem="9Dc-NS-CQe" firstAttribute="top" secondItem="txg-04-WRs" secondAttribute="top" constant="28" id="rdv-Ka-Dfn"/>
+                                    <constraint firstItem="Fuk-X4-7WV" firstAttribute="leading" secondItem="txg-04-WRs" secondAttribute="leading" id="xEp-iS-VCv"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4GH-Gf-nC1"/>
+                                        <exclude reference="iQp-Ph-gzc"/>
+                                        <exclude reference="igq-aI-Bhl"/>
+                                        <exclude reference="mFf-vp-Ttn"/>
+                                        <exclude reference="Na2-hH-zfa"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="txg-04-WRs" secondAttribute="trailing" id="14c-pB-BcQ"/>
+                            <constraint firstItem="txg-04-WRs" firstAttribute="leading" secondItem="sCe-gd-ohf" secondAttribute="leading" id="1K2-Zu-Z30"/>
+                            <constraint firstItem="bSg-G8-f4L" firstAttribute="top" secondItem="txg-04-WRs" secondAttribute="bottom" id="9Nh-le-F3R"/>
+                            <constraint firstItem="PJS-Q2-Wes" firstAttribute="leading" secondItem="sCe-gd-ohf" secondAttribute="leading" id="DBb-TW-BZT"/>
+                            <constraint firstItem="bSg-G8-f4L" firstAttribute="top" secondItem="PJS-Q2-Wes" secondAttribute="bottom" id="Ifc-Xl-eRm"/>
+                            <constraint firstItem="PJS-Q2-Wes" firstAttribute="top" secondItem="sCe-gd-ohf" secondAttribute="top" id="SwG-pi-XZS"/>
+                            <constraint firstItem="txg-04-WRs" firstAttribute="top" secondItem="sCe-gd-ohf" secondAttribute="top" id="Xwj-pH-gSJ"/>
+                            <constraint firstAttribute="trailing" secondItem="PJS-Q2-Wes" secondAttribute="trailing" id="yHK-bx-eC8"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="backgroundVideoContainerView" destination="PJS-Q2-Wes" id="Yqk-QF-UCh"/>
+                        <outlet property="contentVideoContainerView" destination="oiO-co-ox5" id="MH7-nf-g2V"/>
+                        <outlet property="contentView" destination="txg-04-WRs" id="Oca-zr-2Sy"/>
+                        <outlet property="infoTextView" destination="J7o-gF-rN3" id="l4K-NQ-olb"/>
+                        <outlet property="tableView" destination="Fuk-X4-7WV" id="kvE-IF-Ubu"/>
+                        <outlet property="titleTextView" destination="9Dc-NS-CQe" id="EHi-vG-ffE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Acq-9L-DgL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1631" y="2423"/>
         </scene>
         <!--Product Detail View Controller-->
         <scene sceneID="EaE-7h-4Zg">
@@ -445,7 +577,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQd-IB-GF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1631" y="4315"/>
+            <point key="canvasLocation" x="2895" y="1425"/>
         </scene>
         <!--Access Page View Controller-->
         <scene sceneID="npe-bS-nwF">
@@ -584,6 +716,7 @@
         <image name="key_industry_image_glass_panel" width="978" height="733"/>
         <image name="left_border_line_stretch" width="454" height="241"/>
         <image name="logo_header_border" width="526" height="119"/>
+        <image name="main_interface_background" width="1024" height="768"/>
         <image name="products_bg" width="1024" height="768"/>
     </resources>
 </document>

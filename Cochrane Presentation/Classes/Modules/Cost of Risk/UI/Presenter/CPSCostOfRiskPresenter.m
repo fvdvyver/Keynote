@@ -15,7 +15,7 @@
 
 #import "CPSCostOfRiskTableViewDelegate.h"
 
-@interface CPSCostOfRiskPresenter () <MCMenuTableViewDelegateEventHandler>
+@interface CPSCostOfRiskPresenter () <MCTableViewDelegateEventHandler>
 
 @property (nonatomic, strong) MCArrayTableViewDatasource *     datasource;
 @property (nonatomic, strong) CPSCostOfRiskTableViewDelegate * delegate;

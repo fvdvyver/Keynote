@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title_text</key>
+		<string>RAZOR MESH</string>
+		<key>video_file</key>
+		<string>specs_info_00.mp4</string>
+		<key>model_video_file</key>
+		<string>main_interface_00.mvid</string>
+		<key>detail_array</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>MARINE FLOATING BARRIER</string>
+		<key>video_file</key>
+		<string>specs_info_01.mp4</string>
+		<key>model_video_file</key>
+		<string>main_interface_00.mvid</string>
+		<key>detail_array</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>RAPID DEPLOYMENT BARRIER</string>
+		<key>video_file</key>
+		<string>specs_info_02.mp4</string>
+		<key>model_video_file</key>
+		<string>main_interface_00.mvid</string>
+		<key>detail_array</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>ROCKET BARRIER</string>
+		<key>video_file</key>
+		<string>specs_info_03.mp4</string>
+		<key>model_video_file</key>
+		<string>main_interface_00.mvid</string>
+		<key>detail_array</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>SMART COIL</string>
+		<key>video_file</key>
+		<string>specs_info_04.mp4</string>
+		<key>model_video_file</key>
+		<string>main_interface_00.mvid</string>
+		<key>detail_array</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>ANTI-RAM BARRIER</string>
+		<key>video_file</key>
+		<string>specs_info_05.mp4</string>
+		<key>model_video_file</key>
+		<string>main_interface_00.mvid</string>
+		<key>detail_array</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>CLEARVU</string>
+		<key>video_file</key>
+		<string></string>
+		<key>model_video_file</key>
+		<string>main_interface_00.mvid</string>
+		<key>detail_array</key>
+		<array/>
+	</dict>
+</array>
+</plist>

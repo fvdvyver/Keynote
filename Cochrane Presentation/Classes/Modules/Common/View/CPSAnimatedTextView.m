@@ -18,6 +18,8 @@
 
 @property (nonatomic, strong) NSTimer * animationTimer;
 
+- (void)setSuperText:(NSString *)text;
+
 - (void)scheduleTextUpdateTimer;
 - (void)updateTextForTimer:(NSTimer *)timer;
 
@@ -42,12 +44,25 @@
     self.animationTimer = nil;
 }
 
+- (void)setSuperText:(NSString *)text
+{
+    if (text == nil || self.textAttributes == nil)
+    {
+        [super setText:text];
+    }
+    else
+    {
+        NSAttributedString *attrText = [[NSAttributedString alloc] initWithString:text attributes:self.textAttributes];
+        [super setAttributedText:attrText];
+    }
+}
+
 - (void)setText:(NSString *)text
 {
     [self stopAnimating];
     
     self.originalText = text;
-    [super setText:text];
+    [self setSuperText:text];
 }
 
 - (void)animateTextWithDuration:(CGFloat)duration
@@ -63,7 +78,7 @@
         self.animationTimer = nil;
     }
     
-    [super setText:@""];
+    [self setSuperText:@""];
     
     self.animationStartTime = CACurrentMediaTime();
     self.currentAnimationDuration = duration;
@@ -81,7 +96,7 @@
         self.animationTimer = nil;
     }
     
-    [super setText:self.originalText];
+    [self setSuperText:self.originalText];
 }
 
 - (void)scheduleTextUpdateTimer
@@ -127,7 +142,7 @@
         newText = [self interpolatedTextForIndex:currentIndex inString:originalText];
     }
     
-    [super setText:newText];
+    [self setSuperText:newText];
 }
 
 - (NSString *)interpolatedTextForIndex:(NSInteger)characterIndex inString:(NSString *)text
