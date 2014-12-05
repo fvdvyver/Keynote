@@ -18,7 +18,7 @@
 		<key>video_file</key>
 		<string>specs_info_01.mp4</string>
 		<key>model_video_file</key>
-		<string>main_interface_00.mvid</string>
+		<string>main_interface_01.mvid</string>
 		<key>detail_array</key>
 		<array/>
 	</dict>
@@ -28,7 +28,7 @@
 		<key>video_file</key>
 		<string>specs_info_02.mp4</string>
 		<key>model_video_file</key>
-		<string>main_interface_00.mvid</string>
+		<string>main_interface_02.mvid</string>
 		<key>detail_array</key>
 		<array/>
 	</dict>
@@ -38,7 +38,7 @@
 		<key>video_file</key>
 		<string>specs_info_03.mp4</string>
 		<key>model_video_file</key>
-		<string>main_interface_00.mvid</string>
+		<string>main_interface_03.mvid</string>
 		<key>detail_array</key>
 		<array/>
 	</dict>
@@ -48,7 +48,7 @@
 		<key>video_file</key>
 		<string>specs_info_04.mp4</string>
 		<key>model_video_file</key>
-		<string>main_interface_00.mvid</string>
+		<string>main_interface_04.mvid</string>
 		<key>detail_array</key>
 		<array/>
 	</dict>
@@ -58,7 +58,7 @@
 		<key>video_file</key>
 		<string>specs_info_05.mp4</string>
 		<key>model_video_file</key>
-		<string>main_interface_00.mvid</string>
+		<string>main_interface_05.mvid</string>
 		<key>detail_array</key>
 		<array/>
 	</dict>
@@ -68,7 +68,7 @@
 		<key>video_file</key>
 		<string></string>
 		<key>model_video_file</key>
-		<string>main_interface_00.mvid</string>
+		<string>main_interface_06.mvid</string>
 		<key>detail_array</key>
 		<array/>
 	</dict>

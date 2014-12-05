@@ -10,6 +10,12 @@
 
 #import "CPSInfoSpecViewController.h"
 
+#import "AVAnimatorView.h"
+#import "AVAnimatorMedia.h"
+#import "AVAppResourceLoader.h"
+#import "AVFileUtil.h"
+#import "AVMvidFrameDecoder.h"
+
 #import "CPSAnimatedTextView.h"
 
 #import "UITableView+CPSMaskingAdditions.h"
@@ -152,7 +158,23 @@
 
 - (void)playModelVideoWithName:(NSString *)videoName
 {
+    AVAnimatorMedia *media = [AVAnimatorMedia aVAnimatorMedia];
+    media.animatorRepeatCount = INFINITY;
     
+    AVAppResourceLoader *resLoader = [AVAppResourceLoader aVAppResourceLoader];
+    resLoader.movieFilename = videoName;
+    
+    media.resourceLoader = resLoader;
+    
+    AVMvidFrameDecoder *frameDecoder = [AVMvidFrameDecoder aVMvidFrameDecoder];
+    media.frameDecoder = frameDecoder;
+    media.animatorFrameDuration = 1.0 / 25.0;
+    
+    [media prepareToAnimate];
+    [self.modelAnimatorView attachMedia:media];
+    
+    [media startAnimator];
+
 }
 
 @end

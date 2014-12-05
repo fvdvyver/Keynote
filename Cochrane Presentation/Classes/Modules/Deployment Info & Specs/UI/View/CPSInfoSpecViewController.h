@@ -11,10 +11,12 @@
 #import "CPSInfoSpecViewInterface.h"
 
 @class CPSAnimatedTextView;
+@class AVAnimatorView;
 
 @interface CPSInfoSpecViewController : CPSVideoListViewController <CPSInfoSpecView>
 
 @property (nonatomic, weak) IBOutlet CPSAnimatedTextView *titleTextView;
 @property (nonatomic, weak) IBOutlet CPSAnimatedTextView *infoTextView;
+@property (nonatomic, weak) IBOutlet AVAnimatorView *modelAnimatorView;
 
 @end

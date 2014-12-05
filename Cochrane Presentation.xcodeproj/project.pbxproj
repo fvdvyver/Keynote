@@ -126,6 +126,7 @@
 		6D82E8E01A24CCAE00122582 /* CoR_Background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D82E8DF1A24CCAE00122582 /* CoR_Background.mp4 */; };
 		6D82E8E21A24DBD800122582 /* CoR_2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D82E8E11A24DBD800122582 /* CoR_2.mp4 */; };
 		6D84E0FF1A32430E00F1470A /* MPMoviePlayerController+CPSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D84E0FE1A32430E00F1470A /* MPMoviePlayerController+CPSAdditions.m */; };
+		6D84E1051A325A2A00F1470A /* CPSMvidView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D84E1041A325A2A00F1470A /* CPSMvidView.m */; };
 		6D8933E91A1B93090099A818 /* CPSViewControllerContentWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8933E81A1B93090099A818 /* CPSViewControllerContentWireframe.m */; };
 		6D8933EF1A1B9CFF0099A818 /* CPSViewControllerContentWireframeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8933EE1A1B9CFF0099A818 /* CPSViewControllerContentWireframeTests.m */; };
 		6D8933F01A1B9D4F0099A818 /* CPSViewControllerContentWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8933E81A1B93090099A818 /* CPSViewControllerContentWireframe.m */; };
@@ -483,6 +484,8 @@
 		6D82E8E11A24DBD800122582 /* CoR_2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoR_2.mp4; sourceTree = "<group>"; };
 		6D84E0FD1A32430E00F1470A /* MPMoviePlayerController+CPSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPMoviePlayerController+CPSAdditions.h"; sourceTree = "<group>"; };
 		6D84E0FE1A32430E00F1470A /* MPMoviePlayerController+CPSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPMoviePlayerController+CPSAdditions.m"; sourceTree = "<group>"; };
+		6D84E1031A325A2A00F1470A /* CPSMvidView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMvidView.h; sourceTree = "<group>"; };
+		6D84E1041A325A2A00F1470A /* CPSMvidView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSMvidView.m; sourceTree = "<group>"; };
 		6D8933E71A1B93090099A818 /* CPSViewControllerContentWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSViewControllerContentWireframe.h; sourceTree = "<group>"; };
 		6D8933E81A1B93090099A818 /* CPSViewControllerContentWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSViewControllerContentWireframe.m; sourceTree = "<group>"; };
 		6D8933EA1A1B93DC0099A818 /* CPSContentWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSContentWireframe.h; sourceTree = "<group>"; };
@@ -1475,6 +1478,8 @@
 				6D65A16D1A25DE36006519C2 /* CPSAnimatedTextView.m */,
 				6D2FC6B91A321586005C7674 /* CPSAnimatedTextTableViewCell.h */,
 				6D2FC6BA1A321586005C7674 /* CPSAnimatedTextTableViewCell.m */,
+				6D84E1031A325A2A00F1470A /* CPSMvidView.h */,
+				6D84E1041A325A2A00F1470A /* CPSMvidView.m */,
 				6D2FC6981A31DFEF005C7674 /* CALayer+CPSImplicitActionRemoval.h */,
 				6D2FC6991A31DFEF005C7674 /* CALayer+CPSImplicitActionRemoval.m */,
 				6D2FC6951A31DE1B005C7674 /* UITableView+CPSMaskingAdditions.h */,
@@ -2614,6 +2619,7 @@
 				6D5432601A1E279700746CB7 /* CPSMenuItemLoader.m in Sources */,
 				6D1871D01A273BFA00F886B9 /* CPSVideoListPresenter.m in Sources */,
 				6DE058181A2CA55600EFA18C /* SegmentedMappedData.m in Sources */,
+				6D84E1051A325A2A00F1470A /* CPSMvidView.m in Sources */,
 				6DE057FA1A2CA55600EFA18C /* AV7zAppResourceLoader.m in Sources */,
 				6DE057AE1A2C8E5B00EFA18C /* CPSRightToLeftFlowLayout.m in Sources */,
 				6DF03C6A1A1F33B1003A0DF1 /* CPSVideoPlaybackViewController.m in Sources */,
