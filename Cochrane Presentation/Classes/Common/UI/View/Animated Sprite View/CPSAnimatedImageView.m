@@ -44,10 +44,15 @@
 - (void)setCurrentSpriteIndex:(NSInteger )currentSpriteIndex
 {
     NSInteger imageCount = self.spriteImageMap.imageCount;
-    _currentSpriteIndex = currentSpriteIndex % imageCount;
+    _currentSpriteIndex = 0;
     if (imageCount > 0)
     {
+        _currentSpriteIndex = currentSpriteIndex % imageCount;
         self.image = self.spriteImageMap[self.currentSpriteIndex];
+    }
+    else
+    {
+        self.image = nil;
     }
 }
 
