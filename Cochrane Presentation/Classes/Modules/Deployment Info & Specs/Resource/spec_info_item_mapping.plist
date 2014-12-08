@@ -12,6 +12,8 @@
 	<string>securityLevelVideoName</string>
 	<key>security_level_image</key>
 	<string>securityLevelImageName</string>
+	<key>navigation_id</key>
+	<string>navigationIdentifier</string>
 	<key>detail_array</key>
 	<string>details</string>
 </dict>

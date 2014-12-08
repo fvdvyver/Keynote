@@ -7,6 +7,8 @@
 		<string>RAZOR MESH</string>
 		<key>video_file</key>
 		<string>specs_info_00.mp4</string>
+		<key>navigation_id</key>
+		<string></string>
 		<key>model_video_file</key>
 		<string>main_interface_00.mvid</string>
 		<key>security_level_video</key>
@@ -27,6 +29,8 @@
 		<string>MARINE FLOATING BARRIER</string>
 		<key>video_file</key>
 		<string>specs_info_01.mp4</string>
+		<key>navigation_id</key>
+		<string></string>
 		<key>model_video_file</key>
 		<string>main_interface_01.mvid</string>
 		<key>security_level_video</key>
@@ -47,6 +51,8 @@
 		<string>RAPID DEPLOYMENT BARRIER</string>
 		<key>video_file</key>
 		<string>specs_info_02.mp4</string>
+		<key>navigation_id</key>
+		<string></string>
 		<key>model_video_file</key>
 		<string>main_interface_02.mvid</string>
 		<key>security_level_video</key>
@@ -67,6 +73,8 @@
 		<string>ROCKET BARRIER</string>
 		<key>video_file</key>
 		<string>specs_info_03.mp4</string>
+		<key>navigation_id</key>
+		<string></string>
 		<key>model_video_file</key>
 		<string>main_interface_03.mvid</string>
 		<key>security_level_video</key>
@@ -87,6 +95,8 @@
 		<string>SMART COIL</string>
 		<key>video_file</key>
 		<string>specs_info_04.mp4</string>
+		<key>navigation_id</key>
+		<string></string>
 		<key>model_video_file</key>
 		<string>main_interface_04.mvid</string>
 		<key>security_level_video</key>
@@ -107,6 +117,8 @@
 		<string>ANTI-RAM BARRIER</string>
 		<key>video_file</key>
 		<string>specs_info_05.mp4</string>
+		<key>navigation_id</key>
+		<string></string>
 		<key>model_video_file</key>
 		<string>main_interface_05.mvid</string>
 		<key>security_level_video</key>
@@ -127,6 +139,8 @@
 		<string>CLEARVU</string>
 		<key>video_file</key>
 		<string></string>
+		<key>navigation_id</key>
+		<string>menu.clearvu</string>
 		<key>model_video_file</key>
 		<string></string>
 		<key>security_level_video</key>

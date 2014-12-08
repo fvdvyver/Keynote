@@ -8,11 +8,18 @@
 
 #import "CPSInfoSpecInteractor.h"
 
+#import "CPSBaseWireframe.h"
 #import "CPSSpecificationInfoAssetItem.h"
 
 #import "CPSCompatUtils.h"
 
 #define CPSPropertyString(x) NSStringFromSelector(@selector(x))
+
+@interface CPSInfoSpecInteractor ()
+
+- (void)showOutputForItem:(CPSSpecificationInfoAssetItem *)item;
+
+@end
 
 @implementation CPSInfoSpecInteractor
 
@@ -25,6 +32,18 @@
 {
     CPSSpecificationInfoAssetItem *item = self.videoItems[index];
     
+    if (item.navigationIdentifier.length > 0)
+    {
+        [self.wireframe setContentControllerProviderWithIdentifer:item.navigationIdentifier];
+    }
+    else
+    {
+        [self showOutputForItem:item];
+    }
+}
+
+- (void)showOutputForItem:(CPSSpecificationInfoAssetItem *)item
+{
     [self.presenter showTitleText:item.title];
     [self.presenter showInfoStrings:item.details];
     [self.presenter showModelWithVideoName:item.modelVideoName];
