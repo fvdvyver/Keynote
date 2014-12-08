@@ -147,6 +147,11 @@
 
 - (NSString *)interpolatedTextForIndex:(NSInteger)characterIndex inString:(NSString *)text
 {
+    if (text.length == 0)
+    {
+        return @"";
+    }
+    
     NSString *newText = nil;
     
     unichar currentChar = [text characterAtIndex:characterIndex];

@@ -68,12 +68,12 @@
 - (void)configureInfoTextView
 {
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle defaultParagraphStyle] mutableCopy];
-    paragraphStyle.lineSpacing = 40;
-    
+    paragraphStyle.minimumLineHeight = 20;
+
     self.infoTextView.textAttributes = @{
                                           NSParagraphStyleAttributeName : paragraphStyle,
-                                          NSFontAttributeName : self.titleTextView.font,
-                                          NSForegroundColorAttributeName : self.titleTextView.textColor
+                                          NSFontAttributeName : self.infoTextView.font,
+                                          NSForegroundColorAttributeName : self.infoTextView.textColor
                                          };
 }
 
@@ -112,6 +112,7 @@
     
     [self configureTableView];
     [self configureTitleTextView];
+    [self configureInfoTextView];
     [self configureContentVideoContainerView];
 }
 
@@ -154,6 +155,7 @@
 - (void)showInfoText:(NSString *)infoText
 {
     self.infoTextView.text = infoText;
+    [self.infoTextView animateTextWithDuration:1.0];
 }
 
 - (void)playModelVideoWithName:(NSString *)videoName

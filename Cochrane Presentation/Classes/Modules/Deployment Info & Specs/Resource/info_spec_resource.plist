@@ -10,7 +10,13 @@
 		<key>model_video_file</key>
 		<string>main_interface_00.mvid</string>
 		<key>detail_array</key>
-		<array/>
+		<array>
+			<string>Sharper, longer blades</string>
+			<string>Virtually unclimbable</string>
+			<string>Extremely difficult to cut</string>
+			<string>No need for additional razor wire</string>
+			<string>Easy to install</string>
+		</array>
 	</dict>
 	<dict>
 		<key>title_text</key>
@@ -20,7 +26,13 @@
 		<key>model_video_file</key>
 		<string>main_interface_01.mvid</string>
 		<key>detail_array</key>
-		<array/>
+		<array>
+			<string>Almost unsinkable</string>
+			<string>No place for hand or foothold</string>
+			<string>Deadly spikes</string>
+			<string>Coupled to any length</string>
+			<string>25 Tonne breaking strength</string>
+		</array>
 	</dict>
 	<dict>
 		<key>title_text</key>
@@ -30,7 +42,13 @@
 		<key>model_video_file</key>
 		<string>main_interface_02.mvid</string>
 		<key>detail_array</key>
-		<array/>
+		<array>
+			<string>Deploys 100m of coil in 15 seconds</string>
+			<string>Almost impossible to cut with standard tools</string>
+			<string>Uplift and recompression in minutes</string>
+			<string>Three configurations</string>
+			<string>Three barrier options</string>
+		</array>
 	</dict>
 	<dict>
 		<key>title_text</key>
@@ -40,7 +58,13 @@
 		<key>model_video_file</key>
 		<string>main_interface_03.mvid</string>
 		<key>detail_array</key>
-		<array/>
+		<array>
+			<string>14m high rocket screen</string>
+			<string>Engineered to withstand 100 year wind pattern</string>
+			<string>Mesh supplied in pre-assembled bolt-on panels</string>
+			<string>Corrosion proofing for increased ilfespan</string>
+			<string>All components designed to fit in a 12m container</string>
+		</array>
 	</dict>
 	<dict>
 		<key>title_text</key>
@@ -50,7 +74,13 @@
 		<key>model_video_file</key>
 		<string>main_interface_04.mvid</string>
 		<key>detail_array</key>
-		<array/>
+		<array>
+			<string>Ripper blade</string>
+			<string>Extremely difficult to cut</string>
+			<string>Includes covert detection unit - intrusion alert</string>
+			<string>Separate energiser delivers 7000 non-lethal volts</string>
+			<string>Easy to install on an existing structure or barrier</string>
+		</array>
 	</dict>
 	<dict>
 		<key>title_text</key>
@@ -60,7 +90,13 @@
 		<key>model_video_file</key>
 		<string>main_interface_05.mvid</string>
 		<key>detail_array</key>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</dict>
 	<dict>
 		<key>title_text</key>
@@ -70,7 +106,13 @@
 		<key>model_video_file</key>
 		<string>main_interface_06.mvid</string>
 		<key>detail_array</key>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</dict>
 </array>
 </plist>
