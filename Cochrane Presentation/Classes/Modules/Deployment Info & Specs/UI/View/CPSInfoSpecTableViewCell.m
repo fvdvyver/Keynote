@@ -52,7 +52,7 @@
 - (void)animateIn
 {
     self.alpha = 0;
-    [self.animatedTextView animateTextWithDuration:1.7];
+    [self.animatedTextView animateTextWithDuration:1.0];
     [UIView animateWithDuration:0.5 animations:^
     {
          self.alpha = 1.0;

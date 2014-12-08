@@ -24,15 +24,25 @@
 
 #import "CPSInfoSpecTableViewCell.h"
 
+#import "NSString+MCKernAdditions.h"
+
+#define kSelectProductText NSLocalizedString(@"PLEASE SELECT PRODUCT", nil)
+#define kSecurityLevelText NSLocalizedString(@"SECURITY LEVEL", nil)
+
+#define kTextAnimDuration 1.0
+
 @interface CPSInfoSpecViewController ()
 
 - (void)configureTableView;
 - (void)configureTitleTextView;
 - (void)configureInfoTextView;
+- (void)configureSelectProductTextView;
+- (void)configureSecurityLevelTextView;
 - (void)configureContentVideoContainerView;
 
 - (void)hideVisibleCells;
 - (void)animateVisibleCellText;
+- (void)animateTextViewText;
 
 - (void)playMvidVideo:(NSString *)videoName inAnimatorView:(AVAnimatorView *)animatorView;
 
@@ -79,6 +89,30 @@
                                          };
 }
 
+- (void)configureSelectProductTextView
+{
+    self.selectProductTextView.text = nil;
+}
+
+- (void)configureSecurityLevelTextView
+{
+    // Making this clip prevents the last word from flashing when being animated
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle defaultParagraphStyle] mutableCopy];
+    paragraphStyle.lineBreakMode = NSLineBreakByClipping;
+    
+    CGFloat kern = [kSecurityLevelText kernToFillWidth:CGRectGetWidth(self.securityLevelTextView.bounds) - 10.0
+                                               withhFont:self.securityLevelTextView.font];
+
+    self.securityLevelTextView.textAttributes = @{
+                                                  NSParagraphStyleAttributeName : paragraphStyle,
+                                                  NSKernAttributeName : @(kern),
+                                                  NSFontAttributeName : self.securityLevelTextView.font,
+                                                  NSForegroundColorAttributeName : self.securityLevelTextView.textColor
+                                                  };
+
+    self.securityLevelTextView.text = nil;
+}
+
 - (void)configureContentVideoContainerView
 {
     UIImage *maskImage = [UIImage imageNamed:@"info_specs_video_mask"];
@@ -115,13 +149,17 @@
     [self configureTableView];
     [self configureTitleTextView];
     [self configureInfoTextView];
+    [self configureSelectProductTextView];
+    [self configureSecurityLevelTextView];
     [self configureContentVideoContainerView];
 }
 
 - (void)contentViewDidAnimateIn
 {
     [super contentViewDidAnimateIn];
+
     [self animateVisibleCellText];
+    [self animateTextViewText];
 }
 
 - (void)setTableViewDatasource:(id<UITableViewDataSource>)datasource
@@ -148,16 +186,31 @@
     }
 }
 
+- (void)animateTextViewText
+{
+    self.selectProductTextView.text = kSelectProductText;
+    self.securityLevelTextView.text = kSecurityLevelText;
+    
+    [self.selectProductTextView animateTextWithDuration:kTextAnimDuration];
+    [self.securityLevelTextView animateTextWithDuration:kTextAnimDuration];
+}
+
 - (void)showTitleText:(NSString *)titleText
 {
     self.titleTextView.text = titleText;
-    [self.titleTextView animateTextWithDuration:1.0];
+    [self.titleTextView animateTextWithDuration:kTextAnimDuration];
 }
 
 - (void)showInfoText:(NSString *)infoText
 {
     self.infoTextView.text = infoText;
-    [self.infoTextView animateTextWithDuration:1.0];
+    [self.infoTextView animateTextWithDuration:kTextAnimDuration];
+}
+
+- (void)playContentVideoAtURL:(NSURL *)url
+{
+    [super playContentVideoAtURL:url];
+    self.selectProductTextView.hidden = YES;
 }
 
 - (void)playModelVideoWithName:(NSString *)videoName

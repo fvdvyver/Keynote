@@ -195,6 +195,7 @@
 		6DB22E121A35A8A700C58A1F /* info_spec_security_03.mvid in Resources */ = {isa = PBXBuildFile; fileRef = 6DB22E0C1A35A8A700C58A1F /* info_spec_security_03.mvid */; };
 		6DB22E131A35A8A700C58A1F /* info_spec_security_04.mvid in Resources */ = {isa = PBXBuildFile; fileRef = 6DB22E0D1A35A8A700C58A1F /* info_spec_security_04.mvid */; };
 		6DB22E141A35A8A700C58A1F /* info_spec_security_05.mvid in Resources */ = {isa = PBXBuildFile; fileRef = 6DB22E0E1A35A8A700C58A1F /* info_spec_security_05.mvid */; };
+		6DB22E171A35B83A00C58A1F /* NSString+MCKernAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB22E161A35B83A00C58A1F /* NSString+MCKernAdditions.m */; };
 		6DB8995B1A3090F90046EBC9 /* CPSLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB8995A1A3090F90046EBC9 /* CPSLoadingViewController.m */; };
 		6DBD91731A14AC7200FA6A51 /* CPSMenuWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD91721A14AC7200FA6A51 /* CPSMenuWireframe.m */; };
 		6DBD91761A14AD2700FA6A51 /* CPSAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD91751A14AD2700FA6A51 /* CPSAppContext.m */; };
@@ -576,6 +577,8 @@
 		6DB22E0C1A35A8A700C58A1F /* info_spec_security_03.mvid */ = {isa = PBXFileReference; lastKnownFileType = file; path = info_spec_security_03.mvid; sourceTree = "<group>"; };
 		6DB22E0D1A35A8A700C58A1F /* info_spec_security_04.mvid */ = {isa = PBXFileReference; lastKnownFileType = file; path = info_spec_security_04.mvid; sourceTree = "<group>"; };
 		6DB22E0E1A35A8A700C58A1F /* info_spec_security_05.mvid */ = {isa = PBXFileReference; lastKnownFileType = file; path = info_spec_security_05.mvid; sourceTree = "<group>"; };
+		6DB22E151A35B83A00C58A1F /* NSString+MCKernAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MCKernAdditions.h"; sourceTree = "<group>"; };
+		6DB22E161A35B83A00C58A1F /* NSString+MCKernAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MCKernAdditions.m"; sourceTree = "<group>"; };
 		6DB899591A3090F90046EBC9 /* CPSLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSLoadingViewController.h; sourceTree = "<group>"; };
 		6DB8995A1A3090F90046EBC9 /* CPSLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSLoadingViewController.m; sourceTree = "<group>"; };
 		6DBD91711A14AC7200FA6A51 /* CPSMenuWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSMenuWireframe.h; sourceTree = "<group>"; };
@@ -1660,6 +1663,8 @@
 			children = (
 				6D84E0FD1A32430E00F1470A /* MPMoviePlayerController+CPSAdditions.h */,
 				6D84E0FE1A32430E00F1470A /* MPMoviePlayerController+CPSAdditions.m */,
+				6DB22E151A35B83A00C58A1F /* NSString+MCKernAdditions.h */,
+				6DB22E161A35B83A00C58A1F /* NSString+MCKernAdditions.m */,
 			);
 			path = Convenience;
 			sourceTree = "<group>";
@@ -2786,6 +2791,7 @@
 				6DB8995B1A3090F90046EBC9 /* CPSLoadingViewController.m in Sources */,
 				6DE058141A2CA55600EFA18C /* maxvid_encode.m in Sources */,
 				6DE057FB1A2CA55600EFA18C /* AVAnimatorLayer.m in Sources */,
+				6DB22E171A35B83A00C58A1F /* NSString+MCKernAdditions.m in Sources */,
 				6D21158C1A23696D00F2620B /* CPSCostOfRiskWireframe.m in Sources */,
 				6DE0580F1A2CA55600EFA18C /* CGFrameBuffer.m in Sources */,
 				6D2115681A2325D200F2620B /* CPSCostOfRiskInteractor.m in Sources */,
