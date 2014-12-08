@@ -9,6 +9,10 @@
 		<string>specs_info_00.mp4</string>
 		<key>model_video_file</key>
 		<string>main_interface_00.mvid</string>
+		<key>security_level_video</key>
+		<string>info_spec_security_00.mvid</string>
+		<key>security_level_image</key>
+		<string>info_spec_security_frame_00</string>
 		<key>detail_array</key>
 		<array>
 			<string>Sharper, longer blades</string>
@@ -25,6 +29,10 @@
 		<string>specs_info_01.mp4</string>
 		<key>model_video_file</key>
 		<string>main_interface_01.mvid</string>
+		<key>security_level_video</key>
+		<string>info_spec_security_01.mvid</string>
+		<key>security_level_image</key>
+		<string>info_spec_security_frame_01</string>
 		<key>detail_array</key>
 		<array>
 			<string>Almost unsinkable</string>
@@ -41,6 +49,10 @@
 		<string>specs_info_02.mp4</string>
 		<key>model_video_file</key>
 		<string>main_interface_02.mvid</string>
+		<key>security_level_video</key>
+		<string>info_spec_security_02.mvid</string>
+		<key>security_level_image</key>
+		<string>info_spec_security_frame_02</string>
 		<key>detail_array</key>
 		<array>
 			<string>Deploys 100m of coil in 15 seconds</string>
@@ -57,6 +69,10 @@
 		<string>specs_info_03.mp4</string>
 		<key>model_video_file</key>
 		<string>main_interface_03.mvid</string>
+		<key>security_level_video</key>
+		<string>info_spec_security_03.mvid</string>
+		<key>security_level_image</key>
+		<string>info_spec_security_frame_03</string>
 		<key>detail_array</key>
 		<array>
 			<string>14m high rocket screen</string>
@@ -73,6 +89,10 @@
 		<string>specs_info_04.mp4</string>
 		<key>model_video_file</key>
 		<string>main_interface_04.mvid</string>
+		<key>security_level_video</key>
+		<string>info_spec_security_04.mvid</string>
+		<key>security_level_image</key>
+		<string>info_spec_security_frame_04</string>
 		<key>detail_array</key>
 		<array>
 			<string>Ripper blade</string>
@@ -89,6 +109,10 @@
 		<string>specs_info_05.mp4</string>
 		<key>model_video_file</key>
 		<string>main_interface_05.mvid</string>
+		<key>security_level_video</key>
+		<string>info_spec_security_05.mvid</string>
+		<key>security_level_image</key>
+		<string>info_spec_security_frame_05</string>
 		<key>detail_array</key>
 		<array>
 			<string></string>
@@ -104,7 +128,11 @@
 		<key>video_file</key>
 		<string></string>
 		<key>model_video_file</key>
-		<string>main_interface_06.mvid</string>
+		<string></string>
+		<key>security_level_video</key>
+		<string></string>
+		<key>security_level_image</key>
+		<string></string>
 		<key>detail_array</key>
 		<array>
 			<string></string>

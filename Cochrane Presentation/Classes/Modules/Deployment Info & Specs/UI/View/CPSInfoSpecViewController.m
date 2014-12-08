@@ -34,6 +34,8 @@
 - (void)hideVisibleCells;
 - (void)animateVisibleCellText;
 
+- (void)playMvidVideo:(NSString *)videoName inAnimatorView:(AVAnimatorView *)animatorView;
+
 @end
 
 @implementation CPSInfoSpecViewController
@@ -160,6 +162,38 @@
 
 - (void)playModelVideoWithName:(NSString *)videoName
 {
+    [self playMvidVideo:videoName inAnimatorView:self.modelAnimatorView];
+}
+
+- (void)playSecurityLevelVideoWithName:(NSString *)videoName
+{
+    [self playMvidVideo:videoName inAnimatorView:self.securityLevelAnimatorView];
+}
+
+- (void)showSecurityLevelImageWithName:(NSString *)imageName
+{
+    UIImage *image = [UIImage imageNamed:imageName];
+    [UIView transitionWithView:self.securityLevelAnimatorView
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:^
+                    {
+                        [self.securityLevelAnimatorView setImage:image];
+                    }
+                    completion:nil];
+}
+
+- (void)playMvidVideo:(NSString *)videoName inAnimatorView:(AVAnimatorView *)animatorView
+{
+    if (videoName == nil)
+    {
+        [animatorView.media stopAnimator];
+        [animatorView attachMedia:nil];
+        [animatorView setImage:nil];
+
+        return;
+    }
+    
     AVAnimatorMedia *media = [AVAnimatorMedia aVAnimatorMedia];
     media.animatorRepeatCount = INFINITY;
     
@@ -173,10 +207,9 @@
     media.animatorFrameDuration = 1.0 / 25.0;
     
     [media prepareToAnimate];
-    [self.modelAnimatorView attachMedia:media];
+    [animatorView attachMedia:media];
     
     [media startAnimator];
-
 }
 
 @end

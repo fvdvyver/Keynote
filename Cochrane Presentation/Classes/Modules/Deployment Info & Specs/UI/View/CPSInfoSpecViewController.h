@@ -18,5 +18,6 @@
 @property (nonatomic, weak) IBOutlet CPSAnimatedTextView *titleTextView;
 @property (nonatomic, weak) IBOutlet CPSAnimatedTextView *infoTextView;
 @property (nonatomic, weak) IBOutlet AVAnimatorView *modelAnimatorView;
+@property (weak, nonatomic) IBOutlet AVAnimatorView *securityLevelAnimatorView;
 
 @end

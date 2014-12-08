@@ -63,6 +63,16 @@
     [self.userInterface playModelVideoWithName:modelVideoName];
 }
 
+- (void)showSecurityLevelVideoWithName:(NSString *)securityLevelVideoName
+{
+    [self.userInterface playSecurityLevelVideoWithName:securityLevelVideoName];
+}
+
+- (void)showSecurityLevelImageWithName:(NSString *)securityLevelImageName
+{
+    [self.userInterface showSecurityLevelImageWithName:securityLevelImageName];
+}
+
 - (void)introVideoPlaybackCompleted
 {
     [super introVideoPlaybackCompleted];

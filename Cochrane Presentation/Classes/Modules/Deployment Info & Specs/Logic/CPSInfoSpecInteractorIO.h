@@ -21,5 +21,7 @@
 - (void)showTitleText:(NSString *)titleText;
 - (void)showInfoStrings:(NSArray *)infoStrings;
 - (void)showModelWithVideoName:(NSString *)modelVideoName;
+- (void)showSecurityLevelVideoWithName:(NSString *)securityLevelVideoName;
+- (void)showSecurityLevelImageWithName:(NSString *)securityLevelImageName;
 
 @end

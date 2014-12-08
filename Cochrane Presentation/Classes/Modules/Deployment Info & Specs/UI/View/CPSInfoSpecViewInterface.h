@@ -13,5 +13,7 @@
 - (void)showTitleText:(NSString *)titleText;
 - (void)showInfoText:(NSString *)infoText;
 - (void)playModelVideoWithName:(NSString *)videoName;
+- (void)playSecurityLevelVideoWithName:(NSString *)videoName;
+- (void)showSecurityLevelImageWithName:(NSString *)imageName;
 
 @end

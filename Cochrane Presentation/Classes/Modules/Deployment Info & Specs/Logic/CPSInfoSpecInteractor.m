@@ -10,6 +10,8 @@
 
 #import "CPSSpecificationInfoAssetItem.h"
 
+#import "CPSCompatUtils.h"
+
 #define CPSPropertyString(x) NSStringFromSelector(@selector(x))
 
 @implementation CPSInfoSpecInteractor
@@ -27,6 +29,15 @@
     [self.presenter showInfoStrings:item.details];
     [self.presenter showModelWithVideoName:item.modelVideoName];
     [self playVideoForItem:item];
+    
+    if ([CPSCompatUtils InfoSpecViewShouldPlaySecurityLevelVideo])
+    {
+        [self.presenter showSecurityLevelVideoWithName:item.securityLevelVideoName];
+    }
+    else
+    {
+        [self.presenter showSecurityLevelImageWithName:item.securityLevelImageName];
+    }
 }
 
 @end

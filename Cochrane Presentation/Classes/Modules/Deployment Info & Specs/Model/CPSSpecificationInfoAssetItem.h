@@ -10,7 +10,9 @@
 
 @interface CPSSpecificationInfoAssetItem : CPSAssetItem
 
-@property (nonatomic, strong) NSArray * details;
+@property (nonatomic, strong) NSArray *  details;
 @property (nonatomic, strong) NSString * modelVideoName;
+@property (nonatomic, strong) NSString * securityLevelVideoName;
+@property (nonatomic, strong) NSString * securityLevelImageName;
 
 @end
