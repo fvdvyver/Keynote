@@ -304,25 +304,43 @@
 			<key>content_wireframes</key>
 			<array>
 				<dict>
-					<key>wireframe</key>
+					<key>interactor</key>
 					<dict>
 						<key>class</key>
-						<string>CPSPlaceholderWireframe</string>
-						<key>arguments</key>
-						<dict>
-							<key>placeholderText</key>
-							<string>ClearVu</string>
-						</dict>
+						<string>CPSVideoListInteractor</string>
+						<key>resource_loaders</key>
+						<array>
+							<dict>
+								<key>class</key>
+								<string>CPSPropertyMappingResourceLoader</string>
+								<key>arguments</key>
+								<dict>
+									<key>mapping</key>
+									<string>clearvu_item_mapping</string>
+									<key>instance_class</key>
+									<string>CPSAssetItem</string>
+									<key>target_data_keypath</key>
+									<string>videoItems</string>
+									<key>data_file</key>
+									<string>clearvu_resource</string>
+								</dict>
+							</dict>
+						</array>
 					</dict>
 					<key>presenter</key>
 					<dict>
 						<key>class</key>
-						<string>CPSPlaceholderPresenter</string>
+						<string>CPSClearVuListPresenter</string>
+						<key>arguments</key>
+						<dict>
+							<key>introVideoFilename</key>
+							<string>clearvu_animate_on.mp4</string>
+						</dict>
 					</dict>
 					<key>view</key>
 					<dict>
 						<key>identifier</key>
-						<string>PlaceholderViewController</string>
+						<string>ClearVuViewController</string>
 					</dict>
 				</dict>
 			</array>

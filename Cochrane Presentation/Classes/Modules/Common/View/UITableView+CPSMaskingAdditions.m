@@ -29,6 +29,11 @@
     return UIEdgeInsetsMake(10, 0, 0, 0);
 }
 
++ (UIEdgeInsets)cps_insetsForClearVuTableMask
+{
+    return UIEdgeInsetsZero;
+}
+
 + (NSString *)cps_maskImageNameForCostOfRiskTable
 {
     return @"left_border_line_stretch_mask";
@@ -37,6 +42,11 @@
 + (NSString *)cps_maskImageNameForInfoAndSpecsTable
 {
     return @"info_specs_tableview_mask";
+}
+
++ (NSString *)cps_maskImageNameForClearVuTable
+{
+    return @"clearvu_tableview_mask";
 }
 
 - (void)cps_configureTableViewInsetsForMask

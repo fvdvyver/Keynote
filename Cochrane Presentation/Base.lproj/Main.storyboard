@@ -19,6 +19,7 @@
             <string>Planer</string>
             <string>Planer</string>
             <string>Planer</string>
+            <string>Planer</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -618,6 +619,112 @@
             </objects>
             <point key="canvasLocation" x="2895" y="1425"/>
         </scene>
+        <!--Clear Vu Video List View Controller-->
+        <scene sceneID="92e-e7-yFz">
+            <objects>
+                <viewController storyboardIdentifier="ClearVuViewController" id="uNt-p4-Nuu" customClass="CPSClearVuVideoListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="37T-Nc-KRo"/>
+                        <viewControllerLayoutGuide type="bottom" id="YI8-YY-5f2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jNK-O4-Qno">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8l-0t-NSH" userLabel="Background Video Container View">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDf-aC-hdW" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="clearvu_background" translatesAutoresizingMaskIntoConstraints="NO" id="pC9-Jm-Q09">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    </imageView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="LvD-Vd-D4o" customClass="MCMaskedTableView">
+                                        <rect key="frame" x="23" y="13" width="342" height="735"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="342" id="hYq-s1-Jaj"/>
+                                            <constraint firstAttribute="height" constant="735" id="kZk-Ce-KDM"/>
+                                        </constraints>
+                                        <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationLevel="2" indentationWidth="10" reuseIdentifier="video_list_cell" textLabel="nbc-0o-fIH" style="IBUITableViewCellStyleDefault" id="J96-Kd-lHu" customClass="CPSMvidTableViewCell">
+                                                <rect key="frame" x="0.0" y="0.0" width="276" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J96-Kd-lHu" id="Y9m-Hp-mFR">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nbc-0o-fIH">
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="25"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbF-PP-2KB" userLabel="Content Video Container View">
+                                        <rect key="frame" x="366" y="13" width="633" height="736"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="633" id="hP4-e9-0VG"/>
+                                            <constraint firstAttribute="width" constant="633" id="kAk-ew-gfr"/>
+                                            <constraint firstAttribute="height" constant="736" id="l3O-jI-hOu"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="hP4-e9-0VG"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="jbF-PP-2KB" firstAttribute="leading" secondItem="TDf-aC-hdW" secondAttribute="leading" constant="366" id="7Ia-ak-R0L"/>
+                                    <constraint firstItem="jbF-PP-2KB" firstAttribute="top" secondItem="TDf-aC-hdW" secondAttribute="top" constant="13" id="MRm-ov-ucZ"/>
+                                    <constraint firstItem="LvD-Vd-D4o" firstAttribute="leading" secondItem="TDf-aC-hdW" secondAttribute="leading" constant="23" id="Wn9-d2-UN6"/>
+                                    <constraint firstItem="LvD-Vd-D4o" firstAttribute="top" secondItem="TDf-aC-hdW" secondAttribute="top" constant="13" id="jgk-A0-bm1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l8l-0t-NSH" firstAttribute="top" secondItem="37T-Nc-KRo" secondAttribute="bottom" id="48Y-Cm-S1a"/>
+                            <constraint firstAttribute="bottom" secondItem="l8l-0t-NSH" secondAttribute="bottom" id="5W6-eZ-M4c"/>
+                            <constraint firstItem="l8l-0t-NSH" firstAttribute="top" secondItem="jNK-O4-Qno" secondAttribute="top" id="OuZ-6o-Wop"/>
+                            <constraint firstAttribute="trailing" secondItem="TDf-aC-hdW" secondAttribute="trailing" id="UNX-7H-kQH"/>
+                            <constraint firstItem="TDf-aC-hdW" firstAttribute="leading" secondItem="jNK-O4-Qno" secondAttribute="leading" id="YMk-I4-FWb"/>
+                            <constraint firstAttribute="trailing" secondItem="l8l-0t-NSH" secondAttribute="trailing" id="ZlS-0s-njk"/>
+                            <constraint firstAttribute="bottom" secondItem="TDf-aC-hdW" secondAttribute="bottom" id="cfa-OT-UEW"/>
+                            <constraint firstItem="l8l-0t-NSH" firstAttribute="leading" secondItem="jNK-O4-Qno" secondAttribute="leading" id="hdN-Os-Zgv"/>
+                            <constraint firstItem="TDf-aC-hdW" firstAttribute="top" secondItem="jNK-O4-Qno" secondAttribute="top" id="v2K-Kb-WEr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="48Y-Cm-S1a"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="backgroundVideoContainerView" destination="l8l-0t-NSH" id="7Ln-kC-PE6"/>
+                        <outlet property="contentVideoContainerView" destination="jbF-PP-2KB" id="CCL-T2-LVc"/>
+                        <outlet property="contentView" destination="TDf-aC-hdW" id="oBM-Iq-tO4"/>
+                        <outlet property="tableView" destination="LvD-Vd-D4o" id="Axk-YR-gR1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xNk-3g-ak8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2895" y="2423"/>
+        </scene>
         <!--Access Page View Controller-->
         <scene sceneID="npe-bS-nwF">
             <objects>
@@ -749,6 +856,7 @@
     <resources>
         <image name="access_button_border" width="275" height="126"/>
         <image name="access_button_border_highlighted" width="275" height="126"/>
+        <image name="clearvu_background" width="1024" height="768"/>
         <image name="cochrane_logo" width="326" height="94"/>
         <image name="hive_background" width="1024" height="768"/>
         <image name="key_industry_icon_glass_panel" width="143" height="107"/>

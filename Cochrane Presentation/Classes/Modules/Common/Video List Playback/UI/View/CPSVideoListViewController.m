@@ -51,6 +51,7 @@
 - (void)setTableViewDatasource:(id<UITableViewDataSource>)datasource
 {
     [self.tableView setDataSource:datasource];
+    [self.tableView reloadData];
 }
 
 - (void)setTableViewDelegate:(id<UITableViewDelegate>)delegate

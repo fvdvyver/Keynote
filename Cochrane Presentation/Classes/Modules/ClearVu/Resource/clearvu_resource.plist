@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title_text</key>
+		<string>ClearVu</string>
+		<key>animation_name</key>
+		<string>clearvu_logo.mvid</string>
+		<key>video_name</key>
+		<string>clearvu_00.mp4</string>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>Shadow Wall</string>
+		<key>video_name</key>
+		<string>clearvu_01.mp4</string>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>CV-22</string>
+		<key>video_name</key>
+		<string>clearvu_02.mp4</string>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>Reinforced</string>
+		<key>video_name</key>
+		<string>clearvu_03.mp4</string>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>Shutter Mesh</string>
+		<key>video_name</key>
+		<string>clearvu_04.mp4</string>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>Critical Infrastructure</string>
+		<key>video_name</key>
+		<string>clearvu_05.mp4</string>
+	</dict>
+</array>
+</plist>

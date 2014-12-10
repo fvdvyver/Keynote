@@ -15,6 +15,11 @@
 @synthesize wireframe = _wireframe;
 @synthesize presenter = _presenter;
 
+- (void)requestAllVideoItems
+{
+    [self.presenter setAllVideoItems:self.videoItems];
+}
+
 - (void)itemSelectedAtIndex:(NSUInteger)index
 {
     CPSAssetItem *item = self.videoItems[index];

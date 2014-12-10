@@ -12,9 +12,11 @@
 
 + (UIEdgeInsets)cps_insetsForCostOfRiskTableMask;
 + (UIEdgeInsets)cps_insetsForInfoAndSpecsTableMask;
++ (UIEdgeInsets)cps_insetsForClearVuTableMask;
 
 + (NSString *)cps_maskImageNameForCostOfRiskTable;
 + (NSString *)cps_maskImageNameForInfoAndSpecsTable;
++ (NSString *)cps_maskImageNameForClearVuTable;
 
 - (void)cps_configureTableViewMaskWithImage:(NSString *)imageName insets:(UIEdgeInsets)insets;
 

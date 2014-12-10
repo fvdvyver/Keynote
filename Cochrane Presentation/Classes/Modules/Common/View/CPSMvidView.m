@@ -10,6 +10,11 @@
 
 @implementation CPSMvidView
 
+- (CGSize)sizeThatFits:(CGSize)size
+{
+    return [self intrinsicContentSize];
+}
+
 - (CGSize)intrinsicContentSize
 {
     CGFloat scale = 1.0 / [[UIScreen mainScreen] scale];

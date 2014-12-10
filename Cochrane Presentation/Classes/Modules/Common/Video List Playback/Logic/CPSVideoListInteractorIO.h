@@ -13,12 +13,20 @@
 
 @protocol CPSVideoListInteractorInput <CPSInteractor>
 
+- (void)requestAllVideoItems;
 - (void)itemSelectedAtIndex:(NSUInteger)index;
 
 @end
 
 @protocol CPSVideoListInteractorOutput <CPSPresenter>
 
+@required
 - (void)playVideoAtPath:(NSString *)path;
+
+@optional
+/**
+ *  Only implement this if you know the input will have -requestAllVideoItems called
+ */
+- (void)setAllVideoItems:(NSArray *)videoItems;
 
 @end
