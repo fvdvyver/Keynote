@@ -10,6 +10,16 @@
 //  of frame rate, the current frame, and so on. The view provides
 //  a way to render the media in the window system.
 
+// **********************************************************************************
+/* ****** Mushroom Cloud Changes ****************************************************
+ *
+ *  The various timers of this media class are run in NSRunloopCommonModes instead of
+ *  NSDefaultRunLoopMode so that the views still animate when in other run loop modes,
+ *  such as when a scrollview/tableview is being scrolled
+ *
+ * *********************************************************************************/
+// **********************************************************************************
+
 #import <UIKit/UIKit.h>
 
 #import "AVAnimatorMediaRendererProtocol.h"
