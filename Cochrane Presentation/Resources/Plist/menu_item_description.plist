@@ -391,6 +391,39 @@
 				</dict>
 			</array>
 		</dict>
+		<dict>
+			<key>identifier</key>
+			<string>menu.outroduction</string>
+			<key>title</key>
+			<string>Outro</string>
+			<key>icon</key>
+			<string></string>
+			<key>content_wireframes</key>
+			<array>
+				<dict>
+					<key>interactor</key>
+					<dict>
+						<key>class</key>
+						<string>CPSVideoPlayerInteractor</string>
+						<key>arguments</key>
+						<dict>
+							<key>videoName</key>
+							<string>B_Slide_17_Research_&amp;_Development.mp4</string>
+						</dict>
+					</dict>
+					<key>presenter</key>
+					<dict>
+						<key>class</key>
+						<string>CPSVideoPlayerPresenter</string>
+					</dict>
+					<key>view</key>
+					<dict>
+						<key>identifier</key>
+						<string>VideoPlayerViewController</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
 	</array>
 </dict>
 </plist>
