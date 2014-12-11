@@ -221,6 +221,7 @@
 - (void)playSecurityLevelVideoWithName:(NSString *)videoName
 {
     [self playMvidVideo:videoName inAnimatorView:self.securityLevelAnimatorView];
+    self.securityLevelAnimatorView.media.animatorRepeatCount = 0;
 }
 
 - (void)showSecurityLevelImageWithName:(NSString *)imageName
