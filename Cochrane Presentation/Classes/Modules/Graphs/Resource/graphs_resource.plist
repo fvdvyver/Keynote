@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title_text</key>
+		<string>Risk Analysis</string>
+		<key>video_name</key>
+		<string>graph_00.mp4</string>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>Mitigating Risk</string>
+		<key>video_name</key>
+		<string>graph_01.mp4</string>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>Asset Protect</string>
+		<key>video_name</key>
+		<string>graph_02.mp4</string>
+	</dict>
+</array>
+</plist>

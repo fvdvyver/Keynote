@@ -20,6 +20,7 @@
             <string>Planer</string>
             <string>Planer</string>
             <string>Planer</string>
+            <string>Planer</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -574,6 +575,81 @@
             </objects>
             <point key="canvasLocation" x="1631" y="2423"/>
         </scene>
+        <!--Graph List View Controller-->
+        <scene sceneID="kIR-0c-Xuf">
+            <objects>
+                <viewController storyboardIdentifier="GraphListViewController" id="TJW-ca-fsd" customClass="CPSGraphListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="moV-QM-ELd"/>
+                        <viewControllerLayoutGuide type="bottom" id="2V0-84-hZ5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N7e-yb-MB8">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="graphs_background" translatesAutoresizingMaskIntoConstraints="NO" id="NFg-fG-8gh">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Hbj-z1-Qvd">
+                                <rect key="frame" x="0.0" y="110" width="115" height="543"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="543" id="HrZ-hQ-cD1"/>
+                                    <constraint firstAttribute="width" constant="115" id="pRC-48-0gu"/>
+                                </constraints>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="video_list_cell" textLabel="Ho6-9S-bUF" style="IBUITableViewCellStyleDefault" id="OCK-HY-Z5r" customClass="CPSGraphItemTableViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OCK-HY-Z5r" id="TYX-Lv-HlV">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ho6-9S-bUF">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="19"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQW-tw-s85" userLabel="Content Video Container View">
+                                <rect key="frame" x="115" y="83" width="791" height="596"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="791" id="9XS-Bq-rXF"/>
+                                    <constraint firstAttribute="height" constant="596" id="U2C-MS-1RA"/>
+                                </constraints>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="cochrane_logo" translatesAutoresizingMaskIntoConstraints="NO" id="jVx-cz-4tb">
+                                <rect key="frame" x="696" y="601" width="187" height="54"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hbj-z1-Qvd" firstAttribute="top" secondItem="N7e-yb-MB8" secondAttribute="top" constant="110" id="QrH-I2-krP"/>
+                            <constraint firstItem="Hbj-z1-Qvd" firstAttribute="leading" secondItem="N7e-yb-MB8" secondAttribute="leading" id="U1I-oY-ppg"/>
+                            <constraint firstItem="HQW-tw-s85" firstAttribute="leading" secondItem="N7e-yb-MB8" secondAttribute="leading" constant="115" id="vPT-q5-zdE"/>
+                            <constraint firstItem="HQW-tw-s85" firstAttribute="top" secondItem="N7e-yb-MB8" secondAttribute="top" constant="83" id="wKv-PY-wx7"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="contentVideoContainerView" destination="HQW-tw-s85" id="Xhk-VP-Fxg"/>
+                        <outlet property="tableView" destination="Hbj-z1-Qvd" id="WRV-CF-y80"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7A-Gm-ReG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1631" y="3409"/>
+        </scene>
         <!--Product Detail View Controller-->
         <scene sceneID="EaE-7h-4Zg">
             <objects>
@@ -858,6 +934,7 @@
         <image name="access_button_border_highlighted" width="275" height="126"/>
         <image name="clearvu_background" width="1024" height="768"/>
         <image name="cochrane_logo" width="326" height="94"/>
+        <image name="graphs_background" width="1024" height="768"/>
         <image name="hive_background" width="1024" height="768"/>
         <image name="key_industry_icon_glass_panel" width="143" height="107"/>
         <image name="key_industry_image_glass_panel" width="978" height="733"/>

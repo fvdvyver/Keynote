@@ -345,6 +345,52 @@
 				</dict>
 			</array>
 		</dict>
+		<dict>
+			<key>identifier</key>
+			<string>menu.graphs</string>
+			<key>title</key>
+			<string>Graphs</string>
+			<key>icon</key>
+			<string></string>
+			<key>content_wireframes</key>
+			<array>
+				<dict>
+					<key>interactor</key>
+					<dict>
+						<key>class</key>
+						<string>CPSVideoListInteractor</string>
+						<key>resource_loaders</key>
+						<array>
+							<dict>
+								<key>class</key>
+								<string>CPSPropertyMappingResourceLoader</string>
+								<key>arguments</key>
+								<dict>
+									<key>mapping</key>
+									<string>graphs_item_mapping</string>
+									<key>instance_class</key>
+									<string>CPSAssetItem</string>
+									<key>target_data_keypath</key>
+									<string>videoItems</string>
+									<key>data_file</key>
+									<string>graphs_resource</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>presenter</key>
+					<dict>
+						<key>class</key>
+						<string>CPSGraphListPresenter</string>
+					</dict>
+					<key>view</key>
+					<dict>
+						<key>identifier</key>
+						<string>GraphListViewController</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
 	</array>
 </dict>
 </plist>
