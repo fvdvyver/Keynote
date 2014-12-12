@@ -35,7 +35,7 @@
 						<key>arguments</key>
 						<dict>
 							<key>videoName</key>
-							<string>B_Slide_02_Cochrane_Logo.mp4</string>
+							<string>Cochrane_Logo.mp4</string>
 						</dict>
 					</dict>
 					<key>presenter</key>
@@ -57,7 +57,29 @@
 						<key>arguments</key>
 						<dict>
 							<key>videoName</key>
-							<string>B_Slide_03_to_Slide_05.mp4</string>
+							<string>Partners.mp4</string>
+						</dict>
+					</dict>
+					<key>presenter</key>
+					<dict>
+						<key>class</key>
+						<string>CPSVideoPlayerPresenter</string>
+					</dict>
+					<key>view</key>
+					<dict>
+						<key>identifier</key>
+						<string>VideoPlayerViewController</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>interactor</key>
+					<dict>
+						<key>class</key>
+						<string>CPSVideoPlayerInteractor</string>
+						<key>arguments</key>
+						<dict>
+							<key>videoName</key>
+							<string>Cost_of_risk_intro.mp4</string>
 						</dict>
 					</dict>
 					<key>presenter</key>
