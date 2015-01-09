@@ -17,5 +17,6 @@ build/*
 *.pbxuser
 xcuserdata
 
-# Exclude the media folder to keep the repo lightweight
+# Exclude the media folders to keep the repo lightweight
 */Resources/Video/
+*/Resources/Image/

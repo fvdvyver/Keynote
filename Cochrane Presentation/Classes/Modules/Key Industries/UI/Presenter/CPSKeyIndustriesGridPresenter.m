@@ -9,7 +9,7 @@
 #import "CPSKeyIndustriesGridPresenter.h"
 
 #import "CPSKeyIndustriesItemDatasource.h"
-#import "CPSAssetItem.h"
+#import "CPSKeyIndustryAssetItem.h"
 
 @interface CPSKeyIndustriesGridPresenter ()
 
@@ -33,9 +33,9 @@
     [self.userInterface setItemDataProvider:self.provider];
 }
 
-- (void)item:(CPSAssetItem *)item selectedAtIndex:(NSInteger)index
+- (void)item:(CPSKeyIndustryAssetItem *)item selectedAtIndex:(NSInteger)index
 {
-    [self.wireframe showIndustryWithTitle:item.title imageName:item.secondaryFilename];
+    [self.wireframe showIndustryWithTitle:item.title imageName:[item.images firstObject]];
 }
 
 - (void)productsButtonTapped

@@ -183,9 +183,9 @@
 								<key>arguments</key>
 								<dict>
 									<key>instance_class</key>
-									<string>CPSAssetItem</string>
+									<string>CPSKeyIndustryAssetItem</string>
 									<key>mapping</key>
-									<string>secondary_asset_mapping</string>
+									<string>key_industries_item_mapping</string>
 									<key>data_file</key>
 									<string>key_industries_resource</string>
 									<key>target_data_keypath</key>
