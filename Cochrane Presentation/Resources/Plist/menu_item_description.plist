@@ -8,7 +8,7 @@
 			<key>identifier</key>
 			<string>menu.introduction</string>
 			<key>title</key>
-			<string>Intro</string>
+			<string>Explore Cochrane</string>
 			<key>icon</key>
 			<string></string>
 			<key>content_wireframes</key>
@@ -99,7 +99,7 @@
 			<key>identifier</key>
 			<string>menu.cost_of_risk</string>
 			<key>title</key>
-			<string>Cost of Risk</string>
+			<string>Risk</string>
 			<key>icon</key>
 			<string></string>
 			<key>content_wireframes</key>
@@ -155,7 +155,7 @@
 			<key>identifier</key>
 			<string>menu.key_industries</string>
 			<key>title</key>
-			<string>Key Industries</string>
+			<string>Experience</string>
 			<key>icon</key>
 			<string></string>
 			<key>content_wireframes</key>
@@ -211,7 +211,7 @@
 			<key>identifier</key>
 			<string>menu.product_range</string>
 			<key>title</key>
-			<string>Product Range</string>
+			<string>Products</string>
 			<key>icon</key>
 			<string></string>
 			<key>content_wireframes</key>
@@ -269,7 +269,7 @@
 			<key>identifier</key>
 			<string>menu.info_specifications</string>
 			<key>title</key>
-			<string>Deployment Information and Specifications</string>
+			<string>Product Deployment</string>
 			<key>icon</key>
 			<string></string>
 			<key>content_wireframes</key>
