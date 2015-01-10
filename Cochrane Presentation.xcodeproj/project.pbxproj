@@ -265,6 +265,15 @@
 		6DAB25991A61731600125D91 /* MCImageArrayPagerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAB25981A61731600125D91 /* MCImageArrayPagerDataSource.m */; };
 		6DAB259D1A6173C700125D91 /* UIViewController+MCPagerIndexAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAB259C1A6173C700125D91 /* UIViewController+MCPagerIndexAdditions.m */; };
 		6DAB25A01A61753500125D91 /* MCImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAB259F1A61753500125D91 /* MCImageViewController.m */; };
+		6DAB25AA1A6191FA00125D91 /* clearvu_01.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB25A11A6191FA00125D91 /* clearvu_01.mp4 */; };
+		6DAB25AB1A6191FA00125D91 /* clearvu_02.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB25A21A6191FA00125D91 /* clearvu_02.mp4 */; };
+		6DAB25AC1A6191FA00125D91 /* clearvu_03.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB25A31A6191FA00125D91 /* clearvu_03.mp4 */; };
+		6DAB25AD1A6191FA00125D91 /* clearvu_04.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB25A41A6191FA00125D91 /* clearvu_04.mp4 */; };
+		6DAB25AE1A6191FA00125D91 /* clearvu_05.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB25A51A6191FA00125D91 /* clearvu_05.mp4 */; };
+		6DAB25AF1A6191FA00125D91 /* clearvu_06.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB25A61A6191FA00125D91 /* clearvu_06.mp4 */; };
+		6DAB25B01A6191FA00125D91 /* clearvu_07.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB25A71A6191FA00125D91 /* clearvu_07.mp4 */; };
+		6DAB25B11A6191FA00125D91 /* clearvu_08.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB25A81A6191FA00125D91 /* clearvu_08.mp4 */; };
+		6DAB25B21A6191FA00125D91 /* clearvu_09.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB25A91A6191FA00125D91 /* clearvu_09.mp4 */; };
 		6DB22E0F1A35A8A700C58A1F /* info_spec_security_00.mvid in Resources */ = {isa = PBXBuildFile; fileRef = 6DB22E091A35A8A700C58A1F /* info_spec_security_00.mvid */; };
 		6DB22E101A35A8A700C58A1F /* info_spec_security_01.mvid in Resources */ = {isa = PBXBuildFile; fileRef = 6DB22E0A1A35A8A700C58A1F /* info_spec_security_01.mvid */; };
 		6DB22E111A35A8A700C58A1F /* info_spec_security_02.mvid in Resources */ = {isa = PBXBuildFile; fileRef = 6DB22E0B1A35A8A700C58A1F /* info_spec_security_02.mvid */; };
@@ -746,6 +755,15 @@
 		6DAB259C1A6173C700125D91 /* UIViewController+MCPagerIndexAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MCPagerIndexAdditions.m"; sourceTree = "<group>"; };
 		6DAB259E1A61753500125D91 /* MCImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCImageViewController.h; sourceTree = "<group>"; };
 		6DAB259F1A61753500125D91 /* MCImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCImageViewController.m; sourceTree = "<group>"; };
+		6DAB25A11A6191FA00125D91 /* clearvu_01.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = clearvu_01.mp4; sourceTree = "<group>"; };
+		6DAB25A21A6191FA00125D91 /* clearvu_02.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = clearvu_02.mp4; sourceTree = "<group>"; };
+		6DAB25A31A6191FA00125D91 /* clearvu_03.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = clearvu_03.mp4; sourceTree = "<group>"; };
+		6DAB25A41A6191FA00125D91 /* clearvu_04.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = clearvu_04.mp4; sourceTree = "<group>"; };
+		6DAB25A51A6191FA00125D91 /* clearvu_05.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = clearvu_05.mp4; sourceTree = "<group>"; };
+		6DAB25A61A6191FA00125D91 /* clearvu_06.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = clearvu_06.mp4; sourceTree = "<group>"; };
+		6DAB25A71A6191FA00125D91 /* clearvu_07.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = clearvu_07.mp4; sourceTree = "<group>"; };
+		6DAB25A81A6191FA00125D91 /* clearvu_08.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = clearvu_08.mp4; sourceTree = "<group>"; };
+		6DAB25A91A6191FA00125D91 /* clearvu_09.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = clearvu_09.mp4; sourceTree = "<group>"; };
 		6DB22E091A35A8A700C58A1F /* info_spec_security_00.mvid */ = {isa = PBXFileReference; lastKnownFileType = file; path = info_spec_security_00.mvid; sourceTree = "<group>"; };
 		6DB22E0A1A35A8A700C58A1F /* info_spec_security_01.mvid */ = {isa = PBXFileReference; lastKnownFileType = file; path = info_spec_security_01.mvid; sourceTree = "<group>"; };
 		6DB22E0B1A35A8A700C58A1F /* info_spec_security_02.mvid */ = {isa = PBXFileReference; lastKnownFileType = file; path = info_spec_security_02.mvid; sourceTree = "<group>"; };
@@ -2544,6 +2562,15 @@
 			isa = PBXGroup;
 			children = (
 				6DE5007F1A38C2570046074E /* clearvu_00.mp4 */,
+				6DAB25A11A6191FA00125D91 /* clearvu_01.mp4 */,
+				6DAB25A21A6191FA00125D91 /* clearvu_02.mp4 */,
+				6DAB25A31A6191FA00125D91 /* clearvu_03.mp4 */,
+				6DAB25A41A6191FA00125D91 /* clearvu_04.mp4 */,
+				6DAB25A51A6191FA00125D91 /* clearvu_05.mp4 */,
+				6DAB25A61A6191FA00125D91 /* clearvu_06.mp4 */,
+				6DAB25A71A6191FA00125D91 /* clearvu_07.mp4 */,
+				6DAB25A81A6191FA00125D91 /* clearvu_08.mp4 */,
+				6DAB25A91A6191FA00125D91 /* clearvu_09.mp4 */,
 			);
 			path = "Content Videos";
 			sourceTree = "<group>";
@@ -2913,10 +2940,12 @@
 				6D2FC6A71A31E694005C7674 /* main_interface_02.mvid in Resources */,
 				6D54324F1A1DEFE500746CB7 /* animated_background.mp4 in Resources */,
 				6DAB252D1A603AFC00125D91 /* key_industries_22.xcassets in Resources */,
+				6DAB25B11A6191FA00125D91 /* clearvu_08.mp4 in Resources */,
 				6DAB255A1A603BFD00125D91 /* key_industries_05.plist in Resources */,
 				6DAA21611A3068AC00B5CB18 /* product_large_06.mp4 in Resources */,
 				6DAB251B1A603AFC00125D91 /* key_industries_04.xcassets in Resources */,
 				6DAB25781A603EA100125D91 /* key_industries_item_mapping.plist in Resources */,
+				6DAB25AE1A6191FA00125D91 /* clearvu_05.mp4 in Resources */,
 				6DE500801A38C2570046074E /* clearvu_00.mp4 in Resources */,
 				6D8A14A31A2F030F006A4BEC /* product_sprite_8@2x.png in Resources */,
 				6D8A14991A2F030F006A4BEC /* product_sprite_3@2x.png in Resources */,
@@ -2930,6 +2959,7 @@
 				6DAB25651A603BFD00125D91 /* key_industries_16.plist in Resources */,
 				6D8A14921A2F030F006A4BEC /* product_sprite_0@2x.plist in Resources */,
 				6D8A14AC1A2F030F006A4BEC /* product_sprite_13@2x.plist in Resources */,
+				6DAB25AF1A6191FA00125D91 /* clearvu_06.mp4 in Resources */,
 				6DAB252F1A603AFC00125D91 /* key_industries_24.xcassets in Resources */,
 				6DAA21521A304ED000B5CB18 /* product_large_00.mp4 in Resources */,
 				6D8A14AE1A2F030F006A4BEC /* product_sprite_14@2x.plist in Resources */,
@@ -2937,6 +2967,7 @@
 				6D54DA131A28CED30070A1D4 /* secondary_asset_mapping.plist in Resources */,
 				6DAB256F1A603BFD00125D91 /* key_industries_26.plist in Resources */,
 				6D82E8E21A24DBD800122582 /* CoR_2.mp4 in Resources */,
+				6DAB25AA1A6191FA00125D91 /* clearvu_01.mp4 in Resources */,
 				6D54325D1A1E1FD300746CB7 /* menu_item_description.plist in Resources */,
 				6D1871F01A2772F600F886B9 /* key_industries.xcassets in Resources */,
 				6D8A149C1A2F030F006A4BEC /* product_sprite_5@2x.plist in Resources */,
@@ -3015,9 +3046,11 @@
 				6DEA20E81A1638AA001AAC42 /* Planer_Reg.ttf in Resources */,
 				6DAB25171A603AFC00125D91 /* key_industries_00.xcassets in Resources */,
 				6DAB25221A603AFC00125D91 /* key_industries_11.xcassets in Resources */,
+				6DAB25B21A6191FA00125D91 /* clearvu_09.mp4 in Resources */,
 				6D21156F1A232AA700F2620B /* cost_of_risk_resource.plist in Resources */,
 				6D8A14A61A2F030F006A4BEC /* product_sprite_10@2x.plist in Resources */,
 				6DAB25191A603AFC00125D91 /* key_industries_02.xcassets in Resources */,
+				6DAB25B01A6191FA00125D91 /* clearvu_07.mp4 in Resources */,
 				6D8A149D1A2F030F006A4BEC /* product_sprite_5@2x.png in Resources */,
 				6D8A14A51A2F030F006A4BEC /* product_sprite_9@2x.png in Resources */,
 				6DE500941A399FD60046074E /* graphs_item_mapping.plist in Resources */,
@@ -3032,6 +3065,8 @@
 				6DB22E121A35A8A700C58A1F /* info_spec_security_03.mvid in Resources */,
 				6D2FC6C61A3232CB005C7674 /* specs_info_00.mp4 in Resources */,
 				6DAA215F1A3068AC00B5CB18 /* product_large_04.mp4 in Resources */,
+				6DAB25AD1A6191FA00125D91 /* clearvu_04.mp4 in Resources */,
+				6DAB25AC1A6191FA00125D91 /* clearvu_03.mp4 in Resources */,
 				6DAB25551A603BFD00125D91 /* key_industries_00.plist in Resources */,
 				6DAA21651A3068AC00B5CB18 /* product_large_10.mp4 in Resources */,
 				6DE500A11A39A5270046074E /* B_Slide_17_Research_&_Development.mp4 in Resources */,
@@ -3060,6 +3095,7 @@
 				6D8A14AD1A2F030F006A4BEC /* product_sprite_13@2x.png in Resources */,
 				6D179B521A39A74D0089899C /* Cochrane_Logo.mp4 in Resources */,
 				6D2FC6AA1A31E694005C7674 /* main_interface_05.mvid in Resources */,
+				6DAB25AB1A6191FA00125D91 /* clearvu_02.mp4 in Resources */,
 				6D54D9CB1A28AB5F0070A1D4 /* cost_of_risk_item_mapping.plist in Resources */,
 				6D8A14A71A2F030F006A4BEC /* product_sprite_10@2x.png in Resources */,
 				6D8A14A21A2F030F006A4BEC /* product_sprite_8@2x.plist in Resources */,

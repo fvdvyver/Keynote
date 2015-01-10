@@ -36,9 +36,33 @@
 	</dict>
 	<dict>
 		<key>title_text</key>
-		<string>Critical Infrastructure</string>
+		<string>Anti Stampede</string>
 		<key>video_name</key>
 		<string>clearvu_05.mp4</string>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>Critical Infrastructure</string>
+		<key>video_name</key>
+		<string>clearvu_06.mp4</string>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>Balustrade</string>
+		<key>video_name</key>
+		<string>clearvu_07.mp4</string>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>Parkland</string>
+		<key>video_name</key>
+		<string>clearvu_08.mp4</string>
+	</dict>
+	<dict>
+		<key>title_text</key>
+		<string>Pool Fence</string>
+		<key>video_name</key>
+		<string>clearvu_09.mp4</string>
 	</dict>
 </array>
 </plist>
