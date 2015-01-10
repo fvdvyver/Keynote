@@ -59,6 +59,13 @@
     [self.tableView setDelegate:delegate];
 }
 
+- (void)selectItemAtIndex:(NSUInteger)index
+{
+    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]
+                                animated:YES
+                          scrollPosition:UITableViewScrollPositionNone];
+}
+
 - (void)playContentVideoAtURL:(NSURL *)url
 {
     MPMoviePlayerController *controller = [self configureNewMovieControllerWithURL:url

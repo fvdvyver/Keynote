@@ -25,6 +25,8 @@
 - (void)updateView
 {
     [self.interactor requestAllVideoItems];
+    [self.interactor itemSelectedAtIndex:0];
+    [self.userInterface selectItemAtIndex:0];
 }
 
 - (void)setAllVideoItems:(NSArray *)videoItems

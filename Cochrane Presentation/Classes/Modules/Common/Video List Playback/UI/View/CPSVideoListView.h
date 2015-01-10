@@ -22,6 +22,8 @@
 - (void)playContentVideoAtURL:(NSURL *)url;
 - (void)playBackgroundVideoAtURL:(NSURL *)url withCompletion:(dispatch_block_t)completion;
 
+- (void)selectItemAtIndex:(NSUInteger)index;
+
 @end
 
 @protocol CPSVideoListViewEventHandler <CPSPresenter>
