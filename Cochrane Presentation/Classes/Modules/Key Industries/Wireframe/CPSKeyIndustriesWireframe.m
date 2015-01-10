@@ -42,12 +42,12 @@
     [self.parentContentWireframe setContentControllerProvider:[CPSCachedViewControllerProvider providerWithCachedViewController:self.mainViewController]];
 }
 
-- (void)showIndustryWithTitle:(NSString *)title imageName:(NSString *)imageName
+- (void)showIndustryWithTitle:(NSString *)title imageNames:(NSArray *)imageNames
 {
     UIViewController<CPSView> *viewController = (id)[self instantiateNewViewControllerWithIdentifier:self.detailViewControllerIdentifier];
     CPSKeyIndustriesDetailPresenter *presenter = [CPSKeyIndustriesDetailPresenter new];
     presenter.title = title;
-    presenter.imageName = imageName;
+    presenter.imageNames = imageNames;
     
     viewController.eventHandler = presenter;
     

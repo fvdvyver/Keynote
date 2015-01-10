@@ -14,7 +14,7 @@
 @protocol CPSKeyIndustriesDetailView <CPSView>
 
 - (void)setTitle:(NSString *)title;
-- (void)setImage:(UIImage *)image;
+- (void)setImageNames:(NSArray *)imageNames;
 
 @end
 

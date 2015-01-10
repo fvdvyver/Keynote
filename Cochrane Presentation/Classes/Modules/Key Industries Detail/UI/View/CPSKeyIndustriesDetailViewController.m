@@ -8,7 +8,14 @@
 
 #import "CPSKeyIndustriesDetailViewController.h"
 
+#import "MCImageArrayPagerDataSource.h"
+
+#define kPageViewControllerEmbedSegueIdentifier @"PageControllerEmbed"
+
 @interface CPSKeyIndustriesDetailViewController ()
+
+@property (nonatomic, weak, readwrite) UIPageViewController * pageViewController;
+@property (nonatomic, strong) MCImageArrayPagerDataSource *   pagerDataSource;
 
 - (void)setupImageClippingMask;
 - (void)setupGestureRecognizers;
@@ -24,7 +31,7 @@
     CALayer *imageMask = [CALayer layer];
     imageMask.contents = (id)[UIImage imageNamed:@"key_industry_image_clipping_mask"].CGImage;
     
-    self.imageView.layer.mask = imageMask;
+    self.pagerContainerView.layer.mask = imageMask;
 }
 
 - (void)setupGestureRecognizers
@@ -50,7 +57,7 @@
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
-    self.imageView.layer.mask.frame = self.imageView.bounds;
+    self.pagerContainerView.layer.mask.frame = self.pagerContainerView.bounds;
 }
 
 - (void)setTitle:(NSString *)title
@@ -58,14 +65,38 @@
     self.titleLabel.text = title;
 }
 
-- (void)setImage:(UIImage *)image
+- (void)setImageNames:(NSArray *)imageNames
 {
-    self.imageView.image = image;
+    MCImageArrayPagerDataSource *pagerDatasource = [MCImageArrayPagerDataSource new];
+    pagerDatasource.imageNames = imageNames;
+    
+    self.pagerDataSource = pagerDatasource;
+    self.pageViewController.dataSource = self.pagerDataSource;
+    
+    if (imageNames.count > 0)
+    {
+        [self.pageViewController setViewControllers:@[ [self.pagerDataSource viewControllerForImageAtIndex:0] ]
+                                          direction:UIPageViewControllerNavigationDirectionForward
+                                           animated:[self isViewLoaded]
+                                         completion:nil];
+    }
 }
 
 - (void)viewTapped:(UITapGestureRecognizer *)gestureRecognizer
 {
     [self.eventHandler viewTapped];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:kPageViewControllerEmbedSegueIdentifier])
+    {
+        self.pageViewController = (id)segue.destinationViewController;
+        if (self.pageViewController.dataSource == nil)
+        {
+            self.pageViewController.dataSource = self.pagerDataSource;
+        }
+    }
 }
 
 @end

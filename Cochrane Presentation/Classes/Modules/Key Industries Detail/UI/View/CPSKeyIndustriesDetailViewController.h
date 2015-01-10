@@ -14,7 +14,9 @@
 
 @property (nonatomic, weak) id<CPSKeyIndustriesDetailViewEventHandler> eventHandler;
 
-@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
-@property (nonatomic, weak) IBOutlet UIImageView *imageView;
+@property (nonatomic, weak) IBOutlet UILabel * titleLabel;
+@property (weak, nonatomic) IBOutlet UIView *  pagerContainerView;
+
+@property (nonatomic, weak, readonly) UIPageViewController * pageViewController;
 
 @end

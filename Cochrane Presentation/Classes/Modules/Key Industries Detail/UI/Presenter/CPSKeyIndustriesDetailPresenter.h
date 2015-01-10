@@ -18,7 +18,7 @@
 @property (nonatomic, weak) CPSKeyIndustriesWireframe * wireframe;
 @property (nonatomic, weak) id<CPSKeyIndustriesDetailView> userInterface;
 
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSString *imageName;
+@property (nonatomic, strong) NSString * title;
+@property (nonatomic, strong) NSArray *  imageNames;
 
 @end

@@ -13,15 +13,9 @@
 @synthesize interactor = _interactor;
 
 - (void)updateView
-{
-    UIImage *image = [UIImage imageNamed:self.imageName];
-    if (image == nil)
-    {
-        NSLog(@"WARNING: content image (%@) for key industry item %@ not found", self.imageName, self.title);
-    }
-    
+{    
     [self.userInterface setTitle:self.title];
-    [self.userInterface setImage:image];
+    [self.userInterface setImageNames:self.imageNames];
 }
 
 - (void)viewTapped

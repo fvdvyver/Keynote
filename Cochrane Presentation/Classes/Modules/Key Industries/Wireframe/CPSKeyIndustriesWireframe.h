@@ -12,7 +12,7 @@
 
 @property (nonatomic, strong) NSString * detailViewControllerIdentifier;
 
-- (void)showIndustryWithTitle:(NSString *)title imageName:(NSString *)imageName;
+- (void)showIndustryWithTitle:(NSString *)title imageNames:(NSArray *)imageNames;
 - (void)showMainViewController;
 - (void)navigateToProductRange;
 
