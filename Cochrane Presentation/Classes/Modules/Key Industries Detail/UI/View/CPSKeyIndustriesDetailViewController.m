@@ -17,6 +17,8 @@
 @property (nonatomic, weak, readwrite) UIPageViewController * pageViewController;
 @property (nonatomic, strong) MCImageArrayPagerDataSource *   pagerDataSource;
 
+@property (nonatomic, strong) CAGradientLayer * textBackgroundLayer;
+
 - (void)setupImageClippingMask;
 - (void)setupGestureRecognizers;
 
@@ -34,6 +36,22 @@
     self.pagerContainerView.layer.mask = imageMask;
 }
 
+- (void)setupTextBackgroundLayer
+{
+    CAGradientLayer *layer = [CAGradientLayer layer];
+    layer.startPoint = CGPointMake(0.5, 0.0);
+    layer.endPoint = CGPointMake(0.5, 1.0);
+    layer.locations = @[ @0.0, @0.1 ];
+    layer.colors = @[
+                     (__bridge id)[UIColor clearColor].CGColor,
+                      (__bridge id)[UIColor colorWithWhite:0.0 alpha:0.5].CGColor
+                      ];
+    
+    [self.view.layer addSublayer:layer];
+    [self.view bringSubviewToFront:self.titleLabel];
+    self.textBackgroundLayer = layer;
+}
+
 - (void)setupGestureRecognizers
 {
     UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
@@ -45,6 +63,7 @@
     [super viewDidLoad];
     
     [self setupImageClippingMask];
+    [self setupTextBackgroundLayer];
     [self setupGestureRecognizers];
 }
 
@@ -57,7 +76,16 @@
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
+    
+    CGRect titleFrame = self.titleLabel.frame;
+    const CGFloat dh = 10;
+    
     self.pagerContainerView.layer.mask.frame = self.pagerContainerView.bounds;
+    
+    titleFrame.origin.y -= dh;
+    titleFrame.size.height += dh;
+
+    self.textBackgroundLayer.frame = titleFrame;
 }
 
 - (void)setTitle:(NSString *)title
