@@ -275,6 +275,16 @@
 			<key>content_wireframes</key>
 			<array>
 				<dict>
+					<key>wireframe</key>
+					<dict>
+						<key>class</key>
+						<string>CPSVideoListResourceWireframe</string>
+						<key>arguments</key>
+						<dict>
+							<key>additionalResourceListViewControllerIdentifier</key>
+							<string>VideoListResourceGridView</string>
+						</dict>
+					</dict>
 					<key>interactor</key>
 					<dict>
 						<key>class</key>

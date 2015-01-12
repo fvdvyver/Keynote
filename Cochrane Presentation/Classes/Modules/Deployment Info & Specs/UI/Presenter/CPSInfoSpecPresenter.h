@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 Mushroom Cloud. All rights reserved.
 //
 
-#import "CPSVideoListPresenter.h"
+#import "CPSVideoListResourcePresenter.h"
 
 #import "CPSInfoSpecInteractorIO.h"
 #import "CPSInfoSpecViewInterface.h"
 
-@interface CPSInfoSpecPresenter : CPSVideoListPresenter <CPSInfoSpecInteractorOutput>
+@interface CPSInfoSpecPresenter : CPSVideoListResourcePresenter <CPSInfoSpecInteractorOutput>
 
 @property (nonatomic, weak) id<CPSInfoSpecInteractorInput> interactor;
 @property (nonatomic, weak) id <CPSInfoSpecView> userInterface;

@@ -21,6 +21,7 @@
             <string>Planer</string>
             <string>Planer</string>
             <string>Planer</string>
+            <string>Planer</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -434,7 +435,7 @@
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txg-04-WRs" userLabel="Content View">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="main_interface_background" translatesAutoresizingMaskIntoConstraints="NO" id="kAe-xg-i8q">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="main_interface_background" translatesAutoresizingMaskIntoConstraints="NO" id="kAe-xg-i8q">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                     </imageView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Fuk-X4-7WV" customClass="MCMaskedTableView">
@@ -516,22 +517,39 @@
                                         <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xb5-Id-33K">
+                                        <rect key="frame" x="932.5" y="101" width="41" height="90"/>
+                                        <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="69"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="additionalResourceButtonTapped:" destination="0AW-jT-bW1" eventType="touchUpInside" id="mig-Kt-Pwe"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="oiO-co-ox5" firstAttribute="top" secondItem="txg-04-WRs" secondAttribute="top" constant="238" id="4GH-Gf-nC1"/>
                                     <constraint firstAttribute="trailing" secondItem="WSd-tj-tVE" secondAttribute="trailing" constant="326" id="9Gh-ag-HiL"/>
+                                    <constraint firstItem="kAe-xg-i8q" firstAttribute="top" secondItem="txg-04-WRs" secondAttribute="top" id="AxK-cF-MZs"/>
                                     <constraint firstItem="8mi-Ii-Nv6" firstAttribute="top" secondItem="txg-04-WRs" secondAttribute="top" constant="105" id="DWE-yi-o66"/>
+                                    <constraint firstItem="xb5-Id-33K" firstAttribute="centerX" secondItem="txg-04-WRs" secondAttribute="left" constant="953" id="Fb7-UG-7ag"/>
                                     <constraint firstAttribute="bottom" secondItem="Fuk-X4-7WV" secondAttribute="bottom" id="O4c-yo-pwb"/>
+                                    <constraint firstItem="kAe-xg-i8q" firstAttribute="leading" secondItem="txg-04-WRs" secondAttribute="leading" id="OSh-Xi-DMC"/>
                                     <constraint firstItem="KU3-L4-avT" firstAttribute="centerX" secondItem="oiO-co-ox5" secondAttribute="centerX" id="Ps3-ly-mob"/>
                                     <constraint firstItem="oiO-co-ox5" firstAttribute="top" secondItem="txg-04-WRs" secondAttribute="top" constant="231" id="RAd-Lh-4Zc"/>
                                     <constraint firstItem="LTX-jC-7F6" firstAttribute="centerX" secondItem="txg-04-WRs" secondAttribute="leading" constant="165" id="RR2-pk-nby"/>
+                                    <constraint firstItem="xb5-Id-33K" firstAttribute="centerY" secondItem="kAe-xg-i8q" secondAttribute="top" constant="150" id="T2v-Jf-Gbb"/>
                                     <constraint firstAttribute="trailing" secondItem="9Dc-NS-CQe" secondAttribute="trailing" constant="40" id="UPW-aT-pcG"/>
+                                    <constraint firstItem="xb5-Id-33K" firstAttribute="centerY" secondItem="txg-04-WRs" secondAttribute="top" constant="146" id="URr-uJ-k8j"/>
                                     <constraint firstItem="WSd-tj-tVE" firstAttribute="top" secondItem="9Dc-NS-CQe" secondAttribute="bottom" constant="90" id="fN3-zU-Pn2"/>
                                     <constraint firstItem="LTX-jC-7F6" firstAttribute="centerY" secondItem="txg-04-WRs" secondAttribute="top" constant="192" id="hJ0-Yk-qdI"/>
                                     <constraint firstItem="oiO-co-ox5" firstAttribute="top" secondItem="txg-04-WRs" secondAttribute="top" constant="238" id="iQp-Ph-gzc"/>
                                     <constraint firstItem="oiO-co-ox5" firstAttribute="leading" secondItem="Fuk-X4-7WV" secondAttribute="trailing" constant="215" id="igq-aI-Bhl"/>
                                     <constraint firstItem="oiO-co-ox5" firstAttribute="leading" secondItem="txg-04-WRs" secondAttribute="leading" constant="238" id="jzw-Kk-L1V"/>
+                                    <constraint firstItem="xb5-Id-33K" firstAttribute="centerX" secondItem="kAe-xg-i8q" secondAttribute="left" constant="952" id="m0F-gY-22q"/>
                                     <constraint firstItem="oiO-co-ox5" firstAttribute="leading" secondItem="txg-04-WRs" secondAttribute="leading" constant="437" id="mFf-vp-Ttn"/>
                                     <constraint firstItem="8mi-Ii-Nv6" firstAttribute="leading" secondItem="txg-04-WRs" secondAttribute="leading" constant="710" id="pIT-Th-0ZE"/>
                                     <constraint firstItem="9Dc-NS-CQe" firstAttribute="top" secondItem="txg-04-WRs" secondAttribute="top" constant="28" id="rdv-Ka-Dfn"/>
@@ -546,6 +564,8 @@
                                         <exclude reference="igq-aI-Bhl"/>
                                         <exclude reference="mFf-vp-Ttn"/>
                                         <exclude reference="fN3-zU-Pn2"/>
+                                        <exclude reference="T2v-Jf-Gbb"/>
+                                        <exclude reference="m0F-gY-22q"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -565,6 +585,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="additionalResourceButton" destination="xb5-Id-33K" id="ZPl-ok-Jao"/>
                         <outlet property="backgroundVideoContainerView" destination="PJS-Q2-Wes" id="Yqk-QF-UCh"/>
                         <outlet property="contentVideoContainerView" destination="oiO-co-ox5" id="MH7-nf-g2V"/>
                         <outlet property="contentView" destination="txg-04-WRs" id="Oca-zr-2Sy"/>
@@ -654,7 +675,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7A-Gm-ReG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1631" y="3409"/>
+            <point key="canvasLocation" x="1631" y="4411"/>
         </scene>
         <!--Product Detail View Controller-->
         <scene sceneID="EaE-7h-4Zg">
@@ -700,6 +721,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQd-IB-GF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2895" y="1425"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NDg-q8-JEk">
+            <objects>
+                <viewController storyboardIdentifier="VideoListResourceGridView" id="Ici-wW-FsX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q8q-od-BQD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xu9-at-2GE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NVU-LF-KeW">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.71495451720000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Bc-9H-ZnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2895" y="2423"/>
         </scene>
         <!--Clear Vu Video List View Controller-->
         <scene sceneID="92e-e7-yFz">
@@ -805,7 +846,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNk-3g-ak8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2895" y="2423"/>
+            <point key="canvasLocation" x="1631" y="3423"/>
         </scene>
         <!--Access Page View Controller-->
         <scene sceneID="npe-bS-nwF">

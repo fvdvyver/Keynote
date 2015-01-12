@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-#import "CPSVideoListInteractor.h"
+#import "CPSVideoListResourceInteractor.h"
 #import "CPSInfoSpecInteractorIO.h"
 
-@interface CPSInfoSpecInteractor : CPSVideoListInteractor
+@interface CPSInfoSpecInteractor : CPSVideoListResourceInteractor
 
 @property (nonatomic, strong) id<CPSInfoSpecInteractorOutput> presenter;
 

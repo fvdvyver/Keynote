@@ -274,6 +274,10 @@
 		6DAB25B01A6191FA00125D91 /* clearvu_07.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB25A71A6191FA00125D91 /* clearvu_07.mp4 */; };
 		6DAB25B11A6191FA00125D91 /* clearvu_08.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB25A81A6191FA00125D91 /* clearvu_08.mp4 */; };
 		6DAB25B21A6191FA00125D91 /* clearvu_09.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB25A91A6191FA00125D91 /* clearvu_09.mp4 */; };
+		6DAFFF131A63BC9200A25F48 /* CPSVideoListResourceInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAFFF121A63BC9200A25F48 /* CPSVideoListResourceInteractor.m */; };
+		6DAFFF1A1A63D33300A25F48 /* CPSVideoListEmbeddedContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAFFF191A63D33300A25F48 /* CPSVideoListEmbeddedContentViewController.m */; };
+		6DAFFF1D1A63D9F200A25F48 /* CPSVideoListResourcePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAFFF1C1A63D9F200A25F48 /* CPSVideoListResourcePresenter.m */; };
+		6DAFFF211A63FF0900A25F48 /* CPSVideoListResourceWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAFFF201A63FF0900A25F48 /* CPSVideoListResourceWireframe.m */; };
 		6DB22E0F1A35A8A700C58A1F /* info_spec_security_00.mvid in Resources */ = {isa = PBXBuildFile; fileRef = 6DB22E091A35A8A700C58A1F /* info_spec_security_00.mvid */; };
 		6DB22E101A35A8A700C58A1F /* info_spec_security_01.mvid in Resources */ = {isa = PBXBuildFile; fileRef = 6DB22E0A1A35A8A700C58A1F /* info_spec_security_01.mvid */; };
 		6DB22E111A35A8A700C58A1F /* info_spec_security_02.mvid in Resources */ = {isa = PBXBuildFile; fileRef = 6DB22E0B1A35A8A700C58A1F /* info_spec_security_02.mvid */; };
@@ -764,6 +768,16 @@
 		6DAB25A71A6191FA00125D91 /* clearvu_07.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = clearvu_07.mp4; sourceTree = "<group>"; };
 		6DAB25A81A6191FA00125D91 /* clearvu_08.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = clearvu_08.mp4; sourceTree = "<group>"; };
 		6DAB25A91A6191FA00125D91 /* clearvu_09.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = clearvu_09.mp4; sourceTree = "<group>"; };
+		6DAFFF101A63BC7A00A25F48 /* CPSVideoListResourceInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSVideoListResourceInteractorIO.h; sourceTree = "<group>"; };
+		6DAFFF111A63BC9200A25F48 /* CPSVideoListResourceInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSVideoListResourceInteractor.h; sourceTree = "<group>"; };
+		6DAFFF121A63BC9200A25F48 /* CPSVideoListResourceInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSVideoListResourceInteractor.m; sourceTree = "<group>"; };
+		6DAFFF141A63C2E600A25F48 /* CPSVideoListResourceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSVideoListResourceView.h; sourceTree = "<group>"; };
+		6DAFFF181A63D33300A25F48 /* CPSVideoListEmbeddedContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSVideoListEmbeddedContentViewController.h; sourceTree = "<group>"; };
+		6DAFFF191A63D33300A25F48 /* CPSVideoListEmbeddedContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSVideoListEmbeddedContentViewController.m; sourceTree = "<group>"; };
+		6DAFFF1B1A63D9F200A25F48 /* CPSVideoListResourcePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSVideoListResourcePresenter.h; sourceTree = "<group>"; };
+		6DAFFF1C1A63D9F200A25F48 /* CPSVideoListResourcePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSVideoListResourcePresenter.m; sourceTree = "<group>"; };
+		6DAFFF1F1A63FF0900A25F48 /* CPSVideoListResourceWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSVideoListResourceWireframe.h; sourceTree = "<group>"; };
+		6DAFFF201A63FF0900A25F48 /* CPSVideoListResourceWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSVideoListResourceWireframe.m; sourceTree = "<group>"; };
 		6DB22E091A35A8A700C58A1F /* info_spec_security_00.mvid */ = {isa = PBXFileReference; lastKnownFileType = file; path = info_spec_security_00.mvid; sourceTree = "<group>"; };
 		6DB22E0A1A35A8A700C58A1F /* info_spec_security_01.mvid */ = {isa = PBXFileReference; lastKnownFileType = file; path = info_spec_security_01.mvid; sourceTree = "<group>"; };
 		6DB22E0B1A35A8A700C58A1F /* info_spec_security_02.mvid */ = {isa = PBXFileReference; lastKnownFileType = file; path = info_spec_security_02.mvid; sourceTree = "<group>"; };
@@ -2280,6 +2294,64 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6DAFFF0B1A63BA9D00A25F48 /* Video List With Additional Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DAFFF0C1A63BAE300A25F48 /* Logic */,
+				6DAFFF0D1A63BAE300A25F48 /* UI */,
+				6DAFFF1E1A63FEDD00A25F48 /* Wireframe */,
+			);
+			name = "Video List With Additional Resources";
+			path = "Video List With Additonal Resources";
+			sourceTree = "<group>";
+		};
+		6DAFFF0C1A63BAE300A25F48 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6DAFFF101A63BC7A00A25F48 /* CPSVideoListResourceInteractorIO.h */,
+				6DAFFF111A63BC9200A25F48 /* CPSVideoListResourceInteractor.h */,
+				6DAFFF121A63BC9200A25F48 /* CPSVideoListResourceInteractor.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		6DAFFF0D1A63BAE300A25F48 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6DAFFF0E1A63BAE300A25F48 /* Presenter */,
+				6DAFFF0F1A63BAE300A25F48 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6DAFFF0E1A63BAE300A25F48 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6DAFFF1B1A63D9F200A25F48 /* CPSVideoListResourcePresenter.h */,
+				6DAFFF1C1A63D9F200A25F48 /* CPSVideoListResourcePresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6DAFFF0F1A63BAE300A25F48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DAFFF141A63C2E600A25F48 /* CPSVideoListResourceView.h */,
+				6DAFFF181A63D33300A25F48 /* CPSVideoListEmbeddedContentViewController.h */,
+				6DAFFF191A63D33300A25F48 /* CPSVideoListEmbeddedContentViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DAFFF1E1A63FEDD00A25F48 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				6DAFFF1F1A63FF0900A25F48 /* CPSVideoListResourceWireframe.h */,
+				6DAFFF201A63FF0900A25F48 /* CPSVideoListResourceWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
 		6DB22E081A35A82A00C58A1F /* Security Level Videos */ = {
 			isa = PBXGroup;
 			children = (
@@ -2711,6 +2783,7 @@
 				6DB899581A3090E50046EBC9 /* Loading Page */,
 				6DF03C491A1F23E4003A0DF1 /* Single Video Playback */,
 				6D1871B71A2734D000F886B9 /* Video List Playback */,
+				6DAFFF0B1A63BA9D00A25F48 /* Video List With Additional Resources */,
 				6D65A16B1A25DD4A006519C2 /* View */,
 			);
 			path = Common;
@@ -3284,6 +3357,7 @@
 				6D10E1011A10AFC5006DD677 /* CPSRootWireframe.m in Sources */,
 				6D8DEA161A13C3D9007C92F8 /* CPSMenuTableViewController.m in Sources */,
 				6DE058401A2CA58300EFA18C /* 7zStream.c in Sources */,
+				6DAFFF1D1A63D9F200A25F48 /* CPSVideoListResourcePresenter.m in Sources */,
 				6DE057F91A2CA55600EFA18C /* AV7zApng2MvidResourceLoader.m in Sources */,
 				6D54DA3C1A2C82280070A1D4 /* CPSProductItemCollectionCellPresenter.m in Sources */,
 				6D1872031A277D0C00F886B9 /* CPSKeyIndustriesGridViewController.m in Sources */,
@@ -3334,11 +3408,13 @@
 				6DE058021A2CA55600EFA18C /* AVAssetFrameDecoder.m in Sources */,
 				6D1871F51A27737100F886B9 /* CPSKeyIndustriesWireframe.m in Sources */,
 				6DEA20EB1A163A16001AAC42 /* CPSAppearanceConfig.m in Sources */,
+				6DAFFF131A63BC9200A25F48 /* CPSVideoListResourceInteractor.m in Sources */,
 				6DE058051A2CA55600EFA18C /* AVAssetWriterConvertFromMaxvid.m in Sources */,
 				6D54325A1A1E0F9500746CB7 /* CPSViewControllerProviderUtils.m in Sources */,
 				6D10E11D1A10C8D8006DD677 /* CPSViewControllerMenuItem.m in Sources */,
 				6D2115621A231CDE00F2620B /* CPSKeyValueResourceLoader.m in Sources */,
 				6DE0580C1A2CA55600EFA18C /* AVMvidFrameDecoder.m in Sources */,
+				6DAFFF211A63FF0900A25F48 /* CPSVideoListResourceWireframe.m in Sources */,
 				6D1871D41A273FD700F886B9 /* CPSVideoListViewController.m in Sources */,
 				6D2FC69A1A31DFEF005C7674 /* CALayer+CPSImplicitActionRemoval.m in Sources */,
 				6D54DA3F1A2C825B0070A1D4 /* CPSProductItemPresenter.m in Sources */,
@@ -3371,6 +3447,7 @@
 				6D2115681A2325D200F2620B /* CPSCostOfRiskInteractor.m in Sources */,
 				6DE057FD1A2CA55600EFA18C /* AVAnimatorOpenGLView.m in Sources */,
 				6DE058011A2CA55600EFA18C /* AVAsset2MvidResourceLoader.m in Sources */,
+				6DAFFF1A1A63D33300A25F48 /* CPSVideoListEmbeddedContentViewController.m in Sources */,
 				6DA9E4961A30BADF00DA4E54 /* CPSProductSpriteLoadOperation.m in Sources */,
 				6DE057F81A2CA55600EFA18C /* ApngConvertMaxvid.m in Sources */,
 				6DE058501A2CA5A900EFA18C /* 7zMain.c in Sources */,

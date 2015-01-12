@@ -68,6 +68,8 @@
 
 - (void)playContentVideoAtURL:(NSURL *)url
 {
+    [self removeSubviewsFromContainerView:self.contentVideoContainerView];
+    
     MPMoviePlayerController *controller = [self configureNewMovieControllerWithURL:url
                                                                        inContainer:self.contentVideoContainerView
                                                                  isBackgroundVideo:NO];
@@ -90,7 +92,7 @@
     }
     
     self.contentView.alpha = 0.0;
-    [self removeSubviewsFromBackgroundVideoContainerView];
+    [self removeSubviewsFromContainerView:self.backgroundVideoContainerView];
     
     MPMoviePlayerController *videoController = [self configureNewMovieControllerWithURL:url
                                                                             inContainer:self.backgroundVideoContainerView
@@ -135,7 +137,7 @@
                                                   object:self.backgroundVideoController];
     
     UIView *background = [self.backgroundVideoContainerView snapshotViewAfterScreenUpdates:NO];
-    [self removeSubviewsFromBackgroundVideoContainerView];
+    [self removeSubviewsFromContainerView:self.backgroundVideoContainerView];
     
     [self.backgroundVideoContainerView addSubview:background];
     
@@ -156,12 +158,22 @@
 
 - (void)contentViewDidAnimateIn
 {
-    [self removeSubviewsFromBackgroundVideoContainerView];
+    [self removeSubviewsFromContainerView:self.backgroundVideoContainerView];
 }
 
-- (void)removeSubviewsFromBackgroundVideoContainerView
+- (void)removeSubviewsFromContainerView:(UIView *)containerView
 {
-    for (UIView *subview in self.backgroundVideoContainerView.subviews)
+    if (containerView == self.contentVideoContainerView)
+    {
+        [self.contentVideoController stop];
+    }
+    else if (containerView == self.backgroundVideoContainerView)
+    {
+        [self.backgroundVideoController stop];
+    }
+    
+    NSArray *subviews = containerView.subviews.copy;
+    for (UIView *subview in subviews)
     {
         [subview removeFromSuperview];
     }

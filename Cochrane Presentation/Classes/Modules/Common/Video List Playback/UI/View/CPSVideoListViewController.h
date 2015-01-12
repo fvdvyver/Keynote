@@ -31,4 +31,6 @@
 - (void)backgroundVideoPlaybackDidFinish;
 - (void)contentViewDidAnimateIn;
 
+- (void)removeSubviewsFromContainerView:(UIView *)containerView;
+
 @end

@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 Mushroom Cloud. All rights reserved.
 //
 
-#import "CPSVideoListViewController.h"
+#import "CPSVideoListEmbeddedContentViewController.h"
 
 #import "CPSInfoSpecViewInterface.h"
 
 @class CPSAnimatedTextView;
 @class AVAnimatorView;
 
-@interface CPSInfoSpecViewController : CPSVideoListViewController <CPSInfoSpecView>
+@interface CPSInfoSpecViewController : CPSVideoListEmbeddedContentViewController <CPSInfoSpecView>
 
 @property (nonatomic, weak) IBOutlet CPSAnimatedTextView *titleTextView;
 @property (nonatomic, weak) IBOutlet CPSAnimatedTextView *infoTextView;

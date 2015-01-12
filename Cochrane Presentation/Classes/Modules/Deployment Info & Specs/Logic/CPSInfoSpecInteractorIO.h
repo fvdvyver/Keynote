@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Mushroom Cloud. All rights reserved.
 //
 
-#import "CPSVideoListInteractorIO.h"
+#import "CPSVideoListResourceInteractorIO.h"
 
-@protocol CPSInfoSpecInteractorInput <CPSVideoListInteractorInput>
+@protocol CPSInfoSpecInteractorInput <CPSVideoListResourceInteractorInput>
 
 - (void)requestData;
 
 @end
 
-@protocol CPSInfoSpecInteractorOutput <CPSVideoListInteractorOutput>
+@protocol CPSInfoSpecInteractorOutput <CPSVideoListResourceInteractorOutput>
 
 - (void)setVideoTitles:(NSArray *)videoTitles;
 

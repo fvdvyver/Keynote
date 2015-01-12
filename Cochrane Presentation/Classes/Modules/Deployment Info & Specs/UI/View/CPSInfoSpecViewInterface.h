@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Mushroom Cloud. All rights reserved.
 //
 
-#import "CPSVideoListView.h"
+#import "CPSVideoListResourceView.h"
 
-@protocol CPSInfoSpecView <CPSVideoListView>
+@protocol CPSInfoSpecView <CPSVideoListResourceView>
 
 - (void)showTitleText:(NSString *)titleText;
 - (void)showInfoText:(NSString *)infoText;
