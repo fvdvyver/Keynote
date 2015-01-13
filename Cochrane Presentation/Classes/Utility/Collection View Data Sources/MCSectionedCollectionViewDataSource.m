@@ -13,7 +13,10 @@
 @property (nonatomic, weak) id<MCCollectionViewSectionDataProvider> dataProvider;
 @property (nonatomic, weak) id<MCCollectionViewCellPresenter>       presenter;
 
+@property (nonatomic, weak) id<MCCollectionSupplementaryViewPresenter> supplementaryViewPresenter;
+
 @property (nonatomic, strong) NSString *cellIdentifier;
+@property (nonatomic, strong) NSString *supplementaryViewIdentifier;
 
 @end
 
@@ -30,6 +33,13 @@
         _cellIdentifier = cellReuseIdentifier;
     }
     return self;
+}
+
+- (void)setSupplementaryViewPresenter:(id<MCCollectionSupplementaryViewPresenter>)presenter
+                           identifier:(NSString *)cellReuseIdentifier
+{
+    self.supplementaryViewPresenter = presenter;
+    self.supplementaryViewIdentifier = cellReuseIdentifier;
 }
 
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath
@@ -58,6 +68,23 @@
     id item = [self itemAtIndexPath:indexPath];
     [self.presenter configureCell:cell forItem:item atIndexPath:indexPath inCollectionView:collectionView];
     return cell;
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
+           viewForSupplementaryElementOfKind:(NSString *)kind
+                                 atIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *identifier = self.supplementaryViewIdentifier;
+    UICollectionReusableView *view = [collectionView dequeueReusableSupplementaryViewOfKind:kind
+                                                                        withReuseIdentifier:identifier
+                                                                               forIndexPath:indexPath];
+    
+    id sectionData = [self.dataProvider sectionDataForIndexPath:indexPath];
+    [self.supplementaryViewPresenter configureSupplementaryView:view
+                                                       withData:sectionData
+                                                    atIndexPath:indexPath
+                                               inCollectionView:collectionView];
+    return view;
 }
 
 @end

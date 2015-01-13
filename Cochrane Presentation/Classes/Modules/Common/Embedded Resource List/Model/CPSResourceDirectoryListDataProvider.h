@@ -19,6 +19,7 @@
 
 + (instancetype)providerWithResourceDirectories:(NSArray *)resourceDirectories;
 
+- (NSString *)titleForSectionData:(NSString *)sectionData;
 - (CPSFileAssetItem *)itemAtIndexPath:(NSIndexPath *)indexPath;
 
 @end

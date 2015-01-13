@@ -15,9 +15,10 @@
 - (NSInteger)numberOfSections;
 - (NSInteger)numberOfItemsInSection:(NSInteger)sectionIdx;
 
-- (NSString *)titleForSection:(NSInteger)sectionIdx;
-
+- (id)sectionDataForSectionAtIndex:(NSInteger)sectionIdx;
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath;
+
+- (id)titleForSectionData:(id)sectionData;
 
 - (NSString *)assetPathForItem:(id)item outType:(CPSFileAssetType *)type;
 - (NSString *)titleForItem:(id)item;

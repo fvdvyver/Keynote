@@ -14,7 +14,7 @@
 
 #import "CPSResourceItemView.h"
 
-@interface CPSResourceDirectoryDataProviderAdapter : NSObject <MCCollectionViewSectionDataProvider, MCCollectionViewCellPresenter>
+@interface CPSResourceDirectoryDataProviderAdapter : NSObject <MCCollectionViewSectionDataProvider, MCCollectionViewCellPresenter, MCCollectionSupplementaryViewPresenter>
 
 + (instancetype)adapterWithResourceProvider:(CPSResourceDirectoryListDataProvider *)provider;
 
@@ -22,5 +22,10 @@
               forItem:(id)item
           atIndexPath:(NSIndexPath *)indexPath
      inCollectionView:(UICollectionView *)collectionView;
+
+- (void)configureSupplementaryView:(id<CPSResourceListHeaderView>)view
+                          withData:(id)sectionData
+                       atIndexPath:(NSIndexPath *)indexPath
+                  inCollectionView:(UICollectionView *)collectionView;
 
 @end

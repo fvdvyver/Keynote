@@ -13,7 +13,7 @@
 - (NSInteger)numberOfSections;
 - (NSInteger)numberOfItemsInSection:(NSInteger)sectionIdx;
 
-- (NSString *)titleForSection:(NSInteger)sectionIdx;
+- (id)sectionDataForIndexPath:(NSIndexPath *)indexPath;
 
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath;
 

@@ -11,7 +11,10 @@
 #import "MCSectionedCollectionViewDataSource.h"
 #import "CPSResourceDirectoryDataProviderAdapter.h"
 
+#import "CPSResourceListCollectionViewHeader.h"
+
 #define kCellIdentifier @"resource_cell"
+#define kHeaderIdentifier @"header"
 
 @interface CPSResourceListGridViewController ()
 
@@ -26,7 +29,14 @@
 {
     [super viewDidLoad];
     
-    [self.collectionView registerNib:[UINib nibWithNibName:@"CPSResourceItemCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:kCellIdentifier];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"CPSResourceItemCollectionViewCell" bundle:nil]
+          forCellWithReuseIdentifier:kCellIdentifier];
+    [self.collectionView registerClass:[CPSResourceListCollectionViewHeader class]
+            forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+                   withReuseIdentifier:kHeaderIdentifier];
+    
+    UICollectionViewFlowLayout *layout = (id)self.collectionView.collectionViewLayout;
+    layout.headerReferenceSize = CGSizeMake(0.0, 40.0);
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -48,6 +58,7 @@
     self.datasource = [[MCSectionedCollectionViewDataSource alloc] initWithDataProvider:self.dataAdapter
                                                                               presenter:self.dataAdapter
                                                                          cellIdentifier:kCellIdentifier];
+    [self.datasource setSupplementaryViewPresenter:self.dataAdapter identifier:kHeaderIdentifier];
     
     self.collectionView.dataSource = self.datasource;
 }

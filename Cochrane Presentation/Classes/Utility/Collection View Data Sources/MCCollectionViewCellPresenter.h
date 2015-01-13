@@ -14,3 +14,9 @@
 - (void)configureCell:(id)cell forItem:(id)item atIndexPath:(NSIndexPath *)indexPath inCollectionView:(UICollectionView *)collectionView;
 
 @end
+
+@protocol MCCollectionSupplementaryViewPresenter <NSObject>
+
+- (void)configureSupplementaryView:(id)view withData:(id)sectionData atIndexPath:(NSIndexPath *)indexPath inCollectionView:(UICollectionView *)collectionView;
+
+@end

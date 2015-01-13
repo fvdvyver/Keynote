@@ -758,7 +758,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="collectionViewInsetsString" value="{60, 60, 20, 0}"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="collectionViewInsetsString" value="{50, 50, 20, 0}"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="collectionView" destination="USn-ce-vAt" id="MWF-4q-3bb"/>

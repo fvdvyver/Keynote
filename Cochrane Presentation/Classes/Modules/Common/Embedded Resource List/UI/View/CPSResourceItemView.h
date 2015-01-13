@@ -17,3 +17,9 @@
 - (void)setAssetPath:(NSString *)assetPath type:(CPSFileAssetType)type;
 
 @end
+
+@protocol CPSResourceListHeaderView <NSObject>
+
+- (void)setTitle:(NSString *)title;
+
+@end

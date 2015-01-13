@@ -37,6 +37,7 @@
 		6D10EA901A658A0D00FEC074 /* CPSThumbnailGeneratorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA8F1A658A0D00FEC074 /* CPSThumbnailGeneratorOperation.m */; };
 		6D10EA931A658B3400FEC074 /* CPSImageThumbnailGenerationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA921A658B3400FEC074 /* CPSImageThumbnailGenerationOperation.m */; };
 		6D10EA961A658B6A00FEC074 /* CPSVideoThumbnailGenerationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA951A658B6A00FEC074 /* CPSVideoThumbnailGenerationOperation.m */; };
+		6D10EA991A65C40700FEC074 /* CPSResourceListCollectionViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA981A65C40700FEC074 /* CPSResourceListCollectionViewHeader.m */; };
 		6D179B521A39A74D0089899C /* Cochrane_Logo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D179B4F1A39A74D0089899C /* Cochrane_Logo.mp4 */; };
 		6D179B531A39A74D0089899C /* Cost_of_risk_intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D179B501A39A74D0089899C /* Cost_of_risk_intro.mp4 */; };
 		6D179B541A39A74D0089899C /* Partners.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D179B511A39A74D0089899C /* Partners.mp4 */; };
@@ -475,6 +476,8 @@
 		6D10EA921A658B3400FEC074 /* CPSImageThumbnailGenerationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSImageThumbnailGenerationOperation.m; sourceTree = "<group>"; };
 		6D10EA941A658B6A00FEC074 /* CPSVideoThumbnailGenerationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSVideoThumbnailGenerationOperation.h; sourceTree = "<group>"; };
 		6D10EA951A658B6A00FEC074 /* CPSVideoThumbnailGenerationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSVideoThumbnailGenerationOperation.m; sourceTree = "<group>"; };
+		6D10EA971A65C40700FEC074 /* CPSResourceListCollectionViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceListCollectionViewHeader.h; sourceTree = "<group>"; };
+		6D10EA981A65C40700FEC074 /* CPSResourceListCollectionViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSResourceListCollectionViewHeader.m; sourceTree = "<group>"; };
 		6D179B4F1A39A74D0089899C /* Cochrane_Logo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cochrane_Logo.mp4; sourceTree = "<group>"; };
 		6D179B501A39A74D0089899C /* Cost_of_risk_intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cost_of_risk_intro.mp4; sourceTree = "<group>"; };
 		6D179B511A39A74D0089899C /* Partners.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Partners.mp4; sourceTree = "<group>"; };
@@ -1170,6 +1173,8 @@
 				6D10EA6A1A654A8600FEC074 /* CPSResourceListGridViewController.m */,
 				6D10EA731A654FC800FEC074 /* CPSResourceDirectoryDataProviderAdapter.h */,
 				6D10EA741A654FC800FEC074 /* CPSResourceDirectoryDataProviderAdapter.m */,
+				6D10EA971A65C40700FEC074 /* CPSResourceListCollectionViewHeader.h */,
+				6D10EA981A65C40700FEC074 /* CPSResourceListCollectionViewHeader.m */,
 				6D10EA7E1A656B5300FEC074 /* CPSResourceItemCollectionViewCell.h */,
 				6D10EA7F1A656B5300FEC074 /* CPSResourceItemCollectionViewCell.m */,
 				6D10EA811A656C3F00FEC074 /* CPSResourceItemCollectionViewCell.xib */,
@@ -3536,6 +3541,7 @@
 				6DE057FC1A2CA55600EFA18C /* AVAnimatorMedia.m in Sources */,
 				6D1872081A2788B000F886B9 /* CPSKeyIndustriesItemDatasource.m in Sources */,
 				6D744B4E1A386C0300452746 /* CPSClearVuItemPresenter.m in Sources */,
+				6D10EA991A65C40700FEC074 /* CPSResourceListCollectionViewHeader.m in Sources */,
 				6DAB25761A603E4800125D91 /* CPSKeyIndustryAssetItem.m in Sources */,
 				6D10EA611A65314E00FEC074 /* CPSResourceListPresenter.m in Sources */,
 				6D2BD9A11A237C9C0035189C /* CPSCostOfRiskCell.m in Sources */,

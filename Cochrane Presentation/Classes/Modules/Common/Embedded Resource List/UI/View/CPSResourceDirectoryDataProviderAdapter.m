@@ -34,9 +34,9 @@
     return [self.provider numberOfItemsInSection:sectionIdx];
 }
 
-- (NSString *)titleForSection:(NSInteger)sectionIdx
+- (id)sectionDataForIndexPath:(NSIndexPath *)indexPath
 {
-    return [self.provider titleForSection:sectionIdx];
+    return [self.provider sectionDataForSectionAtIndex:indexPath.section];
 }
 
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath
@@ -54,6 +54,14 @@
     
     [cell setTitle:[self.provider titleForItem:item]];
     [cell setAssetPath:path type:type];
+}
+
+- (void)configureSupplementaryView:(id<CPSResourceListHeaderView>)view
+                          withData:(id)sectionData
+                       atIndexPath:(NSIndexPath *)indexPath
+                  inCollectionView:(UICollectionView *)collectionView
+{
+    [view setTitle:[self.provider titleForSectionData:sectionData]];
 }
 
 @end

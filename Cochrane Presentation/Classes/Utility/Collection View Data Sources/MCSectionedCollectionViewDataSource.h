@@ -21,6 +21,9 @@
                            presenter:(id<MCCollectionViewCellPresenter>)presenter
                       cellIdentifier:(NSString *)cellReuseIdentifier;
 
+- (void)setSupplementaryViewPresenter:(id<MCCollectionSupplementaryViewPresenter>)presenter
+                           identifier:(NSString *)cellReuseIdentifier;
+
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath;
 
 @end

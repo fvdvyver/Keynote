@@ -38,7 +38,7 @@
     return directory.contentFiles.count;
 }
 
-- (NSString *)titleForSection:(NSInteger)sectionIdx
+- (NSString *)sectionDataForSectionAtIndex:(NSInteger)sectionIdx
 {
     CPSResourceDirectory *directory = self.resourceDirectories[sectionIdx];
     return [directory.directoryName uppercaseString];
@@ -48,6 +48,11 @@
 {
     CPSResourceDirectory *directory = self.resourceDirectories[indexPath.section];
     return directory.contentFiles[indexPath.row];
+}
+
+- (NSString *)titleForSectionData:(NSString *)sectionData
+{
+    return sectionData;
 }
 
 - (NSString *)assetPathForItem:(CPSFileAssetItem *)item outType:(CPSFileAssetType *)type;
