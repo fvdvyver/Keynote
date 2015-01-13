@@ -9,9 +9,11 @@
 #import "CPSBaseWireframe.h"
 #import "CPSVideoListResourcePresenter.h"
 
+#import "CPSResourceListWireframeInterface.h"
+
 @class CPSAdditionalResourceAssetItem;
 
-@interface CPSVideoListResourceWireframe : CPSBaseWireframe
+@interface CPSVideoListResourceWireframe : CPSBaseWireframe <CPSResourceListWireframeInterface>
 
 @property (nonatomic, strong) NSString * additionalResourceListViewControllerIdentifier;
 

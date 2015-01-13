@@ -26,6 +26,12 @@
 		6D10EA491A65168D00FEC074 /* CPSAdditionalResourceAssetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA481A65168D00FEC074 /* CPSAdditionalResourceAssetItem.m */; };
 		6D10EA4C1A651CC400FEC074 /* CPSFileAssetItem+MIME.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA4B1A651CC400FEC074 /* CPSFileAssetItem+MIME.m */; };
 		6D10EA4E1A6522A400FEC074 /* Module Resource in Resources */ = {isa = PBXBuildFile; fileRef = 6D10EA4D1A6522A400FEC074 /* Module Resource */; };
+		6D10EA611A65314E00FEC074 /* CPSResourceListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA601A65314E00FEC074 /* CPSResourceListPresenter.m */; };
+		6D10EA681A65467D00FEC074 /* CPSResourceDirectoryListDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA671A65467D00FEC074 /* CPSResourceDirectoryListDataProvider.m */; };
+		6D10EA6B1A654A8600FEC074 /* CPSResourceListGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA6A1A654A8600FEC074 /* CPSResourceListGridViewController.m */; };
+		6D10EA711A654D1E00FEC074 /* MCSectionedCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA701A654D1E00FEC074 /* MCSectionedCollectionViewDataSource.m */; };
+		6D10EA751A654FC800FEC074 /* CPSResourceDirectoryDataProviderAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA741A654FC800FEC074 /* CPSResourceDirectoryDataProviderAdapter.m */; };
+		6D10EA7C1A65556E00FEC074 /* CPSResourceListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA7B1A65556E00FEC074 /* CPSResourceListInteractor.m */; };
 		6D179B521A39A74D0089899C /* Cochrane_Logo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D179B4F1A39A74D0089899C /* Cochrane_Logo.mp4 */; };
 		6D179B531A39A74D0089899C /* Cost_of_risk_intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D179B501A39A74D0089899C /* Cost_of_risk_intro.mp4 */; };
 		6D179B541A39A74D0089899C /* Partners.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D179B511A39A74D0089899C /* Partners.mp4 */; };
@@ -436,6 +442,24 @@
 		6D10EA4A1A651CC400FEC074 /* CPSFileAssetItem+MIME.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPSFileAssetItem+MIME.h"; sourceTree = "<group>"; };
 		6D10EA4B1A651CC400FEC074 /* CPSFileAssetItem+MIME.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CPSFileAssetItem+MIME.m"; sourceTree = "<group>"; };
 		6D10EA4D1A6522A400FEC074 /* Module Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Module Resource"; sourceTree = "<group>"; };
+		6D10EA5B1A652B3F00FEC074 /* CPSResourceListInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceListInteractorIO.h; sourceTree = "<group>"; };
+		6D10EA5F1A65314E00FEC074 /* CPSResourceListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceListPresenter.h; sourceTree = "<group>"; };
+		6D10EA601A65314E00FEC074 /* CPSResourceListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSResourceListPresenter.m; sourceTree = "<group>"; };
+		6D10EA631A65327800FEC074 /* CPSResourceListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceListView.h; sourceTree = "<group>"; };
+		6D10EA651A65458400FEC074 /* CPSResourceListDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceListDataProvider.h; sourceTree = "<group>"; };
+		6D10EA661A65467D00FEC074 /* CPSResourceDirectoryListDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceDirectoryListDataProvider.h; sourceTree = "<group>"; };
+		6D10EA671A65467D00FEC074 /* CPSResourceDirectoryListDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSResourceDirectoryListDataProvider.m; sourceTree = "<group>"; };
+		6D10EA691A654A8600FEC074 /* CPSResourceListGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceListGridViewController.h; sourceTree = "<group>"; };
+		6D10EA6A1A654A8600FEC074 /* CPSResourceListGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSResourceListGridViewController.m; sourceTree = "<group>"; };
+		6D10EA6F1A654D1E00FEC074 /* MCSectionedCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSectionedCollectionViewDataSource.h; sourceTree = "<group>"; };
+		6D10EA701A654D1E00FEC074 /* MCSectionedCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSectionedCollectionViewDataSource.m; sourceTree = "<group>"; };
+		6D10EA721A654D4F00FEC074 /* MCCollectionViewSectionDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCollectionViewSectionDataProvider.h; sourceTree = "<group>"; };
+		6D10EA731A654FC800FEC074 /* CPSResourceDirectoryDataProviderAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceDirectoryDataProviderAdapter.h; sourceTree = "<group>"; };
+		6D10EA741A654FC800FEC074 /* CPSResourceDirectoryDataProviderAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSResourceDirectoryDataProviderAdapter.m; sourceTree = "<group>"; };
+		6D10EA761A65520900FEC074 /* CPSResourceItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceItemView.h; sourceTree = "<group>"; };
+		6D10EA7A1A65556E00FEC074 /* CPSResourceListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceListInteractor.h; sourceTree = "<group>"; };
+		6D10EA7B1A65556E00FEC074 /* CPSResourceListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSResourceListInteractor.m; sourceTree = "<group>"; };
+		6D10EA7D1A6555FB00FEC074 /* CPSResourceListWireframeInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceListWireframeInterface.h; sourceTree = "<group>"; };
 		6D179B4F1A39A74D0089899C /* Cochrane_Logo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cochrane_Logo.mp4; sourceTree = "<group>"; };
 		6D179B501A39A74D0089899C /* Cost_of_risk_intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cost_of_risk_intro.mp4; sourceTree = "<group>"; };
 		6D179B511A39A74D0089899C /* Partners.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Partners.mp4; sourceTree = "<group>"; };
@@ -1083,6 +1107,76 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		6D10EA511A6528D000FEC074 /* Embedded Resource List */ = {
+			isa = PBXGroup;
+			children = (
+				6D10EA531A652AB700FEC074 /* Logic */,
+				6D10EA641A65455200FEC074 /* Model */,
+				6D10EA541A652AB700FEC074 /* UI */,
+				6D10EA5D1A652E2300FEC074 /* Wireframe */,
+			);
+			path = "Embedded Resource List";
+			sourceTree = "<group>";
+		};
+		6D10EA531A652AB700FEC074 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6D10EA5B1A652B3F00FEC074 /* CPSResourceListInteractorIO.h */,
+				6D10EA7A1A65556E00FEC074 /* CPSResourceListInteractor.h */,
+				6D10EA7B1A65556E00FEC074 /* CPSResourceListInteractor.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		6D10EA541A652AB700FEC074 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6D10EA551A652AB700FEC074 /* Presenter */,
+				6D10EA561A652AB700FEC074 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6D10EA551A652AB700FEC074 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6D10EA5F1A65314E00FEC074 /* CPSResourceListPresenter.h */,
+				6D10EA601A65314E00FEC074 /* CPSResourceListPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6D10EA561A652AB700FEC074 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D10EA631A65327800FEC074 /* CPSResourceListView.h */,
+				6D10EA761A65520900FEC074 /* CPSResourceItemView.h */,
+				6D10EA691A654A8600FEC074 /* CPSResourceListGridViewController.h */,
+				6D10EA6A1A654A8600FEC074 /* CPSResourceListGridViewController.m */,
+				6D10EA731A654FC800FEC074 /* CPSResourceDirectoryDataProviderAdapter.h */,
+				6D10EA741A654FC800FEC074 /* CPSResourceDirectoryDataProviderAdapter.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D10EA5D1A652E2300FEC074 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				6D10EA7D1A6555FB00FEC074 /* CPSResourceListWireframeInterface.h */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		6D10EA641A65455200FEC074 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D10EA651A65458400FEC074 /* CPSResourceListDataProvider.h */,
+				6D10EA661A65467D00FEC074 /* CPSResourceDirectoryListDataProvider.h */,
+				6D10EA671A65467D00FEC074 /* CPSResourceDirectoryListDataProvider.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6D1871B71A2734D000F886B9 /* Video List Playback */ = {
 			isa = PBXGroup;
 			children = (
@@ -1260,10 +1354,13 @@
 			isa = PBXGroup;
 			children = (
 				6D1872001A277A3300F886B9 /* MCCollectionViewCellPresenter.h */,
+				6D10EA721A654D4F00FEC074 /* MCCollectionViewSectionDataProvider.h */,
 				6D1871FD1A2779EE00F886B9 /* MCArrayCollectionViewDatasource.h */,
 				6D1871FE1A2779EE00F886B9 /* MCArrayCollectionViewDatasource.m */,
 				6D54D9FF1A28BC730070A1D4 /* MCCollectionViewDelegate.h */,
 				6D54DA001A28BC730070A1D4 /* MCCollectionViewDelegate.m */,
+				6D10EA6F1A654D1E00FEC074 /* MCSectionedCollectionViewDataSource.h */,
+				6D10EA701A654D1E00FEC074 /* MCSectionedCollectionViewDataSource.m */,
 			);
 			path = "Collection View Data Sources";
 			sourceTree = "<group>";
@@ -2829,6 +2926,7 @@
 		6DF03C481A1F239C003A0DF1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6D10EA511A6528D000FEC074 /* Embedded Resource List */,
 				6DB899581A3090E50046EBC9 /* Loading Page */,
 				6DF03C491A1F23E4003A0DF1 /* Single Video Playback */,
 				6D1871B71A2734D000F886B9 /* Video List Playback */,
@@ -3375,12 +3473,14 @@
 				6D8A14B81A2F054D006A4BEC /* LSImageMap.m in Sources */,
 				6DC8E65B1A1247A200197DB3 /* CPSCachedViewControllerProvider.m in Sources */,
 				6D2FC68E1A31D584005C7674 /* CPSInfoSpecInteractor.m in Sources */,
+				6D10EA681A65467D00FEC074 /* CPSResourceDirectoryListDataProvider.m in Sources */,
 				6DAB259D1A6173C700125D91 /* UIViewController+MCPagerIndexAdditions.m in Sources */,
 				6D5432421A1CE02B00746CB7 /* CPSAccessPagePresenter.m in Sources */,
 				6D65A16E1A25DE36006519C2 /* CPSAnimatedTextView.m in Sources */,
 				6DE058031A2CA55600EFA18C /* AVAssetJoinAlphaResourceLoader.m in Sources */,
 				6D5432391A1CD5FE00746CB7 /* CPSBaseWireframe.m in Sources */,
 				6D1871FF1A2779EE00F886B9 /* MCArrayCollectionViewDatasource.m in Sources */,
+				6D10EA6B1A654A8600FEC074 /* CPSResourceListGridViewController.m in Sources */,
 				6DE0580D1A2CA55600EFA18C /* AVOfflineComposition.m in Sources */,
 				6DEA20D51A1603DD001AAC42 /* CPSPlaceholderWireframe.m in Sources */,
 				6D1871FA1A2777FD00F886B9 /* CPSKeyIndustriesGridPresenter.m in Sources */,
@@ -3402,10 +3502,12 @@
 				6D1872081A2788B000F886B9 /* CPSKeyIndustriesItemDatasource.m in Sources */,
 				6D744B4E1A386C0300452746 /* CPSClearVuItemPresenter.m in Sources */,
 				6DAB25761A603E4800125D91 /* CPSKeyIndustryAssetItem.m in Sources */,
+				6D10EA611A65314E00FEC074 /* CPSResourceListPresenter.m in Sources */,
 				6D2BD9A11A237C9C0035189C /* CPSCostOfRiskCell.m in Sources */,
 				6D744B4B1A38535000452746 /* CPSClearVuListPresenter.m in Sources */,
 				6D54DA111A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.m in Sources */,
 				6DEA20CF1A15FF3B001AAC42 /* CPSRevealController.m in Sources */,
+				6D10EA711A654D1E00FEC074 /* MCSectionedCollectionViewDataSource.m in Sources */,
 				6D10E1011A10AFC5006DD677 /* CPSRootWireframe.m in Sources */,
 				6D8DEA161A13C3D9007C92F8 /* CPSMenuTableViewController.m in Sources */,
 				6DE058401A2CA58300EFA18C /* 7zStream.c in Sources */,
@@ -3422,6 +3524,7 @@
 				6DE0584A1A2CA58300EFA18C /* Ppmd8Dec.c in Sources */,
 				6DE058101A2CA55600EFA18C /* libapng.c in Sources */,
 				6DE058491A2CA58300EFA18C /* Ppmd8.c in Sources */,
+				6D10EA7C1A65556E00FEC074 /* CPSResourceListInteractor.m in Sources */,
 				6D8324511A387EC3007BD2FA /* CPSMvidTableViewCell+CPSClearVuItemView.m in Sources */,
 				6D10EA4C1A651CC400FEC074 /* CPSFileAssetItem+MIME.m in Sources */,
 				6DE057A61A2C839600EFA18C /* CPSProductItemCollectionViewCell.m in Sources */,
@@ -3480,6 +3583,7 @@
 				6DA9E4991A30BF0C00DA4E54 /* CPSProductSpriteLoadOperationQueue.m in Sources */,
 				6DBD91761A14AD2700FA6A51 /* CPSAppContext.m in Sources */,
 				6D54DA351A2C7D8A0070A1D4 /* CPSProductRangeGridViewController.m in Sources */,
+				6D10EA751A654FC800FEC074 /* CPSResourceDirectoryDataProviderAdapter.m in Sources */,
 				6DE0583D1A2CA58300EFA18C /* 7zDec.c in Sources */,
 				6DE0580E1A2CA55600EFA18C /* AVResourceLoader.m in Sources */,
 				6DE0584F1A2CA5A900EFA18C /* 7zAlloc.c in Sources */,

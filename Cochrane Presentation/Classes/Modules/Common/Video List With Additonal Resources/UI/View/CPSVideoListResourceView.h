@@ -10,18 +10,6 @@
 
 #import "CPSVideoListView.h"
 
-@protocol CPSVideoListItemResourceListDataProvider <NSObject>
-
-- (NSInteger)numberOfSections;
-- (NSInteger)numberOfItemsInSection:(NSInteger)sectionIdx;
-
-- (NSString *)titleForSection:(NSInteger)sectionIdx;
-
-- (UIImage *)thumbnailForItemAtIndexPath:(NSIndexPath *)indexPath;
-- (NSString *)titleForItemAtIndexPath:(NSIndexPath *)indexPath;
-
-@end
-
 @protocol CPSVideoListResourceView <CPSVideoListView>
 
 - (void)setAdditionalResourceButtonVisible:(BOOL)visible;

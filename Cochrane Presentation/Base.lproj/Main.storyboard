@@ -722,10 +722,10 @@
             </objects>
             <point key="canvasLocation" x="2895" y="1425"/>
         </scene>
-        <!--View Controller-->
+        <!--Resource List Grid View Controller-->
         <scene sceneID="NDg-q8-JEk">
             <objects>
-                <viewController storyboardIdentifier="VideoListResourceGridView" id="Ici-wW-FsX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VideoListResourceGridView" id="Ici-wW-FsX" customClass="CPSResourceListGridViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q8q-od-BQD"/>
                         <viewControllerLayoutGuide type="bottom" id="Xu9-at-2GE"/>
@@ -733,10 +733,46 @@
                     <view key="view" contentMode="scaleToFill" id="NVU-LF-KeW">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.71495451720000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="USn-ce-vAt">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fxM-A7-lqc">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="60" minY="60" maxX="10" maxY="50"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="resource_cell" id="qfg-nu-A5d">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.060231345870000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="USn-ce-vAt" firstAttribute="top" secondItem="NVU-LF-KeW" secondAttribute="top" id="64n-6H-1gA"/>
+                            <constraint firstItem="USn-ce-vAt" firstAttribute="leading" secondItem="NVU-LF-KeW" secondAttribute="leading" id="QLr-b0-M33"/>
+                            <constraint firstAttribute="trailing" secondItem="USn-ce-vAt" secondAttribute="trailing" id="ho8-pf-Faf"/>
+                            <constraint firstItem="Xu9-at-2GE" firstAttribute="top" secondItem="USn-ce-vAt" secondAttribute="bottom" id="ky4-US-DSU"/>
+                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="cellReuseIdentifier" value="resource_cell"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="collectionView" destination="USn-ce-vAt" id="MWF-4q-3bb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Bc-9H-ZnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

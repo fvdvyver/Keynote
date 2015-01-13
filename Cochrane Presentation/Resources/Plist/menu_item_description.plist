@@ -305,7 +305,7 @@
 									<key>data_file</key>
 									<string>info_spec_resource</string>
 									<key>resource_path_prefix</key>
-									<string>Module Image/Info Spec/Additional Resources</string>
+									<string>Module Resource/Info Spec/Additional Resources</string>
 									<key>sectioned_data_keypath</key>
 									<string>additionalResourceSections</string>
 								</dict>
