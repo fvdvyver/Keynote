@@ -8,12 +8,7 @@
 
 #import "CPSFileAssetItem.h"
 
-typedef NS_ENUM(NSInteger, CPSFileAssetType)
-{
-    CPSFileAssetTypeImage,
-    CPSFileAssetTypeVideo,
-    CPSFileAssetTypeUnknown
-};
+#import "CPSFileAssetType.h"
 
 @interface CPSFileAssetItem (MIME)
 

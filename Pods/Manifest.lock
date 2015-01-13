@@ -1,6 +1,7 @@
 PODS:
   - KZPropertyMapper (2.5.1)
   - MCiOSControls/MCFrameAdditions (0.1.11)
+  - MCiOSControls/MCImageResizing (0.1.11)
   - MCiOSControls/MCObserver (0.1.11)
   - MCiOSControls/MCRevealController (0.1.11):
     - MCiOSControls/MCFrameAdditions
@@ -8,6 +9,7 @@ PODS:
 
 DEPENDENCIES:
   - KZPropertyMapper (~> 2.5.1)
+  - MCiOSControls/MCImageResizing (~> 0.1.11)
   - MCiOSControls/MCObserver (~> 0.1.11)
   - MCiOSControls/MCRevealController (~> 0.1.11)
   - OCMock (~> 3.1.1)

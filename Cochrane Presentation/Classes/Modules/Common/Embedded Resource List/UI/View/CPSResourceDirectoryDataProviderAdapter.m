@@ -49,7 +49,11 @@
           atIndexPath:(NSIndexPath *)indexPath
      inCollectionView:(UICollectionView *)collectionView
 {
-//    [cell setTitle:[self.provider titleForItemAtIndexPath:indexPath]];
+    CPSFileAssetType type;
+    NSString *path = [self.provider assetPathForItem:item outType:&type];
+    
+    [cell setTitle:[self.provider titleForItem:item]];
+    [cell setAssetPath:path type:type];
 }
 
 @end

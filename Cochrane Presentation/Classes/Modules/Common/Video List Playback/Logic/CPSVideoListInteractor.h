@@ -22,6 +22,10 @@
 // must be an array of CPSVideoListItem
 @property (nonatomic, copy) NSArray *videoItems;
 
+/**
+ *  Default implementation simply calls -playVideoForItem:
+ */
+- (void)itemSelected:(CPSAssetItem *)item;
 - (void)playVideoForItem:(CPSAssetItem *)item;
 
 @end

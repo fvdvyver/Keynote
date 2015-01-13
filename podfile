@@ -5,6 +5,7 @@ platform :ios, '7.0'
 
 pod 'MCiOSControls/MCRevealController', '~> 0.1.11'
 pod 'MCiOSControls/MCObserver', '~> 0.1.11'
+pod 'MCiOSControls/MCImageResizing', '~> 0.1.11'
 pod 'KZPropertyMapper', '~> 2.5.1'
 
 target 'Cochrane PresentationTests', :exclusive => true do

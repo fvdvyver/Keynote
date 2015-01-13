@@ -9,6 +9,7 @@
 #import "CPSResourceDirectoryListDataProvider.h"
 
 #import "CPSFileAssetItem.h"
+#import "CPSFileAssetItem+MIME.h"
 
 @interface CPSResourceDirectoryListDataProvider ()
 
@@ -49,14 +50,17 @@
     return directory.contentFiles[indexPath.row];
 }
 
-- (UIImage *)thumbnailForItemAtIndexPath:(NSIndexPath *)indexPath
+- (NSString *)assetPathForItem:(CPSFileAssetItem *)item outType:(CPSFileAssetType *)type;
 {
-    return [UIImage imageNamed:@"AppIcon"];
+    if (type != NULL)
+    {
+        *type = item.fileType;
+    }
+    return item.path;
 }
 
-- (NSString *)titleForItemAtIndexPath:(NSIndexPath *)indexPath
+- (NSString *)titleForItem:(CPSFileAssetItem *)asset
 {
-    CPSFileAssetItem *asset = [self itemAtIndexPath:indexPath];
     return [[asset.path lastPathComponent] stringByDeletingPathExtension];
 }
 

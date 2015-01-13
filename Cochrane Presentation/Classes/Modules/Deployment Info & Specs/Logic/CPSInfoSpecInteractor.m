@@ -28,16 +28,15 @@
     [self.presenter setVideoTitles:[self.videoItems valueForKey:CPSPropertyString(title)]];
 }
 
-- (void)itemSelectedAtIndex:(NSUInteger)index
+- (void)itemSelected:(CPSSpecificationInfoAssetItem *)item
 {
-    CPSSpecificationInfoAssetItem *item = self.videoItems[index];
-    
     if (item.navigationIdentifier.length > 0)
     {
         [self.wireframe setContentControllerProviderWithIdentifer:item.navigationIdentifier];
     }
     else
     {
+        [super itemSelected:item];
         [self showOutputForItem:item];
     }
 }
@@ -47,7 +46,6 @@
     [self.presenter showTitleText:item.title];
     [self.presenter showInfoStrings:item.details];
     [self.presenter showModelWithVideoName:item.modelVideoName];
-    [self playVideoForItem:item];
     
     if ([CPSCompatUtils InfoSpecViewShouldPlaySecurityLevelVideo])
     {

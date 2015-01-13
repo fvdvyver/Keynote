@@ -32,6 +32,11 @@
 		6D10EA711A654D1E00FEC074 /* MCSectionedCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA701A654D1E00FEC074 /* MCSectionedCollectionViewDataSource.m */; };
 		6D10EA751A654FC800FEC074 /* CPSResourceDirectoryDataProviderAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA741A654FC800FEC074 /* CPSResourceDirectoryDataProviderAdapter.m */; };
 		6D10EA7C1A65556E00FEC074 /* CPSResourceListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA7B1A65556E00FEC074 /* CPSResourceListInteractor.m */; };
+		6D10EA801A656B5300FEC074 /* CPSResourceItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA7F1A656B5300FEC074 /* CPSResourceItemCollectionViewCell.m */; };
+		6D10EA821A656C3F00FEC074 /* CPSResourceItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D10EA811A656C3F00FEC074 /* CPSResourceItemCollectionViewCell.xib */; };
+		6D10EA901A658A0D00FEC074 /* CPSThumbnailGeneratorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA8F1A658A0D00FEC074 /* CPSThumbnailGeneratorOperation.m */; };
+		6D10EA931A658B3400FEC074 /* CPSImageThumbnailGenerationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA921A658B3400FEC074 /* CPSImageThumbnailGenerationOperation.m */; };
+		6D10EA961A658B6A00FEC074 /* CPSVideoThumbnailGenerationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10EA951A658B6A00FEC074 /* CPSVideoThumbnailGenerationOperation.m */; };
 		6D179B521A39A74D0089899C /* Cochrane_Logo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D179B4F1A39A74D0089899C /* Cochrane_Logo.mp4 */; };
 		6D179B531A39A74D0089899C /* Cost_of_risk_intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D179B501A39A74D0089899C /* Cost_of_risk_intro.mp4 */; };
 		6D179B541A39A74D0089899C /* Partners.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D179B511A39A74D0089899C /* Partners.mp4 */; };
@@ -460,6 +465,16 @@
 		6D10EA7A1A65556E00FEC074 /* CPSResourceListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceListInteractor.h; sourceTree = "<group>"; };
 		6D10EA7B1A65556E00FEC074 /* CPSResourceListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSResourceListInteractor.m; sourceTree = "<group>"; };
 		6D10EA7D1A6555FB00FEC074 /* CPSResourceListWireframeInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceListWireframeInterface.h; sourceTree = "<group>"; };
+		6D10EA7E1A656B5300FEC074 /* CPSResourceItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSResourceItemCollectionViewCell.h; sourceTree = "<group>"; };
+		6D10EA7F1A656B5300FEC074 /* CPSResourceItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSResourceItemCollectionViewCell.m; sourceTree = "<group>"; };
+		6D10EA811A656C3F00FEC074 /* CPSResourceItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPSResourceItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		6D10EA871A65830500FEC074 /* CPSFileAssetType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPSFileAssetType.h; sourceTree = "<group>"; };
+		6D10EA8E1A658A0D00FEC074 /* CPSThumbnailGeneratorOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSThumbnailGeneratorOperation.h; sourceTree = "<group>"; };
+		6D10EA8F1A658A0D00FEC074 /* CPSThumbnailGeneratorOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSThumbnailGeneratorOperation.m; sourceTree = "<group>"; };
+		6D10EA911A658B3400FEC074 /* CPSImageThumbnailGenerationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSImageThumbnailGenerationOperation.h; sourceTree = "<group>"; };
+		6D10EA921A658B3400FEC074 /* CPSImageThumbnailGenerationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSImageThumbnailGenerationOperation.m; sourceTree = "<group>"; };
+		6D10EA941A658B6A00FEC074 /* CPSVideoThumbnailGenerationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSVideoThumbnailGenerationOperation.h; sourceTree = "<group>"; };
+		6D10EA951A658B6A00FEC074 /* CPSVideoThumbnailGenerationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSVideoThumbnailGenerationOperation.m; sourceTree = "<group>"; };
 		6D179B4F1A39A74D0089899C /* Cochrane_Logo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cochrane_Logo.mp4; sourceTree = "<group>"; };
 		6D179B501A39A74D0089899C /* Cost_of_risk_intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cost_of_risk_intro.mp4; sourceTree = "<group>"; };
 		6D179B511A39A74D0089899C /* Partners.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Partners.mp4; sourceTree = "<group>"; };
@@ -1155,6 +1170,9 @@
 				6D10EA6A1A654A8600FEC074 /* CPSResourceListGridViewController.m */,
 				6D10EA731A654FC800FEC074 /* CPSResourceDirectoryDataProviderAdapter.h */,
 				6D10EA741A654FC800FEC074 /* CPSResourceDirectoryDataProviderAdapter.m */,
+				6D10EA7E1A656B5300FEC074 /* CPSResourceItemCollectionViewCell.h */,
+				6D10EA7F1A656B5300FEC074 /* CPSResourceItemCollectionViewCell.m */,
+				6D10EA811A656C3F00FEC074 /* CPSResourceItemCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1175,6 +1193,19 @@
 				6D10EA671A65467D00FEC074 /* CPSResourceDirectoryListDataProvider.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6D10EA831A65829900FEC074 /* Thumbnail Generation */ = {
+			isa = PBXGroup;
+			children = (
+				6D10EA8E1A658A0D00FEC074 /* CPSThumbnailGeneratorOperation.h */,
+				6D10EA8F1A658A0D00FEC074 /* CPSThumbnailGeneratorOperation.m */,
+				6D10EA911A658B3400FEC074 /* CPSImageThumbnailGenerationOperation.h */,
+				6D10EA921A658B3400FEC074 /* CPSImageThumbnailGenerationOperation.m */,
+				6D10EA941A658B6A00FEC074 /* CPSVideoThumbnailGenerationOperation.h */,
+				6D10EA951A658B6A00FEC074 /* CPSVideoThumbnailGenerationOperation.m */,
+			);
+			path = "Thumbnail Generation";
 			sourceTree = "<group>";
 		};
 		6D1871B71A2734D000F886B9 /* Video List Playback */ = {
@@ -2602,8 +2633,10 @@
 		6DD1D9EF1A35991B00E112D5 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				6D10EA831A65829900FEC074 /* Thumbnail Generation */,
 				6DD1D9F01A35998400E112D5 /* CPSCompatUtils.h */,
 				6DD1D9F11A35998400E112D5 /* CPSCompatUtils.m */,
+				6D10EA871A65830500FEC074 /* CPSFileAssetType.h */,
 				6D10EA4A1A651CC400FEC074 /* CPSFileAssetItem+MIME.h */,
 				6D10EA4B1A651CC400FEC074 /* CPSFileAssetItem+MIME.m */,
 			);
@@ -3281,6 +3314,7 @@
 				6D8324561A38A51E007BD2FA /* clearvu_logo.mvid in Resources */,
 				6D8A14971A2F030F006A4BEC /* product_sprite_2@2x.png in Resources */,
 				6D2FC6911A31DBB5005C7674 /* info_spec_animate_on.mp4 in Resources */,
+				6D10EA821A656C3F00FEC074 /* CPSResourceItemCollectionViewCell.xib in Resources */,
 				6D8A149A1A2F030F006A4BEC /* product_sprite_4@2x.plist in Resources */,
 				6DAB25231A603AFC00125D91 /* key_industries_12.xcassets in Resources */,
 				6DB22E121A35A8A700C58A1F /* info_spec_security_03.mvid in Resources */,
@@ -3455,6 +3489,7 @@
 				6DE057FA1A2CA55600EFA18C /* AV7zAppResourceLoader.m in Sources */,
 				6DE057AE1A2C8E5B00EFA18C /* CPSRightToLeftFlowLayout.m in Sources */,
 				6DF03C6A1A1F33B1003A0DF1 /* CPSVideoPlaybackViewController.m in Sources */,
+				6D10EA901A658A0D00FEC074 /* CPSThumbnailGeneratorOperation.m in Sources */,
 				6D10E11A1A10C8C0006DD677 /* CPSMenuItem.m in Sources */,
 				6D84E0FF1A32430E00F1470A /* MPMoviePlayerController+CPSAdditions.m in Sources */,
 				6DE058171A2CA55600EFA18C /* MutableAttrString.m in Sources */,
@@ -3537,6 +3572,7 @@
 				6D2FC6B71A321399005C7674 /* CPSInfoSpecTableViewCell.m in Sources */,
 				6D54DA1A1A2C6E820070A1D4 /* CPSProductRangeListInteractor.m in Sources */,
 				6D2FC6971A31DE1B005C7674 /* UITableView+CPSMaskingAdditions.m in Sources */,
+				6D10EA931A658B3400FEC074 /* CPSImageThumbnailGenerationOperation.m in Sources */,
 				6D54DA0E1A28C4430070A1D4 /* CPSKeyIndustriesDetailPresenter.m in Sources */,
 				6DAB25991A61731600125D91 /* MCImageArrayPagerDataSource.m in Sources */,
 				6D1871E71A276D6700F886B9 /* CPSPropertyMappingResourceLoader.m in Sources */,
@@ -3573,6 +3609,7 @@
 				6DAFFF211A63FF0900A25F48 /* CPSVideoListResourceWireframe.m in Sources */,
 				6D1871D41A273FD700F886B9 /* CPSVideoListViewController.m in Sources */,
 				6D2FC69A1A31DFEF005C7674 /* CALayer+CPSImplicitActionRemoval.m in Sources */,
+				6D10EA961A658B6A00FEC074 /* CPSVideoThumbnailGenerationOperation.m in Sources */,
 				6D54DA3F1A2C825B0070A1D4 /* CPSProductItemPresenter.m in Sources */,
 				6DE058081A2CA55600EFA18C /* AVFrameDecoder.m in Sources */,
 				6D2BD99C1A237A6D0035189C /* CPSCostOfRiskCellPresenter.m in Sources */,
@@ -3594,6 +3631,7 @@
 				6D83245B1A38A5D0007BD2FA /* CPSClearVuTableViewDelegate.m in Sources */,
 				6DE500921A399ECC0046074E /* MCSimpleTableViewCellPresenter.m in Sources */,
 				6D8A14B91A2F054D006A4BEC /* LSImageView.m in Sources */,
+				6D10EA801A656B5300FEC074 /* CPSResourceItemCollectionViewCell.m in Sources */,
 				6DE058001A2CA55600EFA18C /* AVAppResourceLoader.m in Sources */,
 				6DB8995B1A3090F90046EBC9 /* CPSLoadingViewController.m in Sources */,
 				6DE058141A2CA55600EFA18C /* maxvid_encode.m in Sources */,

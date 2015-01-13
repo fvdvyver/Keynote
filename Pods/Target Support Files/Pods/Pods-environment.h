@@ -18,6 +18,12 @@
 #define COCOAPODS_VERSION_MINOR_MCiOSControls_MCFrameAdditions 1
 #define COCOAPODS_VERSION_PATCH_MCiOSControls_MCFrameAdditions 11
 
+// MCiOSControls/MCImageResizing
+#define COCOAPODS_POD_AVAILABLE_MCiOSControls_MCImageResizing
+#define COCOAPODS_VERSION_MAJOR_MCiOSControls_MCImageResizing 0
+#define COCOAPODS_VERSION_MINOR_MCiOSControls_MCImageResizing 1
+#define COCOAPODS_VERSION_PATCH_MCiOSControls_MCImageResizing 11
+
 // MCiOSControls/MCObserver
 #define COCOAPODS_POD_AVAILABLE_MCiOSControls_MCObserver
 #define COCOAPODS_VERSION_MAJOR_MCiOSControls_MCObserver 0

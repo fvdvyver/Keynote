@@ -1,0 +1,1 @@
+../../../../../MCiOSControls/MCiOSControls/Objc Categories/UIImage+MCImageResizing.h

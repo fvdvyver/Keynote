@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "CPSFileAssetType.h"
+
 @protocol CPSResourceItemView <NSObject>
 
 - (void)setTitle:(NSString *)title;
+- (void)setImage:(UIImage *)image;
+- (void)setAssetPath:(NSString *)assetPath type:(CPSFileAssetType)type;
 
 @end

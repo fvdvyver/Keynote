@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "CPSFileAssetType.h"
+
 @protocol CPSResourceListDataProvider <NSObject>
 
 - (NSInteger)numberOfSections;
@@ -17,7 +19,7 @@
 
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath;
 
-- (UIImage *)thumbnailForItemAtIndexPath:(NSIndexPath *)indexPath;
-- (NSString *)titleForItemAtIndexPath:(NSIndexPath *)indexPath;
+- (NSString *)assetPathForItem:(id)item outType:(CPSFileAssetType *)type;
+- (NSString *)titleForItem:(id)item;
 
 @end

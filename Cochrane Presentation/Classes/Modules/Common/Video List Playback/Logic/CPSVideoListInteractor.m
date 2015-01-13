@@ -23,6 +23,11 @@
 - (void)itemSelectedAtIndex:(NSUInteger)index
 {
     CPSAssetItem *item = self.videoItems[index];
+    [self itemSelected:item];
+}
+
+- (void)itemSelected:(CPSAssetItem *)item
+{
     [self playVideoForItem:item];
 }
 
