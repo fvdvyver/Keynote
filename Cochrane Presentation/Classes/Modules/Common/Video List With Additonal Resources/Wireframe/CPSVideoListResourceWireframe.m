@@ -10,7 +10,7 @@
 
 @implementation CPSVideoListResourceWireframe
 
-- (void)showVideoItemAdditionalResources:(id)resources
+- (void)showVideoItemAdditionalResources:(NSArray *)resources
 {
     // TODO: create interactor, presenter. Inject dependencies.
     UIViewController *contentController = [self instantiateNewViewControllerWithIdentifier:self.additionalResourceListViewControllerIdentifier];

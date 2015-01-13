@@ -23,6 +23,19 @@
 			<string>No need for additional razor wire</string>
 			<string>Easy to install</string>
 		</array>
+		<key>resource</key>
+		<dict>
+			<key>directory</key>
+			<string>Razor Mesh</string>
+			<key>sections</key>
+			<array>
+				<string>Testing Simulation</string>
+				<string>Videos</string>
+				<string>Photo Gallery</string>
+				<string>Technical Specifications</string>
+				<string>Case Studies</string>
+			</array>
+		</dict>
 	</dict>
 	<dict>
 		<key>title_text</key>
@@ -45,6 +58,19 @@
 			<string>Coupled to any length</string>
 			<string>25 Tonne breaking strength</string>
 		</array>
+		<key>resource</key>
+		<dict>
+			<key>directory</key>
+			<string>Marine Floating Barrier</string>
+			<key>sections</key>
+			<array>
+				<string>Testing Simulation</string>
+				<string>Videos</string>
+				<string>Photo Gallery</string>
+				<string>Technical Specifications</string>
+				<string>Case Studies</string>
+			</array>
+		</dict>
 	</dict>
 	<dict>
 		<key>title_text</key>
@@ -67,6 +93,19 @@
 			<string>Three configurations</string>
 			<string>Three barrier options</string>
 		</array>
+		<key>resource</key>
+		<dict>
+			<key>directory</key>
+			<string>Rapid Deployment Barrier</string>
+			<key>sections</key>
+			<array>
+				<string>Testing Simulation</string>
+				<string>Videos</string>
+				<string>Photo Gallery</string>
+				<string>Technical Specifications</string>
+				<string>Case Studies</string>
+			</array>
+		</dict>
 	</dict>
 	<dict>
 		<key>title_text</key>
@@ -89,6 +128,19 @@
 			<string>Corrosion proofing for increased ilfespan</string>
 			<string>All components designed to fit in a 12m container</string>
 		</array>
+		<key>resource</key>
+		<dict>
+			<key>directory</key>
+			<string>Rocket Barrier</string>
+			<key>sections</key>
+			<array>
+				<string>Testing Simulation</string>
+				<string>Videos</string>
+				<string>Photo Gallery</string>
+				<string>Technical Specifications</string>
+				<string>Case Studies</string>
+			</array>
+		</dict>
 	</dict>
 	<dict>
 		<key>title_text</key>
@@ -111,6 +163,19 @@
 			<string>Separate energiser delivers 7000 non-lethal volts</string>
 			<string>Easy to install on an existing structure or barrier</string>
 		</array>
+		<key>resource</key>
+		<dict>
+			<key>directory</key>
+			<string>Smart Coil</string>
+			<key>sections</key>
+			<array>
+				<string>Testing Simulation</string>
+				<string>Videos</string>
+				<string>Photo Gallery</string>
+				<string>Technical Specifications</string>
+				<string>Case Studies</string>
+			</array>
+		</dict>
 	</dict>
 	<dict>
 		<key>title_text</key>
@@ -133,6 +198,19 @@
 			<string>Shallow base</string>
 			<string>Four stanchion options</string>
 		</array>
+		<key>resource</key>
+		<dict>
+			<key>directory</key>
+			<string>Anti-Ram Barrier</string>
+			<key>sections</key>
+			<array>
+				<string>Testing Simulation</string>
+				<string>Videos</string>
+				<string>Photo Gallery</string>
+				<string>Technical Specifications</string>
+				<string>Case Studies</string>
+			</array>
+		</dict>
 	</dict>
 	<dict>
 		<key>title_text</key>

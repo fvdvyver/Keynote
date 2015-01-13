@@ -8,6 +8,8 @@
 
 #import "CPSVideoListResourceInteractor.h"
 
+#import "CPSAdditionalResourceAssetItem.h"
+
 @implementation CPSVideoListResourceInteractor
 
 - (void)playVideoForItem:(CPSAssetItem *)item
@@ -24,8 +26,9 @@
 
 - (void)requestResourceForSelectedVideoItem
 {
-    // TODO: obtain actual additional resources for item
-    [self.wireframe showVideoItemAdditionalResources:nil];
+    CPSAdditionalResourceAssetItem *selectedItem = self.videoItems[self.selectedIndex];
+    
+    [self.wireframe showVideoItemAdditionalResources:selectedItem.additionalResourceSections];
     [self.presenter setItemResourceButtonVisible:NO];
 }
 

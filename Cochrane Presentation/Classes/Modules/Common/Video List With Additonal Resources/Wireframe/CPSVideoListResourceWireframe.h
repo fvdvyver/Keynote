@@ -9,13 +9,17 @@
 #import "CPSBaseWireframe.h"
 #import "CPSVideoListResourcePresenter.h"
 
+@class CPSAdditionalResourceAssetItem;
+
 @interface CPSVideoListResourceWireframe : CPSBaseWireframe
 
 @property (nonatomic, strong) NSString * additionalResourceListViewControllerIdentifier;
 
 @property (nonatomic, strong) CPSVideoListResourcePresenter * presenter;
 
-// TODO: create data model for list of resources
-- (void)showVideoItemAdditionalResources:(id)resources;
+/**
+ *  resources should be an array of CPSAdditionalResourceAssetItem
+ */
+- (void)showVideoItemAdditionalResources:(NSArray *)resources;
 
 @end

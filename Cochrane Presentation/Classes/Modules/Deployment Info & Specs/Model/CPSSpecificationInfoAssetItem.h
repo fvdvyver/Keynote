@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Mushroom Cloud. All rights reserved.
 //
 
-#import "CPSAssetItem.h"
+#import "CPSAdditionalResourceAssetItem.h"
 
-@interface CPSSpecificationInfoAssetItem : CPSAssetItem
+@interface CPSSpecificationInfoAssetItem : CPSAdditionalResourceAssetItem
 
 @property (nonatomic, strong) NSString * navigationIdentifier;
 

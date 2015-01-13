@@ -11,6 +11,9 @@
 #import "CPSVideoListResourceWireframe.h"
 #import "CPSVideoListResourceInteractorIO.h"
 
+/**
+ *  This class requires its videoItems array to contain instances of CPSAdditionalResourceAssetItem
+ */
 @interface CPSVideoListResourceInteractor : CPSVideoListInteractor <CPSVideoListResourceInteractorInput>
 
 @property (nonatomic, weak)   CPSVideoListResourceWireframe * wireframe;

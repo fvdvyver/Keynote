@@ -14,6 +14,8 @@
 
 - (void)loadResources
 {
+    [KZPropertyMapper logIgnoredValues:NO];
+    
     NSString *datasourceKeypath = self.arguments[@"target_data_keypath"];
     NSString *dataSourceFile = self.arguments[@"data_file"];
     NSString *mappingFile = self.arguments[@"mapping"];
@@ -39,15 +41,26 @@
     
     for (NSDictionary *sourceItem in datasourceArray)
     {
-        id newItem = [instanceClass new];
-        [KZPropertyMapper mapValuesFrom:sourceItem
-                             toInstance:newItem
-                           usingMapping:itemMapping];
+        id newItem = [self newMappedItemFromSource:sourceItem
+                                  destinationClass:instanceClass
+                                       withMapping:itemMapping];
         
         [mappedArray addObject:newItem];
     }
     
     [self.targetObject setValue:mappedArray forKeyPath:datasourceKeypath];
+}
+
+- (id)newMappedItemFromSource:(NSDictionary *)sourceItem
+             destinationClass:(Class)destinationClass
+                  withMapping:(NSDictionary *)itemMapping
+{
+    id newItem = [destinationClass new];
+    [KZPropertyMapper mapValuesFrom:sourceItem
+                         toInstance:newItem
+                       usingMapping:itemMapping];
+    
+    return newItem;
 }
 
 @end

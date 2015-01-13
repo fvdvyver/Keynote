@@ -19,4 +19,8 @@
  */
 @interface CPSPropertyMappingResourceLoader : CPSResourceLoader
 
+- (id)newMappedItemFromSource:(NSDictionary *)sourceItem
+            destinationClass:(Class)destinationClass
+                 withMapping:(NSDictionary *)itemMapping;
+
 @end

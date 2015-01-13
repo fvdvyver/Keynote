@@ -293,7 +293,7 @@
 						<array>
 							<dict>
 								<key>class</key>
-								<string>CPSPropertyMappingResourceLoader</string>
+								<string>CPSVideoListDirectoryResourceLoader</string>
 								<key>arguments</key>
 								<dict>
 									<key>mapping</key>
@@ -304,6 +304,10 @@
 									<string>videoItems</string>
 									<key>data_file</key>
 									<string>info_spec_resource</string>
+									<key>resource_path_prefix</key>
+									<string>Module Image/Info Spec/Additional Resources</string>
+									<key>sectioned_data_keypath</key>
+									<string>additionalResourceSections</string>
 								</dict>
 							</dict>
 						</array>

@@ -19,4 +19,5 @@ xcuserdata
 
 # Exclude the media folders to keep the repo lightweight
 */Resources/Video/
-*/Resources/Image/
+*/Resources/Image Asset/
+*/Resources/Module Resource/
