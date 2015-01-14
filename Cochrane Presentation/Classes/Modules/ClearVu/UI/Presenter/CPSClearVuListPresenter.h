@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Mushroom Cloud. All rights reserved.
 //
 
-#import "CPSVideoListPresenter.h"
+#import "CPSVideoListResourcePresenter.h"
 
-@interface CPSClearVuListPresenter : CPSVideoListPresenter
+@interface CPSClearVuListPresenter : CPSVideoListResourcePresenter
 
 @end

@@ -22,6 +22,7 @@
             <string>Planer</string>
             <string>Planer</string>
             <string>Planer</string>
+            <string>Planer</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -858,6 +859,17 @@
                                             </mask>
                                         </variation>
                                     </view>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FR-PX-aIc">
+                                        <rect key="frame" x="932" y="13" width="41" height="90"/>
+                                        <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="69"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="additionalResourceButtonTapped:" destination="uNt-p4-Nuu" eventType="touchUpInside" id="5z6-Z3-pPM"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -889,6 +901,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="additionalResourceButton" destination="6FR-PX-aIc" id="6tr-dg-imW"/>
                         <outlet property="backgroundVideoContainerView" destination="l8l-0t-NSH" id="7Ln-kC-PE6"/>
                         <outlet property="contentVideoContainerView" destination="jbF-PP-2KB" id="CCL-T2-LVc"/>
                         <outlet property="contentView" destination="TDf-aC-hdW" id="oBM-Iq-tO4"/>

@@ -344,25 +344,43 @@
 			<key>content_wireframes</key>
 			<array>
 				<dict>
+					<key>wireframe</key>
+					<dict>
+						<key>class</key>
+						<string>CPSVideoListResourceWireframe</string>
+						<key>arguments</key>
+						<dict>
+							<key>additionalResourceListViewControllerIdentifier</key>
+							<string>VideoListResourceGridView</string>
+							<key>imageResourceViewControllerIdentifier</key>
+							<string>ImagePagerViewController</string>
+							<key>videoResourceViewControllerIdentifier</key>
+							<string>VideoPlayerViewController</string>
+						</dict>
+					</dict>
 					<key>interactor</key>
 					<dict>
 						<key>class</key>
-						<string>CPSVideoListInteractor</string>
+						<string>CPSVideoListResourceInteractor</string>
 						<key>resource_loaders</key>
 						<array>
 							<dict>
 								<key>class</key>
-								<string>CPSPropertyMappingResourceLoader</string>
+								<string>CPSVideoListDirectoryResourceLoader</string>
 								<key>arguments</key>
 								<dict>
 									<key>mapping</key>
 									<string>clearvu_item_mapping</string>
 									<key>instance_class</key>
-									<string>CPSAssetItem</string>
+									<string>CPSAdditionalResourceAssetItem</string>
 									<key>target_data_keypath</key>
 									<string>videoItems</string>
 									<key>data_file</key>
 									<string>clearvu_resource</string>
+									<key>resource_path_prefix</key>
+									<string>Module Resource/ClearVu/Additional Resources</string>
+									<key>sectioned_data_keypath</key>
+									<string>additionalResourceSections</string>
 								</dict>
 							</dict>
 						</array>

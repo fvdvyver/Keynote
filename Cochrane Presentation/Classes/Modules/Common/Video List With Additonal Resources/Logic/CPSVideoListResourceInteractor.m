@@ -15,10 +15,9 @@
 - (void)playVideoForItem:(CPSAdditionalResourceAssetItem *)item
 {
     [super playVideoForItem:item];
-    if (item.additionalResourceSections.count > 0)
-    {
-        [self.presenter setItemResourceButtonVisible:YES];
-    }
+    
+    BOOL resourceButtonVisible = (item.additionalResourceSections.count > 0);
+    [self.presenter setItemResourceButtonVisible:resourceButtonVisible];
 }
 
 - (void)itemSelectedAtIndex:(NSUInteger)index

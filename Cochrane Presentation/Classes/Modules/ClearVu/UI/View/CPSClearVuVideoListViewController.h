@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Mushroom Cloud. All rights reserved.
 //
 
-#import "CPSVideoListViewController.h"
+#import "CPSVideoListEmbeddedContentViewController.h"
 
-@interface CPSClearVuVideoListViewController : CPSVideoListViewController
+@interface CPSClearVuVideoListViewController : CPSVideoListEmbeddedContentViewController
 
 @end

@@ -9,6 +9,19 @@
 		<string>clearvu_logo.mvid</string>
 		<key>video_name</key>
 		<string>clearvu_00.mp4</string>
+		<key>resource</key>
+		<dict>
+			<key>directory</key>
+			<string>ClearVu</string>
+			<key>sections</key>
+			<array>
+				<string>Testing Simulation</string>
+				<string>Videos</string>
+				<string>Photo Gallery</string>
+				<string>Technical Specifications</string>
+				<string>Case Studies</string>
+			</array>
+		</dict>
 	</dict>
 	<dict>
 		<key>title_text</key>
@@ -21,12 +34,38 @@
 		<string>CV-22</string>
 		<key>video_name</key>
 		<string>clearvu_02.mp4</string>
+		<key>resource</key>
+		<dict>
+			<key>directory</key>
+			<string>CV22</string>
+			<key>sections</key>
+			<array>
+				<string>Testing Simulation</string>
+				<string>Videos</string>
+				<string>Photo Gallery</string>
+				<string>Technical Specifications</string>
+				<string>Case Studies</string>
+			</array>
+		</dict>
 	</dict>
 	<dict>
 		<key>title_text</key>
 		<string>Reinforced</string>
 		<key>video_name</key>
 		<string>clearvu_03.mp4</string>
+		<key>resource</key>
+		<dict>
+			<key>directory</key>
+			<string>Reinforced</string>
+			<key>sections</key>
+			<array>
+				<string>Testing Simulation</string>
+				<string>Videos</string>
+				<string>Photo Gallery</string>
+				<string>Technical Specifications</string>
+				<string>Case Studies</string>
+			</array>
+		</dict>
 	</dict>
 	<dict>
 		<key>title_text</key>
