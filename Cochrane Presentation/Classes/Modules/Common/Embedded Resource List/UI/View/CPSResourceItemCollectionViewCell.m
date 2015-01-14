@@ -36,7 +36,8 @@
     dispatch_once(&onceToken, ^
     {
         queue = [NSOperationQueue new];
-        queue.maxConcurrentOperationCount = 2;
+        queue.maxConcurrentOperationCount = 1;
+        queue.qualityOfService = NSQualityOfServiceBackground;
     });
     
     return queue;
