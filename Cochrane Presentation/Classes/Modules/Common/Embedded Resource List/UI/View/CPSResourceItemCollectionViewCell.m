@@ -85,9 +85,9 @@
                           delay:0.0f
                         options:0
                      animations:^
-     {
-         self.transform = transform;
-     }
+                     {
+                         self.transform = transform;
+                     }
                      completion:nil];
 }
 
@@ -128,7 +128,7 @@
     
     if (operation == self.operation)
     {
-        [self setImage:image];
+        [self setImage:image animated:YES];
         self.operation = nil;
     }
 }
@@ -140,7 +140,19 @@
 
 - (void)setImage:(UIImage *)image
 {
-    self.imageView.image = image;
+    [self setImage:image animated:NO];
+}
+
+- (void)setImage:(UIImage *)image animated:(BOOL)animated
+{
+    [UIView transitionWithView:self.imageView
+                      duration:animated ? 0.2 : 0.0
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:^
+                    {
+                        self.imageView.image = image;
+                    }
+                    completion:nil];
 }
 
 - (void)setAssetPath:(NSString *)assetPath type:(CPSFileAssetType)type
