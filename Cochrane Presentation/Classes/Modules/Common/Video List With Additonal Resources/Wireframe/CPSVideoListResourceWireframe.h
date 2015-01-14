@@ -7,17 +7,23 @@
 //
 
 #import "CPSBaseWireframe.h"
+
+#import "CPSVideoListResourceInteractorIO.h"
 #import "CPSVideoListResourcePresenter.h"
 
 #import "CPSResourceListWireframeInterface.h"
 
+@class CPSVideoListResourceInteractor;
 @class CPSAdditionalResourceAssetItem;
 
 @interface CPSVideoListResourceWireframe : CPSBaseWireframe <CPSResourceListWireframeInterface>
 
 @property (nonatomic, strong) NSString * additionalResourceListViewControllerIdentifier;
 
-@property (nonatomic, strong) CPSVideoListResourcePresenter * presenter;
+@property (nonatomic, strong) NSString * videoResourceViewControllerIdentifier;
+
+@property (nonatomic, strong) id<CPSVideoListResourceInteractorInput> interactor;
+@property (nonatomic, strong) CPSVideoListResourcePresenter *  presenter;
 
 /**
  *  resources should be an array of CPSAdditionalResourceAssetItem

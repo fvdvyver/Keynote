@@ -16,7 +16,7 @@
 #define kCellIdentifier @"resource_cell"
 #define kHeaderIdentifier @"header"
 
-@interface CPSResourceListGridViewController ()
+@interface CPSResourceListGridViewController () <UICollectionViewDelegate>
 
 @property (nonatomic, strong) MCSectionedCollectionViewDataSource * datasource;
 @property (nonatomic, strong) CPSResourceDirectoryDataProviderAdapter * dataAdapter;
@@ -37,6 +37,8 @@
     
     UICollectionViewFlowLayout *layout = (id)self.collectionView.collectionViewLayout;
     layout.headerReferenceSize = CGSizeMake(0.0, 40.0);
+    
+    self.collectionView.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -80,6 +82,12 @@
 - (NSString *)collectionViewInsetsString
 {
     return NSStringFromUIEdgeInsets(self.collectionViewInsets);
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.eventHandler itemSelectedAtIndexPath:indexPath];
+    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
 }
 
 @end

@@ -283,6 +283,8 @@
 						<dict>
 							<key>additionalResourceListViewControllerIdentifier</key>
 							<string>VideoListResourceGridView</string>
+							<key>videoResourceViewControllerIdentifier</key>
+							<string>VideoPlayerViewController</string>
 						</dict>
 					</dict>
 					<key>interactor</key>

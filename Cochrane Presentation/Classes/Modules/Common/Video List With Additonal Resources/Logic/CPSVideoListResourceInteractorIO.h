@@ -11,6 +11,7 @@
 @protocol CPSVideoListResourceInteractorInput <CPSVideoListInteractorInput>
 
 - (void)requestResourceForSelectedVideoItem;
+- (void)resourceWasShown;
 
 @end
 

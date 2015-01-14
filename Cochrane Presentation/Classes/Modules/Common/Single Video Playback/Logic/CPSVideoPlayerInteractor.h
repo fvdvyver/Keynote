@@ -15,6 +15,7 @@
 
 @property (nonatomic, strong) id<CPSVideoPlayerInteractorOutput> presenter;
 
-@property (nonatomic, strong) NSString * videoName;
+@property (nonatomic, strong) NSString * videoName;// loaded from main bundle
+@property (nonatomic, strong) NSString * videoPath;
 
 @end

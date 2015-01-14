@@ -15,9 +15,13 @@
 
 - (void)requestVideoFilepath
 {
-    NSString *resourceName = [self.videoName stringByDeletingPathExtension];
-    NSString *pathExtension = [self.videoName pathExtension];
-    NSString *path = [[NSBundle mainBundle] pathForResource:resourceName ofType:pathExtension];
+    NSString *path = self.videoPath;
+    if (path == nil && self.videoName != nil)
+    {
+        NSString *resourceName = [self.videoName stringByDeletingPathExtension];
+        NSString *pathExtension = [self.videoName pathExtension];
+        path = [[NSBundle mainBundle] pathForResource:resourceName ofType:pathExtension];
+    }
     
     [self.presenter playVideoAtPath:path];
 }

@@ -32,4 +32,10 @@
     [self.presenter setItemResourceButtonVisible:NO];
 }
 
+- (void)resourceWasShown
+{
+    // When we show a resource, we should show the additional resource button again
+    [self.presenter setItemResourceButtonVisible:YES];
+}
+
 @end
