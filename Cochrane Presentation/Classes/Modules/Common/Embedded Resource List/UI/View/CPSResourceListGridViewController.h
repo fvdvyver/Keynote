@@ -17,6 +17,5 @@
 @property (nonatomic, weak) IBOutlet UICollectionView * collectionView;
 
 @property (nonatomic, assign) IBInspectable UIEdgeInsets collectionViewInsets;
-@property (nonatomic, strong) IBInspectable NSString * collectionViewInsetsString;
 
 @end

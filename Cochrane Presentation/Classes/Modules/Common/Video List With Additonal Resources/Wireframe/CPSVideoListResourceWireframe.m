@@ -50,6 +50,10 @@
     presenter.userInterface = contentController;
     
     contentController.eventHandler = presenter;
+    if (self.additionalResourceViewInsetsString != nil)
+    {
+        [contentController setViewInsetsString:self.additionalResourceViewInsetsString];
+    }
     
     [self.presenter.userInterface embedContentViewController:contentController];
     self.contentInteractor = interactor;

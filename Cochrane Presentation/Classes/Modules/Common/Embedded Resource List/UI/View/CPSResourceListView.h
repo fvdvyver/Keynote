@@ -16,6 +16,7 @@
 @protocol CPSResourceListView <CPSView>
 
 - (void)setResourceListDataProvider:(id<CPSResourceListDataProvider>)provider;
+- (void)setViewInsetsString:(NSString *)insetsString;
 
 @end
 

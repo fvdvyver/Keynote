@@ -18,6 +18,7 @@
 
 @interface CPSVideoListResourceWireframe : CPSBaseWireframe <CPSResourceListWireframeInterface>
 
+@property (nonatomic, strong) NSString * additionalResourceViewInsetsString;
 @property (nonatomic, strong) NSString * additionalResourceListViewControllerIdentifier;
 
 @property (nonatomic, strong) NSString * imageResourceViewControllerIdentifier;

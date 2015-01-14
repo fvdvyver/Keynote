@@ -74,7 +74,7 @@
     }
 }
 
-- (void)setCollectionViewInsetsString:(NSString *)collectionViewInsetsString
+- (void)setViewInsetsString:(NSString *)collectionViewInsetsString
 {
     self.collectionViewInsets = UIEdgeInsetsFromString(collectionViewInsetsString);
 }
