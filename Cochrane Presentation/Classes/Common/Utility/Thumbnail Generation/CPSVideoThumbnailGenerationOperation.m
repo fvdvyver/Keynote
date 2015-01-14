@@ -50,7 +50,9 @@
     
     if (error == nil && imageRef != NULL)
     {
-        UIImage *thumbnail = [UIImage imageWithCGImage:imageRef];
+        UIImage *thumbnail = [[UIImage alloc] initWithCGImage:imageRef
+                                                        scale:[[UIScreen mainScreen] scale]
+                                                  orientation:UIImageOrientationUp];
         [self completeWithResultImage:[self resizeImage:thumbnail toSize:self.thumbnailSize]];
     }
     else
