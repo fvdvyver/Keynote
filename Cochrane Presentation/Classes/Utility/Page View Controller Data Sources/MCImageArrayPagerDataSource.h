@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MCImageLoader.h"
+
 @interface MCImageArrayPagerDataSource : NSObject <UIPageViewControllerDataSource>
 
-@property (nonatomic, strong) NSArray * imageNames;
+// Array of id<MCImageLoader> instances
+@property (nonatomic, strong) NSArray * imageLoaders;
 
 - (UIViewController *)viewControllerForImageAtIndex:(NSInteger)index;
 

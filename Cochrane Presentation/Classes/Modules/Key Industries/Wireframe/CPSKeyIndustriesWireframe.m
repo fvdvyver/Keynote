@@ -10,12 +10,13 @@
 
 #import "CPSCachedViewControllerProvider.h"
 
+#import "CPSImagePagerInteractor.h"
 #import "CPSKeyIndustriesDetailPresenter.h"
 
 @interface CPSKeyIndustriesWireframe ()
 
 @property (nonatomic, strong) UIViewController * mainViewController;
-@property (nonatomic, strong) CPSKeyIndustriesDetailPresenter * detailPresenter;
+@property (nonatomic, strong) id detailInteractor;
 
 @end
 
@@ -25,7 +26,7 @@
 {
     // purge the cached content view controller because we have been requested to provide a new one
     self.mainViewController = nil;
-    self.detailPresenter = nil;
+    self.detailInteractor = nil;
 }
 
 - (UIViewController *)contentViewController
@@ -38,28 +39,33 @@
 
 - (void)showMainViewController
 {
-    self.detailPresenter = nil;
+    self.detailInteractor = nil;
     [self.parentContentWireframe setContentControllerProvider:[CPSCachedViewControllerProvider providerWithCachedViewController:self.mainViewController]];
 }
 
 - (void)showIndustryWithTitle:(NSString *)title imageNames:(NSArray *)imageNames
 {
-    UIViewController<CPSView> *viewController = (id)[self instantiateNewViewControllerWithIdentifier:self.detailViewControllerIdentifier];
+    CPSImagePagerInteractor *interactor = [CPSImagePagerInteractor new];
     CPSKeyIndustriesDetailPresenter *presenter = [CPSKeyIndustriesDetailPresenter new];
-    presenter.title = title;
-    presenter.imageNames = imageNames;
+    UIViewController<CPSImagePagerView> *viewController = (id)[self instantiateNewViewControllerWithIdentifier:self.detailViewControllerIdentifier];
     
-    viewController.eventHandler = presenter;
+    interactor.title = title;
+    interactor.imageResources = imageNames;
+    interactor.presenter = presenter;
     
     presenter.wireframe = self;
-    presenter.userInterface = (id)viewController;
+    presenter.interactor = interactor;
+    presenter.userInterface = viewController;
     
-    self.detailPresenter = presenter;
+    viewController.eventHandler = presenter;
+    [viewController setBackgroundVisible:YES];
     
     // Do this on the next run loop so the UI can update first
     [(id)self.parentContentWireframe performSelector:@selector(setContentControllerProvider:)
                                           withObject:[CPSCachedViewControllerProvider providerWithCachedViewController:viewController]
                                           afterDelay:0.0];
+    
+    self.detailInteractor = interactor;
 }
 
 - (void)navigateToProductRange

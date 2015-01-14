@@ -20,6 +20,7 @@
 
 @property (nonatomic, strong) NSString * additionalResourceListViewControllerIdentifier;
 
+@property (nonatomic, strong) NSString * imageResourceViewControllerIdentifier;
 @property (nonatomic, strong) NSString * videoResourceViewControllerIdentifier;
 
 @property (nonatomic, strong) id<CPSVideoListResourceInteractorInput> interactor;

@@ -8,19 +8,18 @@
 
 #import "CPSKeyIndustriesDetailPresenter.h"
 
+#import "MCNamedImageLoader.h"
+
 @implementation CPSKeyIndustriesDetailPresenter
-
-@synthesize interactor = _interactor;
-
-- (void)updateView
-{    
-    [self.userInterface setTitle:self.title];
-    [self.userInterface setImageNames:self.imageNames];
-}
 
 - (void)viewTapped
 {
     [self.wireframe showMainViewController];
+}
+
+- (NSArray *)imageLoadersForImageResources:(NSArray *)imageResources
+{
+    return [MCNamedImageLoader loadersWithImageNames:imageResources];
 }
 
 @end

@@ -25,7 +25,7 @@
     CPSResourceDirectory *directory = self.resourceDirectories[indexPath.section];
     CPSFileAssetItem *resourceItem = directory.contentFiles[indexPath.row];
     
-    [self.wireframe showResource:resourceItem];
+    [self.wireframe showResource:resourceItem withDirectory:directory];
 }
 
 @end

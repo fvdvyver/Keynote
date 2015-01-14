@@ -9,16 +9,13 @@
 #import <Foundation/Foundation.h>
 
 #import "CPSKeyIndustriesWireframe.h"
-#import "CPSKeyIndustriesDetailViewInterface.h"
+#import "CPSImagePagerPresenter.h"
 
 @class CPSKeyIndustriesWireframe;
 
-@interface CPSKeyIndustriesDetailPresenter : NSObject <CPSKeyIndustriesDetailViewEventHandler>
+@interface CPSKeyIndustriesDetailPresenter : CPSImagePagerPresenter
 
 @property (nonatomic, weak) CPSKeyIndustriesWireframe * wireframe;
-@property (nonatomic, weak) id<CPSKeyIndustriesDetailView> userInterface;
-
-@property (nonatomic, strong) NSString * title;
-@property (nonatomic, strong) NSArray *  imageNames;
+@property (nonatomic, weak) id<CPSImagePagerView>       userInterface;
 
 @end

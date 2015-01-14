@@ -111,7 +111,6 @@
 		6D54D9CB1A28AB5F0070A1D4 /* cost_of_risk_item_mapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D54D9CA1A28AB5F0070A1D4 /* cost_of_risk_item_mapping.plist */; };
 		6D54DA011A28BC730070A1D4 /* MCCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA001A28BC730070A1D4 /* MCCollectionViewDelegate.m */; };
 		6D54DA0E1A28C4430070A1D4 /* CPSKeyIndustriesDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA0D1A28C4430070A1D4 /* CPSKeyIndustriesDetailPresenter.m */; };
-		6D54DA111A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA101A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.m */; };
 		6D54DA131A28CED30070A1D4 /* secondary_asset_mapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D54DA121A28CED30070A1D4 /* secondary_asset_mapping.plist */; };
 		6D54DA1A1A2C6E820070A1D4 /* CPSProductRangeListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA191A2C6E820070A1D4 /* CPSProductRangeListInteractor.m */; };
 		6D54DA1E1A2C6F4E0070A1D4 /* CPSProductRangeWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54DA1D1A2C6F4E0070A1D4 /* CPSProductRangeWireframe.m */; };
@@ -133,6 +132,12 @@
 		6D65A1691A25CF89006519C2 /* CoR_10.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D65A1641A25CF89006519C2 /* CoR_10.mp4 */; };
 		6D65A16A1A25CF89006519C2 /* CoR_11.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D65A1651A25CF89006519C2 /* CoR_11.mp4 */; };
 		6D65A16E1A25DE36006519C2 /* CPSAnimatedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D65A16D1A25DE36006519C2 /* CPSAnimatedTextView.m */; };
+		6D693D451A66AAA2005392B0 /* CPSImagePagerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D693D441A66AAA2005392B0 /* CPSImagePagerPresenter.m */; };
+		6D693D481A66AAB3005392B0 /* CPSImagePagerInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D693D471A66AAB3005392B0 /* CPSImagePagerInteractor.m */; };
+		6D693D4C1A66AC6E005392B0 /* CPSImagePagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D693D4B1A66AC6E005392B0 /* CPSImagePagerViewController.m */; };
+		6D693D511A66B372005392B0 /* MCNamedImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D693D501A66B372005392B0 /* MCNamedImageLoader.m */; };
+		6D693D541A66B38A005392B0 /* MCFilePathImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D693D531A66B38A005392B0 /* MCFilePathImageLoader.m */; };
+		6D693D571A66C002005392B0 /* CPSResourceDirectory+FileTypeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D693D561A66C002005392B0 /* CPSResourceDirectory+FileTypeAdditions.m */; };
 		6D744B461A38527600452746 /* clearvu_resource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D744B451A38527600452746 /* clearvu_resource.plist */; };
 		6D744B481A3852D800452746 /* clearvu_item_mapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D744B471A3852D800452746 /* clearvu_item_mapping.plist */; };
 		6D744B4B1A38535000452746 /* CPSClearVuListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D744B4A1A38535000452746 /* CPSClearVuListPresenter.m */; };
@@ -597,11 +602,8 @@
 		6D54D9CA1A28AB5F0070A1D4 /* cost_of_risk_item_mapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cost_of_risk_item_mapping.plist; sourceTree = "<group>"; };
 		6D54D9FF1A28BC730070A1D4 /* MCCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCollectionViewDelegate.h; sourceTree = "<group>"; };
 		6D54DA001A28BC730070A1D4 /* MCCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCollectionViewDelegate.m; sourceTree = "<group>"; };
-		6D54DA0B1A28C3CD0070A1D4 /* CPSKeyIndustriesDetailViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustriesDetailViewInterface.h; sourceTree = "<group>"; };
 		6D54DA0C1A28C4430070A1D4 /* CPSKeyIndustriesDetailPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustriesDetailPresenter.h; sourceTree = "<group>"; };
 		6D54DA0D1A28C4430070A1D4 /* CPSKeyIndustriesDetailPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSKeyIndustriesDetailPresenter.m; sourceTree = "<group>"; };
-		6D54DA0F1A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSKeyIndustriesDetailViewController.h; sourceTree = "<group>"; };
-		6D54DA101A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSKeyIndustriesDetailViewController.m; sourceTree = "<group>"; };
 		6D54DA121A28CED30070A1D4 /* secondary_asset_mapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = secondary_asset_mapping.plist; sourceTree = "<group>"; };
 		6D54DA171A2C64080070A1D4 /* CPSProductRangeListInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSProductRangeListInteractorIO.h; sourceTree = "<group>"; };
 		6D54DA181A2C6E820070A1D4 /* CPSProductRangeListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSProductRangeListInteractor.h; sourceTree = "<group>"; };
@@ -635,6 +637,21 @@
 		6D65A1651A25CF89006519C2 /* CoR_11.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoR_11.mp4; sourceTree = "<group>"; };
 		6D65A16C1A25DE36006519C2 /* CPSAnimatedTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSAnimatedTextView.h; sourceTree = "<group>"; };
 		6D65A16D1A25DE36006519C2 /* CPSAnimatedTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSAnimatedTextView.m; sourceTree = "<group>"; };
+		6D693D421A66AA05005392B0 /* CPSImagePagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSImagePagerView.h; sourceTree = "<group>"; };
+		6D693D431A66AAA2005392B0 /* CPSImagePagerPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSImagePagerPresenter.h; sourceTree = "<group>"; };
+		6D693D441A66AAA2005392B0 /* CPSImagePagerPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSImagePagerPresenter.m; sourceTree = "<group>"; };
+		6D693D461A66AAB3005392B0 /* CPSImagePagerInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSImagePagerInteractor.h; sourceTree = "<group>"; };
+		6D693D471A66AAB3005392B0 /* CPSImagePagerInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSImagePagerInteractor.m; sourceTree = "<group>"; };
+		6D693D491A66AADA005392B0 /* CPSImagePagerInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSImagePagerInteractorIO.h; sourceTree = "<group>"; };
+		6D693D4A1A66AC6E005392B0 /* CPSImagePagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSImagePagerViewController.h; sourceTree = "<group>"; };
+		6D693D4B1A66AC6E005392B0 /* CPSImagePagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSImagePagerViewController.m; sourceTree = "<group>"; };
+		6D693D4E1A66B323005392B0 /* MCImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCImageLoader.h; sourceTree = "<group>"; };
+		6D693D4F1A66B372005392B0 /* MCNamedImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNamedImageLoader.h; sourceTree = "<group>"; };
+		6D693D501A66B372005392B0 /* MCNamedImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNamedImageLoader.m; sourceTree = "<group>"; };
+		6D693D521A66B38A005392B0 /* MCFilePathImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFilePathImageLoader.h; sourceTree = "<group>"; };
+		6D693D531A66B38A005392B0 /* MCFilePathImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFilePathImageLoader.m; sourceTree = "<group>"; };
+		6D693D551A66C002005392B0 /* CPSResourceDirectory+FileTypeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPSResourceDirectory+FileTypeAdditions.h"; sourceTree = "<group>"; };
+		6D693D561A66C002005392B0 /* CPSResourceDirectory+FileTypeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CPSResourceDirectory+FileTypeAdditions.m"; sourceTree = "<group>"; };
 		6D744B451A38527600452746 /* clearvu_resource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = clearvu_resource.plist; sourceTree = "<group>"; };
 		6D744B471A3852D800452746 /* clearvu_item_mapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = clearvu_item_mapping.plist; sourceTree = "<group>"; };
 		6D744B491A38535000452746 /* CPSClearVuListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSClearVuListPresenter.h; sourceTree = "<group>"; };
@@ -1775,19 +1792,8 @@
 			isa = PBXGroup;
 			children = (
 				6D54DA0A1A28C3AE0070A1D4 /* Presenter */,
-				6D54DA091A28C3980070A1D4 /* View */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		6D54DA091A28C3980070A1D4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6D54DA0B1A28C3CD0070A1D4 /* CPSKeyIndustriesDetailViewInterface.h */,
-				6D54DA0F1A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.h */,
-				6D54DA101A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		6D54DA0A1A28C3AE0070A1D4 /* Presenter */ = {
@@ -1916,6 +1922,65 @@
 				6D744B501A38721800452746 /* CPSMvidTableViewCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6D693D3D1A66A956005392B0 /* Image Paging */ = {
+			isa = PBXGroup;
+			children = (
+				6D693D3E1A66A983005392B0 /* Logic */,
+				6D693D3F1A66A983005392B0 /* UI */,
+			);
+			path = "Image Paging";
+			sourceTree = "<group>";
+		};
+		6D693D3E1A66A983005392B0 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6D693D491A66AADA005392B0 /* CPSImagePagerInteractorIO.h */,
+				6D693D461A66AAB3005392B0 /* CPSImagePagerInteractor.h */,
+				6D693D471A66AAB3005392B0 /* CPSImagePagerInteractor.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		6D693D3F1A66A983005392B0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6D693D401A66A983005392B0 /* Presenter */,
+				6D693D411A66A983005392B0 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6D693D401A66A983005392B0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6D693D431A66AAA2005392B0 /* CPSImagePagerPresenter.h */,
+				6D693D441A66AAA2005392B0 /* CPSImagePagerPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6D693D411A66A983005392B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D693D421A66AA05005392B0 /* CPSImagePagerView.h */,
+				6D693D4A1A66AC6E005392B0 /* CPSImagePagerViewController.h */,
+				6D693D4B1A66AC6E005392B0 /* CPSImagePagerViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D693D4D1A66B313005392B0 /* Image Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				6D693D4E1A66B323005392B0 /* MCImageLoader.h */,
+				6D693D521A66B38A005392B0 /* MCFilePathImageLoader.h */,
+				6D693D531A66B38A005392B0 /* MCFilePathImageLoader.m */,
+				6D693D4F1A66B372005392B0 /* MCNamedImageLoader.h */,
+				6D693D501A66B372005392B0 /* MCNamedImageLoader.m */,
+			);
+			path = "Image Loaders";
 			sourceTree = "<group>";
 		};
 		6D744B2F1A36EACD00452746 /* ClearVu */ = {
@@ -2454,6 +2519,7 @@
 		6DAB25961A6172E000125D91 /* Page View Controller Data Sources */ = {
 			isa = PBXGroup;
 			children = (
+				6D693D4D1A66B313005392B0 /* Image Loaders */,
 				6DAB259A1A61738E00125D91 /* View */,
 				6DAB25971A61731600125D91 /* MCImageArrayPagerDataSource.h */,
 				6DAB25981A61731600125D91 /* MCImageArrayPagerDataSource.m */,
@@ -2644,6 +2710,8 @@
 				6D10EA871A65830500FEC074 /* CPSFileAssetType.h */,
 				6D10EA4A1A651CC400FEC074 /* CPSFileAssetItem+MIME.h */,
 				6D10EA4B1A651CC400FEC074 /* CPSFileAssetItem+MIME.m */,
+				6D693D551A66C002005392B0 /* CPSResourceDirectory+FileTypeAdditions.h */,
+				6D693D561A66C002005392B0 /* CPSResourceDirectory+FileTypeAdditions.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -2965,6 +3033,7 @@
 			isa = PBXGroup;
 			children = (
 				6D10EA511A6528D000FEC074 /* Embedded Resource List */,
+				6D693D3D1A66A956005392B0 /* Image Paging */,
 				6DB899581A3090E50046EBC9 /* Loading Page */,
 				6DF03C491A1F23E4003A0DF1 /* Single Video Playback */,
 				6D1871B71A2734D000F886B9 /* Video List Playback */,
@@ -3495,11 +3564,13 @@
 				6DE057AE1A2C8E5B00EFA18C /* CPSRightToLeftFlowLayout.m in Sources */,
 				6DF03C6A1A1F33B1003A0DF1 /* CPSVideoPlaybackViewController.m in Sources */,
 				6D10EA901A658A0D00FEC074 /* CPSThumbnailGeneratorOperation.m in Sources */,
+				6D693D541A66B38A005392B0 /* MCFilePathImageLoader.m in Sources */,
 				6D10E11A1A10C8C0006DD677 /* CPSMenuItem.m in Sources */,
 				6D84E0FF1A32430E00F1470A /* MPMoviePlayerController+CPSAdditions.m in Sources */,
 				6DE058171A2CA55600EFA18C /* MutableAttrString.m in Sources */,
 				6DEA20DD1A16070B001AAC42 /* CPSPlaceholderViewController.m in Sources */,
 				6D8A14B71A2F054D006A4BEC /* LSImage.m in Sources */,
+				6D693D511A66B372005392B0 /* MCNamedImageLoader.m in Sources */,
 				6DE058131A2CA55600EFA18C /* maxvid_deltas.m in Sources */,
 				6D82E8D71A24ACEF00122582 /* CPSCostOfRiskTableViewDelegate.m in Sources */,
 				6D5432551A1E055000746CB7 /* CPSRootWireframeMenuDelegate.m in Sources */,
@@ -3511,6 +3582,7 @@
 				6DE0583B1A2CA58300EFA18C /* 7zBuf.c in Sources */,
 				6DE058111A2CA55600EFA18C /* maxvid_decode_arm.s in Sources */,
 				6D8A14B81A2F054D006A4BEC /* LSImageMap.m in Sources */,
+				6D693D4C1A66AC6E005392B0 /* CPSImagePagerViewController.m in Sources */,
 				6DC8E65B1A1247A200197DB3 /* CPSCachedViewControllerProvider.m in Sources */,
 				6D2FC68E1A31D584005C7674 /* CPSInfoSpecInteractor.m in Sources */,
 				6D10EA681A65467D00FEC074 /* CPSResourceDirectoryListDataProvider.m in Sources */,
@@ -3546,7 +3618,6 @@
 				6D10EA611A65314E00FEC074 /* CPSResourceListPresenter.m in Sources */,
 				6D2BD9A11A237C9C0035189C /* CPSCostOfRiskCell.m in Sources */,
 				6D744B4B1A38535000452746 /* CPSClearVuListPresenter.m in Sources */,
-				6D54DA111A28C5620070A1D4 /* CPSKeyIndustriesDetailViewController.m in Sources */,
 				6DEA20CF1A15FF3B001AAC42 /* CPSRevealController.m in Sources */,
 				6D10EA711A654D1E00FEC074 /* MCSectionedCollectionViewDataSource.m in Sources */,
 				6D10E1011A10AFC5006DD677 /* CPSRootWireframe.m in Sources */,
@@ -3611,6 +3682,7 @@
 				6D54325A1A1E0F9500746CB7 /* CPSViewControllerProviderUtils.m in Sources */,
 				6D10E11D1A10C8D8006DD677 /* CPSViewControllerMenuItem.m in Sources */,
 				6D2115621A231CDE00F2620B /* CPSKeyValueResourceLoader.m in Sources */,
+				6D693D451A66AAA2005392B0 /* CPSImagePagerPresenter.m in Sources */,
 				6DE0580C1A2CA55600EFA18C /* AVMvidFrameDecoder.m in Sources */,
 				6DAFFF211A63FF0900A25F48 /* CPSVideoListResourceWireframe.m in Sources */,
 				6D1871D41A273FD700F886B9 /* CPSVideoListViewController.m in Sources */,
@@ -3619,6 +3691,7 @@
 				6D54DA3F1A2C825B0070A1D4 /* CPSProductItemPresenter.m in Sources */,
 				6DE058081A2CA55600EFA18C /* AVFrameDecoder.m in Sources */,
 				6D2BD99C1A237A6D0035189C /* CPSCostOfRiskCellPresenter.m in Sources */,
+				6D693D571A66C002005392B0 /* CPSResourceDirectory+FileTypeAdditions.m in Sources */,
 				6D2FC6BB1A321586005C7674 /* CPSAnimatedTextTableViewCell.m in Sources */,
 				6D2FC6AF1A31E70E005C7674 /* CPSSpecificationInfoAssetItem.m in Sources */,
 				6D82E8D41A24ABAD00122582 /* MCTableViewDelegate.m in Sources */,
@@ -3633,6 +3706,7 @@
 				6DE058531A2CA68300EFA18C /* AutoPropertyRelease.m in Sources */,
 				6D10EA3F1A64596200FEC074 /* CPSSectionedDirectoryResourceLoader.m in Sources */,
 				6D1871BE1A2736C800F886B9 /* CPSVideoListInteractor.m in Sources */,
+				6D693D481A66AAB3005392B0 /* CPSImagePagerInteractor.m in Sources */,
 				6DE0580A1A2CA55600EFA18C /* AVImageFrameDecoder.m in Sources */,
 				6D83245B1A38A5D0007BD2FA /* CPSClearVuTableViewDelegate.m in Sources */,
 				6DE500921A399ECC0046074E /* MCSimpleTableViewCellPresenter.m in Sources */,

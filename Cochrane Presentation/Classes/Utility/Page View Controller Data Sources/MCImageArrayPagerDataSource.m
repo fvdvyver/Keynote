@@ -14,7 +14,7 @@
 @interface MCImageArrayPagerDataSource ()
 
 - (MCImageViewController *)newImageViewControllerForIndex:(NSInteger)index;
-- (MCImageViewController *)newImageViewControllerForImageWithName:(NSString *)imageName;
+- (MCImageViewController *)newImageViewControllerForImageLoader:(id<MCImageLoader>)imageLoader;
 
 @end
 
@@ -29,20 +29,20 @@
 {
     MCImageViewController *viewController = nil;
     
-    if (index >= 0 && index < self.imageNames.count)
+    if (index >= 0 && index < self.imageLoaders.count)
     {
-        NSString *imageName = self.imageNames[index];
+        id<MCImageLoader> imageLoader = self.imageLoaders[index];
         
-        viewController = [self newImageViewControllerForImageWithName:imageName];
+        viewController = [self newImageViewControllerForImageLoader:imageLoader];
         viewController.mc_pagerIndex = index;
     }
     
     return viewController;
 }
 
-- (MCImageViewController *)newImageViewControllerForImageWithName:(NSString *)imageName
+- (MCImageViewController *)newImageViewControllerForImageLoader:(id<MCImageLoader>)imageLoader
 {
-    UIImage *image = [UIImage imageNamed:imageName];
+    UIImage *image = [imageLoader loadImage];
     
     MCImageViewController *viewController = [MCImageViewController new];
     viewController.image = image;

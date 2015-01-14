@@ -1,32 +1,31 @@
 //
-//  CPSKeyIndustriesDetailViewController.m
+//  CPSImagePagerViewController.m
 //  Cochrane Presentation
 //
-//  Created by Rayman Rosevear on 2014/11/28.
-//  Copyright (c) 2014 Mushroom Cloud. All rights reserved.
+//  Created by Rayman Rosevear on 2015/01/14.
+//  Copyright (c) 2015 Mushroom Cloud. All rights reserved.
 //
 
-#import "CPSKeyIndustriesDetailViewController.h"
+#import "CPSImagePagerViewController.h"
 
 #import "MCImageArrayPagerDataSource.h"
 
-#define kPageViewControllerEmbedSegueIdentifier @"PageControllerEmbed"
-
-@interface CPSKeyIndustriesDetailViewController ()
+@interface CPSImagePagerViewController ()
 
 @property (nonatomic, weak, readwrite) UIPageViewController * pageViewController;
 @property (nonatomic, strong) MCImageArrayPagerDataSource *   pagerDataSource;
 
 @property (nonatomic, strong) CAGradientLayer * textBackgroundLayer;
 
-- (void)setupImageClippingMask;
-- (void)setupGestureRecognizers;
-
 - (void)viewTapped:(UITapGestureRecognizer *)gestureRecognizer;
+
+- (void)setupImageClippingMask;
+- (void)setupTextBackgroundLayer;
+- (void)setupGestureRecognizers;
 
 @end
 
-@implementation CPSKeyIndustriesDetailViewController
+@implementation CPSImagePagerViewController
 
 - (void)setupImageClippingMask
 {
@@ -44,8 +43,8 @@
     layer.locations = @[ @0.0, @0.1 ];
     layer.colors = @[
                      (__bridge id)[UIColor clearColor].CGColor,
-                      (__bridge id)[UIColor colorWithWhite:0.0 alpha:0.5].CGColor
-                      ];
+                     (__bridge id)[UIColor colorWithWhite:0.0 alpha:0.5].CGColor
+                     ];
     
     [self.view.layer addSublayer:layer];
     [self.view bringSubviewToFront:self.titleLabel];
@@ -54,7 +53,8 @@
 
 - (void)setupGestureRecognizers
 {
-    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
+    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                              action:@selector(viewTapped:)];
     [self.view addGestureRecognizer:gesture];
 }
 
@@ -65,6 +65,9 @@
     [self setupImageClippingMask];
     [self setupTextBackgroundLayer];
     [self setupGestureRecognizers];
+    
+    self.backgroundImageView.hidden = !self.backgroundVisible;
+    self.view.backgroundColor = self.backgroundVisible ? [UIColor blackColor] : [UIColor clearColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -84,7 +87,7 @@
     
     titleFrame.origin.y -= dh;
     titleFrame.size.height += dh;
-
+    
     self.textBackgroundLayer.frame = titleFrame;
 }
 
@@ -93,17 +96,32 @@
     self.titleLabel.text = title;
 }
 
-- (void)setImageNames:(NSArray *)imageNames
+- (void)setImageIndex:(NSUInteger)imageIndex
+{
+    _imageIndex = imageIndex;
+    
+    if (self.pagerDataSource != nil && self.pageViewController != nil)
+    {
+        UIViewController *controller = [self.pagerDataSource viewControllerForImageAtIndex:self.imageIndex];
+        [self.pageViewController setViewControllers:@[ controller ]
+                                          direction:UIPageViewControllerNavigationDirectionForward
+                                           animated:[self isViewLoaded]
+                                         completion:nil];
+    }
+}
+
+- (void)setImageLoaders:(NSArray *)imageLoaders
 {
     MCImageArrayPagerDataSource *pagerDatasource = [MCImageArrayPagerDataSource new];
-    pagerDatasource.imageNames = imageNames;
+    pagerDatasource.imageLoaders = imageLoaders;
     
     self.pagerDataSource = pagerDatasource;
     self.pageViewController.dataSource = self.pagerDataSource;
     
-    if (imageNames.count > 0)
+    if (imageLoaders.count > 0 && self.pageViewController != nil)
     {
-        [self.pageViewController setViewControllers:@[ [self.pagerDataSource viewControllerForImageAtIndex:0] ]
+        UIViewController *controller = [self.pagerDataSource viewControllerForImageAtIndex:self.imageIndex];
+        [self.pageViewController setViewControllers:@[ controller ]
                                           direction:UIPageViewControllerNavigationDirectionForward
                                            animated:[self isViewLoaded]
                                          completion:nil];
@@ -115,9 +133,20 @@
     [self.eventHandler viewTapped];
 }
 
+- (void)setBackgroundVisible:(BOOL)visible
+{
+    _backgroundVisible = visible;
+    
+    if ([self isViewLoaded])
+    {
+        self.backgroundImageView.hidden = !self.backgroundVisible;
+        self.view.backgroundColor = self.backgroundVisible ? [UIColor blackColor] : [UIColor clearColor];
+    }
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:kPageViewControllerEmbedSegueIdentifier])
+    if ([segue.identifier isEqualToString:self.pageViewControllerEmbedSegueIdentifier])
     {
         self.pageViewController = (id)segue.destinationViewController;
         if (self.pageViewController.dataSource == nil)

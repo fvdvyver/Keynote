@@ -168,7 +168,7 @@
 						<key>arguments</key>
 						<dict>
 							<key>detailViewControllerIdentifier</key>
-							<string>KeyIndustriesDetailViewController</string>
+							<string>ImagePagerViewController</string>
 						</dict>
 					</dict>
 					<key>interactor</key>
@@ -283,6 +283,8 @@
 						<dict>
 							<key>additionalResourceListViewControllerIdentifier</key>
 							<string>VideoListResourceGridView</string>
+							<key>imageResourceViewControllerIdentifier</key>
+							<string>ImagePagerViewController</string>
 							<key>videoResourceViewControllerIdentifier</key>
 							<string>VideoPlayerViewController</string>
 						</dict>

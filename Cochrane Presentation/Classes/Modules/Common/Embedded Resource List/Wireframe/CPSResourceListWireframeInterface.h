@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @class CPSFileAssetItem;
+@class CPSResourceDirectory;
 
 @protocol CPSResourceListWireframeInterface <NSObject>
 
-- (void)showResource:(CPSFileAssetItem *)resourceItem;
+- (void)showResource:(CPSFileAssetItem *)resourceItem withDirectory:(CPSResourceDirectory *)directory;
 
 @end

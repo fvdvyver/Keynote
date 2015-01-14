@@ -302,10 +302,10 @@
             </objects>
             <point key="canvasLocation" x="2895" y="-457"/>
         </scene>
-        <!--Key Industries Detail View Controller-->
+        <!--Image Pager View Controller-->
         <scene sceneID="tOS-vE-zdq">
             <objects>
-                <viewController storyboardIdentifier="KeyIndustriesDetailViewController" id="MCb-SD-ECo" customClass="CPSKeyIndustriesDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImagePagerViewController" id="MCb-SD-ECo" customClass="CPSImagePagerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LaE-Fv-bqb"/>
                         <viewControllerLayoutGuide type="bottom" id="KiT-nM-INt"/>
@@ -324,6 +324,12 @@
                                     <constraint firstAttribute="height" constant="706" id="jDC-G3-JWa"/>
                                     <constraint firstAttribute="width" constant="942" id="pIg-BL-nK6"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jDC-G3-JWa"/>
+                                        <exclude reference="pIg-BL-nK6"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="v7R-ZG-7c0" kind="embed" identifier="PageControllerEmbed" id="fdi-hy-qJX"/>
                                 </connections>
@@ -331,7 +337,7 @@
                             <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="key_industry_image_glass_panel" translatesAutoresizingMaskIntoConstraints="NO" id="HHS-Yc-iCw">
                                 <rect key="frame" x="23" y="18" width="978" height="733"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUS-2p-BMN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="rUS-2p-BMN">
                                 <rect key="frame" x="41" y="647" width="942" height="90"/>
                                 <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="80"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -341,16 +347,35 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="npT-LD-sLI" firstAttribute="leading" secondItem="rUS-2p-BMN" secondAttribute="leading" id="1G7-On-3ST"/>
+                            <constraint firstItem="HHS-Yc-iCw" firstAttribute="top" secondItem="M34-Mx-um8" secondAttribute="top" constant="18" id="1n5-TG-LsH"/>
+                            <constraint firstAttribute="bottom" secondItem="HHS-Yc-iCw" secondAttribute="bottom" constant="17" id="3F9-pQ-Bog"/>
+                            <constraint firstItem="npT-LD-sLI" firstAttribute="top" secondItem="M34-Mx-um8" secondAttribute="top" constant="31" id="3ty-QS-lec"/>
                             <constraint firstItem="npT-LD-sLI" firstAttribute="centerY" secondItem="HHS-Yc-iCw" secondAttribute="centerY" id="6KL-MG-Udf"/>
+                            <constraint firstAttribute="trailing" secondItem="HHS-Yc-iCw" secondAttribute="trailing" constant="23" id="C6H-ii-eKy"/>
                             <constraint firstAttribute="centerX" secondItem="npT-LD-sLI" secondAttribute="centerX" id="J5F-pK-gk1"/>
+                            <constraint firstItem="HHS-Yc-iCw" firstAttribute="leading" secondItem="M34-Mx-um8" secondAttribute="leading" constant="23" id="LDJ-Qz-sSx"/>
                             <constraint firstAttribute="centerY" secondItem="npT-LD-sLI" secondAttribute="centerY" id="Qls-cs-OfE"/>
                             <constraint firstItem="npT-LD-sLI" firstAttribute="centerX" secondItem="HHS-Yc-iCw" secondAttribute="centerX" id="Rng-S7-bUU"/>
+                            <constraint firstAttribute="trailing" secondItem="npT-LD-sLI" secondAttribute="trailing" constant="41" id="W21-KU-VUW"/>
+                            <constraint firstAttribute="bottom" secondItem="npT-LD-sLI" secondAttribute="bottom" constant="31" id="fGI-fe-UHs"/>
+                            <constraint firstItem="npT-LD-sLI" firstAttribute="leading" secondItem="M34-Mx-um8" secondAttribute="leading" constant="41" id="q1u-qh-Sjz"/>
                             <constraint firstItem="npT-LD-sLI" firstAttribute="trailing" secondItem="rUS-2p-BMN" secondAttribute="trailing" id="tMh-Um-oCF"/>
                             <constraint firstItem="npT-LD-sLI" firstAttribute="bottom" secondItem="rUS-2p-BMN" secondAttribute="bottom" id="tue-lx-dLS"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6KL-MG-Udf"/>
+                                <exclude reference="J5F-pK-gk1"/>
+                                <exclude reference="Qls-cs-OfE"/>
+                                <exclude reference="Rng-S7-bUU"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="pageViewControllerEmbedSegueIdentifier" value="PageControllerEmbed"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="pagerContainerView" destination="npT-LD-sLI" id="Zm5-HP-L7Q"/>
                         <outlet property="titleLabel" destination="rUS-2p-BMN" id="S8r-My-h06"/>
