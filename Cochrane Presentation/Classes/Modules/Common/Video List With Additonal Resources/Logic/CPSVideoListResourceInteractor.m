@@ -12,10 +12,13 @@
 
 @implementation CPSVideoListResourceInteractor
 
-- (void)playVideoForItem:(CPSAssetItem *)item
+- (void)playVideoForItem:(CPSAdditionalResourceAssetItem *)item
 {
-    [self.presenter setItemResourceButtonVisible:YES];
     [super playVideoForItem:item];
+    if (item.additionalResourceSections.count > 0)
+    {
+        [self.presenter setItemResourceButtonVisible:YES];
+    }
 }
 
 - (void)itemSelectedAtIndex:(NSUInteger)index
@@ -35,7 +38,11 @@
 - (void)resourceWasShown
 {
     // When we show a resource, we should show the additional resource button again
-    [self.presenter setItemResourceButtonVisible:YES];
+    CPSAdditionalResourceAssetItem *item = self.videoItems[self.selectedIndex];
+    if (item.additionalResourceSections.count > 0)
+    {
+        [self.presenter setItemResourceButtonVisible:YES];
+    }
 }
 
 @end
