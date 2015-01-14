@@ -21,7 +21,8 @@
                                  @"png"  : @(CPSFileAssetTypeImage),
                                  @"jpg"  : @(CPSFileAssetTypeImage),
                                  @"jpeg" : @(CPSFileAssetTypeImage),
-                                 @"mp4"  : @(CPSFileAssetTypeVideo)
+                                 @"mp4"  : @(CPSFileAssetTypeVideo),
+                                 @"pdf"  : @(CPSFileAssetTypePDF)
                                 }[extension];
     
     asset.fileType = (fileTypeValue == nil) ? CPSFileAssetTypeUnknown : [fileTypeValue integerValue];

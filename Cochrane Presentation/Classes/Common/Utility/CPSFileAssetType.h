@@ -12,5 +12,6 @@ typedef NS_ENUM(NSInteger, CPSFileAssetType)
 {
     CPSFileAssetTypeImage,
     CPSFileAssetTypeVideo,
+    CPSFileAssetTypePDF,
     CPSFileAssetTypeUnknown
 };

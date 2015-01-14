@@ -138,6 +138,7 @@
 		6D693D511A66B372005392B0 /* MCNamedImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D693D501A66B372005392B0 /* MCNamedImageLoader.m */; };
 		6D693D541A66B38A005392B0 /* MCFilePathImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D693D531A66B38A005392B0 /* MCFilePathImageLoader.m */; };
 		6D693D571A66C002005392B0 /* CPSResourceDirectory+FileTypeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D693D561A66C002005392B0 /* CPSResourceDirectory+FileTypeAdditions.m */; };
+		6D693D5A1A66E714005392B0 /* CPSPDFThumbnailGeneratorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D693D591A66E714005392B0 /* CPSPDFThumbnailGeneratorOperation.m */; };
 		6D744B461A38527600452746 /* clearvu_resource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D744B451A38527600452746 /* clearvu_resource.plist */; };
 		6D744B481A3852D800452746 /* clearvu_item_mapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D744B471A3852D800452746 /* clearvu_item_mapping.plist */; };
 		6D744B4B1A38535000452746 /* CPSClearVuListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D744B4A1A38535000452746 /* CPSClearVuListPresenter.m */; };
@@ -652,6 +653,8 @@
 		6D693D531A66B38A005392B0 /* MCFilePathImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFilePathImageLoader.m; sourceTree = "<group>"; };
 		6D693D551A66C002005392B0 /* CPSResourceDirectory+FileTypeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPSResourceDirectory+FileTypeAdditions.h"; sourceTree = "<group>"; };
 		6D693D561A66C002005392B0 /* CPSResourceDirectory+FileTypeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CPSResourceDirectory+FileTypeAdditions.m"; sourceTree = "<group>"; };
+		6D693D581A66E714005392B0 /* CPSPDFThumbnailGeneratorOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSPDFThumbnailGeneratorOperation.h; sourceTree = "<group>"; };
+		6D693D591A66E714005392B0 /* CPSPDFThumbnailGeneratorOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSPDFThumbnailGeneratorOperation.m; sourceTree = "<group>"; };
 		6D744B451A38527600452746 /* clearvu_resource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = clearvu_resource.plist; sourceTree = "<group>"; };
 		6D744B471A3852D800452746 /* clearvu_item_mapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = clearvu_item_mapping.plist; sourceTree = "<group>"; };
 		6D744B491A38535000452746 /* CPSClearVuListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSClearVuListPresenter.h; sourceTree = "<group>"; };
@@ -1226,6 +1229,8 @@
 				6D10EA921A658B3400FEC074 /* CPSImageThumbnailGenerationOperation.m */,
 				6D10EA941A658B6A00FEC074 /* CPSVideoThumbnailGenerationOperation.h */,
 				6D10EA951A658B6A00FEC074 /* CPSVideoThumbnailGenerationOperation.m */,
+				6D693D581A66E714005392B0 /* CPSPDFThumbnailGeneratorOperation.h */,
+				6D693D591A66E714005392B0 /* CPSPDFThumbnailGeneratorOperation.m */,
 			);
 			path = "Thumbnail Generation";
 			sourceTree = "<group>";
@@ -3630,6 +3635,7 @@
 				6D8933F61A1C86820099A818 /* CPSRootContentWireframe.m in Sources */,
 				6DAB25A01A61753500125D91 /* MCImageViewController.m in Sources */,
 				6D8A14BF1A2F0C43006A4BEC /* CPSAnimatedImageView.m in Sources */,
+				6D693D5A1A66E714005392B0 /* CPSPDFThumbnailGeneratorOperation.m in Sources */,
 				6DE058471A2CA58300EFA18C /* Ppmd7.c in Sources */,
 				6D8DEA1E1A14A578007C92F8 /* CPSMenuItemTableViewCell.m in Sources */,
 				6D2FC6B41A320F6D005C7674 /* CPSInfoSpecCellPresenter.m in Sources */,

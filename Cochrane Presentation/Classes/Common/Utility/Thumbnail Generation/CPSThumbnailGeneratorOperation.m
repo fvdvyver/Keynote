@@ -10,6 +10,7 @@
 
 #import "CPSImageThumbnailGenerationOperation.h"
 #import "CPSVideoThumbnailGenerationOperation.h"
+#import "CPSPDFThumbnailGeneratorOperation.h"
 
 #import <UIImage+MCImageResizing.h>
 
@@ -28,7 +29,8 @@
 {
     NSDictionary *classMap = @{
                                @(CPSFileAssetTypeImage) : [CPSImageThumbnailGenerationOperation class],
-                               @(CPSFileAssetTypeVideo) : [CPSVideoThumbnailGenerationOperation class]
+                               @(CPSFileAssetTypeVideo) : [CPSVideoThumbnailGenerationOperation class],
+                               @(CPSFileAssetTypePDF)   : [CPSPDFThumbnailGeneratorOperation class]
                                };
     
     Class cls = classMap[@(type)];
