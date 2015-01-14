@@ -139,6 +139,7 @@
 		6D693D541A66B38A005392B0 /* MCFilePathImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D693D531A66B38A005392B0 /* MCFilePathImageLoader.m */; };
 		6D693D571A66C002005392B0 /* CPSResourceDirectory+FileTypeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D693D561A66C002005392B0 /* CPSResourceDirectory+FileTypeAdditions.m */; };
 		6D693D5A1A66E714005392B0 /* CPSPDFThumbnailGeneratorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D693D591A66E714005392B0 /* CPSPDFThumbnailGeneratorOperation.m */; };
+		6D693D5E1A66EED1005392B0 /* MCArrayQuickLookPreviewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D693D5D1A66EED1005392B0 /* MCArrayQuickLookPreviewDataSource.m */; };
 		6D744B461A38527600452746 /* clearvu_resource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D744B451A38527600452746 /* clearvu_resource.plist */; };
 		6D744B481A3852D800452746 /* clearvu_item_mapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D744B471A3852D800452746 /* clearvu_item_mapping.plist */; };
 		6D744B4B1A38535000452746 /* CPSClearVuListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D744B4A1A38535000452746 /* CPSClearVuListPresenter.m */; };
@@ -655,6 +656,8 @@
 		6D693D561A66C002005392B0 /* CPSResourceDirectory+FileTypeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CPSResourceDirectory+FileTypeAdditions.m"; sourceTree = "<group>"; };
 		6D693D581A66E714005392B0 /* CPSPDFThumbnailGeneratorOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSPDFThumbnailGeneratorOperation.h; sourceTree = "<group>"; };
 		6D693D591A66E714005392B0 /* CPSPDFThumbnailGeneratorOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSPDFThumbnailGeneratorOperation.m; sourceTree = "<group>"; };
+		6D693D5C1A66EED1005392B0 /* MCArrayQuickLookPreviewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCArrayQuickLookPreviewDataSource.h; sourceTree = "<group>"; };
+		6D693D5D1A66EED1005392B0 /* MCArrayQuickLookPreviewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCArrayQuickLookPreviewDataSource.m; sourceTree = "<group>"; };
 		6D744B451A38527600452746 /* clearvu_resource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = clearvu_resource.plist; sourceTree = "<group>"; };
 		6D744B471A3852D800452746 /* clearvu_item_mapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = clearvu_item_mapping.plist; sourceTree = "<group>"; };
 		6D744B491A38535000452746 /* CPSClearVuListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSClearVuListPresenter.h; sourceTree = "<group>"; };
@@ -1988,6 +1991,15 @@
 			path = "Image Loaders";
 			sourceTree = "<group>";
 		};
+		6D693D5B1A66EE97005392B0 /* Quick Look Preview Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				6D693D5C1A66EED1005392B0 /* MCArrayQuickLookPreviewDataSource.h */,
+				6D693D5D1A66EED1005392B0 /* MCArrayQuickLookPreviewDataSource.m */,
+			);
+			path = "Quick Look Preview Data Source";
+			sourceTree = "<group>";
+		};
 		6D744B2F1A36EACD00452746 /* ClearVu */ = {
 			isa = PBXGroup;
 			children = (
@@ -2685,6 +2697,7 @@
 				6D1871FC1A2779C600F886B9 /* Collection View Data Sources */,
 				6D82E8D81A24B79900122582 /* Gesture Recognizer Delegates */,
 				6DAB25961A6172E000125D91 /* Page View Controller Data Sources */,
+				6D693D5B1A66EE97005392B0 /* Quick Look Preview Data Source */,
 				6D21155C1A231AD200F2620B /* Resource Loader */,
 				6DC8E6671A13881D00197DB3 /* Table View Data Sources */,
 				6DEA20E21A16201E001AAC42 /* View */,
@@ -3690,6 +3703,7 @@
 				6D2115621A231CDE00F2620B /* CPSKeyValueResourceLoader.m in Sources */,
 				6D693D451A66AAA2005392B0 /* CPSImagePagerPresenter.m in Sources */,
 				6DE0580C1A2CA55600EFA18C /* AVMvidFrameDecoder.m in Sources */,
+				6D693D5E1A66EED1005392B0 /* MCArrayQuickLookPreviewDataSource.m in Sources */,
 				6DAFFF211A63FF0900A25F48 /* CPSVideoListResourceWireframe.m in Sources */,
 				6D1871D41A273FD700F886B9 /* CPSVideoListViewController.m in Sources */,
 				6D2FC69A1A31DFEF005C7674 /* CALayer+CPSImplicitActionRemoval.m in Sources */,

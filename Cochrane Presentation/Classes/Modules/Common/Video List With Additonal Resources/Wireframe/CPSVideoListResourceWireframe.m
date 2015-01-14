@@ -6,7 +6,11 @@
 //  Copyright (c) 2015 Mushroom Cloud. All rights reserved.
 //
 
+#import <QuickLook/QuickLook.h>
+
 #import "CPSVideoListResourceWireframe.h"
+
+#import "MCArrayQuickLookPreviewDataSource.h"
 
 #import "CPSResourceListInteractor.h"
 #import "CPSResourceListPresenter.h"
@@ -29,8 +33,12 @@
 
 @property (nonatomic, strong) id<CPSInteractor> contentInteractor;
 
+@property (nonatomic, strong) id quickLookDatasource;
+
 - (void)showImageResource:(CPSFileAssetItem *)asset withDirectory:(CPSResourceDirectory *)directory;
 - (void)showVideoResource:(CPSFileAssetItem *)asset;
+
+- (void)presentFullScreenPDFViewForAsset:(CPSFileAssetItem *)asset;
 
 @end
 
@@ -73,6 +81,11 @@
         {
             [self showVideoResource:resourceItem];
             [self.interactor resourceWasShown];
+            break;
+        }
+        case CPSFileAssetTypePDF:
+        {
+            [self presentFullScreenPDFViewForAsset:resourceItem];
             break;
         }
         default:
@@ -128,6 +141,25 @@
     [(id)self.presenter.userInterface performSelector:@selector(embedContentViewController:)
                                        withObject:videoController afterDelay:0.0];
     self.contentInteractor = interactor;
+}
+
+- (void)presentFullScreenPDFViewForAsset:(CPSFileAssetItem *)asset
+{
+    QLPreviewController *previewController = [[QLPreviewController alloc] init];
+    MCArrayQuickLookPreviewDataSource *datasource = [MCArrayQuickLookPreviewDataSource new];
+    
+    datasource.filePaths = @[ asset.path ];
+    
+    previewController.dataSource = datasource;
+    previewController.currentPreviewItemIndex = 0;
+    
+    UIViewController *rootViewController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    
+    [rootViewController presentViewController:previewController
+                                     animated:YES
+                                   completion:nil];
+
+    self.quickLookDatasource = datasource;
 }
 
 @end

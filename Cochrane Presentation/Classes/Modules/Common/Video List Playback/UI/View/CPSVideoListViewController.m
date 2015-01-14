@@ -11,6 +11,9 @@
 #import <MediaPlayer/MediaPlayer.h>
 
 @interface CPSVideoListViewController ()
+{
+    BOOL _hasUpdated;
+}
 
 @property (nonatomic, strong) MPMoviePlayerController * contentVideoController;
 @property (nonatomic, strong) MPMoviePlayerController * backgroundVideoController;
@@ -29,7 +32,12 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.eventHandler updateView];
+    
+    if (!_hasUpdated)
+    {
+        [self.eventHandler updateView];
+        _hasUpdated = YES;
+    }
 }
 
 - (void)viewDidDisappear:(BOOL)animated
