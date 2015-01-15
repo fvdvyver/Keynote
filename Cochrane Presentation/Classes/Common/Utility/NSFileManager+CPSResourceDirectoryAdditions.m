@@ -50,10 +50,13 @@
             [resourceArray addObject:[self assetWithPath:resourcePath]];
         }
         
-        directory = [CPSResourceDirectory new];
-        directory.directoryName = [path lastPathComponent];
-        directory.directoryPath = path;
-        directory.contentFiles = [NSArray arrayWithArray:resourceArray];
+        if (resourceArray.count > 0)
+        {
+            directory = [CPSResourceDirectory new];
+            directory.directoryName = [path lastPathComponent];
+            directory.directoryPath = path;
+            directory.contentFiles = [NSArray arrayWithArray:resourceArray];
+        }
     }
     
     return directory;
