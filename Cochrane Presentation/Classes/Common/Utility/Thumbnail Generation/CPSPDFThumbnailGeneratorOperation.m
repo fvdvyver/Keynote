@@ -20,7 +20,7 @@
     {
         CGPDFPageRef page = CGPDFDocumentGetPage(pdf, 1);//for the first  page
         CGRect aRect = CGPDFPageGetBoxRect(page, kCGPDFCropBox);
-        UIGraphicsBeginImageContext(aRect.size);
+        UIGraphicsBeginImageContextWithOptions(aRect.size, NO, 0);
         CGContextRef context = UIGraphicsGetCurrentContext();
         
         CGContextSaveGState(context);
