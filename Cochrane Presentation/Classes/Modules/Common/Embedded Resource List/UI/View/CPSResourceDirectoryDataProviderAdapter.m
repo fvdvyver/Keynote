@@ -54,6 +54,7 @@
     
     [cell setTitle:[self.provider titleForItem:item]];
     [cell setAssetPath:path type:type];
+    [cell setFileTypeImage:[self.provider fileTypeImageForItem:item]];
 }
 
 - (void)configureSupplementaryView:(id<CPSResourceListHeaderView>)view

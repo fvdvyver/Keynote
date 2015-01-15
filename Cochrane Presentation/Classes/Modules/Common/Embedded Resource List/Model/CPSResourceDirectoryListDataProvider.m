@@ -69,4 +69,27 @@
     return [[asset.path lastPathComponent] stringByDeletingPathExtension];
 }
 
+- (UIImage *)fileTypeImageForItem:(CPSFileAssetItem *)item
+{
+    switch (item.fileType)
+    {
+        case CPSFileAssetTypeImage:
+        {
+            return [UIImage imageNamed:@"file_placeholder_image"];
+        }
+        case CPSFileAssetTypeVideo:
+        {
+            return [UIImage imageNamed:@"file_placeholder_video"];
+        }
+        case CPSFileAssetTypePDF:
+        {
+            return [UIImage imageNamed:@"file_placeholder_pdf"];
+        }
+        default:
+            break;
+    }
+    
+    return [UIImage imageNamed:@"file_placeholder_unknown"];
+}
+
 @end

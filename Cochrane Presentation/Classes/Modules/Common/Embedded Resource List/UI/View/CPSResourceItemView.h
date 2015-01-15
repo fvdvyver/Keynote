@@ -14,6 +14,7 @@
 
 - (void)setTitle:(NSString *)title;
 - (void)setImage:(UIImage *)image;
+- (void)setFileTypeImage:(UIImage *)fileTypeImage;
 - (void)setAssetPath:(NSString *)assetPath type:(CPSFileAssetType)type;
 
 @end

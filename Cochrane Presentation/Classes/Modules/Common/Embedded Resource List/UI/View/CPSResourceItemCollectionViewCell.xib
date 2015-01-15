@@ -33,6 +33,10 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="l4L-tK-zgu">
+                        <rect key="frame" x="105" y="8" width="30" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" id="Cb0-0h-cZu">
                         <rect key="frame" x="0.0" y="93" width="143" height="14"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -47,8 +51,9 @@
             <connections>
                 <outlet property="imageView" destination="crh-65-xMw" id="euF-H3-Ywh"/>
                 <outlet property="titleLabel" destination="Cb0-0h-cZu" id="b1v-iF-P0c"/>
+                <outlet property="typeImageView" destination="l4L-tK-zgu" id="Eb1-we-Q9Z"/>
             </connections>
-            <point key="canvasLocation" x="254.5" y="292"/>
+            <point key="canvasLocation" x="254.5" y="291.5"/>
         </collectionViewCell>
     </objects>
     <resources>

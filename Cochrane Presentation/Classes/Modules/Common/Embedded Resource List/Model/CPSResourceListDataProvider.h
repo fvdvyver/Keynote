@@ -22,5 +22,6 @@
 
 - (NSString *)assetPathForItem:(id)item outType:(CPSFileAssetType *)type;
 - (NSString *)titleForItem:(id)item;
+- (UIImage *)fileTypeImageForItem:(id)item;
 
 @end

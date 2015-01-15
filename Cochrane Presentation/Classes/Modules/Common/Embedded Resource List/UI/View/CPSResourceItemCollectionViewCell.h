@@ -14,6 +14,7 @@
 
 @property (nonatomic, weak) IBOutlet UILabel *     titleLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * imageView;
+@property (nonatomic, weak) IBOutlet UIImageView *typeImageView;
 
 - (void)setImage:(UIImage *)image animated:(BOOL)animated;
            

@@ -61,9 +61,22 @@
     [super prepareForReuse];
     self.titleLabel.text = nil;
     self.imageView.image = nil;
+    self.typeImageView.image = nil;
     
     [self.operation cancel];
     self.operation = nil;
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    CGSize imageSize = self.typeImageView.image.size;
+    CGSize padding = CGSizeMake(5.0, 5.0);
+    self.typeImageView.frame = CGRectMake(CGRectGetWidth(self.contentView.bounds) - (imageSize.width + padding.width),
+                                          padding.height,
+                                          imageSize.width,
+                                          imageSize.height);
 }
 
 - (void)setHighlighted:(BOOL)highlighted
@@ -153,6 +166,11 @@
                         self.imageView.image = image;
                     }
                     completion:nil];
+}
+
+- (void)setFileTypeImage:(UIImage *)fileTypeImage
+{
+    self.typeImageView.image = fileTypeImage;
 }
 
 - (void)setAssetPath:(NSString *)assetPath type:(CPSFileAssetType)type
