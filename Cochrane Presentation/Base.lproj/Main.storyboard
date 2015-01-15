@@ -860,10 +860,15 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FR-PX-aIc">
-                                        <rect key="frame" x="932" y="13" width="41" height="90"/>
-                                        <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="69"/>
-                                        <state key="normal" title="+">
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FR-PX-aIc">
+                                        <rect key="frame" x="921" y="40" width="53" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="53" id="CkO-Ta-FtI"/>
+                                            <constraint firstAttribute="width" constant="53" id="fyY-il-xl9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="59"/>
+                                        <inset key="contentEdgeInsets" minX="1" minY="-2" maxX="-1" maxY="2"/>
+                                        <state key="normal" title="+" backgroundImage="clearvu_add_button_small">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -876,8 +881,10 @@
                                 <constraints>
                                     <constraint firstItem="jbF-PP-2KB" firstAttribute="leading" secondItem="TDf-aC-hdW" secondAttribute="leading" constant="366" id="7Ia-ak-R0L"/>
                                     <constraint firstItem="jbF-PP-2KB" firstAttribute="top" secondItem="TDf-aC-hdW" secondAttribute="top" constant="13" id="MRm-ov-ucZ"/>
+                                    <constraint firstItem="6FR-PX-aIc" firstAttribute="top" secondItem="TDf-aC-hdW" secondAttribute="top" constant="40" id="Nax-js-u6L"/>
                                     <constraint firstItem="LvD-Vd-D4o" firstAttribute="leading" secondItem="TDf-aC-hdW" secondAttribute="leading" constant="23" id="Wn9-d2-UN6"/>
                                     <constraint firstItem="LvD-Vd-D4o" firstAttribute="top" secondItem="TDf-aC-hdW" secondAttribute="top" constant="13" id="jgk-A0-bm1"/>
+                                    <constraint firstAttribute="trailing" secondItem="6FR-PX-aIc" secondAttribute="trailing" constant="50" id="lW1-vj-arh"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1044,6 +1051,7 @@
     <resources>
         <image name="access_button_border" width="275" height="126"/>
         <image name="access_button_border_highlighted" width="275" height="126"/>
+        <image name="clearvu_add_button_small" width="53" height="53"/>
         <image name="clearvu_background" width="1024" height="768"/>
         <image name="cochrane_logo" width="326" height="94"/>
         <image name="graphs_background" width="1024" height="768"/>
