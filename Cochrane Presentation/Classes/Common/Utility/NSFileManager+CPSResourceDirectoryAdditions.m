@@ -17,7 +17,7 @@
 - (CPSFileAssetItem *)assetWithPath:(NSString *)path
 {
     CPSFileAssetItem *asset = [CPSFileAssetItem itemWithPath:path];
-    NSString *extension = [asset.path pathExtension];
+    NSString *extension = [[asset.path pathExtension] lowercaseString];
     NSNumber *fileTypeValue = @{
                                 @"png"  : @(CPSFileAssetTypeImage),
                                 @"jpg"  : @(CPSFileAssetTypeImage),
