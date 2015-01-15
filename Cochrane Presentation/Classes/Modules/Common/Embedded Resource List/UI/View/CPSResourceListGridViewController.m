@@ -36,7 +36,7 @@
                    withReuseIdentifier:kHeaderIdentifier];
     
     UICollectionViewFlowLayout *layout = (id)self.collectionView.collectionViewLayout;
-    layout.headerReferenceSize = CGSizeMake(0.0, 40.0);
+    layout.headerReferenceSize = CGSizeMake(0.0, 50.0);
     
     self.collectionView.delegate = self;
 }

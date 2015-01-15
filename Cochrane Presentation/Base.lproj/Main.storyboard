@@ -867,7 +867,7 @@
                                             <constraint firstAttribute="width" constant="53" id="fyY-il-xl9"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Planer" family="Planer" pointSize="59"/>
-                                        <inset key="contentEdgeInsets" minX="1" minY="-2" maxX="-1" maxY="2"/>
+                                        <inset key="contentEdgeInsets" minX="1" minY="-2" maxX="0.0" maxY="3"/>
                                         <state key="normal" title="+" backgroundImage="clearvu_add_button_small">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
