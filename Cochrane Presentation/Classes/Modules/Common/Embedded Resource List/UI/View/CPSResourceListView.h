@@ -18,6 +18,8 @@
 - (void)setResourceListDataProvider:(id<CPSResourceListDataProvider>)provider;
 - (void)setViewInsetsString:(NSString *)insetsString;
 
+- (void)hideBackgroundView;
+
 @end
 
 @protocol CPSResourceListViewEventHandler <CPSPresenter>

@@ -15,7 +15,7 @@
 
 @interface CPSProductItemCollectionViewCell : UICollectionViewCell <CPSProductItemVideoView>
 
-@property (weak, nonatomic) IBOutlet CPSAnimatedTextView * textView;
-@property (weak, nonatomic) IBOutlet CPSAnimatedImageView *imageView;
+@property (nonatomic, weak) IBOutlet CPSAnimatedTextView * textView;
+@property (nonatomic, weak) IBOutlet CPSAnimatedImageView *imageView;
 
 @end

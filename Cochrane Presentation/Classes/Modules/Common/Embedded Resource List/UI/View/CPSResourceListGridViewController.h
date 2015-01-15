@@ -15,6 +15,7 @@
 @property (nonatomic, weak) id<CPSResourceListViewEventHandler> eventHandler;
 
 @property (nonatomic, weak) IBOutlet UICollectionView * collectionView;
+@property (nonatomic, weak) IBOutlet UIImageView * backgroundImageView;
 
 @property (nonatomic, assign) IBInspectable UIEdgeInsets collectionViewInsets;
 

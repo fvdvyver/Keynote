@@ -299,7 +299,7 @@
 						<array>
 							<dict>
 								<key>class</key>
-								<string>CPSVideoListDirectoryResourceLoader</string>
+								<string>CPSSectionedDirectoryResourceLoader</string>
 								<key>arguments</key>
 								<dict>
 									<key>mapping</key>
@@ -370,7 +370,7 @@
 						<array>
 							<dict>
 								<key>class</key>
-								<string>CPSVideoListDirectoryResourceLoader</string>
+								<string>CPSSectionedDirectoryResourceLoader</string>
 								<key>arguments</key>
 								<dict>
 									<key>mapping</key>
@@ -482,6 +482,65 @@
 					<dict>
 						<key>identifier</key>
 						<string>VideoPlayerViewController</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>identifier</key>
+			<string>menu.marketing</string>
+			<key>title</key>
+			<string>Marketing Materials</string>
+			<key>icon</key>
+			<string></string>
+			<key>content_wireframes</key>
+			<array>
+				<dict>
+					<key>wireframe</key>
+					<dict>
+						<key>class</key>
+						<string>CPSMarketingMaterialWireframe</string>
+						<key>arguments</key>
+						<dict>
+							<key>imageResourceViewControllerIdentifier</key>
+							<string>ImagePagerViewController</string>
+							<key>videoResourceViewControllerIdentifier</key>
+							<string>VideoPlayerViewController</string>
+						</dict>
+					</dict>
+					<key>interactor</key>
+					<dict>
+						<key>class</key>
+						<string>CPSResourceListInteractor</string>
+						<key>resource_loaders</key>
+						<array>
+							<dict>
+								<key>class</key>
+								<string>CPSResourceListDirectoryResourceLoader</string>
+								<key>arguments</key>
+								<dict>
+									<key>target_data_keypath</key>
+									<string>resourceDirectories</string>
+									<key>base_directory</key>
+									<string>Module Resource/Marketing Material</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>presenter</key>
+					<dict>
+						<key>class</key>
+						<string>CPSResourceListPresenter</string>
+						<key>arguments</key>
+						<dict>
+							<key>viewInsetsString</key>
+							<string>{10, 20, 20, 0}</string>
+						</dict>
+					</dict>
+					<key>view</key>
+					<dict>
+						<key>identifier</key>
+						<string>VideoListResourceGridView</string>
 					</dict>
 				</dict>
 			</array>

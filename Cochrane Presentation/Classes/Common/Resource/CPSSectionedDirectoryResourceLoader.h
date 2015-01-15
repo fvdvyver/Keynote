@@ -30,10 +30,4 @@
 - (void)loadSectionedResourcesForTargetItem:(id)target
                       resourceSpecification:(NSDictionary *)resource;
 
-/**
- *  This will return an array of CPSResourceDirectory. Its contentFiles array will contain instances of whatever object is returned from -assetFromPath: (default is CPSFileAssetItem)
- */
-- (CPSResourceDirectory *)loadResourcesAtDirectory:(NSString *)path;
-- (id)assetFromPath:(NSString *)path;
-
 @end

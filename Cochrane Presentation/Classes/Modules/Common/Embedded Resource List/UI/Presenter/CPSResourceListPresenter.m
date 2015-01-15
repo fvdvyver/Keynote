@@ -23,6 +23,14 @@
 - (void)updateView
 {
     [self.interactor requestAllResourceItems];
+    if (self.hidesBackground)
+    {
+        [self.userInterface hideBackgroundView];
+    }
+    if (self.viewInsetsString != nil)
+    {
+        [self.userInterface setViewInsetsString:self.viewInsetsString];
+    }
 }
 
 - (void)setResourceDirectories:(NSArray *)resourceDirectories

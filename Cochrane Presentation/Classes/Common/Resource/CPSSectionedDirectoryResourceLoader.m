@@ -11,6 +11,8 @@
 #import "CPSFileAssetItem.h"
 #import "CPSResourceDirectory.h"
 
+#import "NSFileManager+CPSResourceDirectoryAdditions.h"
+
 @interface CPSSectionedDirectoryResourceLoader ()
 
 @property (nonatomic, strong) NSString * pathPrefix;
@@ -75,7 +77,11 @@
         BOOL isDir = NO;
         if ([fileManager fileExistsAtPath:sectionPath isDirectory:&isDir] && isDir)
         {
-            [loadedSections addObject:[self loadResourcesAtDirectory:sectionPath]];
+            CPSResourceDirectory *directory = [fileManager loadResourcesAtDirectory:sectionPath];
+            if (directory != nil)
+            {
+                [loadedSections addObject:directory];
+            }
         }
         else
         {
@@ -88,35 +94,6 @@
     {
         [target setValue:loadedSections forKeyPath:self.sectionedDataKeypath];
     }
-}
-
-- (CPSResourceDirectory *)loadResourcesAtDirectory:(NSString *)path
-{
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    
-    NSError *error = nil;
-    NSArray *directoryContents = [fileManager contentsOfDirectoryAtPath:path error:&error];
-    
-    NSAssert(error == nil, @"An error occurred get the contents of directory %@: %@", path, error.localizedDescription);
-    
-    NSMutableArray *resourceArray = [NSMutableArray arrayWithCapacity:directoryContents.count];
-    for (NSString *resourceName in directoryContents)
-    {
-        NSString *resourcePath = [path stringByAppendingPathComponent:resourceName];
-        [resourceArray addObject:[self assetFromPath:resourcePath]];
-    }
-    
-    CPSResourceDirectory *directory = [CPSResourceDirectory new];
-    directory.directoryName = [path lastPathComponent];
-    directory.directoryPath = path;
-    directory.contentFiles = [NSArray arrayWithArray:resourceArray];
-    
-    return directory;
-}
-
-- (id)assetFromPath:(NSString *)path
-{
-    return [CPSFileAssetItem itemWithPath:path];
 }
 
 @end

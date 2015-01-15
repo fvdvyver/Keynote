@@ -1,35 +1,34 @@
 //
-//  CPSVideoListResourceWireframe.m
+//  CPSMarketingMaterialWireframe.m
 //  Cochrane Presentation
 //
-//  Created by Rayman Rosevear on 2015/01/12.
+//  Created by Rayman Rosevear on 2015/01/14.
 //  Copyright (c) 2015 Mushroom Cloud. All rights reserved.
 //
 
 #import <QuickLook/QuickLook.h>
 
-#import "CPSVideoListResourceWireframe.h"
+#import "CPSMarketingMaterialWireframe.h"
 
 #import "MCArrayQuickLookPreviewDataSource.h"
-
-#import "CPSResourceListInteractor.h"
-#import "CPSResourceListPresenter.h"
-#import "CPSResourceListView.h"
 
 #import "CPSResourceDirectory.h"
 #import "CPSFileAssetItem+MIME.h"
 #import "CPSResourceDirectory+FileTypeAdditions.h"
 
+#import "CPSCachedViewControllerProvider.h"
+
 #import "CPSImagePagerInteractor.h"
-#import "CPSImagePagerPresenter.h"
+#import "CPSMarketingImagePagerPresenter.h"
 #import "CPSImagePagerView.h"
 
 #import "CPSVideoPlayerInteractor.h"
-#import "CPSVideoPlayerPresenter.h"
+#import "CPSMarketingVideoPlayerPresenter.h"
 #import "CPSVideoPlayerViewInterface.h"
 
-@interface CPSVideoListResourceWireframe ()
+@interface CPSMarketingMaterialWireframe ()
 
+@property (nonatomic, strong) UIViewController * rootViewController;
 @property (nonatomic, strong) id<CPSInteractor> contentInteractor;
 
 @property (nonatomic, strong) id quickLookDatasource;
@@ -41,36 +40,28 @@
 
 @end
 
-@implementation CPSVideoListResourceWireframe
+@implementation CPSMarketingMaterialWireframe
 
 - (void)prepareContentViewController
 {
+    // purge the cached content view controller because we have been requested to provide a new one
+    self.rootViewController = nil;
     self.contentInteractor = nil;
     self.quickLookDatasource = nil;
 }
 
-- (void)showVideoItemAdditionalResources:(NSArray *)resources
+- (UIViewController *)contentViewController
 {
-    CPSResourceListInteractor *interactor = [CPSResourceListInteractor new];
-    CPSResourceListPresenter *presenter = [CPSResourceListPresenter new];
-    UIViewController<CPSResourceListView> * contentController = (id) [self instantiateNewViewControllerWithIdentifier:self.additionalResourceListViewControllerIdentifier];
+    UIViewController *viewController = [super contentViewController];
+    self.rootViewController = viewController;
     
-    interactor.resourceDirectories = resources;
-    interactor.wireframe = self;
-    interactor.presenter = presenter;
-    
-    presenter.interactor = interactor;
-    presenter.userInterface = contentController;
-    presenter.hidesBackground = YES;
-    
-    contentController.eventHandler = presenter;
-    if (self.additionalResourceViewInsetsString != nil)
-    {
-        [contentController setViewInsetsString:self.additionalResourceViewInsetsString];
-    }
-    
-    [self.presenter.userInterface embedContentViewController:contentController];
-    self.contentInteractor = interactor;
+    return viewController;
+}
+
+- (void)showRootViewController
+{
+    self.contentInteractor = nil;
+    [self.parentContentWireframe setContentControllerProvider:[CPSCachedViewControllerProvider providerWithCachedViewController:self.rootViewController]];
 }
 
 - (void)showResource:(CPSFileAssetItem *)resourceItem withDirectory:(CPSResourceDirectory *)directory
@@ -80,13 +71,11 @@
         case CPSFileAssetTypeImage:
         {
             [self showImageResource:resourceItem withDirectory:directory];
-            [self.interactor resourceWasShown];
             break;
         }
         case CPSFileAssetTypeVideo:
         {
             [self showVideoResource:resourceItem];
-            [self.interactor resourceWasShown];
             break;
         }
         case CPSFileAssetTypePDF:
@@ -105,7 +94,7 @@
 - (void)showImageResource:(CPSFileAssetItem *)asset withDirectory:(CPSResourceDirectory *)directory
 {
     CPSImagePagerInteractor *interactor = [CPSImagePagerInteractor new];
-    CPSImagePagerPresenter *presenter = [CPSImagePagerPresenter new];
+    CPSImagePagerPresenter *presenter = [CPSMarketingImagePagerPresenter new];
     UIViewController<CPSImagePagerView> *imageController = (id)[self instantiateNewViewControllerWithIdentifier:self.imageResourceViewControllerIdentifier];
     
     NSArray *imagePaths = [directory filePathsForAllImages];
@@ -116,6 +105,7 @@
     interactor.imageResources = imagePaths;
     interactor.presenter = presenter;
     
+    presenter.wireframe = self;
     presenter.interactor = interactor;
     presenter.userInterface = imageController;
     
@@ -123,29 +113,31 @@
     [imageController setBackgroundVisible:YES];
     
     // Do this on the next run loop so the UI can update first
-    [(id)self.presenter.userInterface performSelector:@selector(embedContentViewController:)
-                                           withObject:imageController afterDelay:0.0];
+    [(id)self.parentContentWireframe performSelector:@selector(setContentControllerProvider:)
+                                          withObject:[CPSCachedViewControllerProvider providerWithCachedViewController:imageController]
+                                          afterDelay:0.0];
     
     self.contentInteractor = interactor;
-
 }
 
 - (void)showVideoResource:(CPSFileAssetItem *)asset
 {
     CPSVideoPlayerInteractor *interactor = [CPSVideoPlayerInteractor new];
-    CPSVideoPlayerPresenter *presenter = [CPSVideoPlayerPresenter new];
+    CPSVideoPlayerPresenter *presenter = [CPSMarketingVideoPlayerPresenter new];
     UIViewController<CPSVideoPlayerViewInterface> *videoController = (id) [self instantiateNewViewControllerWithIdentifier:self.videoResourceViewControllerIdentifier];
     
     interactor.videoPath = asset.path;
     interactor.presenter = presenter;
     
+    presenter.wireframe = self;
     presenter.interactor = interactor;
     presenter.userInterface = videoController;
     
     videoController.eventHandler = presenter;
     
-    [(id)self.presenter.userInterface performSelector:@selector(embedContentViewController:)
-                                       withObject:videoController afterDelay:0.0];
+    [(id)self.parentContentWireframe performSelector:@selector(setContentControllerProvider:)
+                                          withObject:[CPSCachedViewControllerProvider providerWithCachedViewController:videoController]
+                                          afterDelay:0.0];
     self.contentInteractor = interactor;
 }
 
@@ -164,7 +156,7 @@
     [rootViewController presentViewController:previewController
                                      animated:YES
                                    completion:nil];
-
+    
     self.quickLookDatasource = datasource;
 }
 

@@ -16,4 +16,7 @@
 @property (nonatomic, weak) id <CPSResourceListInteractorInput> interactor;
 @property (nonatomic, weak) id <CPSResourceListView> userInterface;
 
+@property (nonatomic, assign) BOOL hidesBackground;
+@property (nonatomic, strong) NSString *viewInsetsString;
+
 @end

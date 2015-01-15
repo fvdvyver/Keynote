@@ -79,6 +79,11 @@
     self.collectionViewInsets = UIEdgeInsetsFromString(collectionViewInsetsString);
 }
 
+- (void)hideBackgroundView
+{
+    self.backgroundImageView.hidden = YES;
+}
+
 - (NSString *)collectionViewInsetsString
 {
     return NSStringFromUIEdgeInsets(self.collectionViewInsets);
