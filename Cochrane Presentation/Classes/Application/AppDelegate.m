@@ -24,6 +24,10 @@
     [applicationContext configureApplicationWithWindow:self.window];
 
     self.applicationContext = applicationContext;
+    
+    // Delay the splash screen
+    [NSThread sleepForTimeInterval:1];
+    
     return YES;
 }
 
