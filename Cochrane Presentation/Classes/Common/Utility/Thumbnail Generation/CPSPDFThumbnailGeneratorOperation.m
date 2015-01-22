@@ -38,10 +38,11 @@
         UIImage *thumbnail = UIGraphicsGetImageFromCurrentImageContext();
         CGContextRestoreGState(context);
         UIGraphicsEndImageContext();
-        CGPDFDocumentRelease(pdf);
         
         [self completeWithResultImage:[self resizeImage:thumbnail toSize:self.thumbnailSize]];
     }
+    
+    CGPDFDocumentRelease(pdf);
 }
 
 @end
