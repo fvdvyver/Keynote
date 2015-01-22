@@ -14,6 +14,29 @@
 
 @implementation NSFileManager (CPSResourceDirectoryAdditions)
 
+- (NSArray *)filePathsOfNonDirectoriesAtPath:(NSString *)path
+{
+    NSMutableArray *filePaths = nil;
+    
+    BOOL isDir = NO;
+    if ([self fileExistsAtPath:path isDirectory:&isDir] && isDir)
+    {
+        NSError *error = nil;
+        NSArray *directoryContents = [self contentsOfDirectoryAtPath:path error:&error];
+        
+        NSAssert(error == nil, @"An error occurred getting the contents of directory %@: %@", path, error.localizedDescription);
+        
+        filePaths = [NSMutableArray arrayWithCapacity:directoryContents.count];
+        for (NSString *fileName in directoryContents)
+        {
+            NSString *filePath = [path stringByAppendingPathComponent:fileName];
+            [filePaths addObject:filePath];
+        }
+    }
+    
+    return filePaths == nil ? nil : [NSArray arrayWithArray:filePaths];
+}
+
 - (CPSFileAssetItem *)assetWithPath:(NSString *)path
 {
     CPSFileAssetItem *asset = [CPSFileAssetItem itemWithPath:path];

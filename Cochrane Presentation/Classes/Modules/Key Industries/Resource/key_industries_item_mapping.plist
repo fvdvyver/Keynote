@@ -6,7 +6,5 @@
 	<string>title</string>
 	<key>icon_image_name</key>
 	<string>primaryFilename</string>
-	<key>image_array_file</key>
-	<string>imageArrayResourceName</string>
 </dict>
 </plist>

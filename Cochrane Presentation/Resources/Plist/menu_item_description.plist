@@ -179,7 +179,7 @@
 						<array>
 							<dict>
 								<key>class</key>
-								<string>CPSPropertyMappingResourceLoader</string>
+								<string>CPSDirectoryResourceLoader</string>
 								<key>arguments</key>
 								<dict>
 									<key>instance_class</key>
@@ -190,6 +190,10 @@
 									<string>key_industries_resource</string>
 									<key>target_data_keypath</key>
 									<string>industryItems</string>
+									<key>resource_path_prefix</key>
+									<string>Module Resource/Key Industries</string>
+									<key>resource_data_list_keypath</key>
+									<string>images</string>
 								</dict>
 							</dict>
 						</array>

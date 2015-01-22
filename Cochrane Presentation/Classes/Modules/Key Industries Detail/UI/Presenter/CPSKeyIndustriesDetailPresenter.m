@@ -17,9 +17,4 @@
     [self.wireframe showMainViewController];
 }
 
-- (NSArray *)imageLoadersForImageResources:(NSArray *)imageResources
-{
-    return [MCNamedImageLoader loadersWithImageNames:imageResources];
-}
-
 @end

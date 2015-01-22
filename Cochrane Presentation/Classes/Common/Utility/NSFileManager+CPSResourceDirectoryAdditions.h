@@ -14,6 +14,11 @@
 @interface NSFileManager (CPSResourceDirectoryAdditions)
 
 /**
+ *  Returns a list of all the files in the given directory that are not folders
+ */
+- (NSArray *)filePathsOfNonDirectoriesAtPath:(NSString *)path;
+
+/**
  *  Returns a new CPSAssetItem configured with the specified path, and with the fileType (from CPSFileAssetItem+MIME.h) specified
  */
 - (CPSFileAssetItem *)assetWithPath:(NSString *)path;
