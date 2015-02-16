@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F52FAD01A8B57D600F241AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC4D1A0B7A140097E4F5 /* LaunchScreen.xib */; };
 		6D10E1011A10AFC5006DD677 /* CPSRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E1001A10AFC5006DD677 /* CPSRootWireframe.m */; };
 		6D10E1091A10B866006DD677 /* CPSRevealRootPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E1081A10B866006DD677 /* CPSRevealRootPresenter.m */; };
 		6D10E10A1A10B8A1006DD677 /* CPSRevealRootPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10E1081A10B866006DD677 /* CPSRevealRootPresenter.m */; };
@@ -154,7 +155,6 @@
 		6D78FC441A0B7A140097E4F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC431A0B7A140097E4F5 /* AppDelegate.m */; };
 		6D78FC4A1A0B7A140097E4F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC481A0B7A140097E4F5 /* Main.storyboard */; };
 		6D78FC4C1A0B7A140097E4F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC4B1A0B7A140097E4F5 /* Images.xcassets */; };
-		6D78FC4F1A0B7A140097E4F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC4D1A0B7A140097E4F5 /* LaunchScreen.xib */; };
 		6D78FC6D1A0B82B70097E4F5 /* CPSRootWireframeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FC6C1A0B82B70097E4F5 /* CPSRootWireframeTests.m */; };
 		6D82E8D41A24ABAD00122582 /* MCTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D82E8D31A24ABAD00122582 /* MCTableViewDelegate.m */; };
 		6D82E8D71A24ACEF00122582 /* CPSCostOfRiskTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D82E8D61A24ACEF00122582 /* CPSCostOfRiskTableViewDelegate.m */; };
@@ -324,7 +324,7 @@
 		6DE0584F1A2CA5A900EFA18C /* 7zAlloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DE0584C1A2CA5A900EFA18C /* 7zAlloc.c */; };
 		6DE058501A2CA5A900EFA18C /* 7zMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DE0584E1A2CA5A900EFA18C /* 7zMain.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		6DE058531A2CA68300EFA18C /* AutoPropertyRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE058521A2CA68300EFA18C /* AutoPropertyRelease.m */; };
-		6DE058561A2CA70500EFA18C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE058541A2CA6F700EFA18C /* libz.dylib */; };
+		6DE058561A2CA70500EFA18C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE058541A2CA6F700EFA18C /* libz.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 		6DE500801A38C2570046074E /* clearvu_00.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5007F1A38C2570046074E /* clearvu_00.mp4 */; };
 		6DE500841A3998460046074E /* graphs.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE500831A3998460046074E /* graphs.xcassets */; };
 		6DE500891A399B5F0046074E /* CPSGraphListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE500881A399B5F0046074E /* CPSGraphListViewController.m */; };
@@ -353,7 +353,7 @@
 		6DF03C6B1A1F3442003A0DF1 /* CPSVideoPlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF03C691A1F33B1003A0DF1 /* CPSVideoPlaybackViewController.m */; };
 		6DF03C6C1A1F3445003A0DF1 /* CPSVideoPlayerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF03C641A1F2F5A003A0DF1 /* CPSVideoPlayerPresenter.m */; };
 		6DF03C6D1A1F3448003A0DF1 /* CPSVideoPlayerInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF03C511A1F2528003A0DF1 /* CPSVideoPlayerInteractor.m */; };
-		76C13A78658DA88850DD7979 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 888BB7766EC1DFB252B3FBBC /* libPods.a */; };
+		76C13A78658DA88850DD7979 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 888BB7766EC1DFB252B3FBBC /* libPods.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		E0BF00AE3AD224C668B6E35D /* libPods-Cochrane PresentationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC7C682EDA3593D283FE74A /* libPods-Cochrane PresentationTests.a */; };
 /* End PBXBuildFile section */
 
@@ -3106,6 +3106,7 @@
 				TargetAttributes = {
 					6D78FC3A1A0B7A140097E4F5 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = P24327CFR5;
 					};
 					6D78FC531A0B7A140097E4F5 = {
 						CreatedOnToolsVersion = 6.1;
@@ -3209,6 +3210,7 @@
 				6D65A16A1A25CF89006519C2 /* CoR_11.mp4 in Resources */,
 				6DAA21541A304ED000B5CB18 /* product_large_02.mp4 in Resources */,
 				6DE057A81A2C87DF00EFA18C /* CPSProductItemCollectionViewCell.xib in Resources */,
+				0F52FAD01A8B57D600F241AB /* LaunchScreen.xib in Resources */,
 				6D2FC6A81A31E694005C7674 /* main_interface_03.mvid in Resources */,
 				6D65A15E1A25CD08006519C2 /* CoR_4.mp4 in Resources */,
 				6DEA20E81A1638AA001AAC42 /* Planer_Reg.ttf in Resources */,
@@ -3254,7 +3256,6 @@
 				6D8A14A21A2F030F006A4BEC /* product_sprite_8@2x.plist in Resources */,
 				6D2FC6C81A3232CB005C7674 /* specs_info_02.mp4 in Resources */,
 				6D1871EA1A27716300F886B9 /* key_industries_resource.plist in Resources */,
-				6D78FC4F1A0B7A140097E4F5 /* LaunchScreen.xib in Resources */,
 				6D179B541A39A74D0089899C /* Partners.mp4 in Resources */,
 				6D78FC4C1A0B7A140097E4F5 /* Images.xcassets in Resources */,
 				6DAA21621A3068AC00B5CB18 /* product_large_07.mp4 in Resources */,
@@ -3713,10 +3714,14 @@
 			baseConfigurationReference = 34CA437028E5848B3F09F9F6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Cochrane Presentation/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -3725,10 +3730,14 @@
 			baseConfigurationReference = 455A999303C9ED5158A09806 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Cochrane Presentation/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -3746,6 +3755,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Cochrane PresentationTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cochrane Presentation.app/Cochrane Presentation";
@@ -3762,6 +3772,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Cochrane PresentationTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cochrane Presentation.app/Cochrane Presentation";
